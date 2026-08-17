@@ -65,6 +65,7 @@ python -m bms smoke --output .runs/smoke-run.json
 ├── spec/
 │   └── specification-manifest.json
 └── tests/
+    ├── test_environment.py
     ├── test_manifests.py
     └── test_smoke.py
 ```
