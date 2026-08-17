@@ -1,0 +1,14 @@
+{
+  "schema": "bms.specification-manifest",
+  "schema_version": "1.0",
+  "created_at": "2026-08-17T13:40:26Z",
+  "requires_explicit_update_on_document_register_change": true,
+  "document_register_update_note": "If DOC-REG-001 changes, review the new register first and update this manifest deliberately before using changed specification versions.",
+  "specifications": {
+    "DOC-REG-001": "3.6",
+    "DOC-013": "0.1",
+    "DOC-014": "0.5",
+    "DOC-015": "0.4",
+    "DOC-016": "0.2"
+  }
+}

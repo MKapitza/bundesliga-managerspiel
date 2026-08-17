@@ -1,0 +1,9 @@
+[project]
+name = "bundesliga-managerspiel-ms2"
+version = "0.0.1"
+description = "Minimal technical bootstrap for MS2-W0/I1"
+requires-python = ">=3.13,<3.14"
+dependencies = []
+
+[tool.bms]
+specification_manifest = "spec/specification-manifest.json"
