@@ -1,6 +1,6 @@
-# Bundesliga-Managerspiel — MS2-W1/C2 Raw Observation + Evidence
+# Bundesliga-Managerspiel — MS2-W1/C3 Control Event Persistence
 
-Minimaler technischer Bootstrap aus MS2-W0/I1 mit dem SQLite-/Migrationsfundament aus **MS2-W1/C1** und der unveränderlichen Raw-/Evidence-Persistenz aus **MS2-W1/C2**. Dieser Stand implementiert bewusst noch keine fachliche Managerspiel-Pipeline, K0-Ausführung oder G1-Logik.
+Minimaler technischer Bootstrap aus MS2-W0/I1 mit dem SQLite-/Migrationsfundament aus **MS2-W1/C1**, der unveränderlichen Raw-/Evidence-Persistenz aus **C2** und der persistenten Control-Event-Grundlage aus **C3**. Dieser Stand führt bewusst keine Kontrolle K0–K7 und kein Gate G1–G7 aus.
 
 ## Stack-Entscheidung
 
@@ -34,7 +34,7 @@ Es ist keine Paketinstallation erforderlich.
 
 ## SQLite und Migrationen
 
-Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. `0001_raw_evidence.sql` erzeugt ausschließlich `evidence_artifact` und `raw_observation`; die technische Migrationshistorie bleibt in `schema_migrations`. Fremdschlüssel werden pro Verbindung aktiviert, und Datenbanktrigger verhindern UPDATE und DELETE beider C2-Tabellen.
+Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. `0001_raw_evidence.sql` erzeugt `evidence_artifact` und `raw_observation`; `0002_control_event.sql` ergänzt ausschließlich `control_event`. Die technische Migrationshistorie bleibt in `schema_migrations`. Fremdschlüssel werden pro Verbindung aktiviert, und Datenbanktrigger verhindern UPDATE und DELETE der unveränderlichen C2-/C3-Datensätze.
 
 ```bash
 python -m bms migrate --db .runs/local.sqlite3
@@ -52,6 +52,12 @@ python -m bms schema-version --db .runs/local.sqlite3
 - `evidence_id` und `raw_record_id` sind technisch erzeugte UUIDv4-Strings. Gleiche Bytes werden nicht dedupliziert.
 - `retrieved_at` und `observed_at` müssen timezone-aware ISO-8601-Texte sein und werden nicht normalisiert. `created_at` wird technisch in UTC als `YYYY-MM-DDTHH:MM:SSZ` erzeugt.
 
+## Control-Event-API
+
+`bms.control_events` stellt `store_control_event` und `read_control_event` sowie die unveränderliche Dataclass `ControlEvent` bereit. `object_refs` und `trace_refs` werden als kompakte JSON-Arrays in der gelieferten Reihenfolge gespeichert und beim Lesen als Tupel zurückgegeben. `checked_at` wird wie die C2-Zeitangaben validiert, aber nicht normalisiert.
+
+Die Migration beschränkt `control_point`, `severity`, `check_status`, `block_effect` und `resolution_status` exakt auf die in DOC-015 definierten Wertemengen. Sie berechnet oder interpretiert diese Werte nicht. `evidence_ref` bleibt eine opaque Referenz ohne Evidence-Fremdschlüssel; nur `predecessor_event_ref` besitzt einen selbstreferenziellen Fremdschlüssel.
+
 ## Lokaler Test- und Smoke-Weg
 
 Im Repository-Root ausführen:
@@ -60,7 +66,7 @@ Im Repository-Root ausführen:
 python -m unittest discover -s tests -v
 ```
 
-Dieser Lauf prüft die bestehende W0/C1-Basis sowie Migration, Byte-Roundtrip, Integrität, fehlende Hash-Deduplizierung, Referenzen, Unveränderlichkeit, Korrekturkette, Run-Traceability, exakte Zeittext-Erhaltung und die C2-Scope-Grenze.
+Dieser Lauf prüft die bestehende W0/C1/C2-Basis sowie C3-Migration und -Checksum, exaktes Control-Event-Schema, UUIDv4-IDs, JSON-/Zeit-Roundtrip, Enum-Constraints, opaque Evidence-Referenzen, Unveränderlichkeit, Vorgängerketten und die C3-Scope-Grenze.
 
 Optional kann ein sichtbares Run-Manifest erzeugt werden:
 
@@ -82,21 +88,24 @@ python -m bms smoke --output .runs/smoke-run.json
 ├── bms/
 │   ├── __init__.py
 │   ├── __main__.py
+│   ├── control_events.py
 │   ├── manifests.py
 │   ├── persistence.py
 │   └── storage.py
 ├── migrations/
-│   └── 0001_raw_evidence.sql
+│   ├── 0001_raw_evidence.sql
+│   └── 0002_control_event.sql
 ├── spec/
 │   └── specification-manifest.json
 └── tests/
     ├── test_environment.py
+    ├── test_control_events.py
     ├── test_manifests.py
     ├── test_migrations.py
     ├── test_smoke.py
     └── test_storage.py
 ```
 
-## Scope-Grenze C2
+## Scope-Grenze C3
 
-C2 enthält nur die technische Speicherung unveränderlicher Evidence-Bytes und minimaler Raw Observations. Nicht enthalten sind reale Quellenadapter oder Parser, Import-Batches, fachliche Rohwerte oder Statusräume, Control Events, Mapping, SSOT, Monitoring, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, K0–K7-/G1–G7-Ausführung, UI, Deployment oder vorsorgliche Plattformarchitektur.
+C3 ergänzt ausschließlich die Persistenz bereits bestimmter Control Events. Es enthält keinen Kontrollkatalog-Executor, keine Ableitung von Severity, Check-Status oder Blockwirkung und keine tatsächliche Blockade-/Gate-/Release-Entscheidung. Ebenfalls nicht enthalten sind reale Quellenadapter oder Parser, Import-Batches, Mapping, SSOT, Monitoring, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI, Deployment oder vorsorgliche Plattformarchitektur.

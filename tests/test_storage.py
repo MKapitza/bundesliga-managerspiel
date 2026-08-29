@@ -8,7 +8,7 @@ import unittest
 import uuid
 from pathlib import Path
 
-from bms.persistence import apply_migrations, connect_database, schema_version
+from bms.persistence import apply_migrations, connect_database
 from bms.storage import (
     read_evidence,
     read_raw_observation,
@@ -50,7 +50,6 @@ FORBIDDEN_C2_SEMANTICS = {
     "result",
     "evaluation",
     "import_batch",
-    "control_event",
     "data_type",
     "raw_label",
     "raw_value",
@@ -62,6 +61,12 @@ FORBIDDEN_C2_SEMANTICS = {
     "severity",
     "block_effect",
     "gate_status",
+    "gate_engine",
+    "release_engine",
+    "control_runner",
+    "control_executor",
+    "severity_calculator",
+    "block_enforcer",
 }
 
 
@@ -95,7 +100,6 @@ class StorageTests(unittest.TestCase):
         return store_raw_observation(self.connection, **values)
 
     def test_c2_t01_fresh_migration_schema_and_checksum(self) -> None:
-        self.assertEqual(schema_version(self.connection), ("0001_raw_evidence", 1))
         tables = {
             row[0]
             for row in self.connection.execute(
@@ -289,7 +293,6 @@ class StorageTests(unittest.TestCase):
         self.assertTrue(FORBIDDEN_C2_SEMANTICS.isdisjoint(production_columns))
         self.assertTrue(FORBIDDEN_C2_SEMANTICS.isdisjoint(production_tables))
         self.assertTrue(FORBIDDEN_C2_SEMANTICS.isdisjoint(module_names))
-        self.assertFalse((REPO_ROOT / "migrations/0002_control_event.sql").exists())
 
 
 if __name__ == "__main__":

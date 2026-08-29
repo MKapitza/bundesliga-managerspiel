@@ -16,8 +16,7 @@ from bms.persistence import (
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-FORBIDDEN_C2_TABLES = {
-    "control_event",
+FORBIDDEN_C3_TABLES = {
     "mapping",
     "ssot",
     "monitoring",
@@ -204,25 +203,31 @@ class MigrationTests(unittest.TestCase):
                 json.loads(report.stdout),
                 {
                     "database": str(database),
-                    "latest_migration": "0001_raw_evidence",
-                    "applied_migrations": 1,
+                    "latest_migration": "0002_control_event",
+                    "applied_migrations": 2,
                 },
             )
 
-    def test_productive_c2_scope_contains_only_raw_evidence_tables(self) -> None:
+    def test_productive_c3_scope_contains_only_raw_evidence_and_control_event(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             connection = connect_database(Path(tmp) / "scope.sqlite3")
             try:
                 apply_migrations(connection, REPO_ROOT / "migrations")
                 self.assertEqual(
                     user_tables(connection),
-                    {"schema_migrations", "evidence_artifact", "raw_observation"},
+                    {
+                        "schema_migrations",
+                        "evidence_artifact",
+                        "raw_observation",
+                        "control_event",
+                    },
                 )
-                self.assertTrue(FORBIDDEN_C2_TABLES.isdisjoint(user_tables(connection)))
+                self.assertTrue(FORBIDDEN_C3_TABLES.isdisjoint(user_tables(connection)))
             finally:
                 connection.close()
         self.assertTrue((REPO_ROOT / "migrations/0001_raw_evidence.sql").is_file())
-        self.assertFalse((REPO_ROOT / "migrations/0002_control_event.sql").exists())
+        self.assertTrue((REPO_ROOT / "migrations/0002_control_event.sql").is_file())
+        self.assertFalse(any((REPO_ROOT / "migrations").glob("0003_*.sql")))
 
 
 if __name__ == "__main__":
