@@ -1,6 +1,6 @@
-# Bundesliga-Managerspiel — MS2-W1/C3 Control Event Persistence
+# Bundesliga-Managerspiel — MS2-W1/C4 Integrated W1 Smoke
 
-Minimaler technischer Bootstrap aus MS2-W0/I1 mit dem SQLite-/Migrationsfundament aus **MS2-W1/C1**, der unveränderlichen Raw-/Evidence-Persistenz aus **C2** und der persistenten Control-Event-Grundlage aus **C3**. Dieser Stand führt bewusst keine Kontrolle K0–K7 und kein Gate G1–G7 aus.
+Minimaler technischer Bootstrap aus MS2-W0/I1 mit dem SQLite-/Migrationsfundament aus **MS2-W1/C1**, der unveränderlichen Raw-/Evidence-Persistenz aus **C2**, der persistenten Control-Event-Grundlage aus **C3** und dem integrierten A/B-Smoke aus **C4**. Dieser Stand führt bewusst keine Kontrolle K0–K7 und kein Gate G1–G7 aus.
 
 ## Stack-Entscheidung
 
@@ -76,6 +76,24 @@ python -m bms smoke --output .runs/smoke-run.json
 
 `.runs/` ist absichtlich nicht versioniert. Das Run-Manifest enthält ausschließlich das technische W0-Grundgerüst: Schema-/Manifest-Version, `run_id`, UTC-Laufzeitpunkt, Git-Commit, Dirty-Flag, Referenz auf das Specification Manifest und Ausführungsstatus.
 
+Der integrierte W1-Smoke erzeugt aus zwei getrennten, zuvor nicht vorhandenen SQLite-Datenbanken ein maschinenlesbares IG1-Kandidatenpaket:
+
+```bash
+python -m bms w1-smoke --output-dir .runs/w1-c4-evidence
+```
+
+Beide Replays wenden 0001 und 0002 an, speichern dieselben synthetischen technischen Fixture-Bytes sowie je eine Raw Observation und ein synthetisch geliefertes Control Event, prüfen die Relationen und vergleichen anschließend alle nichtflüchtigen Strukturwerte. Alte `replay-a`-/`replay-b`-Ausgaben oder Datenbanken werden weder gelöscht noch wiederverwendet. Das erzeugte `ig1-evidence-index.json` kennzeichnet das Paket ausdrücklich nur als Kandidat und trifft keine IG1-Entscheidung.
+
+Das W1-Manifest `bms.w1-run-manifest` ergänzt den bestehenden leichten Run-Manifest-Typ additiv um Specification-Manifest-Hash, Python-/SQLite-Version, Migrationen mit Checksums und die drei technischen Artefakt-IDs. W2-Felder wie Mapping-, SSOT-, Monitoring-, Modell-, Snapshot- oder Ergebnisversionen werden nicht vorgezogen.
+
+Die vollständige technische IG1-Kandidaten-Evidence einschließlich Repository-Preflight, leichtem Smoke, Gesamttestbericht, `git diff --check`, Git-Status und dem unveränderten integrierten W1-Smoke wird reproduzierbar mit einem neuen Ausgabeverzeichnis erzeugt:
+
+```bash
+python -m bms w1-ig1-evidence --output-dir .runs/w1-ig1-candidate
+```
+
+Der Lauf zeichnet einen Dirty-Worktree wahrheitsgemäß auf, ohne deshalb im Entwicklungsmodus fehlzuschlagen. Für einen finalen Post-Commit-Kandidaten erzwingt `--require-clean` zusätzlich einen sauberen Worktree. Auch diese Orchestrierung erzeugt ausschließlich technische Kandidaten-Evidence; `ig1_decision` bleibt `NOT_MADE`.
+
 ## Repositorystruktur
 
 ```text
@@ -91,7 +109,9 @@ python -m bms smoke --output .runs/smoke-run.json
 │   ├── control_events.py
 │   ├── manifests.py
 │   ├── persistence.py
-│   └── storage.py
+│   ├── storage.py
+│   ├── w1_ig1_evidence.py
+│   └── w1_smoke.py
 ├── migrations/
 │   ├── 0001_raw_evidence.sql
 │   └── 0002_control_event.sql
@@ -103,9 +123,11 @@ python -m bms smoke --output .runs/smoke-run.json
     ├── test_manifests.py
     ├── test_migrations.py
     ├── test_smoke.py
-    └── test_storage.py
+    ├── test_storage.py
+    ├── test_w1_ig1_evidence.py
+    └── test_w1_smoke.py
 ```
 
-## Scope-Grenze C3
+## Scope-Grenze C4
 
-C3 ergänzt ausschließlich die Persistenz bereits bestimmter Control Events. Es enthält keinen Kontrollkatalog-Executor, keine Ableitung von Severity, Check-Status oder Blockwirkung und keine tatsächliche Blockade-/Gate-/Release-Entscheidung. Ebenfalls nicht enthalten sind reale Quellenadapter oder Parser, Import-Batches, Mapping, SSOT, Monitoring, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI, Deployment oder vorsorgliche Plattformarchitektur.
+C4 integriert ausschließlich die vorhandenen C1–C3-Bausteine in einen reproduzierbaren technischen Smoke. Es ergänzt weder Persistenzschema noch Fachobjekte und enthält keinen Kontrollkatalog-Executor, keine Ableitung von Severity, Check-Status oder Blockwirkung und keine tatsächliche Blockade-/Gate-/Release-Entscheidung. Ebenfalls nicht enthalten sind reale Quellenadapter oder Parser, Import-Batches, Mapping, SSOT, Monitoring, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI, Deployment oder vorsorgliche Plattformarchitektur.

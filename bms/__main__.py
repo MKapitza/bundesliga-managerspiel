@@ -8,6 +8,8 @@ from pathlib import Path
 
 from .manifests import ManifestError, write_run_manifest
 from .persistence import MigrationError, migrate_database, read_schema_version
+from .w1_ig1_evidence import W1IG1EvidenceError, run_w1_ig1_evidence
+from .w1_smoke import W1SmokeError, run_w1_smoke
 
 
 def _repo_root() -> Path:
@@ -35,6 +37,29 @@ def _parser() -> argparse.ArgumentParser:
     )
     schema_version.add_argument(
         "--db", type=Path, required=True, help="SQLite database path"
+    )
+    w1_smoke = subparsers.add_parser(
+        "w1-smoke", help="run the integrated W1 persistence replay smoke"
+    )
+    w1_smoke.add_argument(
+        "--output-dir",
+        type=Path,
+        required=True,
+        help="new output directory for W1 replay evidence",
+    )
+    w1_evidence = subparsers.add_parser(
+        "w1-ig1-evidence", help="produce the complete technical W1 IG1 candidate evidence"
+    )
+    w1_evidence.add_argument(
+        "--output-dir",
+        type=Path,
+        required=True,
+        help="new output directory for complete W1 IG1 candidate evidence",
+    )
+    w1_evidence.add_argument(
+        "--require-clean",
+        action="store_true",
+        help="fail technical validation when the recorded worktree is dirty",
     )
     return parser
 
@@ -65,6 +90,28 @@ def main() -> int:
             return 1
         print(json.dumps(data, sort_keys=True))
         return 0
+    if args.command == "w1-smoke":
+        try:
+            data = run_w1_smoke(args.output_dir, repo_root=repo_root)
+        except (W1SmokeError, ManifestError, MigrationError, OSError, sqlite3.Error) as exc:
+            print(f"W1 SMOKE FAIL: {exc}", file=sys.stderr)
+            return 1
+        print("W1 SMOKE PASS")
+        print(json.dumps(data, sort_keys=True))
+        return 0
+    if args.command == "w1-ig1-evidence":
+        try:
+            data = run_w1_ig1_evidence(
+                args.output_dir,
+                repo_root=repo_root,
+                require_clean=args.require_clean,
+            )
+        except (W1IG1EvidenceError, OSError, ValueError) as exc:
+            print(f"W1 IG1 EVIDENCE FAIL: {exc}", file=sys.stderr)
+            return 1
+        print(f"W1 IG1 EVIDENCE {data['status']}")
+        print(json.dumps(data, sort_keys=True))
+        return 0 if data["status"] == "PASS" else 1
     return 2
 
 
