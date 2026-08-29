@@ -1,6 +1,6 @@
-# Bundesliga-Managerspiel — MS2-W1/C1 Fundament
+# Bundesliga-Managerspiel — MS2-W1/C2 Raw Observation + Evidence
 
-Minimaler technischer Bootstrap aus MS2-W0/I1 mit dem SQLite- und Migrationsfundament aus **MS2-W1/C1**. Dieser Stand implementiert bewusst noch keine fachliche Managerspiel-Pipeline oder Produkttabellen.
+Minimaler technischer Bootstrap aus MS2-W0/I1 mit dem SQLite-/Migrationsfundament aus **MS2-W1/C1** und der unveränderlichen Raw-/Evidence-Persistenz aus **MS2-W1/C2**. Dieser Stand implementiert bewusst noch keine fachliche Managerspiel-Pipeline, K0-Ausführung oder G1-Logik.
 
 ## Stack-Entscheidung
 
@@ -34,7 +34,7 @@ Es ist keine Paketinstallation erforderlich.
 
 ## SQLite und Migrationen
 
-Versionierte Anwendungsmigrationen liegen künftig unter `migrations/` und folgen der Konvention `NNNN_description.sql`. C1 enthält noch keine Anwendungsmigration: Ein Fresh Setup erzeugt ausschließlich die technische Tabelle `schema_migrations`. Insbesondere werden keine Raw-/Evidence-, Control-Event- oder sonstigen Fachtabellen angelegt.
+Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. `0001_raw_evidence.sql` erzeugt ausschließlich `evidence_artifact` und `raw_observation`; die technische Migrationshistorie bleibt in `schema_migrations`. Fremdschlüssel werden pro Verbindung aktiviert, und Datenbanktrigger verhindern UPDATE und DELETE beider C2-Tabellen.
 
 ```bash
 python -m bms migrate --db .runs/local.sqlite3
@@ -42,6 +42,15 @@ python -m bms schema-version --db .runs/local.sqlite3
 ```
 
 `migrate` wendet Migrationen atomar in Dateinamenreihenfolge an und prüft bereits angewendete Dateien per SHA-256. `schema-version` gibt den Datenbankpfad, die letzte Migration und die Anzahl angewendeter Migrationen als JSON aus. Lokale Datenbanken (`*.db`, `*.sqlite`, `*.sqlite3`) und die nur lokal vorliegenden `project_sources/` werden nicht versioniert.
+
+## Raw-/Evidence-Storage-API
+
+`bms.storage` stellt eine kleine verbindungsbasierte API bereit:
+
+- `store_evidence` / `read_evidence` speichern und lesen Bytes unverändert; `verify_evidence` prüft SHA-256 und Bytelänge.
+- `store_raw_observation` / `read_raw_observation` speichern und lesen Quellenreferenz, Zeittexte, Evidence-/Run-Referenz und optional den Vorgänger unverändert.
+- `evidence_id` und `raw_record_id` sind technisch erzeugte UUIDv4-Strings. Gleiche Bytes werden nicht dedupliziert.
+- `retrieved_at` und `observed_at` müssen timezone-aware ISO-8601-Texte sein und werden nicht normalisiert. `created_at` wird technisch in UTC als `YYYY-MM-DDTHH:MM:SSZ` erzeugt.
 
 ## Lokaler Test- und Smoke-Weg
 
@@ -51,7 +60,7 @@ Im Repository-Root ausführen:
 python -m unittest discover -s tests -v
 ```
 
-Dieser Lauf prüft die bestehende W0-Basis sowie Reihenfolge, Idempotenz, Checksum-Schutz, Rollback, Fresh Rebuild, Schema-Version und Scope-Grenze der C1-Migrationen.
+Dieser Lauf prüft die bestehende W0/C1-Basis sowie Migration, Byte-Roundtrip, Integrität, fehlende Hash-Deduplizierung, Referenzen, Unveränderlichkeit, Korrekturkette, Run-Traceability, exakte Zeittext-Erhaltung und die C2-Scope-Grenze.
 
 Optional kann ein sichtbares Run-Manifest erzeugt werden:
 
@@ -74,16 +83,20 @@ python -m bms smoke --output .runs/smoke-run.json
 │   ├── __init__.py
 │   ├── __main__.py
 │   ├── manifests.py
-│   └── persistence.py
+│   ├── persistence.py
+│   └── storage.py
+├── migrations/
+│   └── 0001_raw_evidence.sql
 ├── spec/
 │   └── specification-manifest.json
 └── tests/
     ├── test_environment.py
     ├── test_manifests.py
     ├── test_migrations.py
-    └── test_smoke.py
+    ├── test_smoke.py
+    └── test_storage.py
 ```
 
-## Scope-Grenze C1
+## Scope-Grenze C2
 
-C1 enthält nur die minimale SQLite-Persistenzbasis, versionierbare SQL-Migrationen, die technische Migrationshistorie, CLI und Tests. Nicht enthalten sind Produkttabellen oder reale Rohdatenimporte, Evidence/Control Events, Mapping, SSOT, Monitoring, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, K0–K7-/G1–G7-Ausführung, UI, Deployment oder vorsorgliche Plattformarchitektur.
+C2 enthält nur die technische Speicherung unveränderlicher Evidence-Bytes und minimaler Raw Observations. Nicht enthalten sind reale Quellenadapter oder Parser, Import-Batches, fachliche Rohwerte oder Statusräume, Control Events, Mapping, SSOT, Monitoring, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, K0–K7-/G1–G7-Ausführung, UI, Deployment oder vorsorgliche Plattformarchitektur.

@@ -16,9 +16,7 @@ from bms.persistence import (
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-FORBIDDEN_TABLES = {
-    "raw_observation",
-    "evidence_artifact",
+FORBIDDEN_C2_TABLES = {
     "control_event",
     "mapping",
     "ssot",
@@ -27,6 +25,7 @@ FORBIDDEN_TABLES = {
     "snapshot",
     "result",
     "evaluation",
+    "import_batch",
 }
 
 
@@ -205,21 +204,24 @@ class MigrationTests(unittest.TestCase):
                 json.loads(report.stdout),
                 {
                     "database": str(database),
-                    "latest_migration": None,
-                    "applied_migrations": 0,
+                    "latest_migration": "0001_raw_evidence",
+                    "applied_migrations": 1,
                 },
             )
 
-    def test_productive_c1_scope_has_no_application_tables_or_migrations(self) -> None:
+    def test_productive_c2_scope_contains_only_raw_evidence_tables(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             connection = connect_database(Path(tmp) / "scope.sqlite3")
             try:
                 apply_migrations(connection, REPO_ROOT / "migrations")
-                self.assertEqual(user_tables(connection), {"schema_migrations"})
-                self.assertTrue(FORBIDDEN_TABLES.isdisjoint(user_tables(connection)))
+                self.assertEqual(
+                    user_tables(connection),
+                    {"schema_migrations", "evidence_artifact", "raw_observation"},
+                )
+                self.assertTrue(FORBIDDEN_C2_TABLES.isdisjoint(user_tables(connection)))
             finally:
                 connection.close()
-        self.assertFalse((REPO_ROOT / "migrations/0001_raw_evidence.sql").exists())
+        self.assertTrue((REPO_ROOT / "migrations/0001_raw_evidence.sql").is_file())
         self.assertFalse((REPO_ROOT / "migrations/0002_control_event.sql").exists())
 
 
