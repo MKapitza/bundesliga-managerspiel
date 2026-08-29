@@ -3,3 +3,9 @@ __pycache__/
 .venv/
 .runs/
 .DS_Store
+project_sources/
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
