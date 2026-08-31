@@ -32,12 +32,17 @@ FIXTURE_RETRIEVED_AT = "2026-01-01T00:00:00.123456+00:00"
 FIXTURE_OBSERVED_AT = "2026-01-01T00:00:00Z"
 FIXTURE_CHECKED_AT = "2026-01-01T00:00:01.500000+00:00"
 
-EXPECTED_MIGRATIONS = ("0001_raw_evidence", "0002_control_event")
+EXPECTED_MIGRATIONS = (
+    "0001_raw_evidence",
+    "0002_control_event",
+    "0003_import_envelope",
+)
 EXPECTED_TABLES = {
     "schema_migrations",
     "evidence_artifact",
     "raw_observation",
     "control_event",
+    "import_envelope",
 }
 FORBIDDEN_PRODUCTION_MODULES = {
     "mapping",
@@ -181,8 +186,12 @@ def build_scope_guard(
     checks = {
         "productive_tables_exact": tables == EXPECTED_TABLES,
         "productive_migrations_exact": migrations
-        == ["0001_raw_evidence.sql", "0002_control_event.sql"],
-        "no_0003_migration": not any(name.startswith("0003_") for name in migrations),
+        == [
+            "0001_raw_evidence.sql",
+            "0002_control_event.sql",
+            "0003_import_envelope.sql",
+        ],
+        "no_0004_migration": not any(name.startswith("0004_") for name in migrations),
         "forbidden_modules_absent": FORBIDDEN_PRODUCTION_MODULES.isdisjoint(modules),
         "stdlib_only": not non_stdlib_imports and dependencies == [],
         "network_imports_absent": NETWORK_IMPORT_ROOTS.isdisjoint(import_roots),
@@ -265,8 +274,8 @@ def _run_replay(run_dir: Path, *, repo_root: Path) -> dict[str, Any]:
         database_schema = _database_schema(connection)
         if newly_applied != list(EXPECTED_MIGRATIONS):
             raise W1SmokeError(f"unexpected fresh migration order: {newly_applied!r}")
-        if database_schema["latest_migration"] != "0002_control_event":
-            raise W1SmokeError("latest migration must be 0002_control_event")
+        if database_schema["latest_migration"] != "0003_import_envelope":
+            raise W1SmokeError("latest migration must be 0003_import_envelope")
 
         evidence = store_evidence(
             connection,
@@ -319,7 +328,7 @@ def _run_replay(run_dir: Path, *, repo_root: Path) -> dict[str, Any]:
         scope_guard = build_scope_guard(connection, repo_root=repo_root)
         checks = {
             "fresh_database_created": database_path.is_file(),
-            "migrations_0001_0002_applied": [
+            "current_migrations_applied": [
                 item["migration_id"] for item in database_schema["applied_migrations"]
             ]
             == list(EXPECTED_MIGRATIONS),

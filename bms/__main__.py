@@ -10,6 +10,8 @@ from .manifests import ManifestError, write_run_manifest
 from .persistence import MigrationError, migrate_database, read_schema_version
 from .w1_ig1_evidence import W1IG1EvidenceError, run_w1_ig1_evidence
 from .w1_smoke import W1SmokeError, run_w1_smoke
+from .imports import FixtureValidationError
+from .w2_c1 import W2C1Error, run_w2_c1_smoke
 
 
 def _repo_root() -> Path:
@@ -60,6 +62,15 @@ def _parser() -> argparse.ArgumentParser:
         "--require-clean",
         action="store_true",
         help="fail technical validation when the recorded worktree is dirty",
+    )
+    w2_c1_smoke = subparsers.add_parser(
+        "w2-c1-smoke", help="run the archived-source W2-C1 import and K0/G1 smoke"
+    )
+    w2_c1_smoke.add_argument(
+        "--fixture-dir", type=Path, required=True, help="pilot fixture directory"
+    )
+    w2_c1_smoke.add_argument(
+        "--output-dir", type=Path, required=True, help="new C1 evidence output directory"
     )
     return parser
 
@@ -112,6 +123,25 @@ def main() -> int:
         print(f"W1 IG1 EVIDENCE {data['status']}")
         print(json.dumps(data, sort_keys=True))
         return 0 if data["status"] == "PASS" else 1
+    if args.command == "w2-c1-smoke":
+        try:
+            data = run_w2_c1_smoke(
+                args.fixture_dir, args.output_dir, repo_root=repo_root
+            )
+        except (
+            W2C1Error,
+            FixtureValidationError,
+            ManifestError,
+            MigrationError,
+            OSError,
+            sqlite3.Error,
+            ValueError,
+        ) as exc:
+            print(f"W2-C1 SMOKE FAIL: {exc}", file=sys.stderr)
+            return 1
+        print("W2-C1 SMOKE PASS")
+        print(json.dumps(data, sort_keys=True))
+        return 0
     return 2
 
 

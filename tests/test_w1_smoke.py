@@ -20,6 +20,7 @@ EXPECTED_TABLES = {
     "evidence_artifact",
     "raw_observation",
     "control_event",
+    "import_envelope",
 }
 
 
@@ -65,7 +66,7 @@ class W1SmokeTests(unittest.TestCase):
                         item["migration_id"]
                         for item in manifest["database_schema"]["applied_migrations"]
                     ],
-                    ["0001_raw_evidence", "0002_control_event"],
+                    ["0001_raw_evidence", "0002_control_event", "0003_import_envelope"],
                 )
 
     def test_c4_t02_integrated_evidence_raw_control_run_path(self) -> None:
@@ -121,7 +122,7 @@ class W1SmokeTests(unittest.TestCase):
                     "artifacts",
                 },
             )
-            self.assertEqual(manifest["database_schema"]["latest_migration"], "0002_control_event")
+            self.assertEqual(manifest["database_schema"]["latest_migration"], "0003_import_envelope")
             self.assertEqual(
                 set(manifest["artifacts"]),
                 {"evidence_id", "raw_record_id", "control_event_id"},
@@ -218,7 +219,11 @@ class W1SmokeTests(unittest.TestCase):
                 )
                 self.assertEqual(
                     scope[replay]["productive_migrations"],
-                    ["0001_raw_evidence.sql", "0002_control_event.sql"],
+                    [
+                        "0001_raw_evidence.sql",
+                        "0002_control_event.sql",
+                        "0003_import_envelope.sql",
+                    ],
                 )
                 self.assertEqual(scope[replay]["forbidden_modules_present"], [])
 

@@ -1,6 +1,6 @@
-# Bundesliga-Managerspiel — MS2-W1/C4 Integrated W1 Smoke
+# Bundesliga-Managerspiel — MS2-W2/C1 Source Import + K0/G1
 
-Minimaler technischer Bootstrap aus MS2-W0/I1 mit dem SQLite-/Migrationsfundament aus **MS2-W1/C1**, der unveränderlichen Raw-/Evidence-Persistenz aus **C2**, der persistenten Control-Event-Grundlage aus **C3** und dem integrierten A/B-Smoke aus **C4**. Dieser Stand führt bewusst keine Kontrolle K0–K7 und kein Gate G1–G7 aus.
+Der technische W1-Unterbau wird in W2-C1 um genau einen realen, archivierten Source-Import erweitert: unveränderte Evidence, Raw Observation, unveränderlicher Import Envelope, tatsächlich ausgeführte K0-Kontrollen und die daraus abgeleitete G1-Entscheidung. Mapping und SSOT sind ausdrücklich noch nicht implementiert.
 
 ## Stack-Entscheidung
 
@@ -34,7 +34,7 @@ Es ist keine Paketinstallation erforderlich.
 
 ## SQLite und Migrationen
 
-Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. `0001_raw_evidence.sql` erzeugt `evidence_artifact` und `raw_observation`; `0002_control_event.sql` ergänzt ausschließlich `control_event`. Die technische Migrationshistorie bleibt in `schema_migrations`. Fremdschlüssel werden pro Verbindung aktiviert, und Datenbanktrigger verhindern UPDATE und DELETE der unveränderlichen C2-/C3-Datensätze.
+Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. `0001_raw_evidence.sql` erzeugt `evidence_artifact` und `raw_observation`, `0002_control_event.sql` ergänzt `control_event`, und `0003_import_envelope.sql` ergänzt ausschließlich den 1:1 über `raw_record_id` verbundenen `import_envelope`. Die technische Migrationshistorie bleibt in `schema_migrations`. Fremdschlüssel und Trigger sichern Referenzen und Unveränderlichkeit.
 
 ```bash
 python -m bms migrate --db .runs/local.sqlite3
@@ -94,6 +94,18 @@ python -m bms w1-ig1-evidence --output-dir .runs/w1-ig1-candidate
 
 Der Lauf zeichnet einen Dirty-Worktree wahrheitsgemäß auf, ohne deshalb im Entwicklungsmodus fehlzuschlagen. Für einen finalen Post-Commit-Kandidaten erzwingt `--require-clean` zusätzlich einen sauberen Worktree. Auch diese Orchestrierung erzeugt ausschließlich technische Kandidaten-Evidence; `ig1_decision` bleibt `NOT_MADE`.
 
+## W2-C1 Source-Smoke
+
+Der C1-Pfad arbeitet ausschließlich offline mit der archivierten Pilotfixture. Er prüft Contract, SHA-256, Bytelänge und `entities.Q969725.id`, speichert die Originalbytes unverändert, erzeugt Raw Observation und Import Envelope und führt CTL-K0-001, -002, -003, -004, -005 und -008 tatsächlich aus. G1 wird anschließend aus den persistierten Control Events abgeleitet.
+
+```bash
+python -m bms w2-c1-smoke \
+  --fixture-dir pilot_data/w2/fixtures/w2-pilot-01 \
+  --output-dir .runs/w2-c1-review
+```
+
+Der Lauf verwendet eine frische SQLite-Datenbank und erzeugt `fixture-validation.json`, `import-report.json`, `k0-control-report.json`, `g1-decision.json`, `run-manifest.json`, `migration-report.json`, `scope-guard.json`, `smoke-report.json` und `evidence-index.json`. Ein nichtleeres Ausgabeverzeichnis wird nicht wiederverwendet.
+
 ## Repositorystruktur
 
 ```text
@@ -107,14 +119,17 @@ Der Lauf zeichnet einen Dirty-Worktree wahrheitsgemäß auf, ohne deshalb im Ent
 │   ├── __init__.py
 │   ├── __main__.py
 │   ├── control_events.py
+│   ├── imports.py
 │   ├── manifests.py
 │   ├── persistence.py
 │   ├── storage.py
 │   ├── w1_ig1_evidence.py
-│   └── w1_smoke.py
+│   ├── w1_smoke.py
+│   └── w2_c1.py
 ├── migrations/
 │   ├── 0001_raw_evidence.sql
-│   └── 0002_control_event.sql
+│   ├── 0002_control_event.sql
+│   └── 0003_import_envelope.sql
 ├── spec/
 │   └── specification-manifest.json
 └── tests/
@@ -125,9 +140,10 @@ Der Lauf zeichnet einen Dirty-Worktree wahrheitsgemäß auf, ohne deshalb im Ent
     ├── test_smoke.py
     ├── test_storage.py
     ├── test_w1_ig1_evidence.py
-    └── test_w1_smoke.py
+    ├── test_w1_smoke.py
+    └── test_w2_c1_source.py
 ```
 
-## Scope-Grenze C4
+## Scope-Grenze W2-C1
 
-C4 integriert ausschließlich die vorhandenen C1–C3-Bausteine in einen reproduzierbaren technischen Smoke. Es ergänzt weder Persistenzschema noch Fachobjekte und enthält keinen Kontrollkatalog-Executor, keine Ableitung von Severity, Check-Status oder Blockwirkung und keine tatsächliche Blockade-/Gate-/Release-Entscheidung. Ebenfalls nicht enthalten sind reale Quellenadapter oder Parser, Import-Batches, Mapping, SSOT, Monitoring, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI, Deployment oder vorsorgliche Plattformarchitektur.
+W2-C1 endet nach dem realen Fixture-Import, K0 und G1. Nicht enthalten sind Netzwerkabruf, generische Adapter-/Gate-Architektur, Mapping, Identitätsreview, SSOT, G2/G3, Monitoring, Eligibility, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI oder Deployment.

@@ -135,13 +135,13 @@ class ControlEventTests(unittest.TestCase):
         return store_control_event(self.connection, **self.event_values(**overrides))
 
     def test_c3_t01_migration_order_version_checksum_and_c2_schema(self) -> None:
-        self.assertEqual(schema_version(self.connection), ("0002_control_event", 2))
+        self.assertEqual(schema_version(self.connection), ("0003_import_envelope", 3))
         history = self.connection.execute(
             "SELECT migration_id, checksum_sha256 FROM schema_migrations ORDER BY migration_id"
         ).fetchall()
         self.assertEqual(
             [row["migration_id"] for row in history],
-            ["0001_raw_evidence", "0002_control_event"],
+            ["0001_raw_evidence", "0002_control_event", "0003_import_envelope"],
         )
         self.assertEqual(
             history[1]["checksum_sha256"],
@@ -326,11 +326,18 @@ class ControlEventTests(unittest.TestCase):
         modules = {path.stem for path in (REPO_ROOT / "bms").glob("*.py")}
         self.assertEqual(
             tables,
-            {"schema_migrations", "evidence_artifact", "raw_observation", "control_event"},
+            {
+                "schema_migrations",
+                "evidence_artifact",
+                "raw_observation",
+                "control_event",
+                "import_envelope",
+            },
         )
         self.assertTrue(FORBIDDEN_C3_PRODUCTION_NAMES.isdisjoint(tables))
         self.assertTrue(FORBIDDEN_C3_PRODUCTION_NAMES.isdisjoint(modules))
-        self.assertFalse(any((REPO_ROOT / "migrations").glob("0003_*.sql")))
+        self.assertTrue((REPO_ROOT / "migrations/0003_import_envelope.sql").is_file())
+        self.assertFalse(any((REPO_ROOT / "migrations").glob("0004_*.sql")))
 
 
 if __name__ == "__main__":
