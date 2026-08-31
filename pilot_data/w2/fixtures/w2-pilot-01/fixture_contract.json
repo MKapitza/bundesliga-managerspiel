@@ -1,0 +1,45 @@
+{
+  "assertion_status": null,
+  "byte_length": 119372,
+  "check_status": "CHECK_PENDING",
+  "conflict_status": "NOT_CHECKED",
+  "critical_expected_record_count": 1,
+  "critical_expected_record_keys": [
+    "WIKIDATA:Q969725"
+  ],
+  "data_type": "Externe Spieleridentität",
+  "encoding": "UTF-8",
+  "expected_structure": {
+    "entity_container": "entities",
+    "entity_id_expected": "Q969725",
+    "entity_id_path": "entities.Q969725.id",
+    "entity_key": "Q969725",
+    "root_type": "object"
+  },
+  "external_player_id": "Q969725",
+  "fixture_id": "w2-pilot-01",
+  "import_method": "SAVED_SOURCE",
+  "information_status": "CONFIRMED_VALUE",
+  "mapping_status": "UNMAPPED",
+  "media_type": "application/json",
+  "observed_at": "2026-08-31T16:36:38+00:00",
+  "published_at": null,
+  "raw_label": "id",
+  "raw_payload_ref": "source/wikidata_Q969725.json",
+  "raw_value": "Q969725",
+  "retrieved_at": "2026-08-31T16:36:38+00:00",
+  "rights": {
+    "git_commit_original_bytes": true,
+    "gitignore_required": false,
+    "scope_note": "Nur die strukturierten archivierten Entity-JSON-Daten werden als Fixture gespeichert; keine verlinkten Medien oder sonstigen Drittinhalte.",
+    "structured_entity_data_license": "CC0"
+  },
+  "schema": "bms.w2-pilot-fixture-contract",
+  "schema_version": "0.1",
+  "sha256": "124f95e3e6e2d938513764877768fd832c34c432d43f9e4b4ce7bde1a47247f1",
+  "source_file": "source/wikidata_Q969725.json",
+  "source_record_id": "Q969725",
+  "source_reference": "https://www.wikidata.org/wiki/Special:EntityData/Q969725.json",
+  "source_system": "WIKIDATA",
+  "target_object_type": "SSOT_EXTERNAL_ID"
+}
