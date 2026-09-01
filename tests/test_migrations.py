@@ -203,8 +203,8 @@ class MigrationTests(unittest.TestCase):
                 json.loads(report.stdout),
                 {
                     "database": str(database),
-                    "latest_migration": "0003_import_envelope",
-                    "applied_migrations": 3,
+                    "latest_migration": "0004_mapping_review",
+                    "applied_migrations": 4,
                 },
             )
 
@@ -221,6 +221,7 @@ class MigrationTests(unittest.TestCase):
                         "raw_observation",
                         "control_event",
                         "import_envelope",
+                        "mapping_record",
                     },
                 )
                 self.assertTrue(FORBIDDEN_C3_TABLES.isdisjoint(user_tables(connection)))
@@ -229,7 +230,8 @@ class MigrationTests(unittest.TestCase):
         self.assertTrue((REPO_ROOT / "migrations/0001_raw_evidence.sql").is_file())
         self.assertTrue((REPO_ROOT / "migrations/0002_control_event.sql").is_file())
         self.assertTrue((REPO_ROOT / "migrations/0003_import_envelope.sql").is_file())
-        self.assertFalse(any((REPO_ROOT / "migrations").glob("0004_*.sql")))
+        self.assertTrue((REPO_ROOT / "migrations/0004_mapping_review.sql").is_file())
+        self.assertFalse(any((REPO_ROOT / "migrations").glob("0005_*.sql")))
 
 
 if __name__ == "__main__":

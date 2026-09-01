@@ -36,6 +36,7 @@ EXPECTED_MIGRATIONS = (
     "0001_raw_evidence",
     "0002_control_event",
     "0003_import_envelope",
+    "0004_mapping_review",
 )
 EXPECTED_TABLES = {
     "schema_migrations",
@@ -43,9 +44,9 @@ EXPECTED_TABLES = {
     "raw_observation",
     "control_event",
     "import_envelope",
+    "mapping_record",
 }
 FORBIDDEN_PRODUCTION_MODULES = {
-    "mapping",
     "identity_matching",
     "ssot",
     "monitoring",
@@ -190,8 +191,9 @@ def build_scope_guard(
             "0001_raw_evidence.sql",
             "0002_control_event.sql",
             "0003_import_envelope.sql",
+            "0004_mapping_review.sql",
         ],
-        "no_0004_migration": not any(name.startswith("0004_") for name in migrations),
+        "no_0005_migration": not any(name.startswith("0005_") for name in migrations),
         "forbidden_modules_absent": FORBIDDEN_PRODUCTION_MODULES.isdisjoint(modules),
         "stdlib_only": not non_stdlib_imports and dependencies == [],
         "network_imports_absent": NETWORK_IMPORT_ROOTS.isdisjoint(import_roots),
@@ -274,8 +276,8 @@ def _run_replay(run_dir: Path, *, repo_root: Path) -> dict[str, Any]:
         database_schema = _database_schema(connection)
         if newly_applied != list(EXPECTED_MIGRATIONS):
             raise W1SmokeError(f"unexpected fresh migration order: {newly_applied!r}")
-        if database_schema["latest_migration"] != "0003_import_envelope":
-            raise W1SmokeError("latest migration must be 0003_import_envelope")
+        if database_schema["latest_migration"] != "0004_mapping_review":
+            raise W1SmokeError("latest migration must be 0004_mapping_review")
 
         evidence = store_evidence(
             connection,

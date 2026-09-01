@@ -1,6 +1,6 @@
-# Bundesliga-Managerspiel — MS2-W2/C1 Source Import + K0/G1
+# Bundesliga-Managerspiel — MS2-W2/C2 Mapping + Review + K1/G2
 
-Der technische W1-Unterbau wird in W2-C1 um genau einen realen, archivierten Source-Import erweitert: unveränderte Evidence, Raw Observation, unveränderlicher Import Envelope, tatsächlich ausgeführte K0-Kontrollen und die daraus abgeleitete G1-Entscheidung. Mapping und SSOT sind ausdrücklich noch nicht implementiert.
+Der technische W1-Unterbau und der reale C1-Importpfad werden in W2-C2 um unveränderliche Mappingrecords, Mapping-Review, tatsächlich ausgeführte K1-Kontrollen und die daraus abgeleitete G2-Entscheidung erweitert. Der reale Pilot endet erwartungsgemäß mit `REVIEW_REQUIRED` und G2 `BLOCKED`; technische Smoke-Ausführung und Gateentscheidung bleiben getrennt. SSOT ist ausdrücklich noch nicht implementiert.
 
 ## Stack-Entscheidung
 
@@ -34,7 +34,7 @@ Es ist keine Paketinstallation erforderlich.
 
 ## SQLite und Migrationen
 
-Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. `0001_raw_evidence.sql` erzeugt `evidence_artifact` und `raw_observation`, `0002_control_event.sql` ergänzt `control_event`, und `0003_import_envelope.sql` ergänzt ausschließlich den 1:1 über `raw_record_id` verbundenen `import_envelope`. Die technische Migrationshistorie bleibt in `schema_migrations`. Fremdschlüssel und Trigger sichern Referenzen und Unveränderlichkeit.
+Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. Auf Evidence, Raw Observation, Control Events und Import Envelope aus 0001–0003 ergänzt `0004_mapping_review.sql` ausschließlich `mapping_record`. Die technische Migrationshistorie bleibt in `schema_migrations`. Fremdschlüssel und Trigger sichern Referenzen, Vorgängerketten und Unveränderlichkeit.
 
 ```bash
 python -m bms migrate --db .runs/local.sqlite3
@@ -106,6 +106,18 @@ python -m bms w2-c1-smoke \
 
 Der Lauf verwendet eine frische SQLite-Datenbank und erzeugt `fixture-validation.json`, `import-report.json`, `k0-control-report.json`, `g1-decision.json`, `run-manifest.json`, `migration-report.json`, `scope-guard.json`, `smoke-report.json` und `evidence-index.json`. Ein nichtleeres Ausgabeverzeichnis wird nicht wiederverwendet.
 
+## W2-C2 Mapping-Smoke
+
+Der integrierte C2-Smoke führt auf einer frischen Datenbank den realen Pfad Fixture → C1 → Mapping → K1 → G2 aus:
+
+```bash
+python -m bms w2-c2-smoke \
+  --fixture-dir pilot_data/w2/fixtures/w2-pilot-01 \
+  --output-dir .runs/w2-c2-review
+```
+
+Für Pilot 01 wird keine interne Spieleridentität erfunden. Die unbekannte Wikidata-ID erzeugt genau einen Mapping-Prüfdatensatz mit `REVIEW_REQUIRED`, CTL-K1-001 und G2 `BLOCKED`; der Smoke meldet bei diesem fachlich erwarteten Blockadepfad `PASS`. Zusätzliche Evidence-Artefakte dokumentieren Mapping, K1 und G2 maschinenlesbar.
+
 ## Repositorystruktur
 
 ```text
@@ -120,16 +132,19 @@ Der Lauf verwendet eine frische SQLite-Datenbank und erzeugt `fixture-validation
 │   ├── __main__.py
 │   ├── control_events.py
 │   ├── imports.py
+│   ├── mapping.py
 │   ├── manifests.py
 │   ├── persistence.py
 │   ├── storage.py
 │   ├── w1_ig1_evidence.py
 │   ├── w1_smoke.py
-│   └── w2_c1.py
+│   ├── w2_c1.py
+│   └── w2_c2.py
 ├── migrations/
 │   ├── 0001_raw_evidence.sql
 │   ├── 0002_control_event.sql
-│   └── 0003_import_envelope.sql
+│   ├── 0003_import_envelope.sql
+│   └── 0004_mapping_review.sql
 ├── spec/
 │   └── specification-manifest.json
 └── tests/
@@ -141,9 +156,10 @@ Der Lauf verwendet eine frische SQLite-Datenbank und erzeugt `fixture-validation
     ├── test_storage.py
     ├── test_w1_ig1_evidence.py
     ├── test_w1_smoke.py
-    └── test_w2_c1_source.py
+    ├── test_w2_c1_source.py
+    └── test_w2_c2_mapping.py
 ```
 
-## Scope-Grenze W2-C1
+## Scope-Grenze W2-C2
 
-W2-C1 endet nach dem realen Fixture-Import, K0 und G1. Nicht enthalten sind Netzwerkabruf, generische Adapter-/Gate-Architektur, Mapping, Identitätsreview, SSOT, G2/G3, Monitoring, Eligibility, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI oder Deployment.
+W2-C2 endet nach Mapping, Review, K1 und G2. Nicht enthalten sind Netzwerkabruf, generische Adapter-/Gate-Architektur, SSOT-Produktionsobjekte oder -Versionen, K2/G3, Monitoring, Eligibility, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI oder Deployment.

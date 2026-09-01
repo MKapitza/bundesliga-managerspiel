@@ -30,9 +30,9 @@ EXPECTED_TABLES = {
     "raw_observation",
     "control_event",
     "import_envelope",
+    "mapping_record",
 }
 FORBIDDEN_TABLE_FRAGMENTS = {
-    "mapping",
     "identity",
     "ssot",
     "monitoring",
@@ -46,7 +46,6 @@ FORBIDDEN_TABLE_FRAGMENTS = {
     "evaluation",
 }
 FORBIDDEN_MODULES = {
-    "mapping",
     "identity_matching",
     "ssot",
     "monitoring",
@@ -426,7 +425,7 @@ def _scope_guard(connection: sqlite3.Connection, repo_root: Path) -> dict[str, A
     forbidden_tables = sorted(
         table
         for table in tables
-        if table != "import_envelope"
+        if table not in {"import_envelope", "mapping_record"}
         and any(fragment in table for fragment in FORBIDDEN_TABLE_FRAGMENTS)
     )
     checks = {
@@ -436,8 +435,9 @@ def _scope_guard(connection: sqlite3.Connection, repo_root: Path) -> dict[str, A
             "0001_raw_evidence.sql",
             "0002_control_event.sql",
             "0003_import_envelope.sql",
+            "0004_mapping_review.sql",
         ],
-        "no_migration_0004": not any(name.startswith("0004_") for name in migrations),
+        "no_migration_0005": not any(name.startswith("0005_") for name in migrations),
         "forbidden_tables_absent": not forbidden_tables,
         "forbidden_modules_absent": FORBIDDEN_MODULES.isdisjoint(modules),
         "network_imports_absent": NETWORK_IMPORT_ROOTS.isdisjoint(imports),
@@ -483,6 +483,7 @@ def run_w2_c1_smoke(
             "0001_raw_evidence",
             "0002_control_event",
             "0003_import_envelope",
+            "0004_mapping_review",
         ]
         migration_report = {
             "schema": "bms.w2-c1-migration-report",
@@ -610,7 +611,9 @@ def run_w2_c1_smoke(
             "k0_pass": k0_report["status"] == "PASS",
             "g1_released_for_mapping": g1["decision"] == "RELEASED_FOR_MAPPING",
             "scope_guard_pass": scope["status"] == "PASS",
-            "mapping_not_executed": imported.envelope.mapping_status == "UNMAPPED",
+            "mapping_not_executed": imported.envelope.mapping_status == "UNMAPPED"
+            and connection.execute("SELECT COUNT(*) FROM mapping_record").fetchone()[0]
+            == 0,
             "status_dimensions_preserved": (
                 imported.envelope.check_status == "CHECK_PENDING"
                 and imported.envelope.conflict_status == "NOT_CHECKED"

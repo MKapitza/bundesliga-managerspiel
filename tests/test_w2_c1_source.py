@@ -134,8 +134,8 @@ class W2C1SourceTests(unittest.TestCase):
             evidence_ids=[imported.evidence.evidence_id],
         )
 
-    def test_t01_fresh_database_migrates_0001_through_0003(self) -> None:
-        self.assertEqual(schema_version(self.connection), ("0003_import_envelope", 3))
+    def test_t01_fresh_database_migrates_through_current_0004(self) -> None:
+        self.assertEqual(schema_version(self.connection), ("0004_mapping_review", 4))
         columns = [
             row["name"]
             for row in self.connection.execute("PRAGMA table_info(import_envelope)")
@@ -326,15 +326,19 @@ class W2C1SourceTests(unittest.TestCase):
             self.assertEqual(set(event.object_refs), expected_refs)
             self.assertEqual(event.evidence_ref, self.imported.evidence.evidence_id)
 
-    def test_t19_no_mapping_or_ssot_production_objects_exist(self) -> None:
+    def test_t19_c1_does_not_execute_mapping_or_create_ssot_objects(self) -> None:
         names = {
             row["name"]
             for row in self.connection.execute(
                 "SELECT name FROM sqlite_master WHERE type='table'"
             )
         }
-        self.assertFalse({"mapping", "ssot", "mapping_version", "ssot_version"} & names)
-        self.assertFalse((REPO_ROOT / "bms/mapping.py").exists())
+        self.assertIn("mapping_record", names)
+        self.assertEqual(
+            self.connection.execute("SELECT COUNT(*) FROM mapping_record").fetchone()[0], 0
+        )
+        self.assertFalse({"ssot", "mapping_version", "ssot_version"} & names)
+        self.assertTrue((REPO_ROOT / "bms/mapping.py").exists())
         self.assertFalse((REPO_ROOT / "bms/ssot.py").exists())
 
     def test_cli_smoke_generates_complete_execution_evidence(self) -> None:
