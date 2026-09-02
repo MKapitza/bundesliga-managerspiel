@@ -1,0 +1,109 @@
+name: MS2 W2 C3 start-prep materialization
+
+on:
+  push:
+    branches:
+      - ms2-w2-c3-start-prep
+    paths:
+      - .github/workflows/ms2-w2-c3-start-prep.yml
+
+permissions:
+  contents: write
+
+jobs:
+  materialize-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout prep branch
+        uses: actions/checkout@v4
+        with:
+          ref: ms2-w2-c3-start-prep
+          fetch-depth: 0
+
+      - name: Materialize exact Wikidata raw fixture
+        shell: bash
+        run: |
+          set -euo pipefail
+          fixture_dir="pilot_data/w2/fixtures/w2-c3-positive-01"
+          raw_path="$fixture_dir/source/wikidata_Q96072055.json"
+          contract_path="$fixture_dir/fixture_contract.json"
+          mkdir -p "$(dirname "$raw_path")"
+
+          tmp="$(mktemp)"
+          curl --fail --location --retry 3 --retry-delay 2 --output "$tmp" "https://www.wikidata.org/wiki/Special:EntityData/Q96072055.json"
+          retrieved_at="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+          export RETRIEVED_AT="$retrieved_at"
+          mv "$tmp" "$raw_path"
+
+          python - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+
+          raw_path = Path("pilot_data/w2/fixtures/w2-c3-positive-01/source/wikidata_Q96072055.json")
+          contract_path = Path("pilot_data/w2/fixtures/w2-c3-positive-01/fixture_contract.json")
+          retrieved_at = os.environ["RETRIEVED_AT"]
+
+          raw = raw_path.read_bytes()
+          parsed = json.loads(raw.decode("utf-8"))
+          assert parsed["entities"]["Q96072055"]["id"] == "Q96072055"
+
+          contract = json.loads(contract_path.read_text(encoding="utf-8"))
+          contract["retrieved_at"] = retrieved_at
+          contract["observed_at"] = retrieved_at
+          contract["sha256"] = hashlib.sha256(raw).hexdigest()
+          contract["byte_length"] = len(raw)
+          contract_path.write_text(
+              json.dumps(contract, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+              encoding="utf-8",
+          )
+
+          print("retrieved_at=" + retrieved_at)
+          print("observed_at=" + retrieved_at)
+          print("sha256=" + contract["sha256"])
+          print("byte_length=" + str(contract["byte_length"]))
+          PY
+
+      - name: Run all existing C2-era tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v
+
+      - name: Final consistency checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+
+          raw = Path("pilot_data/w2/fixtures/w2-c3-positive-01/source/wikidata_Q96072055.json").read_bytes()
+          contract = json.loads(Path("pilot_data/w2/fixtures/w2-c3-positive-01/fixture_contract.json").read_text())
+          manifest = json.loads(Path("spec/specification-manifest.json").read_text())
+
+          assert hashlib.sha256(raw).hexdigest() == contract["sha256"]
+          assert len(raw) == contract["byte_length"]
+          assert contract["mapping_status"] == "UNMAPPED"
+          assert contract["check_status"] == "CHECK_PENDING"
+          assert contract["conflict_status"] == "NOT_CHECKED"
+          assert manifest["specifications"] == {
+              "DOC-REG-001": "3.7",
+              "DOC-013": "0.1",
+              "DOC-014": "0.6",
+              "DOC-015": "0.5",
+              "DOC-016": "0.2",
+          }
+          print("CONSISTENCY_PASS")
+          PY
+
+      - name: Commit prep result and remove temporary workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/ms2-w2-c3-start-prep.yml
+          git add pilot_data/w2/fixtures/w2-c3-positive-01/source/wikidata_Q96072055.json
+          git add pilot_data/w2/fixtures/w2-c3-positive-01/fixture_contract.json
+          git commit -m "Materialize C3 positive raw fixture and validate start prep"
+          git push origin HEAD:ms2-w2-c3-start-prep
