@@ -17,10 +17,10 @@ from bms.manifests import (
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SPEC_PATH = REPO_ROOT / "spec/specification-manifest.json"
 EXPECTED_SPECIFICATIONS = {
-    "DOC-REG-001": "3.6",
+    "DOC-REG-001": "3.7",
     "DOC-013": "0.1",
-    "DOC-014": "0.5",
-    "DOC-015": "0.4",
+    "DOC-014": "0.6",
+    "DOC-015": "0.5",
     "DOC-016": "0.2",
 }
 
