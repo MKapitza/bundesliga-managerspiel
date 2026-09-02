@@ -1,0 +1,45 @@
+{
+  "assertion_status": null,
+  "byte_length": 66528,
+  "check_status": "CHECK_PENDING",
+  "conflict_status": "NOT_CHECKED",
+  "critical_expected_record_count": 1,
+  "critical_expected_record_keys": [
+    "WIKIDATA:Q96072055"
+  ],
+  "data_type": "Externe Spieleridentität",
+  "encoding": "UTF-8",
+  "expected_structure": {
+    "entity_container": "entities",
+    "entity_id_expected": "Q96072055",
+    "entity_id_path": "entities.Q96072055.id",
+    "entity_key": "Q96072055",
+    "root_type": "object"
+  },
+  "external_player_id": "Q96072055",
+  "fixture_id": "w2-c3-positive-01",
+  "import_method": "SAVED_SOURCE",
+  "information_status": "CONFIRMED_VALUE",
+  "mapping_status": "UNMAPPED",
+  "media_type": "application/json",
+  "observed_at": "2026-09-02T16:31:56.330763+00:00",
+  "published_at": null,
+  "raw_label": "id",
+  "raw_payload_ref": "source/wikidata_Q96072055.json",
+  "raw_value": "Q96072055",
+  "retrieved_at": "2026-09-02T16:31:56.330763+00:00",
+  "rights": {
+    "git_commit_original_bytes": true,
+    "gitignore_required": false,
+    "scope_note": "Nur die strukturierten archivierten Entity-JSON-Daten werden als Fixture gespeichert; keine verlinkten Medien oder sonstigen Drittinhalte.",
+    "structured_entity_data_license": "CC0"
+  },
+  "schema": "bms.w2-pilot-fixture-contract",
+  "schema_version": "0.1",
+  "sha256": "d160438c111e9f36bdbf3f87ba05eda5f44ce826e4c43d500beea413c17963d4",
+  "source_file": "source/wikidata_Q96072055.json",
+  "source_record_id": "Q96072055",
+  "source_reference": "https://www.wikidata.org/wiki/Special:EntityData/Q96072055.json",
+  "source_system": "WIKIDATA",
+  "target_object_type": "SSOT_EXTERNAL_ID"
+}
