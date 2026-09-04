@@ -1,0 +1,26 @@
+{
+  "schema":"bms.w3-1-leipzig-full-identity-evidence",
+  "schema_version":"0.1",
+  "run_id":"w3-1-leipzig-identity-20260905-01",
+  "captured_at":"2026-09-05T01:24:00+02:00",
+  "governance_note":"DOC-REG-001 was searched before this step but was not retrievable. The branch specification manifest still states DOC-REG-001 3.8 and DOC-015 0.6; no newer version is inferred.",
+  "source_pdf":{"sha256":"15d6cff1543d6b257d5e0f14cb155f11720f3b725c7628fbd3585b309ab568b8","byte_length":1469439,"pages":2,"reference":"https://www.kicker.de/rb-leipzig/kader/bundesliga/2026-27"},
+  "official_sources":[
+    {"reference":"https://rbleipzig.com/de/teams/maenner","purpose":"official current first-team identity cross-check"},
+    {"reference":"https://rbleipzig.com/de/news/2026-2027","purpose":"official current-season signing/transfer cross-checks"}
+  ],
+  "existing_identities_reused":[
+    {"display_name":"Castello Lukeba","player_id":"7be957a6-2418-4787-a3e2-8d1aebcb5969","legitimation_ref":"ssot-legit:acee5e56-c289-45f7-bc66-8b6d883cde98"},
+    {"display_name":"Brajan Gruda","player_id":"ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e","legitimation_ref":"ssot-legit:7e7fc702-6306-48b0-9a93-04d2d7651141"}
+  ],
+  "new_identity_candidates":[
+    "Ørjan Nyland","Maarten Vandevoordt","Leopold Zingerle","Ridle Baku","Maxime Estève","Max Finkgräfe","Benjamin Henrichs","Lukas Klostermann","Abdoul Koné","Willi Orbán","David Raum","Ezechiel Banzuzi","Christoph Baumgartner","Neil El Aynaoui","Viggo Gebel","Benno Kaltefleiter","Andrija Maksimović","Assan Ouédraogo","Rocco Reitz","Nicolas Seiwald","Johan Bakayoko","Tidiam Gomis","Marc Guiu","Samba Konaté","Christopher Nkunku","Antonio Nusa","Rômulo","Suleman Sani","Arthur Vermeeren","Conrad Harder"
+  ],
+  "identity_assessment":{"new_candidates":30,"evidence_result":"SUFFICIENT","duplicate_check":"CLEAR","review_required":0},
+  "special_cases":[
+    {"display_name":"Arthur Vermeeren","status":"AUSSERDEM_EINGESETZT","current_club_in_kicker":"Royal Antwerp FC","handling":"identity may be legitimized; no current Leipzig club assignment"},
+    {"display_name":"Conrad Harder","status":"AUSSERDEM_EINGESETZT","current_club_in_kicker":"Racing Straßburg","handling":"identity may be legitimized; no current Leipzig club assignment"},
+    {"display_name":"El Chadaille Bitshiabu","status":"NOT_LISTED_IN_CURRENT_CAPTURE","handling":"reuse prior player_id and prior transfer-out record; do not infer current Leipzig assignment"}
+  ],
+  "summary":{"season_listed_players":32,"current_roster":30,"existing_reused":2,"new_positive_candidates":30,"review_required":0}
+}
