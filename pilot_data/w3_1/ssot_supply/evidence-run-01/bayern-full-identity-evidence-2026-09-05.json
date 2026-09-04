@@ -1,0 +1,59 @@
+{
+  "schema": "bms.w3-1-bayern-full-identity-evidence",
+  "schema_version": "0.1",
+  "run_id": "w3-1-bayern-identity-20260905-01",
+  "captured_at": "2026-09-05T01:09:00+02:00",
+  "governance_note": "DOC-REG-001 was re-searched before this step but was not retrievable in the available uploaded-file/repository search. The branch specification manifest still records DOC-REG-001 3.8 / DOC-015 0.6; no newer register evidence was found. No newer version is inferred.",
+  "sources": [
+    {
+      "type": "KICKER_USER_PDF",
+      "reference": "Bayern München | Kader | Bundesliga 2026/27 - kicker",
+      "sha256": "54af23beae23d6df779026516faaa6a3390d45038f40845ad3e0ea0bcf772366",
+      "finding": "Full 24-player Bayern roster with name, nationality, date of birth and season position grouping."
+    },
+    {
+      "type": "OFFICIAL_CLUB_CURRENT_SQUAD",
+      "reference": "https://fcbayern.com/de/teams/profis",
+      "finding": "Official FC Bayern professional squad 2026/27 confirms the identities of the current first-team players; current indexed page includes all cases below except Sacha Boey and Bara Sapoko Ndiaye, which are supported separately."
+    },
+    {
+      "type": "OFFICIAL_CLUB_RECENT_MATCH",
+      "reference": "https://fcbayern.com/en/news/matchreports/2026/09/match-report-vfl-osnabrueck-v-fc-bayern-020916",
+      "finding": "Recent official match report confirms Bara Ndiaye in the Bayern match squad."
+    },
+    {
+      "type": "OFFICIAL_CLUB_HISTORIC_TEAM_RECORD",
+      "reference": "https://fcbayern.com/de/fans/autogrammkarte/autogrammkarten_profis",
+      "finding": "Official Bayern player-card/team material confirms Sacha Boey as a Bayern professional identity."
+    }
+  ],
+  "existing_ssot_reuse": [
+    {"display_name":"Alphonso Davies","player_id":"402c6c62-eacd-4ea7-b864-9572bf136fd1","legitimation_ref":"ssot-legit:676828c1-715a-43ba-9254-a565204eb724"},
+    {"display_name":"Konrad Laimer","player_id":"adc42591-1b56-42aa-af9b-fe672ff460b4","legitimation_ref":"ssot-legit:ffb240d2-2699-48f4-aafc-2a50de472f07"},
+    {"display_name":"Jamal Musiala","player_id":"9ed46b81-bb6e-4f84-a28d-92b0f019beb5","legitimation_ref":"ssot-legit:dc4a7f13-6cb3-4144-a9ca-89991a281962"},
+    {"display_name":"Serge Gnabry","player_id":"66eedad6-6d31-4b13-87a8-358aa68ca9f6","legitimation_ref":"ssot-legit:f7166da0-8dd0-4648-b6c6-8a23b257f3c7"}
+  ],
+  "new_identity_candidates": [
+    {"display_name":"Manuel Neuer","dob":"1986-03-27","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Sven Ulreich","dob":"1988-08-03","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Jonas Urbig","dob":"2003-08-08","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Sacha Boey","dob":"2000-09-13","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Nathaniel Brown","dob":"2003-06-16","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Hiroki Ito","dob":"1999-05-12","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR","notes":["Date of birth disambiguates from the older Japanese footballer with the same Latin-script name."]},
+    {"display_name":"Min-Jae Kim","dob":"1996-11-15","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR","notes":["Official club renders name as Minjae Kim; kicker renders Kim Min-Jae."]},
+    {"display_name":"Josip Stanisic","dob":"2000-04-02","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Jonathan Tah","dob":"1996-02-11","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Dayot Upamecano","dob":"1998-10-27","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Tom Bischof","dob":"2005-06-28","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR","external_identity":"WIKIDATA:Q111308591"},
+    {"display_name":"Lennart Karl","dob":"2008-02-22","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Joshua Kimmich","dob":"1995-02-08","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Aleksandar Pavlovic","dob":"2004-05-03","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"David Santos Daiber","dob":"2007-01-10","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR","notes":["kicker short form David Santos; official club full form David Santos Daiber."]},
+    {"display_name":"Bara Sapoko Ndiaye","dob":"2007-12-31","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR","external_identity":"WIKIDATA:Q137733792"},
+    {"display_name":"Harry Kane","dob":"1993-07-28","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Luis Diaz","dob":"1997-01-13","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Michael Olise","dob":"2001-12-12","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR","external_identity":"WIKIDATA:Q62050484"},
+    {"display_name":"Ismael Saibari","dob":"2001-01-28","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR","external_identity":"WIKIDATA:Q98784065"}
+  ],
+  "summary": {"roster_total":24,"reused_existing":4,"new_positive_candidates":20,"review_required":0}
+}
