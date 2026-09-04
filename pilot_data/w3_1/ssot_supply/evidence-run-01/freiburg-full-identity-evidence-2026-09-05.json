@@ -1,0 +1,71 @@
+{
+  "schema": "bms.w3-1-freiburg-full-identity-evidence",
+  "schema_version": "0.1",
+  "run_id": "w3-1-freiburg-identity-20260905-01",
+  "captured_at": "2026-09-05T01:18:00+02:00",
+  "governance_note": "DOC-REG-001 was searched before this step but no retrievable newer register result was found. Current project working basis remains DOC-REG-001 3.8 / DOC-015 0.6 as already recorded in the branch manifest and prior authorized ledgers; no newer version is inferred.",
+  "sources": [
+    {
+      "type": "KICKER_USER_PDF",
+      "reference": "SC Freiburg | Kader | Bundesliga 2026/27 - kicker",
+      "sha256": "c31736df7e4b639f779a37bb6097bc33dae5e996f820da8ba3cfb8da4bea7843",
+      "byte_length": 233128,
+      "finding": "Full 27-player Freiburg roster with name, nationality, date of birth and season-position grouping."
+    },
+    {
+      "type": "OFFICIAL_CLUB_CURRENT_SQUAD",
+      "reference": "https://www.scfreiburg.com/teams/profis/spieler",
+      "finding": "Official SC Freiburg professional squad page confirms current player identities with date of birth, shirt number and prior clubs."
+    },
+    {
+      "type": "OFFICIAL_CLUB_PLAYER_DETAIL",
+      "reference": "https://www.scfreiburg.com/teams/profis/spieler/mio-backhaus/",
+      "finding": "Example detail page confirms Mio Backhaus identity attributes including full name, date of birth, nationality and position."
+    },
+    {
+      "type": "OFFICIAL_CLUB_PLAYER_DETAIL",
+      "reference": "https://www.scfreiburg.com/teams/profis/spieler/jordy-makengo/",
+      "finding": "Example detail page confirms Jordy Makengo identity attributes including full name, date of birth, nationality and position."
+    },
+    {
+      "type": "OFFICIAL_CLUB_SIGNING",
+      "reference": "https://www.scfreiburg.com/aktuell/nachrichten/profis/news/2025/26/sport-club-verpflichtet-keisuke-goto",
+      "finding": "Official signing announcement independently confirms Keisuke Goto as the Japanese forward joining Freiburg for 2026/27."
+    }
+  ],
+  "existing_identity_check": {
+    "scope": "version-controlled pilot SSOT and already authorized W3.1 player ledgers on the working branch",
+    "result": "NO_APPLICABLE_EXISTING_PLAYER_ID_FOUND_FOR_CURRENT_FREIBURG_ROSTER",
+    "note": "No current Freiburg player is present in the previously authorized 36-player Mathias ledger or the Musiala positive seed. This is a project-repository scoped duplicate check, not a claim about an external master database."
+  },
+  "players": [
+    {"display_name":"Mio Backhaus","dob":"2004-04-16","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Jannik Huth","dob":"1994-04-15","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Florian Müller","dob":"1997-11-13","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Matthias Ginter","dob":"1994-01-19","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Christian Günter","dob":"1993-02-28","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Anthony Jung","dob":"1991-11-03","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Lukas Kübler","dob":"1992-08-30","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Philipp Lienhart","dob":"1996-07-11","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Jordy Makengo","dob":"2001-08-03","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Bruno Ogbus","dob":"2005-12-17","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Max Rosenfelder","dob":"2003-02-10","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Philipp Treu","dob":"2000-12-03","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Berkay Yilmaz","dob":"2005-02-25","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Niklas Beste","dob":"1999-01-04","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Maximilian Eggestein","dob":"1996-12-08","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Yannik Engelhardt","dob":"2001-02-07","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Vincenzo Grifo","dob":"1993-04-07","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Florent Muslija","dob":"1998-07-06","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Patrick Osterhage","dob":"2000-02-01","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Yuito Suzuki","dob":"2001-10-25","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Rouven Tarnutzer","dob":"2007-07-24","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Rihito Yamamoto","dob":"2001-12-12","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Keisuke Goto","dob":"2005-06-03","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Lucas Höler","dob":"1994-07-10","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Cyriaque Irié","dob":"2005-06-20","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Igor Matanović","dob":"2003-03-31","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Derry Scherhant","dob":"2002-11-10","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"}
+  ],
+  "summary": {"roster_total":27,"existing_reused":0,"new_positive_candidates":27,"review_required":0}
+}
