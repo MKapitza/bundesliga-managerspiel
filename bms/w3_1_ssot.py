@@ -44,33 +44,60 @@ def _iso_date(value: str | None, field_name: str, *, required: bool = True) -> d
         raise W31SSOTError(f"{field_name} must be ISO date YYYY-MM-DD") from exc
 
 
-def build_player_state(value: MaterializationInput) -> dict[str, Any]:
+def _require_registered_evidence_ref(value: str | None, field_name: str) -> str:
+    if not isinstance(value, str) or not value:
+        raise W31SSOTError(f"{field_name} must be non-empty")
+    if value.startswith("PENDING_"):
+        raise W31SSOTError(f"{field_name} is not registered evidence: {value}")
+    return value
+
+
+def build_player_state(
+    value: MaterializationInput, *, data_as_of: str
+) -> dict[str, Any]:
     """Build one W3.1 player SSOT state without deriving identity or position from names.
 
-    The function consumes already authorized DEC-030 identities and explicit evidence
-    references. It deliberately supports mapping-free identities because DOC-015 v0.6
-    separates internal identity legitimacy from optional external mapping.
+    The function consumes already authorized DEC-030 identities and explicit registered
+    evidence references. It deliberately supports mapping-free identities because
+    DOC-015 v0.6 separates internal identity legitimacy from optional external mapping.
+    Current club validity is evaluated at ``data_as_of`` so a historical assignment
+    cannot accidentally satisfy the current-club control.
     """
-    for field_name in ("player_id", "player_legitimation_ref", "position_evidence_ref"):
+    for field_name in ("player_id", "player_legitimation_ref"):
         field_value = getattr(value, field_name)
         if not isinstance(field_value, str) or not field_value:
             raise W31SSOTError(f"{field_name} must be non-empty")
+    position_evidence_ref = _require_registered_evidence_ref(
+        value.position_evidence_ref, "position_evidence_ref"
+    )
     if value.season_position not in POSITION_CLASSES:
         raise W31SSOTError("season_position must be one of T/A/M/S")
 
     season_start = _iso_date(SEASON_START_2026_27, "season.valid_from")
     season_end = _iso_date(SEASON_END_2026_27, "season.valid_to")
+    as_of = _iso_date(data_as_of, "data_as_of")
+    assert season_start is not None and season_end is not None and as_of is not None
+    if not season_start <= as_of <= season_end:
+        raise W31SSOTError("data_as_of must lie within season 2026/27")
+
     club_start = _iso_date(value.club_valid_from, "club_valid_from", required=False)
     club_end = _iso_date(value.club_valid_to, "club_valid_to", required=False)
     if club_start and club_end and club_start > club_end:
         raise W31SSOTError("club assignment validity is inverted")
 
+    club_evidence_ref: str | None = None
+    if value.club_id or value.club_legitimation_ref or value.club_valid_from or value.club_valid_to:
+        club_evidence_ref = _require_registered_evidence_ref(
+            value.club_evidence_ref, "club_evidence_ref"
+        )
+
     has_current_club = bool(
         value.club_id
         and value.club_legitimation_ref
-        and value.club_evidence_ref
+        and club_evidence_ref
         and club_start
-        and (club_end is None or club_end >= season_start)
+        and club_start <= as_of
+        and (club_end is None or as_of <= club_end)
     )
     if value.current_bundesliga_assignment_required and not has_current_club:
         status = "SSOT_BLOCKED"
@@ -80,7 +107,7 @@ def build_player_state(value: MaterializationInput) -> dict[str, Any]:
         open_cases = []
 
     player_club_assignment = None
-    if value.club_id and value.club_legitimation_ref and value.club_evidence_ref and club_start:
+    if value.club_id and value.club_legitimation_ref and club_evidence_ref and club_start:
         assignment_id = _technical_id(
             "player-club-assignment", value.player_id, value.club_id, value.club_valid_from or ""
         )
@@ -92,7 +119,7 @@ def build_player_state(value: MaterializationInput) -> dict[str, Any]:
             "valid_to": value.club_valid_to,
             "verification_status": "CONFIRMED",
             "conflict_status": "CLEAR",
-            "evidence_ref": value.club_evidence_ref,
+            "evidence_ref": club_evidence_ref,
         }
 
     position_assignment_id = _technical_id(
@@ -122,7 +149,7 @@ def build_player_state(value: MaterializationInput) -> dict[str, Any]:
             "valid_to": SEASON_END_2026_27,
             "verification_status": "CONFIRMED",
             "conflict_status": "CLEAR",
-            "evidence_ref": value.position_evidence_ref,
+            "evidence_ref": position_evidence_ref,
         },
         "identity_mapping": {
             "mode": "MAPPING_FREE_ALLOWED",
