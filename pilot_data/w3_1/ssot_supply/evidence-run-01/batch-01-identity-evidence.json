@@ -1,0 +1,159 @@
+{
+  "schema": "bms.w3-1-ssot-evidence-batch",
+  "schema_version": "0.1",
+  "run_id": "w3-1-ssot-evidence-20260904-01",
+  "participant_display_name": "Mathias",
+  "season_id": "73745028-426a-4970-a812-95455407ad77",
+  "season_label": "2026/27",
+  "governance_basis": {
+    "DOC-REG-001": "3.8",
+    "DOC-014": "0.7",
+    "DOC-015": "0.6",
+    "DOC-016": "0.2",
+    "decision": "DEC-030",
+    "requirement": "REQ-SSOT-005"
+  },
+  "scope": "Evidence collection only. No DEC-030 authorization, player_id, club_id, ssot_version_id or G3 release is created by this artifact.",
+  "players": [
+    {
+      "input_name": "Atobulu",
+      "resolved_name": "Noah Atubolu",
+      "reported_position": "T",
+      "identity_resolution": "PASS",
+      "current_club_observed": "Eintracht Frankfurt",
+      "evidence": [
+        {
+          "source_system": "BUNDESLIGA_WEB",
+          "source_reference": "https://www.bundesliga.com/de/spieler/noah-atubolu",
+          "observed_facts": ["Noah Atubolu", "Torhüter", "Eintracht Frankfurt", "Geburtsdatum 25.05.2002"]
+        },
+        {
+          "source_system": "BUNDESLIGA_WEB",
+          "source_reference": "https://www.bundesliga.com/de/bundesliga/news/eintracht-frankfurt-noah-atubolu-transfer-wechsel-sc-freiburg-38658",
+          "observed_facts": ["Wechsel/Leihe von SC Freiburg zu Eintracht Frankfurt für 2026/27"]
+        }
+      ],
+      "dec030_status": "EVIDENCE_COLLECTED_AUTHORIZATION_PENDING"
+    },
+    {
+      "input_name": "Kobel",
+      "resolved_name": "Gregor Kobel",
+      "reported_position": "T",
+      "identity_resolution": "PASS",
+      "current_club_observed": "Borussia Dortmund",
+      "evidence": [
+        {
+          "source_system": "BUNDESLIGA_WEB",
+          "source_reference": "https://www.bundesliga.com/de/spieler/gregor-kobel",
+          "observed_facts": ["Gregor Kobel", "Torhüter", "Borussia Dortmund", "Geburtsdatum 06.12.1997"]
+        },
+        {
+          "source_system": "CLUB_OFFICIAL",
+          "source_reference": "https://www.bvb.de/de/de/mannschaften/fussball/spieler/gregor-kobel.html",
+          "observed_facts": ["Gregor Kobel", "Tor", "beim BVB seit 01.07.2021", "Geburtsdatum 06.12.1997"]
+        }
+      ],
+      "dec030_status": "EVIDENCE_COLLECTED_AUTHORIZATION_PENDING"
+    },
+    {
+      "input_name": "Diks",
+      "resolved_name": "Kevin Diks",
+      "reported_position": "A",
+      "identity_resolution": "PASS",
+      "current_club_observed": "Borussia Mönchengladbach",
+      "evidence": [
+        {
+          "source_system": "BUNDESLIGA_WEB",
+          "source_reference": "https://www.bundesliga.com/de/spieler/kevin-diks",
+          "observed_facts": ["Kevin Diks", "Verteidigung", "Borussia Mönchengladbach", "Geburtsdatum 06.10.1996"]
+        }
+      ],
+      "dec030_status": "EVIDENCE_COLLECTED_AUTHORIZATION_PENDING"
+    },
+    {
+      "input_name": "Mittelstädt",
+      "resolved_name": "Maximilian Mittelstädt",
+      "reported_position": "A",
+      "identity_resolution": "PASS",
+      "current_club_observed": "VfB Stuttgart",
+      "evidence": [
+        {
+          "source_system": "BUNDESLIGA_WEB",
+          "source_reference": "https://www.bundesliga.com/de/spieler/maximilian-mittelstadt",
+          "observed_facts": ["Maximilian Mittelstädt", "Verteidigung", "VfB Stuttgart", "Geburtsdatum 18.03.1997"]
+        },
+        {
+          "source_system": "CLUB_OFFICIAL",
+          "source_reference": "https://www.vfb.de/de/vfb/profis/kader/2526/maximilian-mittelstaedt/spielerprofil/",
+          "observed_facts": ["Maximilian Mittelstädt", "Position Abwehr", "Geburtsdatum 18.03.1997"]
+        }
+      ],
+      "dec030_status": "EVIDENCE_COLLECTED_AUTHORIZATION_PENDING"
+    },
+    {
+      "input_name": "Davies",
+      "resolved_name": "Alphonso Davies",
+      "reported_position": "A",
+      "identity_resolution": "PASS",
+      "current_club_observed": "FC Bayern München",
+      "evidence": [
+        {
+          "source_system": "BUNDESLIGA_WEB",
+          "source_reference": "https://www.bundesliga.com/de/spieler/alphonso-davies/",
+          "observed_facts": ["Alphonso Davies", "Verteidigung", "FC Bayern München", "Geburtsdatum 02.11.2000"]
+        }
+      ],
+      "dec030_status": "EVIDENCE_COLLECTED_AUTHORIZATION_PENDING"
+    },
+    {
+      "input_name": "Coufal",
+      "resolved_name": "Vladimir Coufal",
+      "reported_position": "A",
+      "identity_resolution": "PASS",
+      "current_club_observed": "TSG Hoffenheim",
+      "evidence": [
+        {
+          "source_system": "BUNDESLIGA_WEB",
+          "source_reference": "https://www.bundesliga.com/de/spieler/vladimir-coufal",
+          "observed_facts": ["Vladimir Coufal", "Verteidigung", "TSG Hoffenheim", "Geburtsdatum 22.08.1992"]
+        }
+      ],
+      "dec030_status": "EVIDENCE_COLLECTED_AUTHORIZATION_PENDING"
+    },
+    {
+      "input_name": "Juranovic",
+      "resolved_name": "Josip Juranovic",
+      "reported_position": "A",
+      "identity_resolution": "PASS",
+      "current_club_observed": "1. FC Union Berlin",
+      "evidence": [
+        {
+          "source_system": "BUNDESLIGA_WEB",
+          "source_reference": "https://www.bundesliga.com/de/spieler/josip-juranovic",
+          "observed_facts": ["Josip Juranovic", "Verteidigung", "1. FC Union Berlin", "Geburtsdatum 16.08.1995", "Saison 2026/27"]
+        }
+      ],
+      "dec030_status": "EVIDENCE_COLLECTED_AUTHORIZATION_PENDING"
+    },
+    {
+      "input_name": "Svensson",
+      "resolved_name": "Daniel Svensson",
+      "reported_position": "A",
+      "identity_resolution": "PASS",
+      "current_club_observed": "Borussia Dortmund",
+      "evidence": [
+        {
+          "source_system": "CLUB_OFFICIAL",
+          "source_reference": "https://www.bvb.de/de/de/mannschaften/fussball/spieler/daniel-svensson.html",
+          "observed_facts": ["Daniel Svensson", "Borussia Dortmund", "seit Februar 2025", "fester Vertrag bis 30.06.2029"]
+        },
+        {
+          "source_system": "BUNDESLIGA_WEB",
+          "source_reference": "https://www.bundesliga.com/de/spieler/daniel-svensson",
+          "observed_facts": ["Daniel Svensson", "Verteidigung", "Borussia Dortmund", "Geburtsdatum 12.02.2002"]
+        }
+      ],
+      "dec030_status": "EVIDENCE_COLLECTED_AUTHORIZATION_PENDING"
+    }
+  ]
+}
