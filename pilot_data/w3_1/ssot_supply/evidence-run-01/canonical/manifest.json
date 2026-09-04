@@ -1,0 +1,17 @@
+{
+  "schema": "bms.seed-evidence-manifest",
+  "schema_version": "1.0",
+  "evidence": [
+    {
+      "evidence_ref": "w3-1-evidence:club-assignments:2026-09-05",
+      "artifact_path": "club-assignments-2026-09-05.json",
+      "sha256": "61d5f2e07ac74eb922adc0f7dd073e93f460495eaacfd7a8427acd5550e915e1",
+      "byte_length": 3648,
+      "media_type": "application/json",
+      "source_reference": "W3.1 evidence-run-01 batches plus official Bundesliga/club evidence already captured in the run",
+      "representation_type": "CANONICAL_MANUAL_WEB_EVIDENCE_RECORD",
+      "representation_status": "CONFIRMED",
+      "confirmation": "Confirmed canonical consolidation for evidence_ref w3-1-evidence:club-assignments:2026-09-05; seasonal-position evidence is excluded."
+    }
+  ]
+}
