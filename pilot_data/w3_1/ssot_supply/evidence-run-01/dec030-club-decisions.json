@@ -1,0 +1,55 @@
+{
+  "schema": "bms.w3-1-dec030-club-decision-ledger",
+  "schema_version": "0.1",
+  "run_id": "w3-1-ssot-evidence-20260904-01",
+  "decided_at": "2026-09-05T00:28:00+02:00",
+  "authorized_by": "SSOT-Fachprüfung / Fach-Chat Erstellung SSOT",
+  "governance_basis": {
+    "DOC-REG-001": "3.8",
+    "DOC-015": "0.6",
+    "decision": "DEC-030",
+    "requirement": "REQ-SSOT-005",
+    "acceptance_case": "TC6-048"
+  },
+  "evidence_basis": {
+    "competition_club_overview": "https://www.bundesliga.com/de/bundesliga/clubs",
+    "season_context": "2026/27",
+    "supporting_roster_context": "pilot_data/w3_1/ssot_supply/evidence-run-01/batch-01-identity-evidence.json and batch-02-04-identity-evidence.json"
+  },
+  "existing_identity_check": {
+    "scope": "versioned pilot SSOT in repository MKapitza/bundesliga-managerspiel",
+    "known_existing_club_identity": {
+      "club_name": "FC Bayern München",
+      "club_id": "5e5baf09-5fef-46b3-8db4-361565c5a484",
+      "legitimation_ref": "ssot-legit:d110b867-ae87-4426-a3d8-c0e470fc9593",
+      "action": "REUSE_EXISTING_IDENTITY"
+    },
+    "result_for_other_required_clubs": "NO_APPLICABLE_EXISTING_CLUB_ID_FOUND_IN_PILOT_SSOT_BASIS"
+  },
+  "decision_rule": "Positive first legitimation only where the real Bundesliga club is uniquely resolved in the official 2026/27 club context, no applicable internal club identity exists in the pilot SSOT basis, no duplicate suspicion remains, and evidence is sufficient. New UUIDs are consequences of the positive decision, never name-derived authorization.",
+  "clubs": [
+    {"club_name":"FC Bayern München","decision_status":"IDENTITY_REUSED","club_id":"5e5baf09-5fef-46b3-8db4-361565c5a484","legitimation_ref":"ssot-legit:d110b867-ae87-4426-a3d8-c0e470fc9593","duplicate_check":"EXISTING_EXACT_IDENTITY","evidence_result":"SUFFICIENT","source_reference":"existing W2-C3 positive seed and Bundesliga 2026/27 club context"},
+    {"club_name":"Borussia Dortmund","decision_status":"IDENTITY_LEGITIMATED","club_id":"02b0d742-c110-40ac-8bf1-ed45a4b80377","legitimation_ref":"ssot-legit:b5fb63b2-1221-42be-8cf7-6d82ac8f713e","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs/borussia-dortmund"},
+    {"club_name":"Eintracht Frankfurt","decision_status":"IDENTITY_LEGITIMATED","club_id":"9c5535c8-dcbb-4698-a1ad-ad255e9c3ad3","legitimation_ref":"ssot-legit:a257572b-c870-48e1-b861-ccbd18d5f60d","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs/eintracht-frankfurt"},
+    {"club_name":"Borussia Mönchengladbach","decision_status":"IDENTITY_LEGITIMATED","club_id":"f97c8435-a5dd-4a19-8d09-347f6fa31a4f","legitimation_ref":"ssot-legit:8f5e4f29-aed5-46ae-a15e-8d92af9aaec1","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs/borussia-moenchengladbach"},
+    {"club_name":"VfB Stuttgart","decision_status":"IDENTITY_LEGITIMATED","club_id":"1f193f57-cb65-4399-9373-7800d6600692","legitimation_ref":"ssot-legit:50ea2423-c566-4a83-b572-5b5a4ebb6cb6","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs/vfb-stuttgart"},
+    {"club_name":"TSG Hoffenheim","decision_status":"IDENTITY_LEGITIMATED","club_id":"eabf1c96-ac52-467b-934e-b11a9843778b","legitimation_ref":"ssot-legit:facb9dff-ee0b-4389-9fa5-5e18f6244c4f","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs"},
+    {"club_name":"1. FC Union Berlin","decision_status":"IDENTITY_LEGITIMATED","club_id":"237bae42-cb35-4cb3-8e8d-3951c14e0e48","legitimation_ref":"ssot-legit:b090b7ee-d2b5-4c9e-8cb3-2f7b88a40eb8","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs"},
+    {"club_name":"Hamburger SV","decision_status":"IDENTITY_LEGITIMATED","club_id":"15b40c17-fa0b-4097-9a68-a26c02c49830","legitimation_ref":"ssot-legit:70cb1187-4e39-43d7-b9f3-3e777b240c40","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs/hamburger-sv"},
+    {"club_name":"RB Leipzig","decision_status":"IDENTITY_LEGITIMATED","club_id":"5b024d53-f276-41b4-8999-40c731f7efcb","legitimation_ref":"ssot-legit:4d7fe26c-7947-4402-9bdd-840d3c993047","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs"},
+    {"club_name":"1. FSV Mainz 05","decision_status":"IDENTITY_LEGITIMATED","club_id":"32d37292-0b2b-462e-a536-fa9fbe6d28ae","legitimation_ref":"ssot-legit:2463384e-315d-4dce-9286-a6d84dbb808a","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs"},
+    {"club_name":"FC Augsburg","decision_status":"IDENTITY_LEGITIMATED","club_id":"3a57ccaf-f710-46bd-9526-1d165bebf215","legitimation_ref":"ssot-legit:77e08020-de3c-4121-b82b-d47993bc2681","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs"},
+    {"club_name":"SV Werder Bremen","decision_status":"IDENTITY_LEGITIMATED","club_id":"965e7790-3520-4864-8cb2-da450c415a3b","legitimation_ref":"ssot-legit:02af523b-7ffd-48e7-bdca-85aaf4e11c85","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs"},
+    {"club_name":"SV Elversberg","decision_status":"IDENTITY_LEGITIMATED","club_id":"2533a473-468d-4bf7-b7db-69129a0f086e","legitimation_ref":"ssot-legit:176ee461-08b9-44ee-ad87-974e50ce9c7d","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs"},
+    {"club_name":"Bayer 04 Leverkusen","decision_status":"IDENTITY_LEGITIMATED","club_id":"03a4b4b3-6cf6-48c6-839b-d80b3a9069c3","legitimation_ref":"ssot-legit:984b5829-386e-4ab5-be96-c825b1325bc8","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs/bayer-04-leverkusen"},
+    {"club_name":"1. FC Köln","decision_status":"IDENTITY_LEGITIMATED","club_id":"92149536-119c-46fd-b4fa-e89360d7befb","legitimation_ref":"ssot-legit:b622c32b-81a9-4984-8ad5-b854b99185d8","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","source_reference":"https://www.bundesliga.com/de/bundesliga/clubs/1-fc-koeln/squad"}
+  ],
+  "summary": {
+    "required_clubs": 15,
+    "IDENTITY_REUSED": 1,
+    "IDENTITY_LEGITIMATED": 14,
+    "REVIEW_REQUIRED": 0,
+    "new_club_ids_created_as_decision_consequence": 14
+  },
+  "next_stage": "Materialize player-club assignments and season-position assignments, then K2/G3; Bitshiabu requires historical/closed Bundesliga club assignment rather than a current Bundesliga club assignment."
+}
