@@ -1,0 +1,42 @@
+{
+  "schema":"bms.w3-1-dec030-player-decision-ledger","schema_version":"0.1","run_id":"w3-1-leipzig-identity-20260905-01","decided_at":"2026-09-04T23:25:00Z","authorized_by":"SSOT-Fachprüfung / Fach-Chat Erstellung SSOT",
+  "governance_basis":{"DOC-REG-001":"3.8","DOC-015":"0.6","decision":"DEC-030","requirement":"REQ-SSOT-005","test_case":"TC6-048","register_retrieval_caveat":"DOC-REG-001 could not be freshly retrieved; versions are the unchanged branch-manifest working basis and no newer version is inferred."},
+  "reused":[
+    {"display_name":"Castello Lukeba","player_id":"7be957a6-2418-4787-a3e2-8d1aebcb5969","legitimation_ref":"ssot-legit:acee5e56-c289-45f7-bc66-8b6d883cde98","decision":"REUSE_EXISTING_IDENTITY"},
+    {"display_name":"Brajan Gruda","player_id":"ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e","legitimation_ref":"ssot-legit:7e7fc702-6306-48b0-9a93-04d2d7651141","decision":"REUSE_EXISTING_IDENTITY"}
+  ],
+  "decisions":[
+    {"display_name":"Ørjan Nyland","player_id":"a42ab973-997a-473a-81d3-f1b9782e3f12","legitimation_ref":"ssot-legit:32115e49-1494-4930-b4b6-feb94f8e2e7f","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Maarten Vandevoordt","player_id":"35498de6-9723-4b38-92b7-4228c0654bf6","legitimation_ref":"ssot-legit:e057b353-af1e-461d-a63e-e398aa08befc","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Leopold Zingerle","player_id":"64e1fe01-fc38-4cb0-b6dd-d9a1be0ee8f1","legitimation_ref":"ssot-legit:14bc6920-a50b-40b3-be4e-a1c099fb8f90","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Ridle Baku","player_id":"f4f4682c-0425-4a55-863c-aa514fdaa26e","legitimation_ref":"ssot-legit:dbfe2947-feb2-4956-ab97-c422007ceca8","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Maxime Estève","player_id":"8b174c78-fb10-40f4-b257-c304f352eca0","legitimation_ref":"ssot-legit:ac46847b-30f1-4c41-bb4e-922e78a132a6","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Max Finkgräfe","player_id":"dbc169d8-ff30-43f8-a1f5-a51a1924edff","legitimation_ref":"ssot-legit:4f0e6cfb-0e9a-4c01-a63f-a4b95287c86e","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Benjamin Henrichs","player_id":"f838bdc9-f177-4bc1-bab8-ec5c8fd4cf45","legitimation_ref":"ssot-legit:2cd32226-a512-48e0-8f75-ec4ffa698f7e","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Lukas Klostermann","player_id":"163eb88e-08e0-4e4c-b9db-34421ac5d8da","legitimation_ref":"ssot-legit:59a6bdec-0b69-4ca1-98c3-e07d15048cf1","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Abdoul Koné","player_id":"355f6d5f-793f-4c60-aad6-3bd3aca66ea8","legitimation_ref":"ssot-legit:eeaeee09-bfbb-4e03-a6ae-3a9b492f5211","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Willi Orbán","player_id":"4a2f7f06-f3dd-42d5-85eb-573b37c9d6c9","legitimation_ref":"ssot-legit:5b988544-de6f-4634-a96b-69b51f265aa7","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"David Raum","player_id":"88dfbe4a-3988-4a13-b632-886b5fcddb03","legitimation_ref":"ssot-legit:d1384862-98a0-4f6e-927c-b9e03cb3d7a1","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Ezechiel Banzuzi","player_id":"7897c306-9fb8-4228-97a2-4d9196b08fb3","legitimation_ref":"ssot-legit:4daf2061-7e2b-45ee-af0c-54130f0ed942","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Christoph Baumgartner","player_id":"93f93099-86e1-4b12-a9ac-57777552d5c6","legitimation_ref":"ssot-legit:0a35fe92-d9f4-4355-ba81-8d5a10a90408","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Neil El Aynaoui","player_id":"9c631914-6a1f-4675-9aca-ef8f06367208","legitimation_ref":"ssot-legit:5d49e0f5-4ed5-4320-ba63-704fe9a2dbce","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Viggo Gebel","player_id":"88f6ef74-1b01-4a81-a0c2-fd5d80fda0ac","legitimation_ref":"ssot-legit:0a8ae93b-c2fd-48a5-8e55-9db9b81c91a6","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Benno Kaltefleiter","player_id":"7e1b8552-7301-412c-b89b-0a88841c5533","legitimation_ref":"ssot-legit:200cc46f-9979-4d2f-87c8-2a194b2d16e7","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Andrija Maksimović","player_id":"7e383d54-8025-42d5-b398-6a81b7d71ea5","legitimation_ref":"ssot-legit:b75b308d-8879-4fca-9d2e-5777687eee09","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Assan Ouédraogo","player_id":"c0f04866-3fd4-4c5f-9d24-41a9185be28f","legitimation_ref":"ssot-legit:d96a2356-31b3-4ecb-b997-ead086a83a08","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Rocco Reitz","player_id":"2c98c57e-c575-4137-91f9-d1fe3fce065f","legitimation_ref":"ssot-legit:37482dc7-9bfd-4e67-8c93-f0d7dc6b566c","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Nicolas Seiwald","player_id":"710046d0-0950-40de-b886-64b0eafaa674","legitimation_ref":"ssot-legit:3a2d5f79-c34f-4430-a470-5378788d2e87","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Johan Bakayoko","player_id":"53ac8e69-fde3-411d-8ae1-3c2f405ced9a","legitimation_ref":"ssot-legit:8b8b7742-5a18-4eec-be92-160284e4f757","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Tidiam Gomis","player_id":"ada319e9-f789-414e-a539-86f7bf7f832d","legitimation_ref":"ssot-legit:ef0e8095-c561-4231-89ba-2e7bc733c496","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Marc Guiu","player_id":"f80aede9-5915-4bd7-8861-341ea44ee8c6","legitimation_ref":"ssot-legit:5be0adc5-44e6-40ce-b623-cceb508c8777","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Samba Konaté","player_id":"5fea25ec-989f-40bb-a162-3ee811b8c14e","legitimation_ref":"ssot-legit:3074008d-96de-4288-b816-6235dc35eaa2","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Christopher Nkunku","player_id":"9ec8c8c4-0606-4fce-bc29-2810cefb5f33","legitimation_ref":"ssot-legit:4f229ff2-fb86-44e3-b548-6022afba52cc","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Antonio Nusa","player_id":"91912529-c047-42cf-9a9b-3895836ad141","legitimation_ref":"ssot-legit:b910ad32-40ed-4d06-a0ff-df75ad4dba7c","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Rômulo Cardoso","kicker_display_name":"Rômulo","player_id":"d921a2d9-8c3c-4a4c-a45a-08961bb39cc6","legitimation_ref":"ssot-legit:711d370c-2c6f-487b-acb8-03606c64fbeb","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Suleman Sani","player_id":"f8123b48-44a1-44e1-afe8-bdd5c17f1dec","legitimation_ref":"ssot-legit:0fc8763d-2903-4b26-b28b-3cb0159a421e","identity_status":"IDENTITY_LEGITIMATED"},
+    {"display_name":"Arthur Vermeeren","player_id":"e602e76e-79d3-4edb-a89f-c30032121c19","legitimation_ref":"ssot-legit:3b907672-02b1-4cbc-9d11-fe5fff15d4c4","identity_status":"IDENTITY_LEGITIMATED","current_leipzig_assignment":false},
+    {"display_name":"Conrad Harder","player_id":"02c8e9e5-1217-455b-9755-8cf23f5998ef","legitimation_ref":"ssot-legit:2abcf608-943b-42dc-b1bc-d6f76e08b3ed","identity_status":"IDENTITY_LEGITIMATED","current_leipzig_assignment":false}
+  ],
+  "summary":{"season_listed_total":32,"reused_existing":2,"newly_legitimated":30,"review_required":0},
+  "runtime_persistence":"NOT_EXECUTED","ssot_version_id":"NOT_CREATED","k2":"NOT_EXECUTED","g3":"NOT_RELEASED"
+}
