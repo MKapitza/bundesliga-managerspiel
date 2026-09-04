@@ -59,7 +59,11 @@ class W2C31SSOTPersistenceTests(unittest.TestCase):
             Path(self.temporary_directory.name) / "ssot.sqlite3"
         )
         self.addCleanup(self.connection.close)
-        apply_migrations(self.connection, REPO_ROOT / "migrations")
+        apply_migrations(
+            self.connection,
+            REPO_ROOT / "migrations",
+            through="0005_ssot_persistence",
+        )
         self.evidence = store_evidence(
             self.connection,
             content=b"documented-positive-legitimation-evidence",
@@ -779,15 +783,20 @@ class W2C31SSOTPersistenceTests(unittest.TestCase):
                 ),
             )
 
-    def test_t14_c3_2_k2_g3_and_later_scopes_are_absent(self) -> None:
+    def test_t14_c3_1_bounded_database_excludes_c3_2_objects(self) -> None:
         self.assertEqual(
             self.connection.execute(
                 "SELECT COUNT(*) FROM control_event WHERE control_point='K2'"
             ).fetchone()[0],
             0,
         )
-        self.assertFalse((REPO_ROOT / "bms/w2_c3.py").exists())
-        self.assertFalse(any("c3" in path.name.lower() for path in (REPO_ROOT / "bms").glob("*.py")))
+        tables = {
+            row["name"]
+            for row in self.connection.execute(
+                "SELECT name FROM sqlite_master WHERE type='table'"
+            )
+        }
+        self.assertNotIn("ssot_version_release", tables)
 
 
 if __name__ == "__main__":

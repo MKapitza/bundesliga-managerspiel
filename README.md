@@ -1,6 +1,6 @@
-# Bundesliga-Managerspiel — MS2-W2/C3.1 SSOT-Persistenz und Versionierung
+# Bundesliga-Managerspiel — MS2-W2/C3.2 K2/G3 und C3-Smoke
 
-Auf dem technischen W1-Unterbau und dem C1/C2-Pfad ergänzt C3.1 ausschließlich die additive, unveränderliche Persistenz für positive SSOT-Erstlegitimationsnachweise, stabile Spieler-/Vereinsidentitäten und versionierte SSOT-Datenstände. C3.2, K2/G3 und der integrierte C3-Smoke sind noch nicht implementiert.
+Auf dem abgenommenen C3.1-Stand ergänzt C3.2 ausschließlich die K2-Kontrollen CTL-K2-001 bis -006, die deterministische G3-Freigabe und einen integrierten positiven und negativen C3-Smoke. Migration 0006 ergänzt dafür einen separaten unveränderlichen G3-Release-Nachweis; 0001–0005 und die C3.1-Semantik bleiben unverändert.
 
 ## Stack-Entscheidung
 
@@ -34,7 +34,7 @@ Es ist keine Paketinstallation erforderlich.
 
 ## SQLite und Migrationen
 
-Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. Auf Evidence, Raw Observation, Control Events, Import Envelope und Mapping aus 0001–0004 ergänzt `0005_ssot_persistence.sql` ausschließlich die C3.1-Persistenzobjekte. Die technische Migrationshistorie bleibt in `schema_migrations`. Fremdschlüssel, Checks und Trigger sichern Referenzen, positive Erstlegitimation, Vorgängerketten und Unveränderlichkeit. Historische W1/C1/C2-Smokes wenden weiterhin explizit nur Migrationen bis 0004 an.
+Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. Auf Evidence, Raw Observation, Control Events, Import Envelope und Mapping aus 0001–0004 ergänzt `0005_ssot_persistence.sql` die C3.1-Persistenzobjekte. `0006_ssot_version_release.sql` enthält als einziges neues Schemaobjekt eine separate Relation für höchstens einen G3-Release je bestehender `ssot_version_id`. Sie bindet den Release unveränderlich an Run und maschinenlesbare G3-Evidence; `ssot_version` wird nicht nachträglich aktualisiert. Historische W1/C1/C2-Smokes begrenzen ihre Migrationen weiterhin explizit auf ihren jeweiligen Stand.
 
 ## C3.1 SSOT-Persistenz-API
 
@@ -64,7 +64,7 @@ python -m bms schema-version --db .runs/local.sqlite3
 
 `bms.control_events` stellt `store_control_event` und `read_control_event` sowie die unveränderliche Dataclass `ControlEvent` bereit. `object_refs` und `trace_refs` werden als kompakte JSON-Arrays in der gelieferten Reihenfolge gespeichert und beim Lesen als Tupel zurückgegeben. `checked_at` wird wie die C2-Zeitangaben validiert, aber nicht normalisiert.
 
-Die Migration beschränkt `control_point`, `severity`, `check_status`, `block_effect` und `resolution_status` exakt auf die in DOC-015 definierten Wertemengen. Sie berechnet oder interpretiert diese Werte nicht. `evidence_ref` bleibt eine opaque Referenz ohne Evidence-Fremdschlüssel; nur `predecessor_event_ref` besitzt einen selbstreferenziellen Fremdschlüssel.
+Die Migration beschränkt `control_point`, `severity`, `check_status`, `block_effect` und `resolution_status` exakt auf die in DOC-015 definierten Wertemengen. `bms.w2_c3` verwendet dieses bestehende Modell für K2, bestimmt Applicability aus dem SSOT-Versionszustand und leitet effektive Heads aus `control_id`, stabilen Gegenstandsreferenzen und `ssot_version_id` ab. Nicht anwendbare Kontrollen erzeugen keine künstlichen positiven Events.
 
 ## Lokaler Test- und Smoke-Weg
 
@@ -126,6 +126,16 @@ python -m bms w2-c2-smoke \
 
 Für Pilot 01 wird keine interne Spieleridentität erfunden. Die unbekannte Wikidata-ID erzeugt genau einen Mapping-Prüfdatensatz mit `REVIEW_REQUIRED`, CTL-K1-001 und G2 `BLOCKED`; der Smoke meldet bei diesem fachlich erwarteten Blockadepfad `PASS`. Zusätzliche Evidence-Artefakte dokumentieren Mapping, K1 und G2 maschinenlesbar.
 
+## W2-C3 integrierter Smoke
+
+Der C3-Smoke führt den positiven Fixture-Pfad real von Raw/Evidence über G1, bestätigtes Mapping, G2, SSOT-Version und K2 bis G3 aus. Der freigegebene Club-/Saison-Handoff wird dabei unverändert im versionierten SSOT-Zustand materialisiert; Assignment-IDs sind deterministische technische Persistenzreferenzen. Ein zweiter Fresh-DB-Lauf vergleicht die stabilen Fachergebnisse. Der unveränderte Realpilot `w2-pilot-01` endet dagegen hart nach G2 `BLOCKED` und erzeugt weder SSOT-Version noch K2-/G3-Artefakte oder Release.
+
+```bash
+python -m bms w2-c3-smoke --output-dir .runs/w2-c3-review
+```
+
+Das neue, zuvor leere Ausgabeverzeichnis enthält die beiden positiven Datenbanken, die negative Datenbank sowie maschinenlesbare Berichte für Raw-/Evidence-/Mapping-/SSOT-/K2-/G3-Lineage, Replay, Testresultat, Migrationen und Scope Guard. Der Smoke trifft keine IG2-Entscheidung.
+
 ## Repositorystruktur
 
 ```text
@@ -148,13 +158,15 @@ Für Pilot 01 wird keine interne Spieleridentität erfunden. Die unbekannte Wiki
 │   ├── w1_ig1_evidence.py
 │   ├── w1_smoke.py
 │   ├── w2_c1.py
-│   └── w2_c2.py
+│   ├── w2_c2.py
+│   └── w2_c3.py
 ├── migrations/
 │   ├── 0001_raw_evidence.sql
 │   ├── 0002_control_event.sql
 │   ├── 0003_import_envelope.sql
 │   ├── 0004_mapping_review.sql
-│   └── 0005_ssot_persistence.sql
+│   ├── 0005_ssot_persistence.sql
+│   └── 0006_ssot_version_release.sql
 ├── spec/
 │   └── specification-manifest.json
 └── tests/
@@ -168,9 +180,10 @@ Für Pilot 01 wird keine interne Spieleridentität erfunden. Die unbekannte Wiki
     ├── test_w1_smoke.py
     ├── test_w2_c1_source.py
     ├── test_w2_c2_mapping.py
-    └── test_w2_c3_1_ssot_persistence.py
+    ├── test_w2_c3_1_ssot_persistence.py
+    └── test_w2_c3_k2_g3.py
 ```
 
-## Scope-Grenze W2-C3.1
+## Scope-Grenze W2-C3.2
 
-W2-C3.1 endet bei SSOT-Persistenz und -Versionierung. Nicht enthalten sind C3.2, automatische Erstlegitimation aus Roh-/Mappingdaten, K2/G3, der integrierte C3-Smoke, Monitoring, Eligibility, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI oder Deployment.
+W2-C3.2 endet bei K2, G3, separater G3-Release-Persistenz und integriertem C3-Smoke. Nicht enthalten sind automatische Erstlegitimation, Monitoring, Eligibility, K3/G4, Varianten/K4/G5, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI, Deployment oder eine generische Workflow-/Control-Engine.

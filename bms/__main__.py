@@ -13,6 +13,7 @@ from .w1_smoke import W1SmokeError, run_w1_smoke
 from .imports import FixtureValidationError
 from .w2_c1 import W2C1Error, run_w2_c1_smoke
 from .w2_c2 import W2C2Error, run_w2_c2_smoke
+from .w2_c3 import W2C3Error, run_w2_c3_smoke
 
 
 def _repo_root() -> Path:
@@ -78,6 +79,12 @@ def _parser() -> argparse.ArgumentParser:
     )
     w2_c2_smoke.add_argument(
         "--fixture-dir", type=Path, required=True, help="pilot fixture directory"
+    )
+    w2_c3_smoke = subparsers.add_parser(
+        "w2-c3-smoke", help="run the integrated Source-to-SSOT K2/G3 smoke"
+    )
+    w2_c3_smoke.add_argument(
+        "--output-dir", type=Path, required=True, help="new C3 evidence output directory"
     )
     w2_c2_smoke.add_argument(
         "--output-dir", type=Path, required=True, help="new C2 evidence output directory"
@@ -169,6 +176,23 @@ def main() -> int:
             print(f"W2-C2 SMOKE FAIL: {exc}", file=sys.stderr)
             return 1
         print("W2-C2 SMOKE PASS")
+        print(json.dumps(data, sort_keys=True))
+        return 0
+    if args.command == "w2-c3-smoke":
+        try:
+            data = run_w2_c3_smoke(args.output_dir, repo_root=repo_root)
+        except (
+            W2C3Error,
+            FixtureValidationError,
+            ManifestError,
+            MigrationError,
+            OSError,
+            sqlite3.Error,
+            ValueError,
+        ) as exc:
+            print(f"W2-C3 SMOKE FAIL: {exc}", file=sys.stderr)
+            return 1
+        print("W2-C3 SMOKE PASS")
         print(json.dumps(data, sort_keys=True))
         return 0
     return 2

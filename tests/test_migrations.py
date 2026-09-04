@@ -222,12 +222,12 @@ class MigrationTests(unittest.TestCase):
                 json.loads(report.stdout),
                 {
                     "database": str(database),
-                    "latest_migration": "0005_ssot_persistence",
-                    "applied_migrations": 5,
+                    "latest_migration": "0006_ssot_version_release",
+                    "applied_migrations": 6,
                 },
             )
 
-    def test_current_scope_contains_c3_1_ssot_persistence_only(self) -> None:
+    def test_current_scope_contains_c3_2_release_persistence_only(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             connection = connect_database(Path(tmp) / "scope.sqlite3")
             try:
@@ -247,6 +247,7 @@ class MigrationTests(unittest.TestCase):
                         "ssot_club",
                         "ssot_legitimation_mapping",
                         "ssot_version",
+                        "ssot_version_release",
                     },
                 )
                 self.assertTrue(FORBIDDEN_C3_TABLES.isdisjoint(user_tables(connection)))
@@ -257,6 +258,8 @@ class MigrationTests(unittest.TestCase):
         self.assertTrue((REPO_ROOT / "migrations/0003_import_envelope.sql").is_file())
         self.assertTrue((REPO_ROOT / "migrations/0004_mapping_review.sql").is_file())
         self.assertTrue((REPO_ROOT / "migrations/0005_ssot_persistence.sql").is_file())
+        self.assertTrue((REPO_ROOT / "migrations/0006_ssot_version_release.sql").is_file())
+        self.assertFalse(any((REPO_ROOT / "migrations").glob("0007_*.sql")))
 
 
 if __name__ == "__main__":
