@@ -1,0 +1,54 @@
+{
+  "schema": "bms.canonical-manual-web-evidence-record",
+  "schema_version": "1.0",
+  "evidence_ref": "w3-1-evidence:season-position:kicker:bayern:2026-09-05",
+  "captured_at": "2026-09-05T00:57:37+02:00",
+  "source_reference": "https://www.kicker.de/fc-bayern-muenchen/kader/bundesliga/2026-27",
+  "source_title": "Bayern München | Kader | Bundesliga 2026/27 - kicker",
+  "source_representation": {
+    "type": "USER_PROVIDED_PDF_CAPTURE",
+    "sha256": "54af23beae23d6df779026516faaa6a3390d45038f40845ad3e0ea0bcf772366",
+    "byte_length": 220397,
+    "pages": 2,
+    "creator": "Mozilla Firefox 154.0.1",
+    "pdf_creation_date": "2026-09-05T00:57:37+02:00"
+  },
+  "season": "2026/27",
+  "club": "FC Bayern München",
+  "classification_basis": "Players are grouped by kicker on the 2026/27 Bundesliga squad page under TOR, ABWEHR, MITTELFELD and STURM.",
+  "roster_players_in_w3_1": [
+    {
+      "input_name": "Davies",
+      "display_name": "Alphonso Davies",
+      "kicker_group": "ABWEHR",
+      "season_position": "A",
+      "status": "CONFIRMED"
+    },
+    {
+      "input_name": "Laimer",
+      "display_name": "Konrad Laimer",
+      "kicker_group": "ABWEHR",
+      "season_position": "A",
+      "status": "CONFIRMED"
+    },
+    {
+      "input_name": "Gnabry",
+      "display_name": "Serge Gnabry",
+      "kicker_group": "STURM",
+      "season_position": "S",
+      "status": "CONFIRMED"
+    }
+  ],
+  "additional_visible_classification": [
+    {
+      "display_name": "Jamal Musiala",
+      "kicker_group": "MITTELFELD",
+      "season_position": "M"
+    }
+  ],
+  "limitations": [
+    "This evidence covers only FC Bayern München players visible in the supplied 2026/27 kicker squad capture.",
+    "It does not establish positions for players at other clubs.",
+    "It is a position evidence artifact, not a G3 release."
+  ]
+}
