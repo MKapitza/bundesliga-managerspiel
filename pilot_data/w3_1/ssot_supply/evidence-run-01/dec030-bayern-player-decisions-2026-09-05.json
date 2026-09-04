@@ -1,0 +1,40 @@
+{
+  "schema": "bms.w3-1-dec030-player-decision-ledger",
+  "schema_version": "0.1",
+  "run_id": "w3-1-bayern-identity-20260905-01",
+  "decided_at": "2026-09-04T23:11:00Z",
+  "authorized_by": "SSOT-Fachprüfung / Fach-Chat Erstellung SSOT",
+  "governance_basis": {"DOC-REG-001":"3.8","DOC-015":"0.6","decision":"DEC-030","requirement":"REQ-SSOT-005","acceptance_case":"TC6-048"},
+  "register_check_note": "DOC-REG-001 was searched before use but was not retrievable through the available uploaded-file/repository search. The branch specification manifest and prior authorized DEC-030 ledger both state DOC-REG-001 3.8 and DOC-015 0.6; no evidence of a newer register was found. This ledger does not assert that the register itself was freshly opened.",
+  "evidence_basis": ["pilot_data/w3_1/ssot_supply/evidence-run-01/bayern-full-identity-evidence-2026-09-05.json","pilot_data/w3_1/ssot_supply/evidence-run-01/canonical/kicker-roster-bayern-2026-27-full.json"],
+  "reused_existing": [
+    {"display_name":"Alphonso Davies","decision_status":"IDENTITY_LEGITIMATED","player_id":"402c6c62-eacd-4ea7-b864-9572bf136fd1","legitimation_ref":"ssot-legit:676828c1-715a-43ba-9254-a565204eb724"},
+    {"display_name":"Konrad Laimer","decision_status":"IDENTITY_LEGITIMATED","player_id":"adc42591-1b56-42aa-af9b-fe672ff460b4","legitimation_ref":"ssot-legit:ffb240d2-2699-48f4-aafc-2a50de472f07"},
+    {"display_name":"Jamal Musiala","decision_status":"IDENTITY_LEGITIMATED","player_id":"9ed46b81-bb6e-4f84-a28d-92b0f019beb5","legitimation_ref":"ssot-legit:dc4a7f13-6cb3-4144-a9ca-89991a281962"},
+    {"display_name":"Serge Gnabry","decision_status":"IDENTITY_LEGITIMATED","player_id":"66eedad6-6d31-4b13-87a8-358aa68ca9f6","legitimation_ref":"ssot-legit:f7166da0-8dd0-4648-b6c6-8a23b257f3c7"}
+  ],
+  "players": [
+    {"display_name":"Manuel Neuer","decision_status":"IDENTITY_LEGITIMATED","player_id":"8c7bd919-4039-4e20-a139-7c7bbf82a816","legitimation_ref":"ssot-legit:7f4ad577-6b96-468b-856a-ca4dc779d9de","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Sven Ulreich","decision_status":"IDENTITY_LEGITIMATED","player_id":"2627f38e-51a4-4c35-80bc-56f64e1da8b3","legitimation_ref":"ssot-legit:3efd30b0-d4e8-456f-9585-98742dfff34a","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Jonas Urbig","decision_status":"IDENTITY_LEGITIMATED","player_id":"097ee81b-a119-43e7-a26c-562ab997b084","legitimation_ref":"ssot-legit:4a3c2255-61ae-407c-82b0-d1d84000e067","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Sacha Boey","decision_status":"IDENTITY_LEGITIMATED","player_id":"3c2e098e-2d12-46dc-945d-4c56dfcd4542","legitimation_ref":"ssot-legit:ba4563dc-0190-4cfa-9ab8-d4e0bb48b810","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Nathaniel Brown","decision_status":"IDENTITY_LEGITIMATED","player_id":"efd0697d-981c-4af8-993a-974dde7c6598","legitimation_ref":"ssot-legit:6e71fea1-04f3-4068-8b1f-bf8a1ea95621","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Hiroki Ito","decision_status":"IDENTITY_LEGITIMATED","player_id":"e2ba64e0-39f0-4528-8787-f6af414eac8c","legitimation_ref":"ssot-legit:6cec2e7c-3b36-44f1-bcab-2c39b103321f","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Min-Jae Kim","decision_status":"IDENTITY_LEGITIMATED","player_id":"ccad0897-7f23-461f-9a13-63c39a3f8a32","legitimation_ref":"ssot-legit:c763c614-f2c6-4602-852f-fd5bb6c242a4","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Josip Stanisic","decision_status":"IDENTITY_LEGITIMATED","player_id":"1b439b38-f686-4ce4-a045-972898eeebe5","legitimation_ref":"ssot-legit:6e848da8-eded-4a08-aa37-662f059b6913","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Jonathan Tah","decision_status":"IDENTITY_LEGITIMATED","player_id":"2cbc521e-04c6-4d9e-9bfc-1d12ee3cd89d","legitimation_ref":"ssot-legit:6e932e18-ed5a-46d5-ae4d-b38de540d06e","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Dayot Upamecano","decision_status":"IDENTITY_LEGITIMATED","player_id":"5257bf71-023e-4f9e-a22a-5fa3f20251f6","legitimation_ref":"ssot-legit:4c2c99f8-abf9-422a-a95e-7758bae93d2d","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Tom Bischof","decision_status":"IDENTITY_LEGITIMATED","player_id":"7af56263-600f-4f94-accb-d326159fcb86","legitimation_ref":"ssot-legit:ddd24e2b-196b-4202-b44a-a6e09c294b1f","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Lennart Karl","decision_status":"IDENTITY_LEGITIMATED","player_id":"4e98248d-b50b-4db1-ab7f-9cec50d0a4ea","legitimation_ref":"ssot-legit:95f096e7-26b2-4d67-a3b7-97b7b6c06a61","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Joshua Kimmich","decision_status":"IDENTITY_LEGITIMATED","player_id":"208a95be-9ab2-4f09-8ca8-7ab630114b30","legitimation_ref":"ssot-legit:4747f7e1-82a6-423d-96bb-ed79a77d16d1","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Aleksandar Pavlovic","decision_status":"IDENTITY_LEGITIMATED","player_id":"72d61221-049d-468e-b777-5bcdcb381af8","legitimation_ref":"ssot-legit:e0e708f8-40f9-4a31-8595-7ab4c9a9bd32","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"David Santos Daiber","decision_status":"IDENTITY_LEGITIMATED","player_id":"1a39dc0a-2c86-4237-b4b2-7881f2262c9a","legitimation_ref":"ssot-legit:644b0bc6-e085-4115-9f7d-e387a4307f36","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["kicker short form David Santos retained as name variant"]},
+    {"display_name":"Bara Sapoko Ndiaye","decision_status":"IDENTITY_LEGITIMATED","player_id":"b943cc83-aae7-4297-bf51-cf51982eb26e","legitimation_ref":"ssot-legit:dc307c7d-c09d-4f7c-958b-d9a0b96f9b8f","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Harry Kane","decision_status":"IDENTITY_LEGITIMATED","player_id":"a45395b4-3d78-4126-8569-59c1540c1571","legitimation_ref":"ssot-legit:82674052-8283-4d2c-ad2b-4ce810a6806f","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Luis Diaz","decision_status":"IDENTITY_LEGITIMATED","player_id":"41d40e60-6df3-407d-a556-14cf93ef967c","legitimation_ref":"ssot-legit:dc3a8798-8367-4095-81a5-dcd98faedfd1","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Michael Olise","decision_status":"IDENTITY_LEGITIMATED","player_id":"23588ff6-cde9-4393-9a84-993bcb296e5c","legitimation_ref":"ssot-legit:7e5e774d-ddd9-4deb-803d-179234115eaa","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Ismael Saibari","decision_status":"IDENTITY_LEGITIMATED","player_id":"a0eb1307-5176-4e17-a709-5ff4548c9ddd","legitimation_ref":"ssot-legit:f063f19a-5cb9-4853-88db-b9fef90c9693","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"}
+  ],
+  "summary":{"roster_total":24,"existing_reused":4,"newly_legitimated":20,"review_required":0},
+  "runtime_note":"This is a fach decision ledger. Runtime database bootstrap has not been executed; no ssot_version_id, K2 or G3 release is claimed."
+}
