@@ -1,0 +1,70 @@
+{
+  "schema": "bms.w3-1-dec030-player-decision-ledger",
+  "schema_version": "0.1",
+  "run_id": "w3-1-ssot-evidence-20260904-01",
+  "decided_at": "2026-09-04T21:30:00Z",
+  "authorized_by": "SSOT-Fachprüfung / Fach-Chat Erstellung SSOT",
+  "governance_basis": {
+    "DOC-REG-001": "3.8",
+    "DOC-015": "0.6",
+    "decision": "DEC-030",
+    "requirement": "REQ-SSOT-005",
+    "acceptance_case": "TC6-048"
+  },
+  "existing_identity_check": {
+    "scope": "versionierter Pilot-SSOT im Repository MKapitza/bundesliga-managerspiel",
+    "result": "NO_APPLICABLE_EXISTING_PLAYER_ID_FOUND_FOR_ROSTER",
+    "known_existing_positive_seed": "Jamal Musiala only; not a roster member in this W3.1 supply",
+    "note": "The check is scoped to the version-controlled pilot SSOT basis. It does not assert existence or non-existence in an external production master outside this project repository."
+  },
+  "evidence_basis": [
+    "pilot_data/w3_1/ssot_supply/evidence-run-01/batch-01-identity-evidence.json",
+    "pilot_data/w3_1/ssot_supply/evidence-run-01/batch-02-04-identity-evidence.json"
+  ],
+  "decision_rule": "Positive only where the real person is uniquely resolved from contextual evidence, no applicable internal identity is found in the pilot SSOT basis, no relevant duplicate suspicion remains, and the case is not name-only or unknown-external-id-only. UUIDs are technical consequences of the positive decision, not its basis.",
+  "players": [
+    {"display_name":"Noah Atubolu","input_name":"Atobulu","decision_status":"IDENTITY_LEGITIMATED","player_id":"6d404217-7c18-46ad-94bb-976cee7cb0c2","legitimation_ref":"ssot-legit:554499ae-83bf-4c87-84ef-06dd394324bb","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["raw typo retained as name variant","intra-Bundesliga transfer does not create a new identity"]},
+    {"display_name":"Gregor Kobel","input_name":"Kobel","decision_status":"IDENTITY_LEGITIMATED","player_id":"956d0a9b-c749-4190-b02a-88ae28e555f0","legitimation_ref":"ssot-legit:1ff34009-4948-413e-8e45-293c8a0f873e","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Kevin Diks","input_name":"Diks","decision_status":"IDENTITY_LEGITIMATED","player_id":"064f6de3-2fcc-4e4c-962c-4f497c905321","legitimation_ref":"ssot-legit:58125dd6-d735-4885-99d2-15b02ea7d7f3","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Maximilian Mittelstädt","input_name":"Mittelstädt","decision_status":"IDENTITY_LEGITIMATED","player_id":"d7033a82-5009-4008-afc7-386248fd10f1","legitimation_ref":"ssot-legit:a59615d6-3226-4cbd-aa9c-2dbe0446b14e","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Alphonso Davies","input_name":"Davies","decision_status":"IDENTITY_LEGITIMATED","player_id":"402c6c62-eacd-4ea7-b864-9572bf136fd1","legitimation_ref":"ssot-legit:676828c1-715a-43ba-9254-a565204eb724","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Vladimir Coufal","input_name":"Coufal","decision_status":"IDENTITY_LEGITIMATED","player_id":"d566ff64-be86-4648-855b-40c1f2fd7819","legitimation_ref":"ssot-legit:a84ee78e-3d0a-47c5-9ebd-ee01d92c8df7","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Josip Juranović","input_name":"Juranovic","decision_status":"IDENTITY_LEGITIMATED","player_id":"756a83b6-daf6-42b9-839a-31303fa35941","legitimation_ref":"ssot-legit:b356678f-3d57-4641-8893-6cea07db46c5","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Daniel Svensson","input_name":"Svensson","decision_status":"IDENTITY_LEGITIMATED","player_id":"701a8629-72cf-493c-81cf-7d16e7e4032d","legitimation_ref":"ssot-legit:45f7a544-3838-42b9-86c6-a63b68e1a0ae","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Nico Schlotterbeck","input_name":"N. Schlotterbeck","decision_status":"IDENTITY_LEGITIMATED","player_id":"f66ff914-787a-46eb-b965-fa2fe1814c30","legitimation_ref":"ssot-legit:c8d20ba1-dd84-4450-8246-b627b272c09f","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["initial disambiguates the intended Bundesliga player in club/season context"]},
+    {"display_name":"Robin Koch","input_name":"Koch","decision_status":"IDENTITY_LEGITIMATED","player_id":"bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a","legitimation_ref":"ssot-legit:8bf7ba3d-a9e5-4df9-aeda-91cefcad4005","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Konrad Laimer","input_name":"Laimer","decision_status":"IDENTITY_LEGITIMATED","player_id":"adc42591-1b56-42aa-af9b-fe672ff460b4","legitimation_ref":"ssot-legit:ffb240d2-2699-48f4-aafc-2a50de472f07","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["identity decision independent from season-position release; W3.1 season position intended A"]},
+    {"display_name":"Miro Muheim","input_name":"Muheim","decision_status":"IDENTITY_LEGITIMATED","player_id":"d10f160a-2e03-41b5-af14-cdfae062bb5e","legitimation_ref":"ssot-legit:a4e7edef-3c6d-4df0-949c-d6c5e235a581","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Castello Lukeba","input_name":"Lukeba","decision_status":"IDENTITY_LEGITIMATED","player_id":"7be957a6-2418-4787-a3e2-8d1aebcb5969","legitimation_ref":"ssot-legit:acee5e56-c289-45f7-bc66-8b6d883cde98","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Bernardo Fernandes da Silva Junior","input_name":"Bernardo","decision_status":"IDENTITY_LEGITIMATED","player_id":"d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b","legitimation_ref":"ssot-legit:9deb1053-4138-4ef9-936c-8c4977c68407","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["single-name input not used alone; club, nationality, date-of-birth and Bundesliga context disambiguate"]},
+    {"display_name":"Christopher Trimmel","input_name":"Trimmel","decision_status":"IDENTITY_LEGITIMATED","player_id":"4567f6bc-c429-44b7-9ebd-b6736379338e","legitimation_ref":"ssot-legit:4fd0ae29-fb66-4207-ad9c-6ae4e90913c7","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"El Chadaille Bitshiabu","input_name":"Bitshiabu","decision_status":"IDENTITY_LEGITIMATED","player_id":"ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc","legitimation_ref":"ssot-legit:34d36de5-e75f-484f-a189-aa97bd729aef","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["transfer out changes club assignment validity, not player identity"]},
+    {"display_name":"Nadiem Amiri","input_name":"Amiri","decision_status":"IDENTITY_LEGITIMATED","player_id":"0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9","legitimation_ref":"ssot-legit:92a2da36-3fc6-4af9-9d65-705618fea504","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Farès Chaïbi","input_name":"Chabi","decision_status":"IDENTITY_LEGITIMATED","player_id":"c4b6c5ff-3b4f-4a40-a917-a587f22029f5","legitimation_ref":"ssot-legit:5705de1e-9102-42e1-afdf-78be6710d589","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["raw spelling retained as name variant"]},
+    {"display_name":"Alexis Claude-Maurice","input_name":"Claude-Maurice","decision_status":"IDENTITY_LEGITIMATED","player_id":"3ca6dad8-cdd9-4293-aa01-238c3640a2c2","legitimation_ref":"ssot-legit:97271d50-a2a7-4b95-9fc1-1cda81fc96e2","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Andrej Kramarić","input_name":"Kramaric","decision_status":"IDENTITY_LEGITIMATED","player_id":"9027bf68-6eed-45b9-9c75-501ffc00cc5e","legitimation_ref":"ssot-legit:bdb9f5e5-6387-4e16-9afa-41b73bfa5f41","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Arijon Ibrahimović","input_name":"Ibrahimovic","decision_status":"IDENTITY_LEGITIMATED","player_id":"c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0","legitimation_ref":"ssot-legit:b37d5223-f845-493b-9373-036b252860cd","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["intra-Bundesliga club change retains player identity"]},
+    {"display_name":"Brajan Gruda","input_name":"Gruda","decision_status":"IDENTITY_LEGITIMATED","player_id":"ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e","legitimation_ref":"ssot-legit:7e7fc702-6306-48b0-9a93-04d2d7651141","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Carney Chukwuemeka","input_name":"Chukwuemeka","decision_status":"IDENTITY_LEGITIMATED","player_id":"c72f7d72-f070-4992-a9d7-1d50ed4d5fc2","legitimation_ref":"ssot-legit:fa54898b-4d3d-4b73-abdb-8875fc868db7","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Fabian Rieder","input_name":"Rieder","decision_status":"IDENTITY_LEGITIMATED","player_id":"d790076c-0754-49c0-9bc7-7260d57d3ccd","legitimation_ref":"ssot-legit:44a37317-d55e-44d5-b565-c97a644e1fb1","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Iván San José Cantalejo","input_name":"Chuki","decision_status":"IDENTITY_LEGITIMATED","player_id":"691b7e95-d539-4fb3-b097-0d25fb41f48f","legitimation_ref":"ssot-legit:07c71729-e9c2-4da2-9d79-3d29a85acfbd","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["Chuki is an alias/name variant of the same person and must not receive a second player_id"]},
+    {"display_name":"Jamie Leweling","input_name":"Leweling","decision_status":"IDENTITY_LEGITIMATED","player_id":"1ffac639-0a04-4bff-87c2-04d3fc54d98a","legitimation_ref":"ssot-legit:b82d486b-583f-4066-90be-647852edec77","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["identity decision independent from season-position release; W3.1 season position intended M"]},
+    {"display_name":"Lukas Petkov","input_name":"Petkov","decision_status":"IDENTITY_LEGITIMATED","player_id":"2328b13b-02f9-4de7-b064-55d428e34d94","legitimation_ref":"ssot-legit:db50fc4b-6dff-4506-bc48-e38d272e7c19","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Malik Tillman","input_name":"Tilmann","decision_status":"IDENTITY_LEGITIMATED","player_id":"991b4d70-4007-412b-8b37-dd11a6860639","legitimation_ref":"ssot-legit:6b26bfc7-53ee-4cf6-a5d7-f01ce682d70d","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["raw spelling retained as name variant"]},
+    {"display_name":"Wouter Burger","input_name":"Burger","decision_status":"IDENTITY_LEGITIMATED","player_id":"45e0a256-a679-44ee-b3ea-9284b22d2d42","legitimation_ref":"ssot-legit:926d763c-b340-4dac-b148-bd3750e8da93","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Ísak Bergmann Jóhannesson","input_name":"Johannesson","decision_status":"IDENTITY_LEGITIMATED","player_id":"c474360a-7e86-4b54-bc57-55cae78dcd96","legitimation_ref":"ssot-legit:cdb1ffc6-e6b9-4b3a-bebd-946f9c700462","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Serge Gnabry","input_name":"Gnabry","decision_status":"IDENTITY_LEGITIMATED","player_id":"66eedad6-6d31-4b13-87a8-358aa68ca9f6","legitimation_ref":"ssot-legit:f7166da0-8dd0-4648-b6c6-8a23b257f3c7","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Deniz Undav","input_name":"Undav","decision_status":"IDENTITY_LEGITIMATED","player_id":"ea0f64b7-5b07-46dc-9822-c15dec0c9bd9","legitimation_ref":"ssot-legit:f6fca964-28b2-4b17-b398-5c7ec64b7b5a","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Maximilian Beier","input_name":"Beier","decision_status":"IDENTITY_LEGITIMATED","player_id":"b491f0eb-318c-40f5-a1fb-49536ff3e986","legitimation_ref":"ssot-legit:07ed9336-c813-44c8-a7fc-628ce99934a6","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Fisnik Asllani","input_name":"Asslani","decision_status":"IDENTITY_LEGITIMATED","player_id":"573ad1b2-fe1f-4b30-be76-1cd01c70a8a0","legitimation_ref":"ssot-legit:3b71a2ab-f4de-4b3e-be2d-f5a5412429ac","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["raw spelling retained as name variant"]},
+    {"display_name":"Christian Kofane","input_name":"Kofane","decision_status":"IDENTITY_LEGITIMATED","player_id":"a014968a-6e04-482a-8b7c-c1922129c60f","legitimation_ref":"ssot-legit:0ef845e6-69ce-4317-b505-571b25378e0e","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT"},
+    {"display_name":"Moussa Diaby","input_name":"Diaby","decision_status":"IDENTITY_LEGITIMATED","player_id":"8f8cdcc7-c804-42eb-a577-e41befd1c66a","legitimation_ref":"ssot-legit:2728d057-c2ef-4bca-8741-9baa0b24779c","duplicate_check":"CLEAR","evidence_result":"SUFFICIENT","notes":["surname is non-unique globally; return to Bayer 04, timing and Bundesliga context disambiguate","identity decision independent from season-position release; newcomer season position intended S"]}
+  ],
+  "summary": {
+    "player_cases": 36,
+    "IDENTITY_LEGITIMATED": 36,
+    "REVIEW_REQUIRED": 0,
+    "new_player_ids_created_as_decision_consequence": 36,
+    "club_bootstrap_status": "NOT_EXECUTED_IN_THIS_LEDGER"
+  }
+}
