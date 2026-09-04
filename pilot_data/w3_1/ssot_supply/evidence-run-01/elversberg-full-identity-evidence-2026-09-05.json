@@ -1,0 +1,44 @@
+{
+  "schema":"bms.w3-1-elversberg-full-identity-evidence","schema_version":"0.1","run_id":"w3-1-elversberg-identity-20260905-01","captured_at":"2026-09-05T01:42:00+02:00",
+  "governance_note":"DOC-REG-001 was searched before this step but no retrievable register file was found. The branch working basis remains DOC-REG-001 3.8 / DOC-015 0.6 from the existing specification manifest and prior ledgers; no newer version is inferred.",
+  "sources":[
+    {"type":"KICKER_USER_PDF","reference":"SV Elversberg | Kader | Bundesliga 2026/27 - kicker","sha256":"20565164a8b906ae2c15ff8e9854c5866f3e89d69797405e70d0b10ffc9d7491","byte_length":244823,"finding":"27 players with DOB and seasonal T/A/M/S classification."},
+    {"type":"OFFICIAL_CLUB_CURRENT_SQUAD","reference":"https://sv07elversberg.de/teams/profis/kader/","finding":"Official current professional squad confirms the kicker-listed identities; it additionally lists Jason Ceka and Filimon Gerezgiher, absent from the supplied kicker PDF."},
+    {"type":"OFFICIAL_CLUB_PRESEASON","reference":"https://sv07elversberg.de/es-geht-los-unsere-elv-ist-in-die-sommer-vorbereitung-eingestiegen/","finding":"Official 2026/27 preseason reporting provides supporting current-season identity context."}
+  ],
+  "existing_identity_check":{"scope":"version-controlled pilot SSOT and previously authorized W3.1 player ledgers on working branch","result":"ONE_APPLICABLE_EXISTING_PLAYER_ID_FOUND","reused":[{"display_name":"Lukas Petkov","player_id":"2328b13b-02f9-4de7-b064-55d428e34d94","legitimation_ref":"ssot-legit:db50fc4b-6dff-4506-bc48-e38d272e7c19"}]},
+  "players":[
+    {"display_name":"Tim Boss","date_of_birth":"1993-06-28","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Elias Etringer","date_of_birth":"2007-11-24","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Nicolas Kristof","date_of_birth":"1999-12-20","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Frank Lehmann","date_of_birth":"1989-04-29","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Lasse Günther","date_of_birth":"2003-03-21","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Jan Gyamerah","date_of_birth":"1995-06-18","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Felix Keidel","date_of_birth":"2003-06-14","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Florian Le Joncour","date_of_birth":"1995-02-03","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Nicholas Mickelson","date_of_birth":"1999-07-24","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Lukas Pinckert","date_of_birth":"2000-01-22","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Maximilian Rohr","date_of_birth":"1995-06-27","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Luis Seifert","date_of_birth":"2004-01-26","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Luca Sirch","date_of_birth":"1999-06-14","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Raif Adam","date_of_birth":"2005-09-07","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Cole Campbell","date_of_birth":"2006-02-20","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Amara Condé","date_of_birth":"1997-01-06","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Noah Darvich","date_of_birth":"2006-09-25","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Maurice Krattenmacher","date_of_birth":"2005-08-11","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Francis Onyeka","date_of_birth":"2007-04-29","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Lukas Petkov","date_of_birth":"2000-11-01","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR","existing_identity_reused":true,"player_id":"2328b13b-02f9-4de7-b064-55d428e34d94","legitimation_ref":"ssot-legit:db50fc4b-6dff-4506-bc48-e38d272e7c19"},
+    {"display_name":"Lukasz Poreba","date_of_birth":"2000-03-13","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Frederik Schmahl","date_of_birth":"2002-12-21","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Tom Zimmerschied","date_of_birth":"1998-09-22","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Noel Futkeu","date_of_birth":"2002-12-06","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"David Mokwa","date_of_birth":"2004-05-03","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR","name_variant":"David Ngabi Mokwa"},
+    {"display_name":"Luca Pfeiffer","date_of_birth":"1996-08-20","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"},
+    {"display_name":"Luca Schnellbacher","date_of_birth":"1994-05-06","evidence_result":"SUFFICIENT","duplicate_check":"CLEAR"}
+  ],
+  "discrepancies":[
+    {"type":"OFFICIAL_ROSTER_EXTRA_NOT_IN_KICKER_PDF","players":["Jason Ceka","Filimon Gerezgiher"],"handling":"No kicker season_position and no DEC-030 action in this batch."},
+    {"type":"NAME_VARIANT","kicker":"David Mokwa","official_club":"David Ngabi Mokwa","handling":"Same identity; official fuller name retained as identity variant."}
+  ],
+  "summary":{"roster_total":27,"existing_reused":1,"new_positive_candidates":26,"review_required":0}
+}
