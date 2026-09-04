@@ -1,0 +1,56 @@
+{
+  "schema": "bms.canonical-kicker-club-roster",
+  "schema_version": "1.0",
+  "club": "RB Leipzig",
+  "season": "2026/27",
+  "source_reference": "https://www.kicker.de/rb-leipzig/kader/bundesliga/2026-27",
+  "source_capture": {
+    "type": "USER_PROVIDED_PDF_CAPTURE",
+    "sha256": "15d6cff1543d6b257d5e0f14cb155f11720f3b725c7628fbd3585b309ab568b8",
+    "byte_length": 1469439,
+    "pages": 2,
+    "captured_at": "2026-09-05T01:11:04+02:00"
+  },
+  "current_roster": [
+    {"display_name":"Ørjan Nyland","season_position":"T"},
+    {"display_name":"Maarten Vandevoordt","season_position":"T"},
+    {"display_name":"Leopold Zingerle","season_position":"T"},
+    {"display_name":"Ridle Baku","season_position":"A"},
+    {"display_name":"Maxime Estève","season_position":"A"},
+    {"display_name":"Max Finkgräfe","season_position":"A"},
+    {"display_name":"Benjamin Henrichs","season_position":"A"},
+    {"display_name":"Lukas Klostermann","season_position":"A"},
+    {"display_name":"Abdoul Koné","season_position":"A"},
+    {"display_name":"Castello Lukeba","season_position":"A"},
+    {"display_name":"Willi Orbán","season_position":"A"},
+    {"display_name":"David Raum","season_position":"A"},
+    {"display_name":"Ezechiel Banzuzi","season_position":"M"},
+    {"display_name":"Christoph Baumgartner","season_position":"M"},
+    {"display_name":"Neil El Aynaoui","season_position":"M"},
+    {"display_name":"Viggo Gebel","season_position":"M"},
+    {"display_name":"Brajan Gruda","season_position":"M"},
+    {"display_name":"Benno Kaltefleiter","season_position":"M"},
+    {"display_name":"Andrija Maksimović","season_position":"M"},
+    {"display_name":"Assan Ouédraogo","season_position":"M"},
+    {"display_name":"Rocco Reitz","season_position":"M"},
+    {"display_name":"Nicolas Seiwald","season_position":"M"},
+    {"display_name":"Johan Bakayoko","season_position":"S"},
+    {"display_name":"Tidiam Gomis","season_position":"S"},
+    {"display_name":"Marc Guiu","season_position":"S"},
+    {"display_name":"Samba Konaté","season_position":"S"},
+    {"display_name":"Christopher Nkunku","season_position":"S"},
+    {"display_name":"Antonio Nusa","season_position":"S"},
+    {"display_name":"Rômulo","season_position":"S"},
+    {"display_name":"Suleman Sani","season_position":"S"}
+  ],
+  "also_used": [
+    {"display_name":"Arthur Vermeeren","season_position":"M","current_club":"Royal Antwerp FC","roster_status":"AUSSERDEM_EINGESETZT"},
+    {"display_name":"Conrad Harder","season_position":"S","current_club":"Racing Straßburg","roster_status":"AUSSERDEM_EINGESETZT"}
+  ],
+  "counts": {"current_roster":{"T":3,"A":9,"M":10,"S":8,"total":30},"also_used":2,"season_listed_total":32},
+  "identity_status": "UNREVIEWED_EXCEPT_EXISTING_SSOT_IDENTITIES",
+  "notes": [
+    "The PDF separates AKTUELLER KADER from AUSSERDEM EINGESETZT. The latter are retained as season-listed players but are not treated as current RB Leipzig club assignments.",
+    "El Chadaille Bitshiabu is not listed in this kicker capture; his previously legitimized identity and transfer-out handling remain separate and are not inferred from this PDF."
+  ]
+}
