@@ -1,0 +1,48 @@
+{
+  "schema": "bms.w3-1-automated-position-research-status",
+  "schema_version": "0.1",
+  "run_id": "w3-1-position-research-20260905-01",
+  "researched_at": "2026-09-05T00:50:00+02:00",
+  "target": "Binding kicker Managerspiel season-position classification for Bundesliga 2026/27",
+  "method": "Automated indexed-web research against kicker.de player/profile/managerspiel pages; no manual user-provided source used.",
+  "authoritative_method_evidence": {
+    "source": "https://www.kicker.de/faq-kicker-managerspiel-interactive-782800/artikel",
+    "finding": "kicker states that player positions are set before the season by its data editorial team and remain fixed for the season.",
+    "status": "CONFIRMED_METHOD_ONLY"
+  },
+  "current_season_value_result": {
+    "formal_2026_27_position_proofs_found": 0,
+    "roster_size": 36,
+    "status": "INSUFFICIENT_FOR_G3",
+    "reason": "Indexed kicker player-profile results predominantly expose 2025/26 season pages or stale pre-transfer profiles. They are not reproducible proof of the binding 2026/27 Managerspiel classification."
+  },
+  "examples": [
+    {
+      "player": "Konrad Laimer",
+      "indexed_result": "Position: Abwehr",
+      "page_season": "2025/26",
+      "assessment": "CONSISTENT_WITH_WORKING_BASIS_BUT_NOT_2026_27_PROOF"
+    },
+    {
+      "player": "Jamie Leweling",
+      "indexed_result": "Position: Sturm",
+      "page_season": "2025/26",
+      "assessment": "STALE_AND_CONFLICTS_WITH_CONFIRMED_2026_27_WORKING_BASIS_M"
+    },
+    {
+      "player": "Moussa Diaby",
+      "indexed_result": "Position: Mittelfeld; Al-Ittihad",
+      "page_season": "2025/26",
+      "assessment": "STALE_PRE_RETURN_PROFILE_AND_NOT_2026_27_PROOF"
+    },
+    {
+      "player": "Noah Atubolu",
+      "indexed_result": "Position: Tor; SC Freiburg",
+      "page_season": "2025/26",
+      "assessment": "STALE_PRE_TRANSFER_PROFILE_AND_NOT_2026_27_PROOF"
+    }
+  ],
+  "decision": "DO_NOT_CANONICALIZE_INDEXED_PLAYER_PROFILE_POSITIONS_AS_2026_27_EVIDENCE",
+  "next_automated_route": "Access the live kicker Managerspiel 2026/27 transfer-market/player-pool data or an equivalent current-season structured representation. Until then keep position_evidence_ref pending and do not execute G3 release.",
+  "g3_release_count_created_by_this_research": 0
+}
