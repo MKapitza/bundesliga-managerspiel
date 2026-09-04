@@ -5,10 +5,10 @@
   "requires_explicit_update_on_document_register_change": true,
   "document_register_update_note": "If DOC-REG-001 changes, review the new register first and update this manifest deliberately before using changed specification versions.",
   "specifications": {
-    "DOC-REG-001": "3.7",
+    "DOC-REG-001": "3.8",
     "DOC-013": "0.1",
-    "DOC-014": "0.6",
-    "DOC-015": "0.5",
+    "DOC-014": "0.7",
+    "DOC-015": "0.6",
     "DOC-016": "0.2"
   }
 }
