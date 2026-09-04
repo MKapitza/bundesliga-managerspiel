@@ -1,0 +1,53 @@
+{
+  "schema": "bms.w3-1-automatic-managerspiel-access-attempt",
+  "schema_version": "0.1",
+  "attempted_at": "2026-09-05T00:53:00+02:00",
+  "target_season_key": "se-k00012026",
+  "target_competition": "Bundesliga",
+  "goal": "Automatically read the current kicker Managerspiel Interactive 2026/27 player pool including binding season positions.",
+  "season_key_evidence": [
+    {
+      "source": "https://www.meistertrainerforum.de/index.php?topic=15045.860",
+      "finding": "Public 2026/27 league invitation links use https://www.kicker.de/managerspiel/interactive/se-k00012026/..."
+    },
+    {
+      "source": "https://www.bulimaoforum.de/printthread.php?page=49&tid=34587",
+      "finding": "Public 2026/27 Bundesliga managerspiel invitation uses the same season key se-k00012026."
+    }
+  ],
+  "direct_access_attempts": [
+    {
+      "url": "https://www.kicker.de/managerspiel/interactive/se-k00012026",
+      "result": "HTTP_403_FORBIDDEN"
+    },
+    {
+      "url": "https://www.kicker.de/managerspiel/interactive/se-k00012026/live",
+      "result": "NOT_PUBLICLY_FETCHABLE_IN_CURRENT_AUTOMATED_ACCESS_PATH"
+    }
+  ],
+  "authentication_evidence": {
+    "source": "https://www.kicker.de/meinkicker/login",
+    "finding": "kicker requires login for Managerspiel pages; public indexed Managerspiel season pages return an authentication/login state."
+  },
+  "search_index_probe": {
+    "queries": [
+      "site:kicker.de/managerspiel/interactive/se-k00012026 Konrad Laimer",
+      "site:kicker.de/managerspiel/interactive/se-k00012026 Jamie Leweling",
+      "site:kicker.de/managerspiel/interactive/se-k00012026 Moussa Diaby",
+      "site:kicker.de/managerspiel/interactive/se-k00012026 Noah Atubolu"
+    ],
+    "result": "NO_CURRENT_SEASON_PLAYER_POOL_DOCUMENTS_INDEXED",
+    "note": "Search results fall back to public editorial/player-profile pages, predominantly 2025/26, not the 2026/27 Managerspiel pool."
+  },
+  "conclusion": "AUTOMATIC_PUBLIC_READ_BLOCKED_BY_AUTHENTICATION_OR_ACCESS_CONTROL",
+  "security_posture": "No login credentials, session tokens, CAPTCHA bypass, or access-control circumvention were attempted.",
+  "ssot_effect": {
+    "position_evidence_status": "PENDING",
+    "g3_release_count_created": 0
+  },
+  "next_options": [
+    "Use an authenticated browser/session explicitly provided by the user and export the player pool in a reproducible form.",
+    "Use an official/current-season public kicker export or endpoint if one becomes discoverable without access-control bypass.",
+    "Perform a one-time manual export/screenshot/PDF capture from the logged-in current-season player pool and automate all downstream parsing and SSOT processing."
+  ]
+}
