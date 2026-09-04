@@ -1,0 +1,49 @@
+{
+  "schema": "bms.canonical-kicker-club-roster",
+  "schema_version": "1.0",
+  "club": "SV Elversberg",
+  "season": "2026/27",
+  "source_reference": "https://www.kicker.de/sv-elversberg/kader/bundesliga/2026-27",
+  "source_capture": {
+    "type": "USER_PROVIDED_PDF_CAPTURE",
+    "sha256": "20565164a8b906ae2c15ff8e9854c5866f3e89d69797405e70d0b10ffc9d7491",
+    "byte_length": 244823,
+    "pages": 2,
+    "captured_at": "2026-09-05T01:42:00+02:00"
+  },
+  "players": [
+    {"display_name":"Tim Boss","date_of_birth":"1993-06-28","season_position":"T"},
+    {"display_name":"Elias Etringer","date_of_birth":"2007-11-24","season_position":"T"},
+    {"display_name":"Nicolas Kristof","date_of_birth":"1999-12-20","season_position":"T"},
+    {"display_name":"Frank Lehmann","date_of_birth":"1989-04-29","season_position":"T"},
+    {"display_name":"Lasse Günther","date_of_birth":"2003-03-21","season_position":"A"},
+    {"display_name":"Jan Gyamerah","date_of_birth":"1995-06-18","season_position":"A"},
+    {"display_name":"Felix Keidel","date_of_birth":"2003-06-14","season_position":"A"},
+    {"display_name":"Florian Le Joncour","date_of_birth":"1995-02-03","season_position":"A"},
+    {"display_name":"Nicholas Mickelson","date_of_birth":"1999-07-24","season_position":"A"},
+    {"display_name":"Lukas Pinckert","date_of_birth":"2000-01-22","season_position":"A"},
+    {"display_name":"Maximilian Rohr","date_of_birth":"1995-06-27","season_position":"A"},
+    {"display_name":"Luis Seifert","date_of_birth":"2004-01-26","season_position":"A"},
+    {"display_name":"Luca Sirch","date_of_birth":"1999-06-14","season_position":"A"},
+    {"display_name":"Raif Adam","date_of_birth":"2005-09-07","season_position":"M"},
+    {"display_name":"Cole Campbell","date_of_birth":"2006-02-20","season_position":"M"},
+    {"display_name":"Amara Condé","date_of_birth":"1997-01-06","season_position":"M"},
+    {"display_name":"Noah Darvich","date_of_birth":"2006-09-25","season_position":"M"},
+    {"display_name":"Maurice Krattenmacher","date_of_birth":"2005-08-11","season_position":"M"},
+    {"display_name":"Francis Onyeka","date_of_birth":"2007-04-29","season_position":"M"},
+    {"display_name":"Lukas Petkov","date_of_birth":"2000-11-01","season_position":"M"},
+    {"display_name":"Lukasz Poreba","date_of_birth":"2000-03-13","season_position":"M"},
+    {"display_name":"Frederik Schmahl","date_of_birth":"2002-12-21","season_position":"M"},
+    {"display_name":"Tom Zimmerschied","date_of_birth":"1998-09-22","season_position":"M"},
+    {"display_name":"Noel Futkeu","date_of_birth":"2002-12-06","season_position":"S"},
+    {"display_name":"David Mokwa","date_of_birth":"2004-05-03","season_position":"S"},
+    {"display_name":"Luca Pfeiffer","date_of_birth":"1996-08-20","season_position":"S"},
+    {"display_name":"Luca Schnellbacher","date_of_birth":"1994-05-06","season_position":"S"}
+  ],
+  "counts": {"T":4,"A":9,"M":10,"S":4,"total":27},
+  "identity_status": "UNREVIEWED_EXCEPT_EXISTING_SSOT_IDENTITIES",
+  "notes": [
+    "Official SV Elversberg current squad page additionally lists Jason Ceka and Filimon Gerezgiher; they are not present in the supplied kicker roster PDF and therefore receive no kicker season_position from this artifact.",
+    "Official club page uses David Ngabi Mokwa; kicker uses David Mokwa. Identity reconciliation is handled in the identity evidence."
+  ]
+}
