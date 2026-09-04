@@ -1,0 +1,56 @@
+{
+  "schema": "bms.canonical-kicker-club-roster",
+  "schema_version": "1.0",
+  "club": "VfB Stuttgart",
+  "season": "2026/27",
+  "source_reference": "https://www.kicker.de/vfb-stuttgart/kader/bundesliga/2026-27",
+  "source_capture": {
+    "type": "USER_PROVIDED_PDF_CAPTURE",
+    "sha256": "0ada04d57be148d0a71565f892d0a255511716b0d836f9091fffd618892ec9cb",
+    "byte_length": 259199,
+    "pages": 2,
+    "captured_at": "2026-09-05T01:15:00+02:00"
+  },
+  "current_roster": [
+    {"display_name":"Fabian Bredlow","dob":"1995-03-02","season_position":"T"},
+    {"display_name":"Stefan Drljaca","dob":"1999-04-20","season_position":"T"},
+    {"display_name":"Marius Funk","dob":"1996-01-01","season_position":"T"},
+    {"display_name":"Dennis Seimen","dob":"2005-12-01","season_position":"T"},
+    {"display_name":"Ameen Al-Dakhil","dob":"2002-03-06","season_position":"A"},
+    {"display_name":"Lorenz Assignon","dob":"2000-06-22","season_position":"A"},
+    {"display_name":"Jeff Chabot","dob":"1998-02-12","season_position":"A"},
+    {"display_name":"Ramon Hendriks","dob":"2001-07-18","season_position":"A"},
+    {"display_name":"Luca Jaquez","dob":"2003-06-02","season_position":"A"},
+    {"display_name":"Finn Jeltsch","dob":"2006-07-17","season_position":"A"},
+    {"display_name":"Maximilian Mittelstädt","dob":"1997-03-18","season_position":"A"},
+    {"display_name":"Leonidas Stergiou","dob":"2002-03-03","season_position":"A"},
+    {"display_name":"Josha Vagnoman","dob":"2000-12-11","season_position":"A"},
+    {"display_name":"Dan-Axel Zagadou","dob":"1999-06-03","season_position":"A"},
+    {"display_name":"Justin Diehl","dob":"2004-11-27","season_position":"M"},
+    {"display_name":"Bilal El Khannouss","dob":"2004-05-10","season_position":"M"},
+    {"display_name":"Chris Führich","dob":"1998-01-09","season_position":"M"},
+    {"display_name":"Atakan Karazor","dob":"1996-10-13","season_position":"M"},
+    {"display_name":"Jamie Leweling","dob":"2001-02-26","season_position":"M"},
+    {"display_name":"Jarzinho Malanga","dob":"2006-07-10","season_position":"M"},
+    {"display_name":"Nikolas Nartey","dob":"2000-02-22","season_position":"M"},
+    {"display_name":"Grischa Prömel","dob":"1995-01-09","season_position":"M"},
+    {"display_name":"Angelo Stiller","dob":"2001-04-04","season_position":"M"},
+    {"display_name":"Tiago Tomas","dob":"2002-06-16","season_position":"M"},
+    {"display_name":"Yigit Ertugrul","dob":"2009-01-08","season_position":"M"},
+    {"display_name":"Jeremy Arevalo","dob":"2005-03-19","season_position":"S"},
+    {"display_name":"Ermedin Demirovic","dob":"1998-03-25","season_position":"S"},
+    {"display_name":"Dzenan Pejcinovic","dob":"2005-02-15","season_position":"S"},
+    {"display_name":"Leo Sauer","dob":"2005-12-16","season_position":"S"},
+    {"display_name":"Deniz Undav","dob":"1996-07-19","season_position":"S"}
+  ],
+  "also_used": [
+    {"display_name":"Chema","season_position":"M","current_club":"Brighton & Hove Albion","roster_status":"AUSSERDEM_EINGESETZT"},
+    {"display_name":"Yanik Spalt","season_position":"M","current_club":"VfB Stuttgart II","roster_status":"AUSSERDEM_EINGESETZT"}
+  ],
+  "counts": {"current_roster":{"T":4,"A":10,"M":11,"S":5,"total":30},"also_used":2,"season_listed_total":32},
+  "identity_status": "UNREVIEWED_EXCEPT_EXISTING_SSOT_IDENTITIES",
+  "notes": [
+    "Kicker seasonal positions are authoritative for SSOT season_position in this capture, even where the official club roster groups a player differently tactically (notably Jamie Leweling and Tiago Tomas).",
+    "Chema and Yanik Spalt are retained as season-listed players but are not treated as current first-team VfB club assignments."
+  ]
+}
