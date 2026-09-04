@@ -12,6 +12,17 @@
       "representation_type": "CANONICAL_MANUAL_WEB_EVIDENCE_RECORD",
       "representation_status": "CONFIRMED",
       "confirmation": "Confirmed canonical consolidation for evidence_ref w3-1-evidence:club-assignments:2026-09-05; seasonal-position evidence is excluded."
+    },
+    {
+      "evidence_ref": "w3-1-evidence:season-position:kicker:bayern:2026-09-05",
+      "artifact_path": "season-position-kicker-bayern-2026-09-05.json",
+      "sha256": "4d805a0dbacdd24a165c0d42b67e0fa98c92fc7c7c047d6edebc964bb29292d7",
+      "byte_length": 1838,
+      "media_type": "application/json",
+      "source_reference": "User-provided PDF capture of kicker FC Bayern München Kader Bundesliga 2026/27, captured 2026-09-05T00:57:37+02:00; source PDF SHA-256 54af23beae23d6df779026516faaa6a3390d45038f40845ad3e0ea0bcf772366, 220397 bytes.",
+      "representation_type": "CANONICAL_MANUAL_WEB_EVIDENCE_RECORD",
+      "representation_status": "CONFIRMED",
+      "confirmation": "Confirmed 2026/27 kicker squad grouping for W3.1 Bayern players: Alphonso Davies=A, Konrad Laimer=A, Serge Gnabry=S."
     }
   ]
 }
