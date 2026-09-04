@@ -97,6 +97,25 @@ class MigrationTests(unittest.TestCase):
             finally:
                 connection.close()
 
+    def test_migration_boundary_is_explicit_and_validated(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            migrations = root / "migrations"
+            migrations.mkdir()
+            write_migration(migrations, "0001_first.sql", "CREATE TABLE first (id INTEGER);")
+            write_migration(migrations, "0002_second.sql", "CREATE TABLE second (id INTEGER);")
+            connection = connect_database(root / "bounded.sqlite3")
+            try:
+                self.assertEqual(
+                    apply_migrations(connection, migrations, through="0001_first"),
+                    ["0001_first"],
+                )
+                self.assertEqual(schema_version(connection), ("0001_first", 1))
+                with self.assertRaisesRegex(MigrationError, "unknown migration boundary"):
+                    apply_migrations(connection, migrations, through="0003_missing")
+            finally:
+                connection.close()
+
     def test_changed_applied_migration_is_rejected(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -203,12 +222,12 @@ class MigrationTests(unittest.TestCase):
                 json.loads(report.stdout),
                 {
                     "database": str(database),
-                    "latest_migration": "0004_mapping_review",
-                    "applied_migrations": 4,
+                    "latest_migration": "0005_ssot_persistence",
+                    "applied_migrations": 5,
                 },
             )
 
-    def test_productive_c3_scope_contains_only_raw_evidence_and_control_event(self) -> None:
+    def test_current_scope_contains_c3_1_ssot_persistence_only(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             connection = connect_database(Path(tmp) / "scope.sqlite3")
             try:
@@ -222,6 +241,12 @@ class MigrationTests(unittest.TestCase):
                         "control_event",
                         "import_envelope",
                         "mapping_record",
+                        "ssot_evidence_reference",
+                        "ssot_identity_legitimation",
+                        "ssot_player",
+                        "ssot_club",
+                        "ssot_legitimation_mapping",
+                        "ssot_version",
                     },
                 )
                 self.assertTrue(FORBIDDEN_C3_TABLES.isdisjoint(user_tables(connection)))
@@ -231,7 +256,7 @@ class MigrationTests(unittest.TestCase):
         self.assertTrue((REPO_ROOT / "migrations/0002_control_event.sql").is_file())
         self.assertTrue((REPO_ROOT / "migrations/0003_import_envelope.sql").is_file())
         self.assertTrue((REPO_ROOT / "migrations/0004_mapping_review.sql").is_file())
-        self.assertFalse(any((REPO_ROOT / "migrations").glob("0005_*.sql")))
+        self.assertTrue((REPO_ROOT / "migrations/0005_ssot_persistence.sql").is_file())
 
 
 if __name__ == "__main__":

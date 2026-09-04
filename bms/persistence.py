@@ -106,10 +106,20 @@ def _applied_migrations(connection: sqlite3.Connection) -> dict[str, str]:
 
 
 def apply_migrations(
-    connection: sqlite3.Connection, migrations_dir: Path
+    connection: sqlite3.Connection,
+    migrations_dir: Path,
+    *,
+    through: str | None = None,
 ) -> list[str]:
     ensure_schema_migrations(connection)
     migrations = discover_migrations(migrations_dir)
+    if through is not None:
+        available = {migration.migration_id for migration in migrations}
+        if through not in available:
+            raise MigrationError(f"unknown migration boundary: {through}")
+        migrations = [
+            migration for migration in migrations if migration.migration_id <= through
+        ]
     applied = _applied_migrations(connection)
 
     for migration in migrations:

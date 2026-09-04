@@ -60,7 +60,11 @@ class W2C2MappingTests(unittest.TestCase):
             Path(self.temporary_directory.name) / "mapping.sqlite3"
         )
         self.addCleanup(self.connection.close)
-        apply_migrations(self.connection, REPO_ROOT / "migrations")
+        apply_migrations(
+            self.connection,
+            REPO_ROOT / "migrations",
+            through="0004_mapping_review",
+        )
         self.run_id = f"run-c2-test-{uuid.uuid4()}"
         self.imported = import_fixture(
             self.connection, fixture_dir=FIXTURE_DIR, run_id=self.run_id

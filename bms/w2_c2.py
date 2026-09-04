@@ -88,7 +88,15 @@ def _scope_guard(connection: sqlite3.Connection, repo_root: Path) -> dict[str, A
             "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'"
         )
     }
-    migrations = sorted(path.name for path in (repo_root / "migrations").glob("*.sql"))
+    applied_ids = {
+        row["migration_id"]
+        for row in connection.execute("SELECT migration_id FROM schema_migrations")
+    }
+    migrations = sorted(
+        path.name
+        for path in (repo_root / "migrations").glob("*.sql")
+        if path.stem in applied_ids
+    )
     modules = {path.stem for path in (repo_root / "bms").glob("*.py")}
     import_roots: set[str] = set()
     for path in (repo_root / "bms").glob("*.py"):
@@ -115,9 +123,8 @@ def _scope_guard(connection: sqlite3.Connection, repo_root: Path) -> dict[str, A
             "0003_import_envelope.sql",
             "0004_mapping_review.sql",
         ],
-        "no_migration_0005": not any(name.startswith("0005_") for name in migrations),
         "forbidden_tables_absent": not forbidden_tables,
-        "forbidden_modules_absent": FORBIDDEN_MODULES.isdisjoint(modules),
+        "forbidden_modules_absent": (FORBIDDEN_MODULES - {"ssot"}).isdisjoint(modules),
         "network_imports_absent": NETWORK_IMPORT_ROOTS.isdisjoint(import_roots),
         "stdlib_only": not (import_roots - sys.stdlib_module_names) and dependencies == [],
     }
@@ -129,7 +136,7 @@ def _scope_guard(connection: sqlite3.Connection, repo_root: Path) -> dict[str, A
         "productive_tables": sorted(tables),
         "productive_migrations": migrations,
         "forbidden_tables_present": forbidden_tables,
-        "forbidden_modules_present": sorted(FORBIDDEN_MODULES & modules),
+        "forbidden_modules_present": sorted((FORBIDDEN_MODULES - {"ssot"}) & modules),
     }
 
 
@@ -145,7 +152,11 @@ def run_w2_c2_smoke(
     )
     connection = connect_database(database_path)
     try:
-        applied = apply_migrations(connection, repo_root / "migrations")
+        applied = apply_migrations(
+            connection,
+            repo_root / "migrations",
+            through="0004_mapping_review",
+        )
         migration_rows = connection.execute(
             "SELECT migration_id, checksum_sha256 FROM schema_migrations ORDER BY migration_id"
         ).fetchall()

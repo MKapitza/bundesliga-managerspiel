@@ -67,7 +67,11 @@ class W2C1SourceTests(unittest.TestCase):
             Path(self.temporary_directory.name) / "w2-c1.sqlite3"
         )
         self.addCleanup(self.connection.close)
-        apply_migrations(self.connection, REPO_ROOT / "migrations")
+        apply_migrations(
+            self.connection,
+            REPO_ROOT / "migrations",
+            through="0004_mapping_review",
+        )
         self.run_id = f"run-test-{uuid.uuid4()}"
         self.imported = import_fixture(
             self.connection, fixture_dir=FIXTURE_DIR, run_id=self.run_id
@@ -339,7 +343,6 @@ class W2C1SourceTests(unittest.TestCase):
         )
         self.assertFalse({"ssot", "mapping_version", "ssot_version"} & names)
         self.assertTrue((REPO_ROOT / "bms/mapping.py").exists())
-        self.assertFalse((REPO_ROOT / "bms/ssot.py").exists())
 
     def test_cli_smoke_generates_complete_execution_evidence(self) -> None:
         output = Path(self.temporary_directory.name) / "cli-evidence"

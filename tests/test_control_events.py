@@ -107,7 +107,11 @@ class ControlEventTests(unittest.TestCase):
         database = Path(self.temporary_directory.name) / "control-events.sqlite3"
         self.connection = connect_database(database)
         self.addCleanup(self.connection.close)
-        apply_migrations(self.connection, REPO_ROOT / "migrations")
+        apply_migrations(
+            self.connection,
+            REPO_ROOT / "migrations",
+            through="0004_mapping_review",
+        )
 
     def event_values(self, **overrides):
         values = {
@@ -341,10 +345,11 @@ class ControlEventTests(unittest.TestCase):
             },
         )
         self.assertTrue(FORBIDDEN_C3_PRODUCTION_NAMES.isdisjoint(tables))
-        self.assertTrue((FORBIDDEN_C3_PRODUCTION_NAMES - {"mapping"}).isdisjoint(modules))
+        self.assertTrue(
+            (FORBIDDEN_C3_PRODUCTION_NAMES - {"mapping", "ssot"}).isdisjoint(modules)
+        )
         self.assertTrue((REPO_ROOT / "migrations/0003_import_envelope.sql").is_file())
         self.assertTrue((REPO_ROOT / "migrations/0004_mapping_review.sql").is_file())
-        self.assertFalse(any((REPO_ROOT / "migrations").glob("0005_*.sql")))
 
 
 if __name__ == "__main__":

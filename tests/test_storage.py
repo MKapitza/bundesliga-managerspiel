@@ -77,7 +77,11 @@ class StorageTests(unittest.TestCase):
         database = Path(self.temporary_directory.name) / "storage.sqlite3"
         self.connection = connect_database(database)
         self.addCleanup(self.connection.close)
-        apply_migrations(self.connection, REPO_ROOT / "migrations")
+        apply_migrations(
+            self.connection,
+            REPO_ROOT / "migrations",
+            through="0004_mapping_review",
+        )
 
     def store_example_evidence(self, *, run_id: str = "run-c2-test"):
         return store_evidence(
@@ -292,7 +296,9 @@ class StorageTests(unittest.TestCase):
         module_names = {path.stem for path in (REPO_ROOT / "bms").glob("*.py")}
         self.assertTrue(FORBIDDEN_C2_SEMANTICS.isdisjoint(production_columns))
         self.assertTrue(FORBIDDEN_C2_SEMANTICS.isdisjoint(production_tables))
-        self.assertTrue((FORBIDDEN_C2_SEMANTICS - {"mapping"}).isdisjoint(module_names))
+        self.assertTrue(
+            (FORBIDDEN_C2_SEMANTICS - {"mapping", "ssot"}).isdisjoint(module_names)
+        )
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
-# Bundesliga-Managerspiel — MS2-W2/C2 Mapping + Review + K1/G2
+# Bundesliga-Managerspiel — MS2-W2/C3.1 SSOT-Persistenz und Versionierung
 
-Der technische W1-Unterbau und der reale C1-Importpfad werden in W2-C2 um unveränderliche Mappingrecords, Mapping-Review, tatsächlich ausgeführte K1-Kontrollen und die daraus abgeleitete G2-Entscheidung erweitert. Der reale Pilot endet erwartungsgemäß mit `REVIEW_REQUIRED` und G2 `BLOCKED`; technische Smoke-Ausführung und Gateentscheidung bleiben getrennt. SSOT ist ausdrücklich noch nicht implementiert.
+Auf dem technischen W1-Unterbau und dem C1/C2-Pfad ergänzt C3.1 ausschließlich die additive, unveränderliche Persistenz für positive SSOT-Erstlegitimationsnachweise, stabile Spieler-/Vereinsidentitäten und versionierte SSOT-Datenstände. C3.2, K2/G3 und der integrierte C3-Smoke sind noch nicht implementiert.
 
 ## Stack-Entscheidung
 
@@ -15,12 +15,12 @@ Damit bleiben lokale Ausführung, Testbarkeit und Reproduzierbarkeit mit minimal
 
 ## Verbindliche Spezifikationsbasis
 
-`spec/specification-manifest.json` referenziert den für I1 geprüften Stand:
+`spec/specification-manifest.json` referenziert den aktuell geprüften Stand:
 
-- DOC-REG-001 3.6
+- DOC-REG-001 3.7
 - DOC-013 0.1
-- DOC-014 0.5
-- DOC-015 0.4
+- DOC-014 0.6
+- DOC-015 0.5
 - DOC-016 0.2
 
 Bei jeder Änderung von DOC-REG-001 muss zuerst der neue Registerstand geprüft und anschließend das Specification Manifest bewusst aktualisiert werden.
@@ -34,7 +34,15 @@ Es ist keine Paketinstallation erforderlich.
 
 ## SQLite und Migrationen
 
-Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. Auf Evidence, Raw Observation, Control Events und Import Envelope aus 0001–0003 ergänzt `0004_mapping_review.sql` ausschließlich `mapping_record`. Die technische Migrationshistorie bleibt in `schema_migrations`. Fremdschlüssel und Trigger sichern Referenzen, Vorgängerketten und Unveränderlichkeit.
+Versionierte Anwendungsmigrationen liegen unter `migrations/` und folgen der Konvention `NNNN_description.sql`. Auf Evidence, Raw Observation, Control Events, Import Envelope und Mapping aus 0001–0004 ergänzt `0005_ssot_persistence.sql` ausschließlich die C3.1-Persistenzobjekte. Die technische Migrationshistorie bleibt in `schema_migrations`. Fremdschlüssel, Checks und Trigger sichern Referenzen, positive Erstlegitimation, Vorgängerketten und Unveränderlichkeit. Historische W1/C1/C2-Smokes wenden weiterhin explizit nur Migrationen bis 0004 an.
+
+## C3.1 SSOT-Persistenz-API
+
+`bms.ssot` speichert und liest positive, evidence-gebundene Erstlegitimationsnachweise, dazu passend legitimierte Spieler oder Vereine sowie SSOT-Datenstände. Der bereits fachlich vergebene `legitimation_ref` ist eine unverändert übernommene Eingabe und bleibt von der stabilen internen Spieler-/Vereins-ID getrennt. Ein Spieler oder Verein kann nur mit einem nach Objekttyp, interner ID und Entscheidungszeitpunkt passenden positiven `legitimation_ref` persistiert werden. Der identische Replay von Entscheid, neutralem Evidence Bundle und interner Identität liefert den vorhandenen Stand zurück; eine widersprüchliche Wiederverwendung des Referenzwerts wird abgelehnt. SSOT-Datenstände sind append-only, bewahren ihren JSON-Zustand und verweisen bei Fortschreibung auf den Vorgänger. Freigabezeit und Freigabenachweis bleiben ein konsistentes optionales Paar; eine Freigabe wird in C3.1 weder abgeleitet noch entschieden.
+
+Für den bereits fachlich autorisierten positiven Spieler-Seed persistiert die C3.1-API Legitimation, stabile Spieler-ID und das vorgegebene `CONFIRMED`-Mapping atomar und idempotent; eine unveränderliche Relation hält den Mappingbezug zum `legitimation_ref` nachvollziehbar. Dabei findet weder automatische Match-Ermittlung noch eine K1-Neuausführung statt. Ein positiver Club-Entscheid ohne vorgegebene externe Identität bleibt mapping-frei. K2-Control-Events, G3-Entscheidungen, SSOT-Prüffälle, Vereins-/Positionszuordnungen sowie Monitoring- oder Folgesemantik bleiben späteren Inkrementen vorbehalten.
+
+Das Seed-Evidence-Manifest bindet die drei bestehenden fachlichen `evidence_ref`-Werte unveränderlich und eindeutig an gespeicherte Evidence-Artefakte. Vor der Bindung werden Artefaktpfad, SHA-256, Bytelänge und bei kanonischen manuellen Webnachweisen zusätzlich der eingebettete Referent geprüft. Ein positiver Bootstrap akzeptiert nur vollständig aufgelöste Evidence; sein WIKIDATA-Mapping muss auf dasselbe Artefakt wie die archivierte WIKIDATA-Rohbeobachtung zurückführen. Die Bundesliga- und FCB-Datensätze bleiben als kanonische Nachweise der ursprünglichen manuellen Prüfung gekennzeichnet und werden nicht als Webseiten-Snapshots ausgegeben.
 
 ```bash
 python -m bms migrate --db .runs/local.sqlite3
@@ -136,6 +144,7 @@ Für Pilot 01 wird keine interne Spieleridentität erfunden. Die unbekannte Wiki
 │   ├── manifests.py
 │   ├── persistence.py
 │   ├── storage.py
+│   ├── ssot.py
 │   ├── w1_ig1_evidence.py
 │   ├── w1_smoke.py
 │   ├── w2_c1.py
@@ -144,7 +153,8 @@ Für Pilot 01 wird keine interne Spieleridentität erfunden. Die unbekannte Wiki
 │   ├── 0001_raw_evidence.sql
 │   ├── 0002_control_event.sql
 │   ├── 0003_import_envelope.sql
-│   └── 0004_mapping_review.sql
+│   ├── 0004_mapping_review.sql
+│   └── 0005_ssot_persistence.sql
 ├── spec/
 │   └── specification-manifest.json
 └── tests/
@@ -157,9 +167,10 @@ Für Pilot 01 wird keine interne Spieleridentität erfunden. Die unbekannte Wiki
     ├── test_w1_ig1_evidence.py
     ├── test_w1_smoke.py
     ├── test_w2_c1_source.py
-    └── test_w2_c2_mapping.py
+    ├── test_w2_c2_mapping.py
+    └── test_w2_c3_1_ssot_persistence.py
 ```
 
-## Scope-Grenze W2-C2
+## Scope-Grenze W2-C3.1
 
-W2-C2 endet nach Mapping, Review, K1 und G2. Nicht enthalten sind Netzwerkabruf, generische Adapter-/Gate-Architektur, SSOT-Produktionsobjekte oder -Versionen, K2/G3, Monitoring, Eligibility, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI oder Deployment.
+W2-C3.1 endet bei SSOT-Persistenz und -Versionierung. Nicht enthalten sind C3.2, automatische Erstlegitimation aus Roh-/Mappingdaten, K2/G3, der integrierte C3-Smoke, Monitoring, Eligibility, Prognose/Empfehlung, Snapshot, Managerentscheidung, Ergebnis/Evaluation, UI oder Deployment.

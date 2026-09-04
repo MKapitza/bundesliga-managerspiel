@@ -1,0 +1,49 @@
+{
+  "schema": "bms.seed-evidence-manifest",
+  "schema_version": "1.0",
+  "fixture_id": "w2-c3-positive-01",
+  "evidence": [
+    {
+      "evidence_ref": "seed-evidence:w2-c3-positive-01:player:wikidata",
+      "artifact_path": "evidence/wikidata_Q96072055.json",
+      "sha256": "d160438c111e9f36bdbf3f87ba05eda5f44ce826e4c43d500beea413c17963d4",
+      "byte_length": 66528,
+      "media_type": "application/json",
+      "source_reference": "https://www.wikidata.org/wiki/Special:EntityData/Q96072055.json",
+      "retrieved_at": "2026-09-02T17:54:42Z",
+      "observed_at": "2026-09-02T17:54:42Z",
+      "representation_type": "ARCHIVED_RAW_SOURCE",
+      "purpose": "Archivierter Wikidata-EntityData-Datensatz zu Q96072055; belegt die bei der Erstlegitimation geprüfte externe Spieleridentität Jamal Musiala und deren Identitäts- und Eindeutigkeitskontext.",
+      "representation_status": "CONFIRMED",
+      "confirmation": "Dieses konkrete Artefakt repräsentiert exakt den fachlichen Evidence-Referenten seed-evidence:w2-c3-positive-01:player:wikidata."
+    },
+    {
+      "evidence_ref": "seed-evidence:w2-c3-positive-01:player:bundesliga",
+      "artifact_path": "evidence/player_bundesliga.json",
+      "sha256": "30c157ac68482ddea6ed7cc09900824792faf9841387bceb143aeafce8758e0d",
+      "byte_length": 560,
+      "media_type": "application/json",
+      "source_reference": "https://www.bundesliga.com/de/spieler/jamal-musiala",
+      "retrieved_at": "2026-09-02T15:57:44+02:00",
+      "observed_at": "2026-09-02T15:57:44+02:00",
+      "representation_type": "CANONICAL_MANUAL_WEB_EVIDENCE_RECORD",
+      "purpose": "Kanonischer Nachweis der ursprünglichen manuellen Bundesliga-Webprüfung zu Spielername, Geburtsdatum, Verein, Position und Saison 2026/2027; kein archivierter Webseiten-Snapshot.",
+      "representation_status": "CONFIRMED",
+      "confirmation": "Dieses konkrete Artefakt repräsentiert exakt den fachlichen Evidence-Referenten seed-evidence:w2-c3-positive-01:player:bundesliga."
+    },
+    {
+      "evidence_ref": "seed-evidence:w2-c3-positive-01:player:fcb",
+      "artifact_path": "evidence/player_fcb.json",
+      "sha256": "d78b57a10619aa25d47e8a2f807e729d712f78ae118d72877ba7fc04555fa1b9",
+      "byte_length": 581,
+      "media_type": "application/json",
+      "source_reference": "https://fcbayern.com/de/teams/profis/jamal-musiala",
+      "retrieved_at": "2026-09-02T15:57:44+02:00",
+      "observed_at": "2026-09-02T15:57:44+02:00",
+      "representation_type": "CANONICAL_MANUAL_WEB_EVIDENCE_RECORD",
+      "purpose": "Kanonischer Nachweis der ursprünglichen manuellen Prüfung des offiziellen FC-Bayern-Spielerprofils zu Spieleridentität, Geburtsdatum, Position, Vereinszugehörigkeit und Zugehörigkeit seit 04.07.2019; kein archivierter Webseiten-Snapshot.",
+      "representation_status": "CONFIRMED",
+      "confirmation": "Dieses konkrete Artefakt repräsentiert exakt den fachlichen Evidence-Referenten seed-evidence:w2-c3-positive-01:player:fcb."
+    }
+  ]
+}

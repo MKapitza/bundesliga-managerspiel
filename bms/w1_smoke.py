@@ -173,7 +173,15 @@ def build_scope_guard(
             """
         )
     }
-    migrations = sorted(path.name for path in (repo_root / "migrations").glob("*.sql"))
+    applied_ids = {
+        row["migration_id"]
+        for row in connection.execute("SELECT migration_id FROM schema_migrations")
+    }
+    migrations = sorted(
+        path.name
+        for path in (repo_root / "migrations").glob("*.sql")
+        if path.stem in applied_ids
+    )
     modules = {path.stem for path in (repo_root / "bms").glob("*.py")}
     import_roots = _production_import_roots(repo_root)
     non_stdlib_imports = sorted(import_roots - sys.stdlib_module_names)
@@ -193,8 +201,9 @@ def build_scope_guard(
             "0003_import_envelope.sql",
             "0004_mapping_review.sql",
         ],
-        "no_0005_migration": not any(name.startswith("0005_") for name in migrations),
-        "forbidden_modules_absent": FORBIDDEN_PRODUCTION_MODULES.isdisjoint(modules),
+        "forbidden_modules_absent": (
+            FORBIDDEN_PRODUCTION_MODULES - {"ssot"}
+        ).isdisjoint(modules),
         "stdlib_only": not non_stdlib_imports and dependencies == [],
         "network_imports_absent": NETWORK_IMPORT_ROOTS.isdisjoint(import_roots),
         "docker_artifacts_absent": not docker_artifacts,
@@ -208,7 +217,9 @@ def build_scope_guard(
         "productive_tables": sorted(tables),
         "productive_migrations": migrations,
         "production_modules": sorted(modules),
-        "forbidden_modules_present": sorted(FORBIDDEN_PRODUCTION_MODULES & modules),
+        "forbidden_modules_present": sorted(
+            (FORBIDDEN_PRODUCTION_MODULES - {"ssot"}) & modules
+        ),
         "import_roots": sorted(import_roots),
         "non_stdlib_imports": non_stdlib_imports,
         "declared_dependencies": dependencies,
@@ -272,7 +283,11 @@ def _run_replay(run_dir: Path, *, repo_root: Path) -> dict[str, Any]:
     )
     connection = connect_database(database_path)
     try:
-        newly_applied = apply_migrations(connection, repo_root / "migrations")
+        newly_applied = apply_migrations(
+            connection,
+            repo_root / "migrations",
+            through="0004_mapping_review",
+        )
         database_schema = _database_schema(connection)
         if newly_applied != list(EXPECTED_MIGRATIONS):
             raise W1SmokeError(f"unexpected fresh migration order: {newly_applied!r}")
