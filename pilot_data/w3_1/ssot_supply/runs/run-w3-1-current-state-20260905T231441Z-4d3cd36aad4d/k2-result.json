@@ -1,0 +1,13 @@
+{
+  "control_events": 211,
+  "ctl_k2_007_new_identity_count": 0,
+  "ctl_k2_008_passed": 35,
+  "failed": 0,
+  "players_checked": 35,
+  "result": "PASS",
+  "run_id": "run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d",
+  "schema": "bms.w3-1-k2-result",
+  "schema_version": "0.2",
+  "ssot_version_id": "a536f758-5628-4ab0-afaa-991592540bb7",
+  "tc6_050": "PASS"
+}
