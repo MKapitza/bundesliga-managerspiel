@@ -1,0 +1,103 @@
+{
+  "schema": "bms.w3-1-ssot-consolidation-status",
+  "schema_version": "0.1",
+  "consolidated_at": "2026-09-05T20:55:14+02:00",
+  "source_commit": "7c7a1ef5df533b6572b74591588fa28858afd1d0",
+  "branch": "ms2-w3-1-ssot-supply",
+  "status": "PRE_MATERIALIZATION_NOT_READY",
+  "governance_check": {
+    "DOC-REG-001": "3.8",
+    "DOC-014": "0.7",
+    "DOC-015": "0.6",
+    "DOC-016": "0.2",
+    "result": "PASS",
+    "note": "Current binding document register was rechecked before consolidation; repository specification manifest matches the register."
+  },
+  "inventory": {
+    "canonical_full_rosters": {
+      "required": 18,
+      "found": 18,
+      "status": "COMPLETE",
+      "clubs": ["FC Augsburg","FC Bayern München","SV Werder Bremen","Borussia Dortmund","SV Elversberg","Eintracht Frankfurt","SC Freiburg","Borussia Mönchengladbach","Hamburger SV","TSG Hoffenheim","1. FC Köln","RB Leipzig","Bayer 04 Leverkusen","1. FSV Mainz 05","SC Paderborn 07","FC Schalke 04","VfB Stuttgart","1. FC Union Berlin"]
+    },
+    "team_identity_evidence_artifacts": {"required": 18, "found": 18, "status": "COMPLETE"},
+    "team_player_decision_ledgers": {"required": 18, "found": 18, "status": "COMPLETE"},
+    "club_decision_coverage": {
+      "required": 18,
+      "found": 17,
+      "status": "INCOMPLETE",
+      "covered_by": ["dec030-club-decisions.json (15 clubs)","dec030-paderborn-club-decision-2026-09-05.json","dec030-schalke-club-decision-2026-09-05.json"],
+      "missing": ["SC Freiburg"],
+      "note": "No standalone positive SC Freiburg club DEC-030 artifact or stable club_id/legitimation_ref was found in the inspected repository state. No identity is inferred from the club name."
+    }
+  },
+  "open_identity_cases": [
+    {
+      "display_name": "Kacper Potulski",
+      "scope": "CURRENT_MAINZ_ROSTER",
+      "status": "REVIEW_REQUIRED",
+      "reason": "Conflicting date of birth between supplied kicker roster PDF and official Mainz profile; no positive DEC-030 decision and no player_id."
+    },
+    {
+      "display_name": "Chema",
+      "scope": "STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT",
+      "status": "REVIEW_REQUIRED",
+      "reason": "Insufficient identity attributes; no ID from name alone."
+    },
+    {
+      "display_name": "Yanik Spalt",
+      "scope": "STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT",
+      "status": "REVIEW_REQUIRED",
+      "reason": "Insufficient identity attributes; no ID from name alone."
+    }
+  ],
+  "post_decision_identity_gap": {
+    "club": "Bayer 04 Leverkusen",
+    "count": 24,
+    "status": "POSITIVE_DEC030_WITHOUT_RECORDED_PLAYER_ID_AND_LEGITIMATION_REF",
+    "source": "evidence-run-01/dec030-leverkusen-player-decisions-2026-09-05.json",
+    "handling": "Do not invent IDs during consolidation. A deliberate DEC-030-compliant technical consequence step is required before full-league materialization input can be complete."
+  },
+  "evidence_registration": {
+    "canonical_manifest_entries": 2,
+    "status": "INCOMPLETE_FOR_FULL_LEAGUE",
+    "registered_refs": ["w3-1-evidence:club-assignments:2026-09-05","w3-1-evidence:season-position:kicker:bayern:2026-09-05"],
+    "note": "The manifest does not yet register immutable position/club evidence refs for the 18-club full-roster state."
+  },
+  "club_assignment_evidence": {
+    "artifact": "evidence-run-01/canonical/club-assignments-2026-09-05.json",
+    "captured_at": "2026-09-05T00:42:00+02:00",
+    "scope": "Mathias 36-player working set / 15 clubs",
+    "status": "PARTIAL_FOR_FULL_LEAGUE",
+    "note": "It is not a complete 18-club/full-roster assignment consolidation."
+  },
+  "materialization_input": {
+    "artifact": "materialization-input-2026-09-05.json",
+    "data_as_of": "2026-09-05T00:38:00+02:00",
+    "players": 36,
+    "position_counts": {"T": 2, "A": 14, "M": 14, "S": 6},
+    "evidence_refs": "PENDING_CANONICAL_EVIDENCE",
+    "status": "STALE_AND_PARTIAL_DO_NOT_EXECUTE_AS_FULL_LEAGUE_INPUT",
+    "note": "This input predates the 18-roster expansion and must not be treated as current full-league materialization input."
+  },
+  "runtime_release_state": {
+    "runtime_ssot_materialization": "NOT_FOUND_NOT_EXECUTED_FOR_CURRENT_FULL_LEAGUE_STATE",
+    "ssot_version_id": "NOT_FOUND",
+    "k2": "NOT_EXECUTED",
+    "g3": "NOT_RELEASED",
+    "release_ref": "NOT_FOUND"
+  },
+  "blocking_sequence_before_materialization": [
+    "Resolve or formally retain REVIEW_REQUIRED status for Kacper Potulski according to DEC-030; Chema and Yanik Spalt remain separate unresolved season-history cases.",
+    "Close SC Freiburg club DEC-030 / stable club identity gap without reconstructing from name alone.",
+    "Complete the 24 Leverkusen post-positive-decision player_id/legitimation_ref consequences under DEC-030/REQ-SSOT-005.",
+    "Build full-league immutable club-assignment and kicker position evidence registration; update canonical evidence manifest.",
+    "Generate a new full-league materialization input from only complete positive identities and registered evidence refs.",
+    "Only then execute Runtime materialization, K2 and, if K2 passes, G3 release."
+  ],
+  "notes": [
+    "No new fachliche identity decision is made by this consolidation artifact.",
+    "No new player_id, club_id, ssot_version_id, K2, G3 or release reference is created by this consolidation artifact.",
+    "Recovered and already positive DEC-030 results are not re-legitimized."
+  ]
+}
