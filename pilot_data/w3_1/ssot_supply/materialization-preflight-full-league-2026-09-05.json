@@ -1,0 +1,55 @@
+{
+  "schema": "bms.w3-1-ssot-materialization-preflight",
+  "schema_version": "0.1",
+  "checked_at": "2026-09-05T23:06:00+02:00",
+  "branch": "ms2-w3-1-ssot-supply",
+  "source_commit_before_preflight": "3e9551190d7e0f5e0bed718fac3d186476c3a285",
+  "governance": {
+    "DOC-REG-001": "3.8",
+    "DOC-014": "0.7",
+    "DOC-015": "0.6",
+    "DOC-016": "0.2"
+  },
+  "result": "BLOCKED_BEFORE_MATERIALIZATION_INPUT",
+  "identity_readiness": {
+    "current_18_roster_identity_blockers": 0,
+    "potulski": {
+      "status": "IDENTITY_LEGITIMATED_AFTER_CONFLICT_RESOLUTION",
+      "player_id": "e16fe991-2a78-44b3-87cd-0370ad733f81",
+      "legitimation_ref": "ssot-legit:03e0f9b5-35b3-40df-9232-7c1fe0da7126",
+      "decision_artifact": "evidence-run-01/dec030-mainz-potulski-resolution-decision-2026-09-05.json"
+    },
+    "separate_non_current_roster_review_cases": [
+      {"display_name": "Chema", "scope": "STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT", "status": "REVIEW_REQUIRED"},
+      {"display_name": "Yanik Spalt", "scope": "STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT", "status": "REVIEW_REQUIRED"}
+    ]
+  },
+  "evidence_readiness": {
+    "club_assignment_ref": "w3-1-evidence:club-assignments:kicker-full-league:2026-09-05",
+    "position_ref": "w3-1-evidence:season-position:kicker-full-league:2026-09-05",
+    "manifest_status": "REGISTERED_SOURCE_PACKAGE_COMPLETE_FOR_18_CANONICAL_ROSTERS"
+  },
+  "blocking_condition": {
+    "code_contract": "bms/w3_1_ssot.py MaterializationInput / build_player_state",
+    "required_field": "club_valid_from",
+    "reason": "For a current Bundesliga assignment, build_player_state requires an evidenced club_valid_from in order to construct a confirmed player_club_assignment and reach SSOT_PROCESSABLE.",
+    "available_full_league_evidence": "The immutable full-league roster index proves current roster membership at the captured repository observation state, but explicitly does not establish each player's exact club_valid_from date.",
+    "governance_constraint": "DOC-015 requires validity boundaries to reflect actual source precision; an unknown required boundary must not be replaced by an invented season-start or capture date.",
+    "consequence": "A new full-league executable materialization-input file cannot yet be produced without fabricating validity values."
+  },
+  "required_next_supply": {
+    "type": "EVIDENCED_PLAYER_CLUB_VALIDITY",
+    "minimum": "For each current materializable player, provide or derive from already persisted immutable evidence a defensible club_valid_from consistent with source precision.",
+    "prohibited_shortcuts": [
+      "Do not default all players to 2026-08-28.",
+      "Do not use roster capture timestamp as a proxy for club_valid_from.",
+      "Do not infer transfer dates from names or roster membership alone."
+    ]
+  },
+  "runtime_release_state": {
+    "ssot_materialization": "NOT_EXECUTED",
+    "ssot_version_id": "NOT_CREATED",
+    "k2": "NOT_EXECUTED",
+    "g3": "NOT_RELEASED"
+  }
+}
