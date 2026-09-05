@@ -1,0 +1,67 @@
+{
+  "schema": "bms.w3-1-ssot-p-and-i-return",
+  "schema_version": "0.1",
+  "returned_at": "2026-09-06T01:20:00+02:00",
+  "status": "SSOT_SUPPLY_NOT_READY",
+  "governance": {
+    "DOC-REG-001": "3.9",
+    "DOC-014": "0.8",
+    "DOC-015": "0.7",
+    "DOC-016": "0.2",
+    "GF-SSOT-002": "CLOSED",
+    "DEC-032": "APPLIED",
+    "REQ-SSOT-006": "APPLIED",
+    "TP-06": "APPLIED",
+    "TC6-050": "PASS"
+  },
+  "implementation": {
+    "specification_update_commit": "8fc330498e0324cca5e37307c18252da242ba55e",
+    "migration_commit": "5bdeca864f56d3b165da803405d34d53cdc867f6",
+    "current_state_implementation_commit": "8a1aa30d95aa249c1235df15225165efb19e582c",
+    "test_commit": "febd191decf832d04b5a5cfa3fc93d602678bf02"
+  },
+  "execution": {
+    "run_id": "run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d",
+    "executed_against_commit": "febd191decf832d04b5a5cfa3fc93d602678bf02",
+    "source_evidence_commit": "094df9797900c3452204378dcf82e7d4eddba891",
+    "data_as_of": "2026-09-05",
+    "execution_status": "SUCCEEDED",
+    "ssot_version_id": "a536f758-5628-4ab0-afaa-991592540bb7",
+    "released_scope_player_count": 35,
+    "k2_result": "PASS",
+    "k2_event_count": 211,
+    "ctl_k2_007_new_identity_count": 0,
+    "ctl_k2_008_passed": 35,
+    "g3_decision": "SSOT_RELEASED",
+    "g3_release_id": "e5f6c1a9-c460-4481-adfa-9f787d61ee0c",
+    "g3_evidence_id": "evidence:9b35c377-8e60-4619-8d82-bb43676e2bd1",
+    "tc6_050": "PASS",
+    "synthetic_club_valid_from_created": false
+  },
+  "released_scope": {
+    "name": "Mathias current-state processable subset",
+    "participant_roster_inputs": 36,
+    "released_players": 35,
+    "blocked_players": 1
+  },
+  "remaining_blockers": [
+    {
+      "input_name": "Bitshiabu",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "blocker": "MISSING_CURRENT_CLUB_STATE_AT_AS_OF",
+      "reason": "The existing RB Leipzig historical assignment ended 2026-09-02 and the player is absent from the canonical current RB Leipzig roster used for the 2026-09-05 current-state evidence. No different current club is evidenced in the W3.1 supply used by this run. No current-state confirmation is fabricated.",
+      "required_resolution": "Provide reproducible evidence for the player's actual club at the required as_of, or formally remove/replace the participant-roster input outside the SSOT identity process."
+    }
+  ],
+  "separate_nonblocking_review_cases": [
+    "Chema – Stuttgart season-history AUSSERDEM_EINGESETZT – REVIEW_REQUIRED",
+    "Yanik Spalt – Stuttgart season-history AUSSERDEM_EINGESETZT – REVIEW_REQUIRED"
+  ],
+  "run_artifacts": {
+    "run_manifest": "runs/run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d/run-manifest.json",
+    "k2_result": "runs/run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d/k2-result.json",
+    "tc6_050_result": "runs/run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d/tc6-050-result.json",
+    "g3_decision": "runs/run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d/g3-decision.json"
+  },
+  "assessment": "A real SSOT version, K2 execution and G3 release now exist for the 35-player processable current-state subset. Overall W3.1/Mathias supply remains NOT_READY because one of the 36 participant-roster inputs lacks a positive current-club state at the required as_of."
+}
