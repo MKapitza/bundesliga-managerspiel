@@ -1,0 +1,11 @@
+{
+  "schema":"bms.w3-1-tc6-050-result",
+  "schema_version":"0.2",
+  "run_id":"run-w3-1-outside-bundesliga-20260906T003200Z-a35d474a184a",
+  "ssot_version_id":"7a07172b-4c3b-40cd-a182-c7a5fd85e645",
+  "as_of":"2026-09-05",
+  "checked_positive_club_confirmations":35,
+  "checked_outside_bundesliga_confirmations":1,
+  "status":"PASS",
+  "assertions":["explicit as_of","no synthetic club_valid_from","OUTSIDE_BUNDESLIGA has no club_id","no fictional club","point-in-time use only","stable player identity retained"]
+}
