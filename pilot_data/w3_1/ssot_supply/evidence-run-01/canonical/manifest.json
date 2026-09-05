@@ -23,6 +23,28 @@
       "representation_type": "CANONICAL_MANUAL_WEB_EVIDENCE_RECORD",
       "representation_status": "CONFIRMED",
       "confirmation": "Confirmed 2026/27 kicker squad grouping for W3.1 Bayern players: Alphonso Davies=A, Konrad Laimer=A, Serge Gnabry=S."
+    },
+    {
+      "evidence_ref": "w3-1-evidence:club-assignments:kicker-full-league:2026-09-05",
+      "artifact_path": "club-assignments-kicker-full-league-2026-09-05.json",
+      "sha256": "846dc3158ff03aba3a50266b845cedaa0d74524afe936378e7948bd0e1082b44",
+      "byte_length": 4619,
+      "media_type": "application/json",
+      "source_reference": "18 canonical kicker Bundesliga 2026/27 roster artifacts pinned to repository commit 094df9797900c3452204378dcf82e7d4eddba891",
+      "representation_type": "IMMUTABLE_GIT_CANONICAL_ROSTER_INDEX",
+      "representation_status": "CONFIRMED",
+      "confirmation": "Confirmed w3-1-evidence:club-assignments:kicker-full-league:2026-09-05 against all 18 canonical kicker roster artifacts at immutable source commit 094df9797900c3452204378dcf82e7d4eddba891."
+    },
+    {
+      "evidence_ref": "w3-1-evidence:season-position:kicker-full-league:2026-09-05",
+      "artifact_path": "season-position-kicker-full-league-2026-09-05.json",
+      "sha256": "24ea76bcf2cc673951b633145ac0dbd20a1d5fbd98347e9590407d9d614b213a",
+      "byte_length": 4420,
+      "media_type": "application/json",
+      "source_reference": "18 canonical kicker Bundesliga 2026/27 roster artifacts pinned to repository commit 094df9797900c3452204378dcf82e7d4eddba891",
+      "representation_type": "IMMUTABLE_GIT_CANONICAL_ROSTER_INDEX",
+      "representation_status": "CONFIRMED",
+      "confirmation": "Confirmed w3-1-evidence:season-position:kicker-full-league:2026-09-05 against all 18 canonical kicker roster artifacts at immutable source commit 094df9797900c3452204378dcf82e7d4eddba891."
     }
   ]
 }
