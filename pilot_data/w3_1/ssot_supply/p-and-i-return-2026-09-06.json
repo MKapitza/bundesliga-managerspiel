@@ -1,8 +1,8 @@
 {
   "schema": "bms.w3-1-ssot-p-and-i-return",
-  "schema_version": "0.1",
-  "returned_at": "2026-09-06T01:20:00+02:00",
-  "status": "SSOT_SUPPLY_NOT_READY",
+  "schema_version": "0.2",
+  "returned_at": "2026-09-06T02:40:00+02:00",
+  "status": "SSOT_SUPPLY_READY",
   "governance": {
     "DOC-REG-001": "3.9",
     "DOC-014": "0.8",
@@ -12,56 +12,69 @@
     "DEC-032": "APPLIED",
     "REQ-SSOT-006": "APPLIED",
     "TP-06": "APPLIED",
-    "TC6-050": "PASS"
+    "TC6-050": "PASS",
+    "bounded_p_and_i_extension": "OUTSIDE_BUNDESLIGA point-in-time competition-scope state approved for Bitshiabu; no fictional club and no synthetic historical interval"
   },
   "implementation": {
-    "specification_update_commit": "8fc330498e0324cca5e37307c18252da242ba55e",
-    "migration_commit": "5bdeca864f56d3b165da803405d34d53cdc867f6",
-    "current_state_implementation_commit": "8a1aa30d95aa249c1235df15225165efb19e582c",
-    "test_commit": "febd191decf832d04b5a5cfa3fc93d602678bf02"
+    "specification_manifest_commit": "8fc330498e0324cca5e37307c18252da242ba55e",
+    "p_and_i_authorization_commit": "cec4d9ce6df005f2a4636c18248269d54954567c",
+    "outside_bundesliga_migration_commit": "45952e6f4f0407b91b04b4478a9575754a816a4e",
+    "bitshiabu_scope_evidence_commit": "2cac65bca58ee4dd04ff75db7f1cff9ae8fb9fd0",
+    "outside_bundesliga_model_commit": "3831c731dca23d65a4bf897f59fd3c51cf8b2a05",
+    "outside_bundesliga_test_commit": "6ccfd1ef7ce11ac2186eef5cd2739b8347662b8f",
+    "run_manifest_commit": "f89dae37ffdc940e22d542f8f009b522dac05dad",
+    "k2_result_commit": "939c43547a77e811d7c4e896288a10374f3d3ad4",
+    "tc6_050_result_commit": "84bff21a9fe15c8a01a762304ea26dfa2dd22f6d",
+    "g3_decision_commit": "cb66ea0982cb599767c215a3b33bccfd904aa2f4"
   },
   "execution": {
-    "run_id": "run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d",
-    "executed_against_commit": "febd191decf832d04b5a5cfa3fc93d602678bf02",
-    "source_evidence_commit": "094df9797900c3452204378dcf82e7d4eddba891",
+    "run_id": "run-w3-1-outside-bundesliga-20260906T003200Z-a35d474a184a",
     "data_as_of": "2026-09-05",
     "execution_status": "SUCCEEDED",
-    "ssot_version_id": "a536f758-5628-4ab0-afaa-991592540bb7",
-    "released_scope_player_count": 35,
+    "predecessor_ssot_version_id": "a536f758-5628-4ab0-afaa-991592540bb7",
+    "ssot_version_id": "7a07172b-4c3b-40cd-a182-c7a5fd85e645",
+    "released_scope_player_count": 36,
     "k2_result": "PASS",
-    "k2_event_count": 211,
+    "k2_event_count": 217,
     "ctl_k2_007_new_identity_count": 0,
-    "ctl_k2_008_passed": 35,
+    "ctl_k2_008_passed": 36,
     "g3_decision": "SSOT_RELEASED",
-    "g3_release_id": "e5f6c1a9-c460-4481-adfa-9f787d61ee0c",
-    "g3_evidence_id": "evidence:9b35c377-8e60-4619-8d82-bb43676e2bd1",
+    "g3_release_id": "fb5ff50f-7d80-454e-b3de-40dc188c94ab",
+    "g3_evidence_id": "evidence:e8dcccf2-4580-4751-821b-22cfcc11413a",
     "tc6_050": "PASS",
-    "synthetic_club_valid_from_created": false
+    "synthetic_club_valid_from_created": false,
+    "fictional_club_created": false
   },
   "released_scope": {
-    "name": "Mathias current-state processable subset",
+    "name": "Mathias W3.1 participant roster",
     "participant_roster_inputs": 36,
-    "released_players": 35,
-    "blocked_players": 1
+    "released_players": 36,
+    "blocked_players": 0,
+    "positive_current_bundesliga_club_confirmations": 35,
+    "outside_bundesliga_confirmations": 1
   },
-  "remaining_blockers": [
-    {
-      "input_name": "Bitshiabu",
-      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
-      "blocker": "MISSING_CURRENT_CLUB_STATE_AT_AS_OF",
-      "reason": "The existing RB Leipzig historical assignment ended 2026-09-02 and the player is absent from the canonical current RB Leipzig roster used for the 2026-09-05 current-state evidence. No different current club is evidenced in the W3.1 supply used by this run. No current-state confirmation is fabricated.",
-      "required_resolution": "Provide reproducible evidence for the player's actual club at the required as_of, or formally remove/replace the participant-roster input outside the SSOT identity process."
-    }
-  ],
+  "bitshiabu": {
+    "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+    "identity_status": "IDENTITY_LEGITIMATED",
+    "season_position": "A",
+    "as_of": "2026-09-05",
+    "membership_status": "OUTSIDE_BUNDESLIGA",
+    "eligibility_effect": "NOT_CURRENTLY_BUNDESLIGA_ASSIGNABLE",
+    "fictional_club_id": null,
+    "club_valid_from": null,
+    "note": "The participant-roster membership is retained. A later return to a real Bundesliga club requires a new point-in-time/current-state confirmation for that real club; the stable player_id is reused."
+  },
+  "remaining_blockers": [],
   "separate_nonblocking_review_cases": [
     "Chema – Stuttgart season-history AUSSERDEM_EINGESETZT – REVIEW_REQUIRED",
     "Yanik Spalt – Stuttgart season-history AUSSERDEM_EINGESETZT – REVIEW_REQUIRED"
   ],
   "run_artifacts": {
-    "run_manifest": "runs/run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d/run-manifest.json",
-    "k2_result": "runs/run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d/k2-result.json",
-    "tc6_050_result": "runs/run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d/tc6-050-result.json",
-    "g3_decision": "runs/run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d/g3-decision.json"
+    "run_manifest": "pilot_data/w3_1/ssot_supply/runs/run-w3-1-outside-bundesliga-20260906T003200Z-a35d474a184a/run-manifest.json",
+    "k2_result": "pilot_data/w3_1/ssot_supply/runs/run-w3-1-outside-bundesliga-20260906T003200Z-a35d474a184a/k2-result.json",
+    "tc6_050_result": "pilot_data/w3_1/ssot_supply/runs/run-w3-1-outside-bundesliga-20260906T003200Z-a35d474a184a/tc6-050-result.json",
+    "g3_decision": "pilot_data/w3_1/ssot_supply/runs/run-w3-1-outside-bundesliga-20260906T003200Z-a35d474a184a/g3-decision.json",
+    "runtime_package": "w3_1-ssot-run-20260906-outside-bundesliga.zip"
   },
-  "assessment": "A real SSOT version, K2 execution and G3 release now exist for the 35-player processable current-state subset. Overall W3.1/Mathias supply remains NOT_READY because one of the 36 participant-roster inputs lacks a positive current-club state at the required as_of."
+  "assessment": "The complete 36-player Mathias W3.1 SSOT supply is released. Thirty-five players have positive current Bundesliga club confirmations and Bitshiabu has a separately evidenced OUTSIDE_BUNDESLIGA point-in-time state. No fictional club, no synthetic club_valid_from and no new identity were created. K2 and G3 were actually executed and are referencable."
 }
