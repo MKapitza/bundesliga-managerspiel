@@ -1,0 +1,49 @@
+{
+  "schema": "bms.canonical-kicker-club-roster",
+  "schema_version": "1.0",
+  "club": "Eintracht Frankfurt",
+  "season": "2026/27",
+  "source_reference": "https://www.kicker.de/eintracht-frankfurt/kader/bundesliga/2026-27",
+  "source_capture": {
+    "type": "USER_PROVIDED_PDF_CAPTURE",
+    "sha256": "99f9e34b08782ebeadc9710687e7b04096c39c5edf95981ce7f58143404d6f2d",
+    "byte_length": 1449044,
+    "pages": 2,
+    "captured_at": "2026-09-05T01:17:43+02:00"
+  },
+  "players": [
+    {"display_name":"Noah Atubolu","date_of_birth":"2002-05-25","season_position":"T"},
+    {"display_name":"Jens Grahl","date_of_birth":"1988-09-22","season_position":"T"},
+    {"display_name":"Kaua Santos","date_of_birth":"2003-04-11","season_position":"T"},
+    {"display_name":"Amil Siljevic","date_of_birth":"2007-01-19","season_position":"T"},
+    {"display_name":"Elias Baum","date_of_birth":"2005-10-26","season_position":"A"},
+    {"display_name":"Lilian Brassier","date_of_birth":"1999-11-02","season_position":"A"},
+    {"display_name":"Timothy Chandler","date_of_birth":"1990-03-29","season_position":"A"},
+    {"display_name":"Nnamdi Collins","date_of_birth":"2004-01-10","season_position":"A"},
+    {"display_name":"Robin Koch","date_of_birth":"1996-07-17","season_position":"A"},
+    {"display_name":"Keita Kosugi","date_of_birth":"2006-03-18","season_position":"A"},
+    {"display_name":"Jeremiaha Maluze","date_of_birth":"2004-11-11","season_position":"A"},
+    {"display_name":"Otávio","date_of_birth":"2005-11-25","season_position":"A"},
+    {"display_name":"Ayoube Amaimouni-Echghouyab","date_of_birth":"2004-11-30","season_position":"M"},
+    {"display_name":"Love Arrhov","date_of_birth":"2008-05-17","season_position":"M"},
+    {"display_name":"Noel Aseko","date_of_birth":"2005-11-22","season_position":"M"},
+    {"display_name":"Farès Chaïbi","date_of_birth":"2002-11-28","season_position":"M"},
+    {"display_name":"Ritsu Doan","date_of_birth":"1998-06-18","season_position":"M"},
+    {"display_name":"Mario Götze","date_of_birth":"1992-06-03","season_position":"M"},
+    {"display_name":"Oscar Højlund","date_of_birth":"2005-01-04","season_position":"M"},
+    {"display_name":"Ansgar Knauff","date_of_birth":"2002-01-10","season_position":"M"},
+    {"display_name":"Raphael Onyedika","date_of_birth":"2001-04-19","season_position":"M"},
+    {"display_name":"Can Uzun","date_of_birth":"2005-11-11","season_position":"M"},
+    {"display_name":"Jonathan Burkardt","date_of_birth":"2000-07-11","season_position":"S"},
+    {"display_name":"Younes Ebnoutalib","date_of_birth":"2003-09-13","season_position":"S"},
+    {"display_name":"Jessic Ngankam","date_of_birth":"2000-07-20","season_position":"S"},
+    {"display_name":"Malik Pimpong","date_of_birth":"2008-01-01","season_position":"S"}
+  ],
+  "counts": {"T":4,"A":8,"M":10,"S":4,"total":26},
+  "identity_status": "UNREVIEWED_EXCEPT_EXISTING_SSOT_IDENTITIES",
+  "notes": [
+    "Kicker seasonal position is the SSOT season-position source for this capture.",
+    "Kicker renders Fares Chaibi and Noel Aseko without diacritics; normalized identity names Farès Chaïbi and Noel Aseko are retained.",
+    "Official Eintracht Frankfurt 2026/27 squad page independently confirms the current squad identities."
+  ]
+}
