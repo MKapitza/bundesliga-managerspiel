@@ -1,8 +1,8 @@
 {
   "schema": "bms.w3-1-ssot-consolidation-status",
-  "schema_version": "0.3",
-  "consolidated_at": "2026-09-05T21:57:00+02:00",
-  "source_commit": "4ef8a3bde8e10a6ddb7de21d0cea88e83995467e",
+  "schema_version": "0.4",
+  "consolidated_at": "2026-09-05T23:07:00+02:00",
+  "source_commit": "0164871ed64eb8c2b0d702d84c41f04290f651e2",
   "branch": "ms2-w3-1-ssot-supply",
   "status": "PRE_MATERIALIZATION_NOT_READY",
   "governance_check": {
@@ -18,11 +18,23 @@
     "team_player_decision_ledgers": {"required": 18, "found": 18, "status": "COMPLETE"},
     "club_decision_coverage": {"required": 18, "found": 18, "status": "COMPLETE"}
   },
-  "open_identity_cases": [
-    {"display_name":"Kacper Potulski","scope":"CURRENT_MAINZ_ROSTER","status":"REVIEW_REQUIRED","reason":"Conflicting date of birth between supplied kicker roster PDF and official Mainz profile; no positive DEC-030 decision and no player_id."},
-    {"display_name":"Chema","scope":"STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT","status":"REVIEW_REQUIRED","reason":"Insufficient identity attributes; no ID from name alone."},
-    {"display_name":"Yanik Spalt","scope":"STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT","status":"REVIEW_REQUIRED","reason":"Insufficient identity attributes; no ID from name alone."}
-  ],
+  "identity_readiness": {
+    "current_roster_status": "COMPLETE_POSITIVE_IDENTITY_COVERAGE",
+    "potulski_resolution": {
+      "prior_status": "REVIEW_REQUIRED",
+      "current_status": "IDENTITY_LEGITIMATED",
+      "player_id": "e16fe991-2a78-44b3-87cd-0370ad733f81",
+      "legitimation_ref": "ssot-legit:03e0f9b5-35b3-40df-9232-7c1fe0da7126",
+      "evidence_artifact": "evidence-run-01/mainz-potulski-resolution-evidence-2026-09-05.json",
+      "decision_artifact": "evidence-run-01/dec030-mainz-potulski-resolution-decision-2026-09-05.json",
+      "decision_commit": "3e9551190d7e0f5e0bed718fac3d186476c3a285",
+      "note": "Contradictory DOB observations are preserved; the later positive identity decision resolves the ambiguity for DEC-030 without overwriting source observations."
+    },
+    "remaining_review_cases": [
+      {"display_name":"Chema","scope":"STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT","status":"REVIEW_REQUIRED","current_roster_blocker":false},
+      {"display_name":"Yanik Spalt","scope":"STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT","status":"REVIEW_REQUIRED","current_roster_blocker":false}
+    ]
+  },
   "post_decision_identity_gap": {
     "club": "Bayer 04 Leverkusen",
     "remaining_count": 0,
@@ -38,14 +50,15 @@
     "source_commit_pinned": "094df9797900c3452204378dcf82e7d4eddba891",
     "club_assignment_artifact": "evidence-run-01/canonical/club-assignments-kicker-full-league-2026-09-05.json",
     "position_artifact": "evidence-run-01/canonical/season-position-kicker-full-league-2026-09-05.json",
-    "manifest": "evidence-run-01/canonical/manifest.json",
-    "registration_commit": "4ef8a3bde8e10a6ddb7de21d0cea88e83995467e",
-    "scope_note": "Current-roster club membership is registered for all 18 canonical kicker rosters; historical AUSSERDEM EINGESETZT rows are excluded from current club-assignment evidence. Kicker T/A/M/S is registered for all encoded season-position rows."
+    "manifest": "evidence-run-01/canonical/manifest.json"
   },
-  "materialization_input": {
-    "artifact": "materialization-input-2026-09-05.json",
-    "status": "STALE_AND_PARTIAL_DO_NOT_EXECUTE_AS_FULL_LEAGUE_INPUT",
-    "next_required_step": "Determine treatment of current-roster REVIEW_REQUIRED case Kacper Potulski, then build a new full-league materialization input only from positive identities and registered evidence refs. Exact club assignment validity fields must be supplied from evidence or handled conservatively; roster membership alone does not establish an exact club_valid_from date."
+  "materialization_preflight": {
+    "artifact": "materialization-preflight-full-league-2026-09-05.json",
+    "commit": "0164871ed64eb8c2b0d702d84c41f04290f651e2",
+    "result": "BLOCKED_BEFORE_MATERIALIZATION_INPUT",
+    "blocking_field": "club_valid_from",
+    "reason": "The W3.1 materialization contract requires an evidenced club_valid_from for current club assignments. Full-league roster membership proves current membership at observation time but does not establish each player's exact validity start. DOC-015 prohibits invented replacement dates.",
+    "old_materialization_input": "materialization-input-2026-09-05.json remains stale and must not be executed."
   },
   "runtime_release_state": {
     "runtime_ssot_materialization": "NOT_EXECUTED_FOR_CURRENT_FULL_LEAGUE_STATE",
@@ -55,13 +68,13 @@
     "release_ref": "NOT_FOUND"
   },
   "blocking_sequence_before_materialization": [
-    "Determine treatment of Kacper Potulski in the current Mainz roster under DEC-030. Chema and Yanik Spalt remain separate season-history REVIEW_REQUIRED cases and do not receive IDs without sufficient evidence.",
-    "Build a new full-league materialization input from complete positive identities and registered evidence refs, using only evidenced assignment validity values.",
+    "Supply evidenced player-club validity starts for the current full-league materializable player set, respecting actual source precision and without defaulting to season start or roster capture time.",
+    "Generate a new full-league materialization input using only positive identities, registered evidence refs and evidenced validity values.",
     "Only then execute Runtime materialization, K2 and, if K2 passes, G3 release."
   ],
   "notes": [
-    "No new player or club identity decision was made by the evidence-registration step.",
-    "No new player_id, club_id, ssot_version_id, K2, G3 or release reference was created by the evidence-registration step.",
+    "Chema and Yanik Spalt remain separate season-history REVIEW_REQUIRED cases and receive no IDs without sufficient evidence.",
+    "No ssot_version_id, K2, G3 or release reference has been generated.",
     "Recovered and already positive DEC-030 results are not re-legitimized."
   ]
 }
