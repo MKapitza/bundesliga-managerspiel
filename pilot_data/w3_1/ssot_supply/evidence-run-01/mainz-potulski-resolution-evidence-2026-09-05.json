@@ -1,0 +1,69 @@
+{
+  "schema": "bms.w3-1-identity-conflict-resolution-evidence",
+  "schema_version": "0.1",
+  "run_id": "w3-1-mainz-potulski-resolution-20260905-01",
+  "captured_at": "2026-09-05T23:01:00+02:00",
+  "governance_basis": {
+    "DOC-REG-001": "3.8",
+    "DOC-015": "0.6",
+    "decision": "DEC-030",
+    "requirement": "REQ-SSOT-005"
+  },
+  "subject": {
+    "display_name": "Kacper Potulski",
+    "club": "1. FSV Mainz 05",
+    "kicker_season_position": "A"
+  },
+  "prior_state": {
+    "status": "REVIEW_REQUIRED",
+    "reason": "DOB conflict between the supplied kicker roster capture and the official Mainz 05 player profile.",
+    "source_ledger": "dec030-mainz-player-decisions-2026-09-05.json"
+  },
+  "observations": [
+    {
+      "source_type": "KICKER_CANONICAL_ROSTER_CAPTURE",
+      "source_reference": "canonical/kicker-roster-mainz-2026-27-full.json",
+      "observed_dob": "2007-10-18",
+      "role": "season-position and roster observation",
+      "note": "Preserved exactly as printed; not silently corrected."
+    },
+    {
+      "source_type": "OFFICIAL_CLUB_PLAYER_PROFILE",
+      "source_reference": "https://www.mainz05.de/kacper-potulski",
+      "observed_dob": "2007-07-19",
+      "observed_attributes": {"birth_place": "Danzig", "nationality": "Polen", "height": "1,95m"}
+    },
+    {
+      "source_type": "DFB_DATENCENTER_BUNDESLIGA_2026_27",
+      "source_reference": "https://datencenter.dfb.de/en/competitions/bundesliga/seasons/2026-2027/teams/1-fsv-mainz-05",
+      "observed_dob": "2007-10-19",
+      "observed_attributes": {"club": "1. FSV Mainz 05", "shirt_number": 48, "competition": "Bundesliga 2026/27"}
+    },
+    {
+      "source_type": "DFB_DATENCENTER_REGIONALLIGA_2025_26",
+      "source_reference": "https://datencenter.dfb.de/en/competitions/regional-league-southwest/seasons/2025-2026/teams/1-fsv-mainz-05-ii",
+      "observed_dob": "2007-10-19",
+      "observed_attributes": {"club": "1. FSV Mainz 05 II", "shirt_number": 14, "competition": "Regionalliga Südwest 2025/26"}
+    },
+    {
+      "source_type": "DFB_DATENCENTER_U17_2023_24",
+      "source_reference": "https://datencenter.dfb.de/en/competitions/bundesliga-south-south-west/seasons/18837/teams/1-fsv-mainz-05-u-17",
+      "observed_dob": "2007-10-19",
+      "observed_attributes": {"club": "1. FSV Mainz 05 U17", "shirt_number": 4, "competition": "U17 Bundesliga Süd/Südwest 2023/24"}
+    }
+  ],
+  "resolution": {
+    "identity_result": "UNIQUE_REAL_PERSON_CONFIRMED",
+    "resolved_identity_dob": "2007-10-19",
+    "conflict_status": "RESOLVED_FOR_IDENTITY_LEGITIMATION",
+    "rationale": "Three DFB competition-registration views spanning 2023/24, 2025/26 and 2026/27 independently expose the same Kacper Potulski / Mainz identity with DOB 2007-10-19; the current Bundesliga view also anchors shirt number 48. The Mainz profile and kicker capture remain preserved as contradictory observations. The conflict is therefore retained as source-quality evidence but no longer creates a relevant ambiguity about the real person for DEC-030 identity legitimation.",
+    "kicker_position_unchanged": "A",
+    "kicker_dob_observation_overwritten": false,
+    "official_mainz_dob_observation_overwritten": false
+  },
+  "duplicate_check": {
+    "result": "NO_APPLICABLE_EXISTING_PLAYER_ID_FOUND",
+    "scope": "Existing recovered and subsequently consolidated W3.1 decision stock on ms2-w3-1-ssot-supply before this resolution.",
+    "note": "The prior Mainz ledger contains Potulski only as REVIEW_REQUIRED and without player_id; no existing identity is reused or replaced."
+  }
+}
