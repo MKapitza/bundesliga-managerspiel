@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-09-05",
+  "assertions": [
+    "explicit as_of",
+    "no club_valid_from or valid_from generated",
+    "positive verification_status",
+    "positive release_status",
+    "conflict_status CLEAR",
+    "use restricted to exact as_of",
+    "later historical interval does not mutate confirmation"
+  ],
+  "checked_confirmations": 35,
+  "run_id": "run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d",
+  "schema": "bms.w3-1-tc6-050-result",
+  "schema_version": "0.1",
+  "ssot_version_id": "a536f758-5628-4ab0-afaa-991592540bb7",
+  "status": "PASS"
+}
