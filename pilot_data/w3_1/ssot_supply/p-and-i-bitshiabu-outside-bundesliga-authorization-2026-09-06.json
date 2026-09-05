@@ -1,0 +1,26 @@
+{
+  "schema": "bms.p-and-i-authorization",
+  "schema_version": "0.1",
+  "authorized_at": "2026-09-06T01:00:00+02:00",
+  "scope": "W3.1 SSOT / participant roster Mathias",
+  "subject": {
+    "display_name": "El Chadaille Bitshiabu",
+    "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc"
+  },
+  "authorization": "For the W3.1 reference date, a reproducibly evidenced status OUTSIDE_BUNDESLIGA may be represented without creating a fictional club, without deleting the player from the participant roster and without changing the stable player identity. A later return to one of the 18 Bundesliga clubs requires a new positive point-in-time/current-state confirmation for that real club; no new player_id is created.",
+  "internal_status_name": "OUTSIDE_BUNDESLIGA",
+  "not_authorized": [
+    "No fictional club or Joker club_id.",
+    "No synthetic club_valid_from.",
+    "No deletion/recreation of the player identity.",
+    "No claim about which club outside the Bundesliga employs the player unless separately evidenced."
+  ],
+  "governance_context": {
+    "DOC-REG-001": "3.9",
+    "DOC-014": "0.8",
+    "DOC-015": "0.7",
+    "DOC-016": "0.2",
+    "basis": ["DEC-032", "REQ-SSOT-006", "TP-06", "CTL-K2-008", "TC6-050"],
+    "note": "This is a bounded P&I-approved extension for the negative competition-scope state. No new formal DEC/REQ identifier is invented by SSOT2."
+  }
+}
