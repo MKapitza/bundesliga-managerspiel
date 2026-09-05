@@ -1,15 +1,15 @@
 {
   "schema": "bms.w3-1-ssot-consolidation-status",
-  "schema_version": "0.4",
-  "consolidated_at": "2026-09-05T23:07:00+02:00",
-  "source_commit": "0164871ed64eb8c2b0d702d84c41f04290f651e2",
+  "schema_version": "0.5",
+  "consolidated_at": "2026-09-06T01:20:00+02:00",
   "branch": "ms2-w3-1-ssot-supply",
-  "status": "PRE_MATERIALIZATION_NOT_READY",
+  "status": "SSOT_SUPPLY_NOT_READY",
   "governance_check": {
-    "DOC-REG-001": "3.8",
-    "DOC-014": "0.7",
-    "DOC-015": "0.6",
+    "DOC-REG-001": "3.9",
+    "DOC-014": "0.8",
+    "DOC-015": "0.7",
     "DOC-016": "0.2",
+    "GF-SSOT-002": "CLOSED",
     "result": "PASS"
   },
   "inventory": {
@@ -18,63 +18,44 @@
     "team_player_decision_ledgers": {"required": 18, "found": 18, "status": "COMPLETE"},
     "club_decision_coverage": {"required": 18, "found": 18, "status": "COMPLETE"}
   },
-  "identity_readiness": {
-    "current_roster_status": "COMPLETE_POSITIVE_IDENTITY_COVERAGE",
-    "potulski_resolution": {
-      "prior_status": "REVIEW_REQUIRED",
-      "current_status": "IDENTITY_LEGITIMATED",
-      "player_id": "e16fe991-2a78-44b3-87cd-0370ad733f81",
-      "legitimation_ref": "ssot-legit:03e0f9b5-35b3-40df-9232-7c1fe0da7126",
-      "evidence_artifact": "evidence-run-01/mainz-potulski-resolution-evidence-2026-09-05.json",
-      "decision_artifact": "evidence-run-01/dec030-mainz-potulski-resolution-decision-2026-09-05.json",
-      "decision_commit": "3e9551190d7e0f5e0bed718fac3d186476c3a285",
-      "note": "Contradictory DOB observations are preserved; the later positive identity decision resolves the ambiguity for DEC-030 without overwriting source observations."
-    },
-    "remaining_review_cases": [
-      {"display_name":"Chema","scope":"STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT","status":"REVIEW_REQUIRED","current_roster_blocker":false},
-      {"display_name":"Yanik Spalt","scope":"STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT","status":"REVIEW_REQUIRED","current_roster_blocker":false}
-    ]
+  "current_state_semantics": {
+    "object": "PLAYER_CLUB_STATE_CONFIRMATION",
+    "decision": "DEC-032",
+    "requirement": "REQ-SSOT-006",
+    "technical_principle": "TP-06",
+    "control": "CTL-K2-008",
+    "acceptance_case": "TC6-050",
+    "synthetic_club_valid_from": "PROHIBITED_AND_NOT_CREATED"
   },
-  "post_decision_identity_gap": {
-    "club": "Bayer 04 Leverkusen",
-    "remaining_count": 0,
-    "status": "CLOSED",
-    "artifact": "evidence-run-01/dec030-leverkusen-player-decisions-2026-09-05.json",
-    "commit": "f5c6241b827d21539d239c1eecc99ede6a80cd43"
+  "materialization": {
+    "run_id": "run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d",
+    "executed_against_commit": "febd191decf832d04b5a5cfa3fc93d602678bf02",
+    "data_as_of": "2026-09-05",
+    "participant_roster_inputs": 36,
+    "released_scope_player_count": 35,
+    "blocked_input_count": 1,
+    "ssot_version_id": "a536f758-5628-4ab0-afaa-991592540bb7",
+    "k2_result": "PASS",
+    "k2_events": 211,
+    "ctl_k2_008_passed": 35,
+    "ctl_k2_007_new_identity_count": 0,
+    "tc6_050": "PASS",
+    "g3_decision": "SSOT_RELEASED",
+    "g3_release_id": "e5f6c1a9-c460-4481-adfa-9f787d61ee0c",
+    "g3_evidence_id": "evidence:9b35c377-8e60-4619-8d82-bb43676e2bd1"
   },
-  "evidence_registration": {
-    "status": "COMPLETE_FOR_18_CANONICAL_KICKER_ROSTERS",
-    "canonical_manifest_entries": 4,
-    "full_league_club_assignment_ref": "w3-1-evidence:club-assignments:kicker-full-league:2026-09-05",
-    "full_league_position_ref": "w3-1-evidence:season-position:kicker-full-league:2026-09-05",
-    "source_commit_pinned": "094df9797900c3452204378dcf82e7d4eddba891",
-    "club_assignment_artifact": "evidence-run-01/canonical/club-assignments-kicker-full-league-2026-09-05.json",
-    "position_artifact": "evidence-run-01/canonical/season-position-kicker-full-league-2026-09-05.json",
-    "manifest": "evidence-run-01/canonical/manifest.json"
-  },
-  "materialization_preflight": {
-    "artifact": "materialization-preflight-full-league-2026-09-05.json",
-    "commit": "0164871ed64eb8c2b0d702d84c41f04290f651e2",
-    "result": "BLOCKED_BEFORE_MATERIALIZATION_INPUT",
-    "blocking_field": "club_valid_from",
-    "reason": "The W3.1 materialization contract requires an evidenced club_valid_from for current club assignments. Full-league roster membership proves current membership at observation time but does not establish each player's exact validity start. DOC-015 prohibits invented replacement dates.",
-    "old_materialization_input": "materialization-input-2026-09-05.json remains stale and must not be executed."
-  },
-  "runtime_release_state": {
-    "runtime_ssot_materialization": "NOT_EXECUTED_FOR_CURRENT_FULL_LEAGUE_STATE",
-    "ssot_version_id": "NOT_FOUND",
-    "k2": "NOT_EXECUTED",
-    "g3": "NOT_RELEASED",
-    "release_ref": "NOT_FOUND"
-  },
-  "blocking_sequence_before_materialization": [
-    "Supply evidenced player-club validity starts for the current full-league materializable player set, respecting actual source precision and without defaulting to season start or roster capture time.",
-    "Generate a new full-league materialization input using only positive identities, registered evidence refs and evidenced validity values.",
-    "Only then execute Runtime materialization, K2 and, if K2 passes, G3 release."
+  "remaining_blockers": [
+    {
+      "input_name": "Bitshiabu",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "code": "MISSING_CURRENT_CLUB_STATE_AT_AS_OF",
+      "reason": "Prior RB Leipzig assignment ended 2026-09-02; player is absent from the canonical current Leipzig roster at the W3.1 evidence state. No replacement current club is evidenced in this supply."
+    }
   ],
-  "notes": [
-    "Chema and Yanik Spalt remain separate season-history REVIEW_REQUIRED cases and receive no IDs without sufficient evidence.",
-    "No ssot_version_id, K2, G3 or release reference has been generated.",
-    "Recovered and already positive DEC-030 results are not re-legitimized."
-  ]
+  "nonblocking_review_cases": [
+    {"display_name": "Chema", "scope": "STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT", "status": "REVIEW_REQUIRED"},
+    {"display_name": "Yanik Spalt", "scope": "STUTTGART_SEASON_HISTORY_AUSSERDEM_EINGESETZT", "status": "REVIEW_REQUIRED"}
+  ],
+  "p_and_i_return": "p-and-i-return-2026-09-06.json",
+  "assessment": "GF-SSOT-002 removed the former validity-start blocker. Current-state confirmations were materially persisted and released for 35 participant-roster players without fabricating historical interval starts. Overall Mathias/W3.1 supply is not ready until the remaining Bitshiabu current-club blocker is resolved or the participant-roster scope is formally changed."
 }
