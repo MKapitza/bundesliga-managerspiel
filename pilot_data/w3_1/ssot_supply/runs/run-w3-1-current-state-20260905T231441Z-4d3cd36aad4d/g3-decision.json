@@ -1,0 +1,31 @@
+{
+  "blocked_inputs": [
+    {
+      "input_name": "Bitshiabu",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "reason": "NO_CURRENT_STATE_CONFIRMATION_AT_2026-09-05; prior RB Leipzig historical assignment ended 2026-09-02; player absent from current canonical Leipzig roster"
+    }
+  ],
+  "decision": "SSOT_RELEASED",
+  "derivation": {
+    "all_required_heads_passed": true,
+    "current_state_confirmations_released": true,
+    "no_synthetic_club_valid_from": true,
+    "ssot_state_processable": true,
+    "tc6_050_passed": true
+  },
+  "released_scope_player_count": 35,
+  "required_control_ids": [
+    "CTL-K2-002",
+    "CTL-K2-003",
+    "CTL-K2-004",
+    "CTL-K2-005",
+    "CTL-K2-006",
+    "CTL-K2-008",
+    "CTL-K2-007"
+  ],
+  "schema": "bms.w2-c3-g3-decision",
+  "schema_version": "0.1",
+  "specification_manifest_sha256": "0683b5d3c0a38094cb7bfe9e214c6ecde9ba2eb5a6213a7cd4673d2d9ca30282",
+  "ssot_version_id": "a536f758-5628-4ab0-afaa-991592540bb7"
+}
