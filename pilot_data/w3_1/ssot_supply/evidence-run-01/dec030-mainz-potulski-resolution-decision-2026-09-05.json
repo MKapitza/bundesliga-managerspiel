@@ -1,0 +1,43 @@
+{
+  "schema": "bms.w3-1-dec030-player-decision-ledger",
+  "schema_version": "0.1",
+  "run_id": "w3-1-mainz-potulski-resolution-20260905-01",
+  "decided_at": "2026-09-05T23:04:00+02:00",
+  "authorized_by": "SSOT-Fachprüfung / Fach-Chat Erstellung SSOT 2",
+  "governance_basis": {
+    "DOC-REG-001": "3.8",
+    "DOC-015": "0.6",
+    "decision": "DEC-030",
+    "requirement": "REQ-SSOT-005",
+    "acceptance_case": "TC6-048"
+  },
+  "supersedes_review_case_only": {
+    "source_artifact": "dec030-mainz-player-decisions-2026-09-05.json",
+    "display_name": "Kacper Potulski",
+    "prior_status": "REVIEW_REQUIRED",
+    "note": "The original source observations and original review decision are preserved; this artifact records the later conflict-resolution decision only."
+  },
+  "evidence_basis": [
+    "mainz-potulski-resolution-evidence-2026-09-05.json",
+    "mainz-full-identity-evidence-2026-09-05.json",
+    "canonical/kicker-roster-mainz-2026-27-full.json"
+  ],
+  "existing_identity_check": {
+    "result": "NO_APPLICABLE_EXISTING_PLAYER_ID_FOUND",
+    "scope": "Recovered and subsequently consolidated W3.1 player decision stock before this decision",
+    "note": "The existing Mainz ledger contains Potulski only as REVIEW_REQUIRED and without player_id."
+  },
+  "decision": {
+    "display_name": "Kacper Potulski",
+    "decision_status": "IDENTITY_LEGITIMATED",
+    "player_id": "e16fe991-2a78-44b3-87cd-0370ad733f81",
+    "legitimation_ref": "ssot-legit:03e0f9b5-35b3-40df-9232-7c1fe0da7126",
+    "duplicate_check": "CLEAR",
+    "evidence_result": "SUFFICIENT_AFTER_CONFLICT_RESOLUTION",
+    "resolved_identity_dob": "2007-10-19",
+    "season_position": "A",
+    "club_id": "32d37292-0b2b-462e-a536-fa9fbe6d28ae"
+  },
+  "decision_rationale": "The earlier DOB discrepancy no longer creates a relevant ambiguity about the real person. Three DFB competition-registration views across 2023/24, 2025/26 and 2026/27 consistently identify Kacper Potulski in the Mainz club structure with DOB 2007-10-19; the current Bundesliga registration also anchors shirt number 48. The contradictory kicker and Mainz-profile DOB observations remain preserved and are not silently corrected. The stable player_id and legitimation_ref are technical consequences of this positive DEC-030 decision.",
+  "runtime_note": "Fach decision only. Runtime identity persistence, SSOT versioning, K2 and G3 not executed."
+}
