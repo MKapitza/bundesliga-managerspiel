@@ -1,0 +1,32 @@
+{
+  "schema": "bms.w3-1-ssot-run-manifest",
+  "schema_version": "0.3",
+  "run_id": "run-w3-1-outside-bundesliga-20260906T003200Z-a35d474a184a",
+  "run_at": "2026-09-06T00:32:00Z",
+  "data_as_of": "2026-09-05",
+  "execution_status": "SUCCEEDED",
+  "source_predecessor_ssot_version_id": "a536f758-5628-4ab0-afaa-991592540bb7",
+  "specifications": {"DOC-REG-001":"3.9","DOC-014":"0.8","DOC-015":"0.7","DOC-016":"0.2"},
+  "ssot_version_id": "7a07172b-4c3b-40cd-a182-c7a5fd85e645",
+  "k2_result": "PASS",
+  "k2_event_count": 217,
+  "ctl_k2_008_passed": 36,
+  "ctl_k2_007_new_identity_count": 0,
+  "tc6_050": "PASS",
+  "g3_decision": "SSOT_RELEASED",
+  "g3_release_id": "fb5ff50f-7d80-454e-b3de-40dc188c94ab",
+  "g3_evidence_id": "evidence:e8dcccf2-4580-4751-821b-22cfcc11413a",
+  "released_scope_player_count": 36,
+  "blocked_inputs": [],
+  "outside_bundesliga_player_count": 1,
+  "runtime_verification": {
+    "ssot_version_rows": 1,
+    "positive_club_confirmation_rows": 35,
+    "outside_bundesliga_confirmation_rows": 1,
+    "k2_rows": 217,
+    "k2_failed": 0,
+    "ctl_k2_008_passed": 36,
+    "g3_release_rows": 1
+  },
+  "runtime_package": "w3_1-ssot-run-20260906-outside-bundesliga.zip"
+}
