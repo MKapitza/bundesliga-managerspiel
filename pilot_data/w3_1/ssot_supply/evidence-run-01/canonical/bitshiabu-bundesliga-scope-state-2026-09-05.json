@@ -1,0 +1,25 @@
+{
+  "schema": "bms.w3-1-bundesliga-scope-state-evidence",
+  "schema_version": "0.1",
+  "evidence_ref": "w3-1-evidence:bundesliga-scope-state:bitshiabu:2026-09-05",
+  "player": {
+    "display_name": "El Chadaille Bitshiabu",
+    "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc"
+  },
+  "as_of": "2026-09-05",
+  "membership_status": "OUTSIDE_BUNDESLIGA",
+  "representation_status": "CONFIRMED",
+  "basis": [
+    "w3-1-evidence:club-assignments:kicker-full-league:2026-09-05",
+    "pilot_data/w3_1/ssot_supply/evidence-run-01/canonical/club-assignments-2026-09-05.json",
+    "pilot_data/w3_1/ssot_supply/evidence-run-01/canonical/kicker-roster-leipzig-2026-27-full.json",
+    "pilot_data/w3_1/ssot_supply/p-and-i-bitshiabu-outside-bundesliga-authorization-2026-09-06.json"
+  ],
+  "finding": "For the W3.1 reference date, Bitshiabu is not assigned to any of the 18 Bundesliga clubs. The previously evidenced RB Leipzig interval ends on 2026-09-02, and the canonical current Leipzig roster capture does not list him. P&I explicitly confirmed that he is outside the 18-club Bundesliga scope at the reference date.",
+  "scope_semantics": "This evidence asserts only competition-scope membership status at the stated as_of date. It does not identify or infer any non-Bundesliga club, does not create a fictional club, and does not create a historical club_valid_from.",
+  "verification_status": "CONFIRMED",
+  "release_status": "RELEASED",
+  "conflict_status": "CLEAR",
+  "source_reference": "18-club canonical kicker roster set pinned by w3-1-evidence:club-assignments:kicker-full-league:2026-09-05 plus P&I authorization",
+  "observed_at": "2026-09-06T01:00:00+02:00"
+}
