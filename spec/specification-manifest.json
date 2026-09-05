@@ -1,14 +1,14 @@
 {
   "schema": "bms.specification-manifest",
   "schema_version": "1.0",
-  "created_at": "2026-08-17T13:40:26Z",
+  "created_at": "2026-09-06T00:10:00Z",
   "requires_explicit_update_on_document_register_change": true,
-  "document_register_update_note": "If DOC-REG-001 changes, review the new register first and update this manifest deliberately before using changed specification versions.",
+  "document_register_update_note": "DOC-REG-001 3.9 verified before W3.1 continuation after GF-SSOT-002. DEC-032 / REQ-SSOT-006 and PLAYER_CLUB_STATE_CONFIRMATION are binding; no synthetic club_valid_from may be introduced.",
   "specifications": {
-    "DOC-REG-001": "3.8",
+    "DOC-REG-001": "3.9",
     "DOC-013": "0.1",
-    "DOC-014": "0.7",
-    "DOC-015": "0.6",
+    "DOC-014": "0.8",
+    "DOC-015": "0.7",
     "DOC-016": "0.2"
   }
 }
