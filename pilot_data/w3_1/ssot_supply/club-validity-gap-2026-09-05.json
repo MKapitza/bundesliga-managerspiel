@@ -1,0 +1,90 @@
+{
+  "schema": "bms.w3-1-club-validity-gap",
+  "schema_version": "0.1",
+  "checked_at": "2026-09-05T23:10:00+02:00",
+  "branch": "ms2-w3-1-ssot-supply",
+  "source_commit": "664122f4e1a487605179dfa08d30e111ba06649f",
+  "status": "P_AND_I_DECISION_REQUIRED",
+  "governance": {
+    "DOC-REG-001": "3.8",
+    "DOC-014": "0.7",
+    "DOC-015": "0.6",
+    "DOC-016": "0.2"
+  },
+  "current_roster_scope": {
+    "clubs": 18,
+    "players": 511,
+    "counts_by_club": {
+      "FC Augsburg": 28,
+      "FC Bayern München": 24,
+      "SV Werder Bremen": 32,
+      "Borussia Dortmund": 30,
+      "SV Elversberg": 27,
+      "Eintracht Frankfurt": 26,
+      "SC Freiburg": 27,
+      "Borussia Mönchengladbach": 30,
+      "Hamburger SV": 27,
+      "TSG Hoffenheim": 27,
+      "1. FC Köln": 29,
+      "RB Leipzig": 30,
+      "Bayer 04 Leverkusen": 27,
+      "1. FSV Mainz 05": 27,
+      "SC Paderborn 07": 32,
+      "FC Schalke 04": 28,
+      "VfB Stuttgart": 30,
+      "1. FC Union Berlin": 30
+    },
+    "also_used_rows_excluded_from_current_assignment_scope": true
+  },
+  "existing_evidenced_validity_coverage": {
+    "artifact": "evidence-run-01/canonical/club-assignments-2026-09-05.json",
+    "registered_evidence_ref": "w3-1-evidence:club-assignments:2026-09-05",
+    "assignments_in_artifact": 36,
+    "current_processable_assignments": 35,
+    "historical_or_ended_assignment": {
+      "player": "El Chadaille Bitshiabu",
+      "valid_to": "2026-09-02",
+      "current_bundesliga_assignment": false
+    },
+    "note": "These values are retained from the already-confirmed canonical manual web evidence record. No new validity date is inferred here."
+  },
+  "gap": {
+    "current_roster_players_without_registered_exact_club_valid_from_in_the_inspected_materialization_supply": 476,
+    "calculation": "511 current-roster players minus 35 current assignments already covered by the canonical club-assignment evidence record",
+    "important_scope_note": "This figure describes registered/materialization-ready validity coverage in the inspected W3.1 supply. It does not claim that no exact date exists anywhere on the web or in an uninspected external system."
+  },
+  "blocking_rules": [
+    "DOC-015 defines player-club assignment validity fields as critical where required for the currently valid assignment; missing values receive no replacement value and block the affected player/period.",
+    "DEC-015 / REQ-SSOT-003 prohibit inventing replacement values for missing binding SSOT master data.",
+    "bms/w3_1_ssot.py requires club_valid_from to construct a confirmed current player_club_assignment and reach SSOT_PROCESSABLE."
+  ],
+  "prohibited_shortcuts": [
+    "Do not default unknown club_valid_from to season start 2026-08-28.",
+    "Do not use roster capture date as a proxy for the real assignment start.",
+    "Do not infer validity boundaries from names or roster membership alone."
+  ],
+  "p_and_i_options": [
+    {
+      "option": "A",
+      "title": "Source exact validity boundaries",
+      "description": "Commission evidence acquisition for the missing current-roster club_valid_from values and persist each value with reproducible source reference and source precision before full-league materialization."
+    },
+    {
+      "option": "B",
+      "title": "Approve a model/technical precision extension",
+      "description": "Introduce an explicitly governed distinction between real-world assignment start and point-in-time confirmed current membership (for example observed_valid_at / boundary_precision). This requires a governance/domain-model decision and corresponding code/test change; it must not silently reinterpret existing valid_from semantics."
+    },
+    {
+      "option": "C",
+      "title": "Narrow materialization scope",
+      "description": "Materialize only the subset with fully evidenced assignment validity and keep all other current-roster players SSOT_BLOCKED. This would not satisfy a full-league ready state and therefore needs explicit pilot-scope approval."
+    }
+  ],
+  "recommended_p_and_i_question": "Does W3.1 require historically exact club_valid_from for every current roster player, or may a separately modelled point-in-time confirmed-membership interval satisfy current-assignment processability without fabricating the true assignment start?",
+  "runtime_state": {
+    "full_league_materialization": "NOT_EXECUTED",
+    "ssot_version_id": "NOT_CREATED",
+    "k2": "NOT_EXECUTED",
+    "g3": "NOT_RELEASED"
+  }
+}
