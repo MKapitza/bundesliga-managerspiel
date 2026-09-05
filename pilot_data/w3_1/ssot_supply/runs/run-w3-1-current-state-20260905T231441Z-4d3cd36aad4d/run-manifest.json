@@ -1,0 +1,44 @@
+{
+  "blocked_inputs": [
+    {
+      "input_name": "Bitshiabu",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "reason": "NO_CURRENT_STATE_CONFIRMATION_AT_2026-09-05; prior RB Leipzig historical assignment ended 2026-09-02; player absent from current canonical Leipzig roster"
+    }
+  ],
+  "ctl_k2_007_new_identity_count": 0,
+  "ctl_k2_008_passed": 35,
+  "data_as_of": "2026-09-05",
+  "execution_status": "SUCCEEDED",
+  "g3_decision": "SSOT_RELEASED",
+  "g3_evidence_id": "evidence:9b35c377-8e60-4619-8d82-bb43676e2bd1",
+  "g3_release_id": "e5f6c1a9-c460-4481-adfa-9f787d61ee0c",
+  "git_commit": "febd191decf832d04b5a5cfa3fc93d602678bf02",
+  "k2_event_count": 211,
+  "k2_result": "PASS",
+  "released_scope_player_count": 35,
+  "run_at": "2026-09-05T23:14:41Z",
+  "run_id": "run-w3-1-current-state-20260905T231441Z-4d3cd36aad4d",
+  "runtime_verification": {
+    "confirmation_rows": 35,
+    "ctl_k2_007_rows": 1,
+    "ctl_k2_008_passed": 35,
+    "g3_release_id": "e5f6c1a9-c460-4481-adfa-9f787d61ee0c",
+    "g3_release_rows": 1,
+    "k2_failed": 0,
+    "k2_rows": 211,
+    "ssot_version_rows": 1
+  },
+  "schema": "bms.w3-1-ssot-run-manifest",
+  "schema_version": "0.2",
+  "source_evidence_commit": "094df9797900c3452204378dcf82e7d4eddba891",
+  "specification_manifest_sha256": "0683b5d3c0a38094cb7bfe9e214c6ecde9ba2eb5a6213a7cd4673d2d9ca30282",
+  "specifications": {
+    "DOC-014": "0.8",
+    "DOC-015": "0.7",
+    "DOC-016": "0.2",
+    "DOC-REG-001": "3.9"
+  },
+  "ssot_version_id": "a536f758-5628-4ab0-afaa-991592540bb7",
+  "tc6_050": "PASS"
+}
