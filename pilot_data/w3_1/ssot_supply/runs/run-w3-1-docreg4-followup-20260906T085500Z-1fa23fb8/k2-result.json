@@ -1,0 +1,13 @@
+{
+  "schema": "bms.w3-1-k2-result",
+  "schema_version": "0.4",
+  "result": "PASS",
+  "run_id": "run-w3-1-docreg4-followup-20260906T085500Z-1fa23fb8",
+  "ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+  "players_checked": 36,
+  "control_events": 217,
+  "failed": 0,
+  "ctl_k2_008_passed": 36,
+  "ctl_k2_007_new_identity_count": 0,
+  "tc6_051": "PASS"
+}
