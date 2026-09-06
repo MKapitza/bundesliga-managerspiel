@@ -1,0 +1,76 @@
+{
+  "schema": "bms.w3-1-ssot-governance-followup-handoff",
+  "schema_version": "0.1",
+  "status": "SSOT_SUPPLY_READY",
+  "governance": {
+    "DOC-REG-001": "4.0",
+    "DOC-014": "0.9",
+    "DOC-015": "0.8",
+    "DOC-016": "0.2",
+    "decision": "DEC-033",
+    "requirement": "REQ-SSOT-007",
+    "technical_principle": "TP-07",
+    "acceptance_case_ssot_k2": "TC6-051",
+    "bitshiabu_k2_controls": ["CTL-K2-003", "CTL-K2-006", "CTL-K2-008"]
+  },
+  "repository": {
+    "repository": "MKapitza/bundesliga-managerspiel",
+    "branch": "ms2-w3-1-ssot-docreg4-followup",
+    "tag": null,
+    "execution_commit": "1fa23fb8e0bf6a1d598eed64439d66deab84cb96",
+    "run_artifact_commit": "256081452e34f4f75dcf00d84ee7b638c694cfe7"
+  },
+  "specification_manifest": {
+    "path": "spec/specification-manifest.json",
+    "sha256": "79093f0964f72c0d581a4552a87595fa78609d78a0d29be5bc120f8e6f49d5bf",
+    "included_in_handoff_package_as": "specification-manifest.json"
+  },
+  "run": {
+    "run_id": "run-w3-1-docreg4-followup-20260906T085500Z-1fa23fb8",
+    "data_as_of": "2026-09-05",
+    "predecessor_ssot_version_id": "7a07172b-4c3b-40cd-a182-c7a5fd85e645",
+    "ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+    "k2_result": "PASS",
+    "k2_event_count": 217,
+    "k2_failed": 0,
+    "g3_decision": "SSOT_RELEASED",
+    "g3_release_id": "dfc7b755-9269-489e-9ad4-d36db6c8867b",
+    "g3_evidence_id": "evidence:586f985b-a637-4f1b-811e-eb304fd1f4bc"
+  },
+  "bitshiabu": {
+    "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+    "as_of": "2026-09-05",
+    "state": "OUTSIDE_BUNDESLIGA",
+    "verification_status": "CONFIRMED",
+    "release_status": "RELEASED",
+    "conflict_status": "CLEAR",
+    "ssot_status": "SSOT_PROCESSABLE",
+    "evidence_ref": "w3-1-evidence:bundesliga-scope-state:bitshiabu:2026-09-05",
+    "evidence_handoff_artifact": "bitshiabu-governance-followup-evidence.json",
+    "authorization_refs": [
+      "pilot_data/w3_1/ssot_supply/p-and-i-bitshiabu-outside-bundesliga-authorization-2026-09-06.json",
+      "pilot_data/w3_1/ssot_supply/bitshiabu-governance-followup-authorization-2026-09-06.json"
+    ],
+    "authorization_handoff_artifacts": [
+      "p-and-i-bitshiabu-outside-bundesliga-authorization-2026-09-06.json",
+      "bitshiabu-governance-followup-authorization-2026-09-06.json"
+    ],
+    "assertions": {
+      "positive_club_state_same_as_of": false,
+      "dummy_club": false,
+      "synthetic_valid_from_or_exit_date": false,
+      "artificial_match_or_lock": false,
+      "CTL-K2-003": "PASS",
+      "CTL-K2-006": "PASS",
+      "CTL-K2-008": "PASS",
+      "TC6-051_SSOT_K2": "PASS"
+    }
+  },
+  "history": {
+    "historical_run_preserved": true,
+    "historical_ssot_version_preserved": true,
+    "previous_ready_ssot_version_id": "7a07172b-4c3b-40cd-a182-c7a5fd85e645",
+    "new_run_appends_new_ssot_version": true
+  },
+  "blockers": []
+}
