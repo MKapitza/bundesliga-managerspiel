@@ -1,0 +1,28 @@
+{
+  "schema": "bms.w2-c3-g3-decision",
+  "schema_version": "0.2",
+  "decision": "SSOT_RELEASED",
+  "ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+  "specification_manifest_sha256": "79093f0964f72c0d581a4552a87595fa78609d78a0d29be5bc120f8e6f49d5bf",
+  "required_control_ids": [
+    "CTL-K2-002",
+    "CTL-K2-003",
+    "CTL-K2-004",
+    "CTL-K2-005",
+    "CTL-K2-006",
+    "CTL-K2-008",
+    "CTL-K2-007"
+  ],
+  "derivation": {
+    "all_required_heads_passed": true,
+    "tc6_051_passed": true,
+    "outside_bundesliga_state_released": true,
+    "no_positive_club_state_collision": true,
+    "no_dummy_club": true,
+    "no_synthetic_valid_from_or_exit_date": true,
+    "no_artificial_match_or_lock": true,
+    "ssot_state_processable": true
+  },
+  "released_scope_player_count": 36,
+  "blocked_inputs": []
+}
