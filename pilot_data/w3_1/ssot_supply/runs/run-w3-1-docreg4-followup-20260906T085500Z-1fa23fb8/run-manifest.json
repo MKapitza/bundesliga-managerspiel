@@ -1,0 +1,35 @@
+{
+  "schema": "bms.w3-1-ssot-run-manifest",
+  "schema_version": "0.4",
+  "run_id": "run-w3-1-docreg4-followup-20260906T085500Z-1fa23fb8",
+  "run_at": "2026-09-06T08:55:00Z",
+  "execution_status": "SUCCEEDED",
+  "branch": "ms2-w3-1-ssot-docreg4-followup",
+  "executed_against_commit": "1fa23fb8e0bf6a1d598eed64439d66deab84cb96",
+  "specification_manifest_path": "spec/specification-manifest.json",
+  "specification_manifest_sha256": "79093f0964f72c0d581a4552a87595fa78609d78a0d29be5bc120f8e6f49d5bf",
+  "specifications": {
+    "DOC-REG-001": "4.0",
+    "DOC-014": "0.9",
+    "DOC-015": "0.8",
+    "DOC-016": "0.2"
+  },
+  "source_predecessor_ssot_version_id": "7a07172b-4c3b-40cd-a182-c7a5fd85e645",
+  "ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+  "released_scope_player_count": 36,
+  "outside_bundesliga_player_count": 1,
+  "k2_result": "PASS",
+  "k2_event_count": 217,
+  "ctl_k2_008_passed": 36,
+  "ctl_k2_007_new_identity_count": 0,
+  "tc6_051": "PASS",
+  "g3_decision": "SSOT_RELEASED",
+  "g3_release_id": "dfc7b755-9269-489e-9ad4-d36db6c8867b",
+  "g3_evidence_id": "evidence:586f985b-a637-4f1b-811e-eb304fd1f4bc",
+  "bitshiabu_evidence_ref": "w3-1-evidence:bundesliga-scope-state:bitshiabu:2026-09-05",
+  "bitshiabu_authorization_refs": [
+    "pilot_data/w3_1/ssot_supply/p-and-i-bitshiabu-outside-bundesliga-authorization-2026-09-06.json",
+    "pilot_data/w3_1/ssot_supply/bitshiabu-governance-followup-authorization-2026-09-06.json"
+  ],
+  "historical_ssot_versions_preserved": true
+}
