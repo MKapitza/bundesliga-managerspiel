@@ -1,0 +1,42 @@
+{
+  "schema": "bms.p-and-i-governance-followup-authorization",
+  "schema_version": "0.1",
+  "authorized_at": "2026-09-06T10:51:00+02:00",
+  "scope": "W3.1 SSOT / participant roster Mathias / governance follow-up only",
+  "subject": {
+    "display_name": "El Chadaille Bitshiabu",
+    "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc"
+  },
+  "decision_reuse": {
+    "fachliche_abnahme": "REUSE_UNCHANGED",
+    "identity": "REUSE_UNCHANGED",
+    "bundesliga_state": "OUTSIDE_BUNDESLIGA",
+    "as_of": "2026-09-05",
+    "prior_authorization_ref": "pilot_data/w3_1/ssot_supply/p-and-i-bitshiabu-outside-bundesliga-authorization-2026-09-06.json",
+    "prior_evidence_ref": "w3-1-evidence:bundesliga-scope-state:bitshiabu:2026-09-05"
+  },
+  "binding_governance": {
+    "DOC-REG-001": "4.0",
+    "DOC-014": "0.9",
+    "DOC-015": "0.8",
+    "DOC-016": "0.2",
+    "decision": "DEC-033",
+    "requirement": "REQ-SSOT-007",
+    "technical_principle": "TP-07",
+    "acceptance_case": "TC6-051",
+    "k2_controls": ["CTL-K2-003", "CTL-K2-006", "CTL-K2-008"]
+  },
+  "required_assertions": {
+    "player_id_unchanged": true,
+    "membership_status": "OUTSIDE_BUNDESLIGA",
+    "verification_status": "CONFIRMED",
+    "release_status": "RELEASED",
+    "conflict_status": "CLEAR",
+    "ssot_status": "SSOT_PROCESSABLE",
+    "positive_club_state_same_as_of": false,
+    "dummy_club": false,
+    "synthetic_valid_from_or_exit_date": false,
+    "artificial_match_or_lock": false
+  },
+  "note": "No player, club or current-state decision is newly determined. This artifact only binds the already accepted Bitshiabu state to DOC-REG-001 4.0 / DEC-033 / REQ-SSOT-007 for the reproducible follow-up run."
+}
