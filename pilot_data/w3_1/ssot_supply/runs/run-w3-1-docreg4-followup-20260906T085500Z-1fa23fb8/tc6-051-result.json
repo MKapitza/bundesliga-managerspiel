@@ -1,0 +1,24 @@
+{
+  "schema": "bms.w3-1-tc6-051-result",
+  "schema_version": "0.1",
+  "status": "PASS",
+  "run_id": "run-w3-1-docreg4-followup-20260906T085500Z-1fa23fb8",
+  "ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+  "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+  "as_of": "2026-09-05",
+  "membership_status": "OUTSIDE_BUNDESLIGA",
+  "verification_status": "CONFIRMED",
+  "release_status": "RELEASED",
+  "conflict_status": "CLEAR",
+  "ssot_status": "SSOT_PROCESSABLE",
+  "positive_club_state_same_as_of": false,
+  "dummy_club": false,
+  "synthetic_valid_from_or_exit_date": false,
+  "artificial_match_or_lock": false,
+  "controls": {
+    "CTL-K2-003": "PASS",
+    "CTL-K2-006": "PASS",
+    "CTL-K2-008": "PASS"
+  },
+  "governance": ["DEC-033", "REQ-SSOT-007", "TP-07"]
+}
