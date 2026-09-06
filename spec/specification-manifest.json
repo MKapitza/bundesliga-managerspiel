@@ -1,14 +1,14 @@
 {
   "schema": "bms.specification-manifest",
   "schema_version": "1.0",
-  "created_at": "2026-09-06T00:10:00Z",
+  "created_at": "2026-09-06T08:55:00Z",
   "requires_explicit_update_on_document_register_change": true,
-  "document_register_update_note": "DOC-REG-001 3.9 verified before W3.1 continuation after GF-SSOT-002. DEC-032 / REQ-SSOT-006 and PLAYER_CLUB_STATE_CONFIRMATION are binding; no synthetic club_valid_from may be introduced.",
+  "document_register_update_note": "DOC-REG-001 4.0 verified before W3.1 SSOT governance follow-up. DOC-014 0.9, DOC-015 0.8 and DOC-016 0.2 are binding. DEC-033 / REQ-SSOT-007, PLAYER_BUNDESLIGA_STATE_CONFIRMATION, TP-07 and TC6-051 govern the negative Bundesliga point-in-time state; no dummy club, synthetic interval boundary or artificial match/lock may be introduced.",
   "specifications": {
-    "DOC-REG-001": "3.9",
+    "DOC-REG-001": "4.0",
     "DOC-013": "0.1",
-    "DOC-014": "0.8",
-    "DOC-015": "0.7",
+    "DOC-014": "0.9",
+    "DOC-015": "0.8",
     "DOC-016": "0.2"
   }
 }
