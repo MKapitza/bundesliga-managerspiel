@@ -1,0 +1,86 @@
+{
+  "schema": "bms.w3-2-comparison-ssot-qc",
+  "schema_version": "0.1",
+  "data_as_of": "2026-09-09",
+  "source_reference": "w3-2-comparison-rosters-20260909-v0.3 / Kader andere Teilnehmer_Original_27-08-2026.xlsx",
+  "mapping_reference": "pilot_data/w3_2/comparison_ssot/comparison-ssot-mapping-233-2026-09-09.csv",
+  "governance_basis": {
+    "DOC-REG-001": "4.0",
+    "DOC-013": "0.1",
+    "DOC-014": "0.9",
+    "DOC-015": "0.8",
+    "DOC-016": "0.2"
+  },
+  "expected_scope": {
+    "regular_base_rows": 230,
+    "active_options": [
+      "Fábio Vieira",
+      "Guéla Doué",
+      "Mikey Moore"
+    ],
+    "non_active_options": [
+      "Amoura",
+      "Gakpo",
+      "Hector Fort",
+      "Kehrer",
+      "Mahmic",
+      "Mbaye",
+      "Regula",
+      "Sancho",
+      "Tresoldi",
+      "Woltemade"
+    ],
+    "final_regular_rows": 233,
+    "participant_counts": {
+      "Tim": 44,
+      "Carsten": 64,
+      "Florian": 89,
+      "Uwe": 36
+    }
+  },
+  "observed": {
+    "total_rows": 233,
+    "participant_counts": {
+      "Tim": 44,
+      "Carsten": 64,
+      "Florian": 89,
+      "Uwe": 36
+    },
+    "seasonal_ssot_positions": [
+      "A",
+      "M",
+      "S",
+      "T"
+    ],
+    "mapping_status_values": [
+      "PASS"
+    ],
+    "bundesliga_membership_states": [
+      "CURRENT_BUNDESLIGA_CLUB",
+      "OUTSIDE_BUNDESLIGA"
+    ],
+    "active_option_presence": {
+      "Fábio Vieira": true,
+      "Guéla Doué": true,
+      "Mikey Moore": true
+    },
+    "non_active_options_present": []
+  },
+  "duplicate_check": {
+    "within_participant_duplicates": [],
+    "across_participant_multiple_assignments": [],
+    "interpretation": "Across-participant reuse of one stable player_id is allowed and explicitly reported; within-participant duplicate player_id would block readiness."
+  },
+  "required_field_gaps": [],
+  "checks": {
+    "total_rows_233": true,
+    "participant_counts_match_source": true,
+    "all_mapping_status_pass": true,
+    "required_fields_complete": true,
+    "active_options_present": true,
+    "non_active_options_absent": true,
+    "no_within_participant_player_id_duplicates": true,
+    "positions_within_TAMS": true
+  },
+  "result": "COMPARISON_SSOT_MAPPING_READY"
+}
