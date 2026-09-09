@@ -1,0 +1,17 @@
+{
+  "schema": "bms.w3-2-existing-decision-index",
+  "schema_version": "0.1",
+  "purpose": "Reproducibility bridge only; no new identity decision.",
+  "source_commit": "3e9551190d7e0f5e0bed718fac3d186476c3a285",
+  "source_artifact": "pilot_data/w3_1/ssot_supply/evidence-run-01/dec030-mainz-potulski-resolution-decision-2026-09-05.json",
+  "decision": {
+    "display_name": "Kacper Potulski",
+    "decision_status": "IDENTITY_LEGITIMATED",
+    "player_id": "e16fe991-2a78-44b3-87cd-0370ad733f81",
+    "legitimation_ref": "ssot-legit:03e0f9b5-35b3-40df-9232-7c1fe0da7126",
+    "season_position": "A",
+    "club_id": "32d37292-0b2b-462e-a536-fa9fbe6d28ae",
+    "duplicate_check": "CLEAR",
+    "evidence_result": "SUFFICIENT_AFTER_CONFLICT_RESOLUTION"
+  }
+}
