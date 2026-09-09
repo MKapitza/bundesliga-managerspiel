@@ -108,7 +108,7 @@ for r in rows:
   unresolved.append({'participant':r['participant'],'source_name':r['source_name'],'reason':'IDENTITY_NOT_FOUND_AFTER_ALIAS_AND_DEC_LEDGER_LOOKUP'}); continue
 
  resid=res_by_name.get(norm(identity['display_name'])) or res_by_name.get(k)
- candidates=roster_by_name.get(norm(identity['display_name']),[])+roster_by_name.get(k,[])
+ candidates=roster_by_name.get(norm(identity['display_name']),[])+roster_by_name.get(k,[])+roster_by_name.get(norm(r['source_name']),[])
  # dedupe candidates
  seen=set(); candidates=[x for x in candidates if not (tuple(x.items()) in seen or seen.add(tuple(x.items())))]
  current=[x for x in candidates if x['is_current']]
