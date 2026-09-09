@@ -1,0 +1,32 @@
+name: W3.2 comparison SSOT QC
+
+on:
+  push:
+    branches:
+      - ms2-w3-2-comparison-ssot
+    paths:
+      - 'scripts/w3_2_qc_comparison_ssot.py'
+      - 'pilot_data/w3_2/comparison_ssot/comparison-ssot-mapping-233-2026-09-09.csv'
+      - '.github/workflows/w3-2-qc-comparison-ssot.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  qc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run SSOT QC
+        run: python scripts/w3_2_qc_comparison_ssot.py
+      - name: Persist QC report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pilot_data/w3_2/comparison_ssot/comparison-ssot-qc-2026-09-09.json
+          if git diff --cached --quiet; then
+            echo "No QC changes"
+          else
+            git commit -m "W3.2: persist comparison SSOT QC [skip ci]"
+            git push
+          fi
