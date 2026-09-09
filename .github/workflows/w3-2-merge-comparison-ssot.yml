@@ -1,0 +1,31 @@
+name: W3.2 comparison SSOT merge
+
+on:
+  push:
+    branches:
+      - ms2-w3-2-comparison-ssot
+    paths-ignore:
+      - 'pilot_data/w3_2/comparison_ssot/comparison-ssot-mapping-233-2026-09-09.json'
+      - 'pilot_data/w3_2/comparison_ssot/comparison-ssot-mapping-233-2026-09-09.csv'
+
+permissions:
+  contents: write
+
+jobs:
+  build-mapping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build 233-row mapping
+        run: python scripts/w3_2_merge_comparison_ssot.py
+      - name: Commit generated mapping
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pilot_data/w3_2/comparison_ssot/comparison-ssot-mapping-233-2026-09-09.json pilot_data/w3_2/comparison_ssot/comparison-ssot-mapping-233-2026-09-09.csv
+          if git diff --cached --quiet; then
+            echo "No mapping changes"
+          else
+            git commit -m "W3.2: persist 233-row comparison SSOT mapping [skip ci]"
+            git push
+          fi
