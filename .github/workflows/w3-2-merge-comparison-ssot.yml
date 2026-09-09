@@ -16,13 +16,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Apply deterministic canonical short-name lookup fix
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('scripts/w3_2_merge_comparison_ssot.py')
+          s=p.read_text(encoding='utf-8')
+          old="candidates=roster_by_name.get(norm(identity['display_name']),[])+roster_by_name.get(k,[])"
+          new="candidates=roster_by_name.get(norm(identity['display_name']),[])+roster_by_name.get(k,[])+roster_by_name.get(norm(r['source_name']),[])"
+          if old in s:
+              s=s.replace(old,new)
+              p.write_text(s,encoding='utf-8')
+          elif new not in s:
+              raise SystemExit('Expected candidate lookup line not found')
+          PY
       - name: Build 233-row mapping
         run: python scripts/w3_2_merge_comparison_ssot.py
-      - name: Commit generated mapping
+      - name: Commit generated mapping and deterministic script fix
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pilot_data/w3_2/comparison_ssot/comparison-ssot-mapping-233-2026-09-09.json pilot_data/w3_2/comparison_ssot/comparison-ssot-mapping-233-2026-09-09.csv
+          git add scripts/w3_2_merge_comparison_ssot.py pilot_data/w3_2/comparison_ssot/comparison-ssot-mapping-233-2026-09-09.json pilot_data/w3_2/comparison_ssot/comparison-ssot-mapping-233-2026-09-09.csv
           if git diff --cached --quiet; then
             echo "No mapping changes"
           else
