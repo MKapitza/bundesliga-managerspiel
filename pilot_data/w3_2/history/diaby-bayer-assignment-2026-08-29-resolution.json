@@ -1,0 +1,63 @@
+{
+  "schema": "bms.w3-2-player-club-point-state-resolution",
+  "schema_version": "0.1",
+  "status": "DIABY_HISTORY_WINDOW_RESOLVED",
+  "decision": "CONFIRMED",
+  "decision_key": "DIABY_BAYER_ASSIGNMENT_2026_08_29",
+  "player": {
+    "display_name": "Moussa Diaby",
+    "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a"
+  },
+  "club": {
+    "display_name": "Bayer 04 Leverkusen",
+    "club_id": "03a4b4b3-6cf6-48c6-839b-d80b3a9069c3"
+  },
+  "as_of": "2026-08-29",
+  "evidence_date": "2026-09-13",
+  "observed_at": "2026-09-13T17:55:19Z",
+  "retrieved_at": "2026-09-13T17:55:19Z",
+  "evidence_ref": "w3-2-evidence:diaby-bayer-point-state:2026-08-29:2026-09-13",
+  "source_ref": "https://www.bayer04.de/pt-br/player/werkself/bayer-04-leverkusen/moussa-diaby",
+  "source_check_status": "PASS_AUTHORITATIVE_OFFICIAL_CLUB_PROFILE_DIRECT_HISTORICAL_DATE",
+  "source_fact": {
+    "source_asserted_club_since_date": "2026-08-28",
+    "meaning": "The official Bayer 04 player profile states that Moussa Diaby has been at Bayer 04 since 28.08.2026. Therefore the narrower point-in-time proposition for 29.08.2026 is positively established.",
+    "interval_materialized": false
+  },
+  "corroborating_source": {
+    "source_ref": "https://www.bayer04.de/de-de/news/bayer04/bayer-04-holt-stuermerstar-moussa-diaby-zurueck",
+    "published_at": "2026-09-01",
+    "use": "Identity and return-from-Al-Ittihad corroboration only. It is not used to invent or backdate club_valid_from."
+  },
+  "governance_basis": {
+    "DOC-REG-001": "4.0",
+    "DOC-014": "0.9",
+    "DOC-015": "0.8",
+    "DOC-016": "0.2",
+    "decision": "DEC-032",
+    "requirement": "REQ-SSOT-006"
+  },
+  "ssot_semantics": {
+    "statement_type": "POINT_IN_TIME_PLAYER_CLUB_CONFIRMATION",
+    "verification_status": "CONFIRMED",
+    "conflict_status": "CLEAR",
+    "valid_from": null,
+    "valid_to": null,
+    "no_interval_inference": true,
+    "no_new_player_id": true,
+    "no_new_club_id": true,
+    "ssot_materialization_executed": false,
+    "new_ssot_version_claimed": false
+  },
+  "b13_wce_01": {
+    "window_consequence": "WINDOW_ELIGIBLE",
+    "ssot_identity_consequence": "B13-WCE-01 is admissible for HIST_PROFILE window inclusion from SSOT/identity perspective because player-to-club assignment at the observation date 2026-08-29 is positively established.",
+    "hist_profile_calculation_executed": false,
+    "provider_followup_executed": false
+  },
+  "notes": [
+    "The later 2026-09-01 transfer announcement is not used as a synthetic start-date source.",
+    "No club_valid_from or club_valid_to is created from the match date, the retrieval date, or the later announcement.",
+    "This artifact resolves only the historical player/club question requested for B13-WCE-01."
+  ]
+}
