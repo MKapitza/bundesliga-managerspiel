@@ -1,0 +1,75 @@
+{
+  "schema": "bms.w3-1-gw4-k2-result",
+  "schema_version": "0.1",
+  "run_id": "run-w3-1-gw4-refresh-20260918T154700Z-744726c884b0",
+  "ssot_version_id": "6055581f-afea-5c2a-9281-ad7cb5cb3981",
+  "data_as_of": "2026-09-18T17:00:00+02:00",
+  "result": "PASS",
+  "players_checked": 36,
+  "failed_players": [],
+  "controls": [
+    {
+      "control": "IDENTITY_STABILITY",
+      "result": "PASS"
+    },
+    {
+      "control": "CLUB_ID_STABILITY",
+      "result": "PASS"
+    },
+    {
+      "control": "SEASON_POSITION_CONSISTENCY",
+      "result": "PASS"
+    },
+    {
+      "control": "CURRENT_STATE_EVIDENCE",
+      "result": "PASS"
+    },
+    {
+      "control": "CUTOFF_RELATION",
+      "result": "PASS"
+    },
+    {
+      "control": "POSITIVE_NEGATIVE_STATUS_SEMANTICS",
+      "result": "PASS"
+    },
+    {
+      "control": "NO_DOUBLE_OR_CONFLICT_STATES",
+      "result": "PASS"
+    },
+    {
+      "control": "COMPLETE_36_COVERAGE",
+      "result": "PASS"
+    },
+    {
+      "control": "TRACEABILITY",
+      "result": "PASS"
+    },
+    {
+      "control": "NO_NEW_PLAYER_ID",
+      "result": "PASS"
+    },
+    {
+      "control": "NO_NEW_CLUB_ID",
+      "result": "PASS"
+    },
+    {
+      "control": "NO_SYNTHETIC_VALIDITY_INTERVALS",
+      "result": "PASS"
+    },
+    {
+      "control": "NO_2026_09_05_CURRENT_STATE_INTERPOLATION",
+      "result": "PASS"
+    }
+  ],
+  "bitshiabu": {
+    "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+    "resolved_state": "OUTSIDE_BUNDESLIGA",
+    "club_id": null,
+    "result": "PASS",
+    "evidence_refs": [
+      "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051",
+      "https://www.galatasaray.org/haber/gs-sportif-a-s/el-chadaille-bitshiabu-galatasarayda/60877",
+      "https://www.galatasaray.org/p/3-el-chadaille-bitshiabu/3760"
+    ]
+  }
+}
