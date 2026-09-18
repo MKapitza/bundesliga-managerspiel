@@ -1,0 +1,22 @@
+{
+  "schema": "bms.w3-1-gw4-ssot-refresh-handoff",
+  "schema_version": "0.1",
+  "status": "GW4_SSOT_REFRESH_COMPLETED",
+  "k2": "PASS",
+  "g3": "SSOT_RELEASED",
+  "current_state_coverage": "36/36",
+  "run_id": "run-w3-1-gw4-refresh-20260918T154700Z-744726c884b0",
+  "data_as_of": "2026-09-18T17:00:00+02:00",
+  "ssot_version_id": "6055581f-afea-5c2a-9281-ad7cb5cb3981",
+  "g3_release_id": "56222818-1470-5058-a743-db499fc548d4",
+  "g3_evidence_id": "evidence:8fab031e-65b9-5308-a594-3fc5cdf6f1c3",
+  "states": {
+    "CURRENT_BUNDESLIGA_CLUB": 35,
+    "OUTSIDE_BUNDESLIGA": 1
+  },
+  "bitshiabu_state": "OUTSIDE_BUNDESLIGA",
+  "con_008_status": "HANDOFF_READY",
+  "next_status": "READY_FOR_W3_1_DEPENDENT_RERUN",
+  "package_sha256": "6e2b0a41778fdff3e4e091159b7b877f12c2d2a0207d0ee02ea94276fe04d296",
+  "stop_rule": "STOP_AFTER_K2_G3_PACKAGE_HANDOFF"
+}
