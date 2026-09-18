@@ -1,0 +1,23 @@
+{
+  "schema": "bms.w3-1-gw4-source-integrity",
+  "schema_version": "0.2",
+  "checked_at": "2026-09-18T17:47:00+02:00",
+  "manifest_sha256": "f2d43e07d57a2d4c336ae2525e5ddfee86f5dea5fc547b26357d068b1552b933",
+  "sha256sums_sha256": "275e5fd601e6063d168108b19b46162c19a7f9a36f296d31300e621461aae716",
+  "refresh_input_sha256": "744726c884b01c82aa33977c007586d2b8fe97105c6f0e040a3f4ca6be2dcb47",
+  "manifest_hash_matches_SHA256SUMS": true,
+  "current_governance_set": {
+    "DOC-REG-001": "4.1",
+    "DOC-013": "0.1",
+    "DOC-014": "1.0",
+    "DOC-015": "0.8",
+    "DOC-016": "0.3"
+  },
+  "register": {
+    "doc_id": "DOC-REG-001",
+    "version": "4.1",
+    "status": "CURRENT_AND_BINDING",
+    "sha256": "eed5796493fc8c41f8992b8d825754791f8bd5d0e9994f9ade2f210ba3bffff5"
+  },
+  "result": "PASS"
+}
