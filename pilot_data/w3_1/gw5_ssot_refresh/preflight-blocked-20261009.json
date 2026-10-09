@@ -1,6 +1,6 @@
 {
   "schema": "bms.w3-1-gw5-ssot-refresh-preflight",
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "checked_at": "2026-10-09T22:56:00+02:00",
   "data_as_of": "2026-10-09T17:00:00+02:00",
   "status": "BLOCKED_BEFORE_REFRESH_EXECUTION",
@@ -10,7 +10,10 @@
     "DOC-014": "1.0",
     "DOC-015": "0.8",
     "DOC-016": "0.3",
-    "result": "PASS_REGISTER_CONTENT",
+    "result": "PASS",
+    "manifest_sha256": "f2d43e07d57a2d4c336ae2525e5ddfee86f5dea5fc547b26357d068b1552b933",
+    "sha256sums_sha256": "275e5fd601e6063d168108b19b46162c19a7f9a36f296d31300e621461aae716",
+    "manifest_hash_matches_sha256sums": true,
     "local_current_file_sha256": {
       "DOC-REG-001": "eed5796493fc8c41f8992b8d825754791f8bd5d0e9994f9ade2f210ba3bffff5",
       "DOC-013": "d8dbb559489dcfb5f88e05b27e08a0a03a5275a7025aff90bd28412d2d18e799",
@@ -21,19 +24,31 @@
   },
   "required_source_integrity_files": {
     "CURRENT/MANIFEST.json": {
-      "available": false,
-      "verification": "NOT_RUN"
+      "available": true,
+      "actual_sha256": "f2d43e07d57a2d4c336ae2525e5ddfee86f5dea5fc547b26357d068b1552b933",
+      "verification": "PASS"
     },
     "CURRENT/SHA256SUMS.txt": {
-      "available": false,
-      "verification": "NOT_RUN"
+      "available": true,
+      "actual_sha256": "275e5fd601e6063d168108b19b46162c19a7f9a36f296d31300e621461aae716",
+      "verification": "PASS"
     }
   },
   "binding_refresh_input": {
     "filename": "GW5_CUTOFF_SSOT_REFRESH_INPUT_20261009.json",
     "expected_sha256": "32224bf4d20a23793c2130873c182c4235feecc7d56cc8d2b974d34c8a5e75ad",
-    "available": false,
-    "hash_verified": false
+    "available": true,
+    "actual_sha256": "123573a09cfd4ea59f0c2af93e39b79e7086ee22a0c7d3fe7368f8f0cc95e84f",
+    "hash_verified": false,
+    "content_status": {
+      "template_status": "PREPARED",
+      "cutoff_execution": "NOT_STARTED",
+      "player_count": 0,
+      "refresh_required": null,
+      "requested_ssot_actions_count": 0,
+      "result": null
+    },
+    "verification": "FAIL_WRONG_OR_UNPOPULATED_INPUT"
   },
   "handoff_package": {
     "filename": "GW5_C3_20261009_v0.1.zip",
@@ -63,19 +78,18 @@
   },
   "blockers": [
     {
-      "reason_code": "MISSING_CURRENT_MANIFEST",
-      "affected_control": "GOVERNANCE_START",
-      "required_input": "01_Projektquellen/CURRENT/MANIFEST.json"
-    },
-    {
-      "reason_code": "MISSING_CURRENT_SHA256SUMS",
-      "affected_control": "GOVERNANCE_START",
-      "required_input": "01_Projektquellen/CURRENT/SHA256SUMS.txt"
-    },
-    {
-      "reason_code": "MISSING_GW5_SSOT_REFRESH_INPUT",
+      "reason_code": "GW5_SSOT_REFRESH_INPUT_HASH_MISMATCH",
       "affected_control": "K2_CURRENT_STATE_EVIDENCE",
-      "required_input": "GW5_CUTOFF_SSOT_REFRESH_INPUT_20261009.json with SHA256 32224bf4d20a23793c2130873c182c4235feecc7d56cc8d2b974d34c8a5e75ad"
+      "expected_sha256": "32224bf4d20a23793c2130873c182c4235feecc7d56cc8d2b974d34c8a5e75ad",
+      "actual_sha256": "123573a09cfd4ea59f0c2af93e39b79e7086ee22a0c7d3fe7368f8f0cc95e84f",
+      "required_input": "Correct populated GW5_CUTOFF_SSOT_REFRESH_INPUT_20261009.json"
+    },
+    {
+      "reason_code": "GW5_SSOT_REFRESH_INPUT_UNPOPULATED",
+      "affected_control": "K2_CURRENT_STATE_EVIDENCE",
+      "observed_player_count": 0,
+      "required_player_count": 36,
+      "required_input": "Refresh input containing the bound C0/C1/C2 evidence and 36-player refresh scope"
     },
     {
       "reason_code": "MISSING_GW5_C3_HANDOFF_PACKAGE",
@@ -84,5 +98,5 @@
     }
   ],
   "stop_rule_applied": "STOP_TO_PI2_BEFORE_K2_G3",
-  "next": "Provide the four missing binding files; then execute source-integrity verification, 36/36 point-in-time current-state review, K2 and G3 without changing identity, season position, club identity or validity semantics."
+  "next": "Provide the correct populated refresh input and GW5_C3 handoff ZIP; source-integrity/governance start is now satisfied."
 }
