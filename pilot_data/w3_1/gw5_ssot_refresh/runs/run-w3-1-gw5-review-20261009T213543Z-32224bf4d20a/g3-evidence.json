@@ -1,0 +1,19 @@
+{
+  "run_id": "run-w3-1-gw5-review-20261009T213543Z-32224bf4d20a",
+  "checked_at": "2026-10-09T23:35:42.743114+02:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "evidence_id": "evidence:048f9a68-13f0-42da-b44c-cebf6cbe5ec2",
+  "decision_id": "c0a5058c-76a7-4c80-9add-aa9d25f382f0",
+  "decision": "BLOCKED",
+  "g3_release_id": null,
+  "ssot_version_id": null,
+  "k2_sha256": "a9326c98953b8073bb5bd31be2da7c2882e5c664defe9c90a4263b8fa297ef77",
+  "resolution_sha256": "bd0c2a0cf5114990701af4b8b772bbfacc922cf1627b327db2abe4f8a2c805be",
+  "basis": [
+    "DOC-014@1.0 DEC-032/033 REQ-SSOT-006/007",
+    "DOC-015@0.8 sections 29.1 and 30.2, CTL-K2-003/006/008"
+  ],
+  "finding": "Correct files close the prior input-integrity blockers. Mandatory observation provenance is absent in every C2 source. 35 positive club candidates additionally lack explicit temporal evidence at the target instant. No full or partial SSOT release is materialized.",
+  "additional_provenance_blocker": "PREDECESSOR_K2_EVIDENCE_DIVERGENCE"
+}

@@ -1,0 +1,599 @@
+{
+  "recorded_at": "2026-10-09T22:30:39.174803+02:00",
+  "sources": [
+    {
+      "source_key": "SGE",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/eintracht-frankfurt",
+      "publisher_date": null,
+      "roster_rows": [
+        1,
+        10,
+        18
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Noah Atubolu, Robin Koch, Farès Chaïbi sind dem Verein Eintracht Frankfurt zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "BVB",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/borussia-dortmund",
+      "publisher_date": null,
+      "roster_rows": [
+        2,
+        8,
+        9,
+        23,
+        33
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Gregor Kobel, Daniel Svensson, Nico Schlotterbeck, Carney Chukwuemeka, Maximilian Beier sind dem Verein Borussia Dortmund zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "BMG",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/borussia-moenchengladbach/squad",
+      "publisher_date": null,
+      "roster_rows": [
+        3
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Kevin Diks sind dem Verein Borussia Mönchengladbach zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "VFB",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/vfb-stuttgart",
+      "publisher_date": null,
+      "roster_rows": [
+        4,
+        26,
+        32
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Maximilian Mittelstädt, Jamie Leweling, Deniz Undav sind dem Verein VfB Stuttgart zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "FCB",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/fc-bayern-muenchen",
+      "publisher_date": null,
+      "roster_rows": [
+        5,
+        11,
+        31
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Alphonso Davies, Konrad Laimer, Serge Gnabry sind dem Verein FC Bayern München zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "TSG",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/tsg-hoffenheim/stats",
+      "publisher_date": null,
+      "roster_rows": [
+        6,
+        14,
+        20,
+        29,
+        34
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Vladimír Coufal, Bernardo Fernandes da Silva Junior, Andrej Kramarić, Wouter Burger, Fisnik Asllani sind dem Verein TSG Hoffenheim zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "FCU",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/1-fc-union-berlin",
+      "publisher_date": null,
+      "roster_rows": [
+        7,
+        15
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Josip Juranović, Christopher Trimmel sind dem Verein 1. FC Union Berlin zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "HSV",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/hamburger-sv",
+      "publisher_date": null,
+      "roster_rows": [
+        12
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Miro Muheim sind dem Verein Hamburger SV zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "RBL",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/rb-leipzig",
+      "publisher_date": null,
+      "roster_rows": [
+        13,
+        22
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Castello Lukeba, Brajan Gruda sind dem Verein RB Leipzig zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "M05",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/1-fsv-mainz-05",
+      "publisher_date": null,
+      "roster_rows": [
+        17
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Nadiem Amiri sind dem Verein 1. FSV Mainz 05 zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "FCA",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/fc-augsburg",
+      "publisher_date": null,
+      "roster_rows": [
+        19,
+        21,
+        24
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Alexis Claude-Maurice, Arijon Ibrahimović, Fabian Rieder sind dem Verein FC Augsburg zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "SVW",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/sv-werder-bremen",
+      "publisher_date": null,
+      "roster_rows": [
+        25
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Iván San José Cantalejo (Chuki) sind dem Verein SV Werder Bremen zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "ELV",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/sv-elversberg",
+      "publisher_date": null,
+      "roster_rows": [
+        27
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Lukas Petkov sind dem Verein SV Elversberg zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "B04",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/bayer-04-leverkusen/kader",
+      "publisher_date": null,
+      "roster_rows": [
+        28,
+        35,
+        36
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Malik Tillman, Christian Kofane, Moussa Diaby sind dem Verein Bayer 04 Leverkusen zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "KOE",
+      "url": "https://www.bundesliga.com/de/bundesliga/clubs/1-fc-koeln/squad",
+      "publisher_date": null,
+      "roster_rows": [
+        30
+      ],
+      "fact_extract": "Offizieller Bundesliga-Kader 2026/27: Ísak Bergmann Jóhannesson sind dem Verein 1. FC Köln zugeordnet.",
+      "evidence_kind": "OFFICIAL_CURRENT_SQUAD_CORROBORATION_ONLY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "CL_SEPT",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+      "publisher_date": "2026-09-04",
+      "roster_rows": [
+        2,
+        4,
+        5,
+        8,
+        9,
+        11,
+        13,
+        22,
+        23,
+        26,
+        31,
+        32,
+        33
+      ],
+      "fact_extract": "Saisonkader-Meldung: Bayern Davies/Laimer/Gnabry; Dortmund Kobel/Svensson/Schlotterbeck/Chukwuemeka/Beier; Leipzig Lukeba/Gruda; Stuttgart Mittelstädt/Leweling/Undav. Nur Vereinsbindung verwendet, keine UEFA-Eligibility übernommen.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "TSG_SEPT",
+      "url": "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/9/5/BVB-Traumstart-nach-Aufholjagd-in-Hoffenheim-perfekt.html",
+      "publisher_date": "2026-09-05",
+      "roster_rows": [
+        6,
+        14,
+        20,
+        29
+      ],
+      "fact_extract": "Datierter offizieller Spielbericht ordnet Coufal, Bernardo, Kramarić und Burger Hoffenheim zu. Nur Clubzugehörigkeit ausgewertet.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "ASLLANI_SEPT",
+      "url": "https://www.vfb.de/de/vfb/profis/saison/bundesliga/2627/3-tsg-hoffenheim----vfb-stuttgart-/",
+      "publisher_date": "2026-09-12",
+      "roster_rows": [
+        34
+      ],
+      "fact_extract": "Offizielles Datencenter führt Fisnik Asllani im Hoffenheimer Spielkader. Nur Clubzugehörigkeit ausgewertet.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "BAYER_UNION_SEPT",
+      "url": "https://www.bayer04.de/en-us/news/bundesliga/werkself-thrash-union-berlin-4-0-in-first-home-game",
+      "publisher_date": "2026-09-05",
+      "roster_rows": [
+        7,
+        15,
+        28,
+        35,
+        36
+      ],
+      "fact_extract": "Vereinsbericht ordnet Juranović/Trimmel Union sowie Tillman/Kofane/Diaby Leverkusen zu. Nur Clubzugehörigkeit ausgewertet.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "SGE_FCA_SEPT",
+      "url": "https://en.eintracht.de/news/eintracht-unterliegt-nach-fuehrung-augsburg-179108/",
+      "publisher_date": "2026-09-06",
+      "roster_rows": [
+        1,
+        18,
+        19,
+        21,
+        24
+      ],
+      "fact_extract": "Datierter Eintracht-Bericht bindet Atubolu/Chaïbi an Frankfurt und Claude-Maurice/Ibrahimović/Rieder an Augsburg. Nur Clubzugehörigkeit ausgewertet.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "KOCH_SEPT",
+      "url": "https://profis.eintracht.de/news/in-unserem-spiel-noch-luft-nach-oben-179374/",
+      "publisher_date": "2026-09-19",
+      "roster_rows": [
+        10
+      ],
+      "fact_extract": "Eintracht nennt Robin Koch ihren Kapitän. Nur Vereinsbindung verwendet.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "DIKS_AMIRI_SEPT",
+      "url": "https://www.mainz05.de/news/gladbach-joker-tore-entscheiden-wahnsinns-ritt",
+      "publisher_date": "2026-09-19",
+      "roster_rows": [
+        3,
+        17
+      ],
+      "fact_extract": "Offizieller Mainz-Bericht führt Kevin Diks Bakarbessy für Gladbach und Nadiem Amiri für Mainz. Nur Vereinsbindung verwendet.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "PETKOV_SEPT",
+      "url": "https://sv07elversberg.de/sve-erkaempft-sich-einen-punkt-auf-schalke/",
+      "publisher_date": "2026-09-21",
+      "roster_rows": [
+        27
+      ],
+      "fact_extract": "Vereinsbericht über Bundesliga-Partie am 20.09. nennt Lukas Petkov als Elversberger. Nur Vereinsbindung verwendet.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "JOHANNESSON_OCT",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/stars-international-duty-harry-kane-michael-olise-konstantinos-karetsas-39314/",
+      "publisher_date": "2026-10-07",
+      "roster_rows": [
+        30
+      ],
+      "fact_extract": "Abschnitt 3. Oktober bezeichnet Ísak Jóhannesson als Kölner Mittelfeldspieler. Nur die Clubzuordnung dieses vor dem Cutoff datierten Abschnitts verwendet.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "MUHEIM_AUG",
+      "url": "https://www.hsv.de/news/wir-haben-maximal-bock-auf-diesen-wettbewerb-",
+      "publisher_date": "2026-08-22",
+      "roster_rows": [
+        12
+      ],
+      "fact_extract": "HSV-Pressekonferenz führt Miro Muheim als Spieler im eigenen Personalbestand. Nur Vereinszugehörigkeit, kein Verletzungsstatus für GW5 übernommen.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "CHUKI_TRANSFER",
+      "url": "https://www.werder.de/news/maenner/2025-2026/pm-chuki-02062026",
+      "publisher_date": "2026-06-02",
+      "roster_rows": [
+        25
+      ],
+      "fact_extract": "Werder bestätigt festen Zugang von Real Valladolid für 2026/27 und die Identität Iván San José Cantalejo = Chuki.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "ATUBOLU_TRANSFER",
+      "url": "https://profis.eintracht.de/news/eintracht-frankfurt-verpflichtet-noah-atubolu-178900/",
+      "publisher_date": "2026-08-28",
+      "roster_rows": [
+        1
+      ],
+      "fact_extract": "Eintracht bestätigt Atubolus Leihe aus Freiburg bis Saisonende 2026/27.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "SUMMER_TRANSFERS",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/",
+      "publisher_date": "2026-09-04",
+      "roster_rows": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "fact_extract": "Offizieller Sommer-Transferabgleich aller betroffenen Clubs: Atubolu nach Frankfurt (Leihe), Ibrahimović nach Augsburg (Leihe), Gruda weiter Leipzig (verlängerte Leihe), Chuki nach Bremen (fest), Diaby nach Leverkusen (fest), Bitshiabu von Leipzig zu Galatasaray (Leihe). Für die übrigen Roster-Mitglieder kein widersprechender Abgang in den gelesenen Clubabschnitten. Abwesenheit von einer Abgangsliste allein ist kein positiver Clubbeleg.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "BITSHIABU_LOAN",
+      "url": "https://www.galatasaray.org/haber/gs-sportif-a-s/el-chadaille-bitshiabu-galatasarayda/60877",
+      "publisher_date": "2026-09-02",
+      "roster_rows": [
+        16
+      ],
+      "fact_extract": "Galatasaray bestätigt die Leihe von El-Chadaille Bitshiabu Kathibuyi-Ndenga Ngana von RB Leipzig bis Ende 2026/27 mit Kaufoption. Positiver Nachweis eines realen Vereins außerhalb der Bundesliga; nicht aus Abwesenheit von einer Kaderseite abgeleitet.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "BITSHIABU_IDENTITY",
+      "url": "https://www.galatasaray.org/haber/futbol/galatasaraya-hos-geldin-el-chadaille-bitshiabu/60878",
+      "publisher_date": "2026-09-02",
+      "roster_rows": [
+        16
+      ],
+      "fact_extract": "Offizielle Begrüßung bindet den Namen El-Chadaille Bitshiabu an den Zugang aus Leipzig.",
+      "evidence_kind": "DATED_FIRST_PARTY",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "BERNARDO_PROFILE",
+      "url": "https://www.bundesliga.com/de/spieler/bernardo",
+      "publisher_date": null,
+      "roster_rows": [
+        14
+      ],
+      "fact_extract": "Bernardo ist als Hoffenheimer Spieler mit Geburtsdatum 14.05.1995 geführt. Alias-Abgleich mit bestehender Identität.",
+      "evidence_kind": "OFFICIAL_IDENTITY_CORROBORATION",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    },
+    {
+      "source_key": "JOHANNESSON_PROFILE",
+      "url": "https://www.bundesliga.com/de/spieler/isak-johannesson",
+      "publisher_date": null,
+      "roster_rows": [
+        30
+      ],
+      "fact_extract": "Ísak Jóhannesson ist als Kölner Spieler mit Geburtsdatum 23.03.2003 geführt. Kurzname der bestehenden Identität.",
+      "evidence_kind": "OFFICIAL_IDENTITY_CORROBORATION",
+      "retrieved_at_interval": {
+        "start": "2026-10-09T21:52:47.149994+02:00",
+        "end": "2026-10-09T22:30:39.174803+02:00"
+      },
+      "observed_at": null,
+      "note": "Nachträglicher Abruf; kein Live-Read um 17:00. Kompakter Prüfauszug, keine gespeicherte vollständige Webseite."
+    }
+  ],
+  "source_capture": "Factual review extracts and URLs. Hashes in this package protect these extracts, not full remote page bodies.",
+  "temporal_method": "Retrospektive Rekonstruktion aus erneut gelesenen, vor Cutoff datierten Club-/Transferbelegen und offizieller Saison-Kaderkorroboration. Keine Übernahme eines alten SSOT-as_of als Gültigkeitsintervall. Kein Live-Read exakt um 17:00 behauptet.",
+  "excluded": "Matchwerte, Verletzungsstatus, Einsatzminuten, spätere GW5-Aufstellungen und Ergebnisse werden nicht in C2 materialisiert."
+}

@@ -1,0 +1,283 @@
+{
+  "artifact": "GW5_SSOT_K2_G3_REVIEW_20261009",
+  "created_at": "2026-10-09T23:35:42.743114+02:00",
+  "result": "BLOCKED",
+  "hash_policy": "Root manifest covers all payload, including nested indexes; root SHA256SUMS covers payload plus root MANIFEST, excluding itself.",
+  "files": [
+    {
+      "path": "audit-code/gw5_refresh_review.py",
+      "size_bytes": 29575,
+      "sha256": "8df85426a231a1f9760132497d88c234c90b6e2d65dbc22f7b575e714c57123c"
+    },
+    {
+      "path": "audit-code/run.py",
+      "size_bytes": 18340,
+      "sha256": "1016620d895a159ad842f893b4ea378913ad23f3be6fa26b7cf44b0ff9d08285"
+    },
+    {
+      "path": "audit-code/w3_1_current_state.py",
+      "size_bytes": 12222,
+      "sha256": "5bc73a550cf395655f60ef890b14f4dd719b1bc1430092f3420ad79d53d0fe83"
+    },
+    {
+      "path": "audit-code/w3_1_outside_bundesliga.py",
+      "size_bytes": 5589,
+      "sha256": "df39778dcd0e265f8636e4010569699868ea6197681c00d8a347825f1f998ccb"
+    },
+    {
+      "path": "current-state-resolution-36.json",
+      "size_bytes": 151489,
+      "sha256": "bd0c2a0cf5114990701af4b8b772bbfacc922cf1627b327db2abe4f8a2c805be"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/C3_RESULT.json",
+      "size_bytes": 1203,
+      "sha256": "9666cfe272460848c32ef635b863b48548f6442d6c68d9400463411beab017d9"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/DOC-013_TEXT.json",
+      "size_bytes": 8818,
+      "sha256": "2a0aac472d4ec6445fc38f69174e9fc28275535fc6abf3393831d1e6d309c809"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/DOC-014_TEXT.json",
+      "size_bytes": 138498,
+      "sha256": "d224501c2809bac0db38fa397770923a8060eb128ca1fcefa0467ce139656d7a"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/DOC-015_TEXT.json",
+      "size_bytes": 272983,
+      "sha256": "dab2ec18a192b370fb5fd60e579da9022fd18f58aabf1e4a3dc81f9693843ced"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/DOC-016_TEXT.json",
+      "size_bytes": 45560,
+      "sha256": "5d17e27ebb1eeb75ea0baa09ecb419f46d2e2e635ade19a01526bc61c09685a0"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/DOC_REGISTER.json",
+      "size_bytes": 6610,
+      "sha256": "55e7c14a5f7d351c47088ea65d424a23b92446c974159bd766dc740b7bc44cb9"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/EXISTING_SSOT/current-state-resolution-36.json",
+      "size_bytes": 56012,
+      "sha256": "441a0ebb4a0a0fca0b920089f3a44723f2ab02b393e30cdd1979b6fb03039e51"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/EXISTING_SSOT/g3-decision.json",
+      "size_bytes": 913,
+      "sha256": "a027e189de8a3cdb4d4232c9468b5514687bcb4c76d0dfafd671a487b29f8fc4"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/EXISTING_SSOT/g3-evidence.json",
+      "size_bytes": 25263,
+      "sha256": "ea9859e8a5a421a239e5f504435bcf969e20c776f3fc732d09bbcd6ae6d68179"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/EXISTING_SSOT/k2-result.json",
+      "size_bytes": 1928,
+      "sha256": "3008b0eebeba8e94a27d032f55e612a22b844c98f7bbe86d69c9d7dd9530561f"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/EXISTING_SSOT/MS2_W3_1_GW4_SSOT_Refresh_Input_v0.1.json",
+      "size_bytes": 38951,
+      "sha256": "744726c884b01c82aa33977c007586d2b8fe97105c6f0e040a3f4ca6be2dcb47"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/EXISTING_SSOT/ssot-version.json",
+      "size_bytes": 706,
+      "sha256": "c01fbf42b020b6ebbb302eb2be794124b8c57a13df6bf383ecab6e4547987c49"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/INPUT_INTEGRITY.json",
+      "size_bytes": 13801,
+      "sha256": "044f95673c36f95c8c3bbdd6e324c309db24a0dd7b576c748bd5d235d6bd129a"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/INPUTS/C2_EXISTING_SSOT_BINDING.json",
+      "size_bytes": 2346,
+      "sha256": "1fca5add1d5a5db88983d938bff799ffb23a4c3ca18d9bc0d9f07cf619345bc8"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+      "size_bytes": 25711,
+      "sha256": "ab746f6099285b82e65a40f746f8a67b4cc802a75a09d29a12179a1d052897b7"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/INPUTS/FIRST_PARTY_ATTESTATION.json",
+      "size_bytes": 768,
+      "sha256": "838a13cb455656871cc5a3ad9c5ef2f2e8c51e49b2257b996b2a0d11dd8521c4"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/INPUTS/GW5_C0_RERUN_20261009.json",
+      "size_bytes": 4121,
+      "sha256": "0493a4b8b561e54b323cd84b509093265691d8f82d17196e53a74a47431e1d49"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/INPUTS/GW5_C1_ROSTER_RECHECK_20261009.json",
+      "size_bytes": 19606,
+      "sha256": "144cfb131bf59224c353bdb7197c96644d8b5608bf5f38e921b77db0f1f089f7"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/INPUTS/GW5_C2_REAL_WORLD_STATE_20261009.json",
+      "size_bytes": 52626,
+      "sha256": "d783b249503b8ffbc1402a5c45c2275d334a8392475913705eca69ff355f08f7"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/SSOT_RELEASE_DISCOVERY.json",
+      "size_bytes": 1433,
+      "sha256": "1723d62463d6cf4f8dc8037ca2723b141c58ff31c9b95c9e8ea5d73c416aa646"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/evidence/START_CURRENT_AUDITS.json",
+      "size_bytes": 507013,
+      "sha256": "c011d74b5149a83b5ee527e7e23d4cc330ceac961b276cf08a8fda8d2c2be861"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/GW5_CUTOFF_TEMPLATE_SET/GW5_CUTOFF_SSOT_REFRESH_INPUT_20261009.json",
+      "size_bytes": 329143,
+      "sha256": "32224bf4d20a23793c2130873c182c4235feecc7d56cc8d2b974d34c8a5e75ad"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/MANIFEST.json",
+      "size_bytes": 4746,
+      "sha256": "762d8fb00435781e03d64e83832772b1999d9571b509ae8b3544a9b07bb5a8a9"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/PI2_RUECKGABE_GW5_C3_20261009.md",
+      "size_bytes": 7021,
+      "sha256": "15c13c7c88976e47dffe49af513f34afd102200527c843433ed4ecafd2b980c0"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/READBACK.json",
+      "size_bytes": 572,
+      "sha256": "f46558bbf847317531877a866e172619e97831a52452cefaa441ac18ef7b5653"
+    },
+    {
+      "path": "evidence/C3_PACKAGE/SHA256SUMS.txt",
+      "size_bytes": 2612,
+      "sha256": "febbb1f6f2650f0c2c79ff81d95248ee98fbff14c6782ffb46e760c492315ae0"
+    },
+    {
+      "path": "evidence/CURRENT/00_Dokumentenregister_Stand_4.1.docx",
+      "size_bytes": 22537,
+      "sha256": "eed5796493fc8c41f8992b8d825754791f8bd5d0e9994f9ade2f210ba3bffff5"
+    },
+    {
+      "path": "evidence/CURRENT/13_MS1_Abnahmeprotokoll_v0.1.docx",
+      "size_bytes": 40768,
+      "sha256": "d8dbb559489dcfb5f88e05b27e08a0a03a5275a7025aff90bd28412d2d18e799"
+    },
+    {
+      "path": "evidence/CURRENT/14_Governance_Steuerungspaket_v1.0.docx",
+      "size_bytes": 85260,
+      "sha256": "a05de07368861d5799c35d79f454bd426558d9af9aedce3ec93650d8f7b02800"
+    },
+    {
+      "path": "evidence/CURRENT/15_Fachliches_Zielmodell_MS1_v0.8.docx",
+      "size_bytes": 186275,
+      "sha256": "ef5d494cc1ac3d5b5eeec046e0c43528d82884173fedd99c726df77bc710d908"
+    },
+    {
+      "path": "evidence/CURRENT/16_Steuerungsdokument_MS2_v0.3.docx",
+      "size_bytes": 60563,
+      "sha256": "51f54bd61e48bbd857cda9152e6b4f6ae7d34cb62e41e98e880d676d7242b443"
+    },
+    {
+      "path": "evidence/CURRENT/MANIFEST.json",
+      "size_bytes": 2812,
+      "sha256": "f2d43e07d57a2d4c336ae2525e5ddfee86f5dea5fc547b26357d068b1552b933"
+    },
+    {
+      "path": "evidence/CURRENT/SHA256SUMS.txt",
+      "size_bytes": 596,
+      "sha256": "275e5fd601e6063d168108b19b46162c19a7f9a36f296d31300e621461aae716"
+    },
+    {
+      "path": "evidence/current-governance-audit.json",
+      "size_bytes": 533942,
+      "sha256": "5ac8c18485225ec0d3a5b5d0b2710e48c96fa36a525fb03c6d72833b842c4ce0"
+    },
+    {
+      "path": "evidence/existing-validator-execution.json",
+      "size_bytes": 42318,
+      "sha256": "4ddfc5738dc530fbd38341f022440ae92b9b6145701ded0c2c0757a463fe38e3"
+    },
+    {
+      "path": "evidence/GW5_C3_20261009_v0.1.zip",
+      "size_bytes": 272491,
+      "sha256": "39fd76fb889a643d97a764f28ca0c27bf11649de808dee7f9a41d5fc2b04cc2c"
+    },
+    {
+      "path": "evidence/predecessor-comparison.json",
+      "size_bytes": 1161,
+      "sha256": "e30a7787ac88f11e9936e3910223b5de740b6fa85c9f90a0cb8621fd9c9b0f17"
+    },
+    {
+      "path": "evidence/REPOSITORY_PREDECESSOR/g3-decision.json",
+      "size_bytes": 913,
+      "sha256": "a027e189de8a3cdb4d4232c9468b5514687bcb4c76d0dfafd671a487b29f8fc4"
+    },
+    {
+      "path": "evidence/REPOSITORY_PREDECESSOR/k2-result.json",
+      "size_bytes": 2053,
+      "sha256": "7ca5dbac5909a63a087b0a3e38bb8d56962af11c94968cfa2c4606201ff50b77"
+    },
+    {
+      "path": "evidence/REPOSITORY_PREDECESSOR/ssot-version.json",
+      "size_bytes": 706,
+      "sha256": "c01fbf42b020b6ebbb302eb2be794124b8c57a13df6bf383ecab6e4547987c49"
+    },
+    {
+      "path": "g3-decision.json",
+      "size_bytes": 783,
+      "sha256": "f452e82a3804e199878668d9b5ba2768d9d71c61124c97712492c28ee8320204"
+    },
+    {
+      "path": "g3-evidence.json",
+      "size_bytes": 1111,
+      "sha256": "ce6e24f1ed1f7e68c3933ca78d50e7a18565ee6be7fcfa620c85487eaf542b49"
+    },
+    {
+      "path": "GW5_CUTOFF_SSOT_REFRESH_INPUT_20261009.json",
+      "size_bytes": 329143,
+      "sha256": "32224bf4d20a23793c2130873c182c4235feecc7d56cc8d2b974d34c8a5e75ad"
+    },
+    {
+      "path": "k2-result.json",
+      "size_bytes": 195805,
+      "sha256": "a9326c98953b8073bb5bd31be2da7c2882e5c664defe9c90a4263b8fa297ef77"
+    },
+    {
+      "path": "PI2_RETURN.json",
+      "size_bytes": 966,
+      "sha256": "6183b46b54a267496ee17b7fb8e5b35d6afbc2e825da3178b4383eb7f64c52d0"
+    },
+    {
+      "path": "PI2_RUECKGABE.md",
+      "size_bytes": 6944,
+      "sha256": "42598677140c60294901c9a3e2b1bd1981dc4a6c0cf19d71ba50d3a7afb05c72"
+    },
+    {
+      "path": "READBACK.json",
+      "size_bytes": 629,
+      "sha256": "c01430b134f2230c9e47652a7a4ed3b1173caecc65a3e97502933268a1c50ceb"
+    },
+    {
+      "path": "source-integrity.json",
+      "size_bytes": 936,
+      "sha256": "dc43d03a0c41944d384315edca725bb4c1ffa5315047b38d1b5deaa7861b769f"
+    },
+    {
+      "path": "ssot-materialization-status.json",
+      "size_bytes": 419,
+      "sha256": "93e844439a9222d9ea593c076b85b4b8c1e553d1eb87854a69acefa6844d5f5a"
+    },
+    {
+      "path": "traceability.json",
+      "size_bytes": 3160,
+      "sha256": "2012cd1ac8be13fe6cbefcbfc0a07641ba311b2e7d4d310fb4965fcc39e1c20e"
+    }
+  ]
+}

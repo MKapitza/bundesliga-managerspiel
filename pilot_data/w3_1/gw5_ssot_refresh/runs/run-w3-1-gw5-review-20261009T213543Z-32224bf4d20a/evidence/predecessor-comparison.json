@@ -1,0 +1,25 @@
+{
+  "comparison": [
+    {
+      "file": "ssot-version.json",
+      "git_blob_sha256": "c01fbf42b020b6ebbb302eb2be794124b8c57a13df6bf383ecab6e4547987c49",
+      "handoff_member_sha256": "c01fbf42b020b6ebbb302eb2be794124b8c57a13df6bf383ecab6e4547987c49",
+      "identical": true
+    },
+    {
+      "file": "g3-decision.json",
+      "git_blob_sha256": "a027e189de8a3cdb4d4232c9468b5514687bcb4c76d0dfafd671a487b29f8fc4",
+      "handoff_member_sha256": "a027e189de8a3cdb4d4232c9468b5514687bcb4c76d0dfafd671a487b29f8fc4",
+      "identical": true
+    },
+    {
+      "file": "k2-result.json",
+      "git_blob_sha256": "7ca5dbac5909a63a087b0a3e38bb8d56962af11c94968cfa2c4606201ff50b77",
+      "handoff_member_sha256": "3008b0eebeba8e94a27d032f55e612a22b844c98f7bbe86d69c9d7dd9530561f",
+      "identical": false
+    }
+  ],
+  "status": "REVIEW_REQUIRED",
+  "reason_code": "PREDECESSOR_K2_EVIDENCE_DIVERGENCE",
+  "note": "Git object bytes used to exclude Windows checkout newline conversion. Both K2 records identify the same release and PASS, but differ in Bitshiabu conflict_review/evidence_refs. Neither is silently substituted or rewritten."
+}

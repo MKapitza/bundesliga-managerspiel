@@ -1,0 +1,25 @@
+{
+  "run_id": "run-w3-1-gw5-review-20261009T213543Z-32224bf4d20a",
+  "checked_at": "2026-10-09T23:35:42.743114+02:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "decision": "BLOCKED",
+  "decision_id": "c0a5058c-76a7-4c80-9add-aa9d25f382f0",
+  "g3_release_id": null,
+  "g3_evidence_id": "evidence:048f9a68-13f0-42da-b44c-cebf6cbe5ec2",
+  "ssot_version_id": null,
+  "k2_result": "BLOCKED",
+  "released_scope_player_count": 0,
+  "blockers_ref": "current-state-resolution-36.json",
+  "required_controls": [
+    "CTL-K2-001",
+    "CTL-K2-002",
+    "CTL-K2-003",
+    "CTL-K2-004",
+    "CTL-K2-005",
+    "CTL-K2-006",
+    "CTL-K2-007",
+    "CTL-K2-008"
+  ],
+  "NEXT": "STOP → P&I 2"
+}

@@ -1,0 +1,130 @@
+{
+  "artifact": "GW5_C3_20261009_v0.1",
+  "created_at": "2026-10-09T22:49:01.221992+02:00",
+  "C3": "WAITING_FOR_SSOT_G3_REFRESH",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "CON008": "DEFERRED",
+  "hash_policy": "Manifest covers payload including READBACK; SHA256SUMS covers payload and root MANIFEST, excluding itself.",
+  "files": [
+    {
+      "path": "C3_RESULT.json",
+      "size_bytes": 1203,
+      "sha256": "9666cfe272460848c32ef635b863b48548f6442d6c68d9400463411beab017d9"
+    },
+    {
+      "path": "evidence/DOC-013_TEXT.json",
+      "size_bytes": 8818,
+      "sha256": "2a0aac472d4ec6445fc38f69174e9fc28275535fc6abf3393831d1e6d309c809"
+    },
+    {
+      "path": "evidence/DOC-014_TEXT.json",
+      "size_bytes": 138498,
+      "sha256": "d224501c2809bac0db38fa397770923a8060eb128ca1fcefa0467ce139656d7a"
+    },
+    {
+      "path": "evidence/DOC-015_TEXT.json",
+      "size_bytes": 272983,
+      "sha256": "dab2ec18a192b370fb5fd60e579da9022fd18f58aabf1e4a3dc81f9693843ced"
+    },
+    {
+      "path": "evidence/DOC-016_TEXT.json",
+      "size_bytes": 45560,
+      "sha256": "5d17e27ebb1eeb75ea0baa09ecb419f46d2e2e635ade19a01526bc61c09685a0"
+    },
+    {
+      "path": "evidence/DOC_REGISTER.json",
+      "size_bytes": 6610,
+      "sha256": "55e7c14a5f7d351c47088ea65d424a23b92446c974159bd766dc740b7bc44cb9"
+    },
+    {
+      "path": "evidence/EXISTING_SSOT/current-state-resolution-36.json",
+      "size_bytes": 56012,
+      "sha256": "441a0ebb4a0a0fca0b920089f3a44723f2ab02b393e30cdd1979b6fb03039e51"
+    },
+    {
+      "path": "evidence/EXISTING_SSOT/g3-decision.json",
+      "size_bytes": 913,
+      "sha256": "a027e189de8a3cdb4d4232c9468b5514687bcb4c76d0dfafd671a487b29f8fc4"
+    },
+    {
+      "path": "evidence/EXISTING_SSOT/g3-evidence.json",
+      "size_bytes": 25263,
+      "sha256": "ea9859e8a5a421a239e5f504435bcf969e20c776f3fc732d09bbcd6ae6d68179"
+    },
+    {
+      "path": "evidence/EXISTING_SSOT/k2-result.json",
+      "size_bytes": 1928,
+      "sha256": "3008b0eebeba8e94a27d032f55e612a22b844c98f7bbe86d69c9d7dd9530561f"
+    },
+    {
+      "path": "evidence/EXISTING_SSOT/MS2_W3_1_GW4_SSOT_Refresh_Input_v0.1.json",
+      "size_bytes": 38951,
+      "sha256": "744726c884b01c82aa33977c007586d2b8fe97105c6f0e040a3f4ca6be2dcb47"
+    },
+    {
+      "path": "evidence/EXISTING_SSOT/ssot-version.json",
+      "size_bytes": 706,
+      "sha256": "c01fbf42b020b6ebbb302eb2be794124b8c57a13df6bf383ecab6e4547987c49"
+    },
+    {
+      "path": "evidence/INPUT_INTEGRITY.json",
+      "size_bytes": 13801,
+      "sha256": "044f95673c36f95c8c3bbdd6e324c309db24a0dd7b576c748bd5d235d6bd129a"
+    },
+    {
+      "path": "evidence/INPUTS/C2_EXISTING_SSOT_BINDING.json",
+      "size_bytes": 2346,
+      "sha256": "1fca5add1d5a5db88983d938bff799ffb23a4c3ca18d9bc0d9f07cf619345bc8"
+    },
+    {
+      "path": "evidence/INPUTS/C2_WEB_SOURCES.json",
+      "size_bytes": 25711,
+      "sha256": "ab746f6099285b82e65a40f746f8a67b4cc802a75a09d29a12179a1d052897b7"
+    },
+    {
+      "path": "evidence/INPUTS/FIRST_PARTY_ATTESTATION.json",
+      "size_bytes": 768,
+      "sha256": "838a13cb455656871cc5a3ad9c5ef2f2e8c51e49b2257b996b2a0d11dd8521c4"
+    },
+    {
+      "path": "evidence/INPUTS/GW5_C0_RERUN_20261009.json",
+      "size_bytes": 4121,
+      "sha256": "0493a4b8b561e54b323cd84b509093265691d8f82d17196e53a74a47431e1d49"
+    },
+    {
+      "path": "evidence/INPUTS/GW5_C1_ROSTER_RECHECK_20261009.json",
+      "size_bytes": 19606,
+      "sha256": "144cfb131bf59224c353bdb7197c96644d8b5608bf5f38e921b77db0f1f089f7"
+    },
+    {
+      "path": "evidence/INPUTS/GW5_C2_REAL_WORLD_STATE_20261009.json",
+      "size_bytes": 52626,
+      "sha256": "d783b249503b8ffbc1402a5c45c2275d334a8392475913705eca69ff355f08f7"
+    },
+    {
+      "path": "evidence/SSOT_RELEASE_DISCOVERY.json",
+      "size_bytes": 1433,
+      "sha256": "1723d62463d6cf4f8dc8037ca2723b141c58ff31c9b95c9e8ea5d73c416aa646"
+    },
+    {
+      "path": "evidence/START_CURRENT_AUDITS.json",
+      "size_bytes": 507013,
+      "sha256": "c011d74b5149a83b5ee527e7e23d4cc330ceac961b276cf08a8fda8d2c2be861"
+    },
+    {
+      "path": "GW5_CUTOFF_TEMPLATE_SET/GW5_CUTOFF_SSOT_REFRESH_INPUT_20261009.json",
+      "size_bytes": 329143,
+      "sha256": "32224bf4d20a23793c2130873c182c4235feecc7d56cc8d2b974d34c8a5e75ad"
+    },
+    {
+      "path": "PI2_RUECKGABE_GW5_C3_20261009.md",
+      "size_bytes": 7021,
+      "sha256": "15c13c7c88976e47dffe49af513f34afd102200527c843433ed4ecafd2b980c0"
+    },
+    {
+      "path": "READBACK.json",
+      "size_bytes": 572,
+      "sha256": "f46558bbf847317531877a866e172619e97831a52452cefaa441ac18ef7b5653"
+    }
+  ]
+}

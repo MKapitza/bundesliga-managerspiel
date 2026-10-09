@@ -1,0 +1,51 @@
+{
+  "path": "C:\\Users\\mkapi\\Desktop\\BMS\\03_Modelle_und_Fachhandoffs\\CURRENT\\W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2\\MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL.zip",
+  "sha256": "32f239ad5c13dcc7c9162270e89608754012bd9274006f9429b07db5d8a6bb22",
+  "ssot_version": {
+    "schema": "bms.ssot-version",
+    "schema_version": "0.2",
+    "ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+    "predecessor_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+    "created_at": "2026-09-18T17:47:00+02:00",
+    "data_as_of": "2026-09-18T17:00:00+02:00",
+    "season_id": "73745028-426a-4970-a812-95455407ad77",
+    "scope": "W3.1_GW4_CUTOFF_CURRENT_STATE_36",
+    "released_scope_player_count": 36,
+    "current_state_counts": {
+      "CURRENT_BUNDESLIGA_CLUB": 35,
+      "OUTSIDE_BUNDESLIGA": 1
+    },
+    "historical_predecessor_preserved": true,
+    "valid_from_intervals_created": false,
+    "valid_to_intervals_created": false,
+    "resolution_artifact": "current-state-resolution-36.json"
+  },
+  "g3_decision": {
+    "schema": "bms.w3-1-gw4-g3-decision",
+    "schema_version": "0.2",
+    "run_id": "run-w3-1-gw4-refresh-20260918T154700Z-744726c884b0-r2",
+    "decision": "SSOT_RELEASED",
+    "ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+    "g3_release_id": "2d6c65ed-6b2e-5ba9-960c-70bfa15d68c0",
+    "g3_evidence_id": "evidence:38af4563-35c1-5443-9882-9d2a90f2047f",
+    "data_as_of": "2026-09-18T17:00:00+02:00",
+    "released_scope_player_count": 36,
+    "k2_result": "PASS",
+    "derivation": {
+      "current_state_coverage": "36/36",
+      "current_bundesliga_club_states": 35,
+      "outside_bundesliga_states": 1,
+      "all_candidate_states_evaluated": true,
+      "all_required_k2_controls_passed": true,
+      "no_new_identity_decisions": true,
+      "no_new_player_ids": true,
+      "no_new_club_ids": true,
+      "no_synthetic_validity_intervals": true,
+      "historical_2026_09_05_release_unchanged": true
+    },
+    "blocked_inputs": []
+  },
+  "member": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/current-state-resolution-36.json",
+  "member_sha256": "441a0ebb4a0a0fca0b920089f3a44723f2ab02b393e30cdd1979b6fb03039e51",
+  "use": "identity, same-season position, stable existing club_id only; no GW4 club-state extrapolation"
+}

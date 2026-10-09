@@ -1,0 +1,34 @@
+{
+  "C3": "WAITING_FOR_SSOT_G3_REFRESH",
+  "C3_DECISION": "C3_REFRESH_REQUIRED",
+  "PLAYERS_CHECKED": 36,
+  "IDENTITY_REUSE": "36/36",
+  "POSITION_REUSE": "36/36",
+  "CURRENT_STATE_REUSE": "0/36",
+  "CURRENT_STATE_REFRESH_REQUIRED": "36/36",
+  "CURRENT_STATE_REFRESH_REQUIRED_SCOPE": "All cutoff club/league assertions, including 1 OUTSIDE statement",
+  "POSITIVE_CLUB_STATE_REFRESH_REQUIRED": "35/36",
+  "OUTSIDE_STATE_REFRESH_REQUIRED": "1/36",
+  "OUTSIDE_BUNDESLIGA": {
+    "count": 1,
+    "names": [
+      "El Chadaille Bitshiabu"
+    ]
+  },
+  "SSOT_REFRESH_REQUIRED": "YES",
+  "EXISTING_SSOT_VERSIONS": [
+    "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0"
+  ],
+  "HISTORICAL_IDENTITY_PREDECESSOR": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+  "EXISTING_G3_REFERENCES": {
+    "g3_release_id": "2d6c65ed-6b2e-5ba9-960c-70bfa15d68c0",
+    "g3_evidence_id": "evidence:38af4563-35c1-5443-9882-9d2a90f2047f"
+  },
+  "NEW_SSOT_VERSION": "NONE",
+  "NEW_G3_RELEASE": "NONE",
+  "C4_C13": "NOT_STARTED",
+  "NEXT": "STOP → P&I 2 / Übergabe an Erstellung SSOT 2",
+  "CON008": "DEFERRED",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "checked_at": "2026-10-09T22:49:01.062262+02:00"
+}

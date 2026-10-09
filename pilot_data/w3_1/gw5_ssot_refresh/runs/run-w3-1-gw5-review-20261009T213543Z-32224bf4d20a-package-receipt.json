@@ -1,0 +1,9 @@
+{
+  "run_id": "run-w3-1-gw5-review-20261009T213543Z-32224bf4d20a",
+  "package_filename": "GW5_SSOT_K2_G3_REVIEW_20261009_BLOCKED_v0.1.zip",
+  "package_sha256": "3db9ac81a88c79ea9acf76889af9d0f91b2f9b05b331198dd77f593d764df56d",
+  "zip_crc": "PASS",
+  "internal_hashes_checked": 56,
+  "result": "BLOCKED",
+  "NEXT": "STOP → P&I 2"
+}

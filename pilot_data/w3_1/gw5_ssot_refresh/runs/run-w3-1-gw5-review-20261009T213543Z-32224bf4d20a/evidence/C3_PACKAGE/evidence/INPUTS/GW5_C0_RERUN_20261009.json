@@ -1,0 +1,91 @@
+{
+  "artifact": "GW5_C0_RERUN_20261009",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "checked_at": "2026-10-09T20:31:18.669693+02:00",
+  "full_rerun_performed": true,
+  "prior_blocked_results_reused": false,
+  "MODEL_ROOT_INVENTORY_SYNC": "PASS",
+  "OTHER_CURRENT_ROOTS": "PASS",
+  "DOC_REG": "4.1",
+  "CURRENT_MAPPING": {
+    "DOC-013": "0.1",
+    "DOC-014": "1.0",
+    "DOC-015": "0.8",
+    "DOC-016": "0.3",
+    "DOC-REG-001": "4.1"
+  },
+  "BASELINE_PACKAGES": "PASS",
+  "FINAL_C0": "PASS",
+  "CUTOFF_EXECUTION": "STARTED",
+  "C1_C13": "NOT_STARTED",
+  "NEXT": "C1",
+  "root_hash_checks": 434,
+  "root_manifest_checks": 430,
+  "root_inventory_files": 441,
+  "baseline_internal_hash_checks": 116,
+  "baseline_payload_manifest_checks": 113,
+  "baseline_outer_hash_checks": 3,
+  "baseline_crc": "3/3 PASS",
+  "root_provenance_comparison": [
+    {
+      "root": "C:\\Users\\mkapi\\Desktop\\BMS\\01_Projektquellen\\CURRENT",
+      "file": "MANIFEST.json",
+      "provenance_sha256": "f2d43e07d57a2d4c336ae2525e5ddfee86f5dea5fc547b26357d068b1552b933",
+      "current_sha256": "f2d43e07d57a2d4c336ae2525e5ddfee86f5dea5fc547b26357d068b1552b933",
+      "comparison": "IDENTICAL"
+    },
+    {
+      "root": "C:\\Users\\mkapi\\Desktop\\BMS\\01_Projektquellen\\CURRENT",
+      "file": "SHA256SUMS.txt",
+      "provenance_sha256": "275e5fd601e6063d168108b19b46162c19a7f9a36f296d31300e621461aae716",
+      "current_sha256": "275e5fd601e6063d168108b19b46162c19a7f9a36f296d31300e621461aae716",
+      "comparison": "IDENTICAL"
+    },
+    {
+      "root": "C:\\Users\\mkapi\\Desktop\\BMS\\02_Rohdaten\\W3_2_HIST_PROFILE\\CURRENT",
+      "file": "MANIFEST.json",
+      "provenance_sha256": "444ac4439d3118ee76301519b8000d3ee5997e566fb2803189a30115c0a5a806",
+      "current_sha256": "444ac4439d3118ee76301519b8000d3ee5997e566fb2803189a30115c0a5a806",
+      "comparison": "IDENTICAL"
+    },
+    {
+      "root": "C:\\Users\\mkapi\\Desktop\\BMS\\02_Rohdaten\\W3_2_HIST_PROFILE\\CURRENT",
+      "file": "SHA256SUMS.txt",
+      "provenance_sha256": "aadd15a5e65c05b95e6581f3b6774624b9829cce34827ebeace275f57ab4ee65",
+      "current_sha256": "aadd15a5e65c05b95e6581f3b6774624b9829cce34827ebeace275f57ab4ee65",
+      "comparison": "IDENTICAL"
+    },
+    {
+      "root": "C:\\Users\\mkapi\\Desktop\\BMS\\03_Modelle_und_Fachhandoffs\\CURRENT",
+      "file": "MANIFEST.json",
+      "provenance_sha256": "58b24a23b7c76d932097e0b17ba02d0539dfe363790c77e32291b7291916c518",
+      "current_sha256": "ef601c28a65df0020a5d3cc07133b396722648b5caec252cabac7d62345241d4",
+      "comparison": "CHANGED"
+    },
+    {
+      "root": "C:\\Users\\mkapi\\Desktop\\BMS\\03_Modelle_und_Fachhandoffs\\CURRENT",
+      "file": "SHA256SUMS.txt",
+      "provenance_sha256": "5a5c091082e80b150e8fdef0b05c5aa124f1ab8c56f49b9d51f6c620e7a54154",
+      "current_sha256": "040d865b9a174efd87bb3b204f77f8412dace0754d47eb5d16bd59431685cdce",
+      "comparison": "CHANGED"
+    },
+    {
+      "root": "C:\\Users\\mkapi\\Desktop\\BMS\\04_Technische_Preflights\\CURRENT",
+      "file": "MANIFEST.json",
+      "provenance_sha256": "75520de7960dd7416be0cbcf5ed4ad736ef8de3e23cf7f39fa7b2c25763f3160",
+      "current_sha256": "ab0bc0980171b5c956e79bfb925b00813a7b3503d03a4d89656836e4c2534c08",
+      "comparison": "CHANGED"
+    },
+    {
+      "root": "C:\\Users\\mkapi\\Desktop\\BMS\\04_Technische_Preflights\\CURRENT",
+      "file": "SHA256SUMS.txt",
+      "provenance_sha256": "4501b80aa12032abe22af681af7a74c5fc8fa43747de36ec8d51a704980775f0",
+      "current_sha256": "fd9abf77665bce8ace971e4215d95052862c8d48b5295d6ee45a858ec7b3f85d",
+      "comparison": "CHANGED"
+    }
+  ],
+  "time_note": "Ausführung nach Cutoff gemäß ausdrücklichem Entblockungsauftrag. Keine Rückdatierung, kein behaupteter Live-Read exakt 17:00. Nur administrative Bestandsabbildung; keine neue Stichtags-Fachinformation erhoben.",
+  "no_new_governance_ids": true,
+  "source_freeze": "CUT_OFF_VALID",
+  "source_freeze_scope": "C0 Governance-/Dateibindung; keine fachliche READY-/RELEASE-Freigabe für C1–C13"
+}

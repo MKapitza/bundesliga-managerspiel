@@ -1,0 +1,14 @@
+{
+  "verification": "PASS",
+  "verification_scope": "Byte integrity, references, K2 coverage and blocked gate consistency; not domain release",
+  "package_filename": "GW5_SSOT_K2_G3_REVIEW_20261009_BLOCKED_v0.1.zip",
+  "package_sha256": "3db9ac81a88c79ea9acf76889af9d0f91b2f9b05b331198dd77f593d764df56d",
+  "zip_members": 57,
+  "manifest_entries": 55,
+  "hash_entries": 56,
+  "players_checked": 36,
+  "control_evaluations": 288,
+  "new_ssot_versions": 0,
+  "g3_releases": 0,
+  "CON008": "NOT_PERFORMED"
+}

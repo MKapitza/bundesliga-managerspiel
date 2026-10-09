@@ -1,0 +1,502 @@
+{
+  "artifact": "GW5_C1_ROSTER_RECHECK_20261009",
+  "C1": "PASS",
+  "participant": "Mathias",
+  "participant_id": "cd9d5c00-d440-5a97-afc8-3c8bd1e8f2c0",
+  "roster_size": 36,
+  "roster_members": [
+    {
+      "row": 1,
+      "display_name": "Noah Atubolu",
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "season_position": "T",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 2,
+      "display_name": "Gregor Kobel",
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "season_position": "T",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 3,
+      "display_name": "Kevin Diks",
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 4,
+      "display_name": "Maximilian Mittelstädt",
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 5,
+      "display_name": "Alphonso Davies",
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 6,
+      "display_name": "Vladimír Coufal",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 7,
+      "display_name": "Josip Juranović",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 8,
+      "display_name": "Daniel Svensson",
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 9,
+      "display_name": "Nico Schlotterbeck",
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 10,
+      "display_name": "Robin Koch",
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 11,
+      "display_name": "Konrad Laimer",
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 12,
+      "display_name": "Miro Muheim",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 13,
+      "display_name": "Castello Lukeba",
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 14,
+      "display_name": "Bernardo Fernandes da Silva Junior",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 15,
+      "display_name": "Christopher Trimmel",
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 16,
+      "display_name": "El Chadaille Bitshiabu",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "season_position": "A",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 17,
+      "display_name": "Nadiem Amiri",
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 18,
+      "display_name": "Farès Chaïbi",
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 19,
+      "display_name": "Alexis Claude-Maurice",
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 20,
+      "display_name": "Andrej Kramarić",
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 21,
+      "display_name": "Arijon Ibrahimović",
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 22,
+      "display_name": "Brajan Gruda",
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 23,
+      "display_name": "Carney Chukwuemeka",
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 24,
+      "display_name": "Fabian Rieder",
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 25,
+      "display_name": "Iván San José Cantalejo (Chuki)",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 26,
+      "display_name": "Jamie Leweling",
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 27,
+      "display_name": "Lukas Petkov",
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 28,
+      "display_name": "Malik Tillman",
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 29,
+      "display_name": "Wouter Burger",
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 30,
+      "display_name": "Ísak Bergmann Jóhannesson",
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "season_position": "M",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 31,
+      "display_name": "Serge Gnabry",
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "season_position": "S",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 32,
+      "display_name": "Deniz Undav",
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "season_position": "S",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 33,
+      "display_name": "Maximilian Beier",
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "season_position": "S",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 34,
+      "display_name": "Fisnik Asllani",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "season_position": "S",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 35,
+      "display_name": "Christian Kofane",
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "season_position": "S",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    },
+    {
+      "row": 36,
+      "display_name": "Moussa Diaby",
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "season_position": "S",
+      "roster_membership": "MEMBER_OF_MATHIAS_ROSTER",
+      "existing_identity_binding": {
+        "source_ssot_version_id": "c2b1156d-82f1-4f52-9d3c-c13c8bdb24d2",
+        "identity_reusable": true,
+        "season_position_reusable_for_same_season": true,
+        "club_or_bundesliga_state_reusable_at_cutoff": false
+      }
+    }
+  ],
+  "capture_method": "BASELINE_ROSTER_PLUS_FIRST_PARTY_USER_ATTESTATION",
+  "captured_at": "2026-10-09T21:52:47.149994+02:00",
+  "effective_as_of": "2026-10-09T17:00:00+02:00",
+  "source_ref": [
+    {
+      "path": "C:\\Users\\mkapi\\Desktop\\BMS\\03_Modelle_und_Fachhandoffs\\CURRENT\\W3_1_GW4_Cutoff_Freeze_20260918\\MS2_W3_1_GW4_Cutoff_Freeze_v0.1.json",
+      "sha256": "37efbb876a96e616fc1e43b6849e003ba1e02b4a0db6e715f10f7145a5098426",
+      "baseline_capture": "2026-09-18T17:00:00+02:00",
+      "baseline_source_ref": "MS2_W3_1_G4_Vollscope_Fachhandoff_v0.2.json"
+    },
+    {
+      "path": "evidence/FIRST_PARTY_ATTESTATION.json",
+      "sha256": "838a13cb455656871cc5a3ad9c5ef2f2e8c51e49b2257b996b2a0d11dd8521c4"
+    }
+  ],
+  "source_check_status": "PASS",
+  "FIRST_PARTY_ATTESTATION": "ACCEPTED",
+  "ROSTER_MUTATIONS_SINCE_BASELINE": "NONE_CONFIRMED",
+  "BITSHIABU_ROSTER_STATUS": "MEMBER_OF_MATHIAS_ROSTER",
+  "BITSHIABU_ROSTER_REPLACEMENT": "NONE_CONFIRMED_BY_FIRST_PARTY_ATTESTATION",
+  "roster_snapshot_created": false,
+  "C2": "NOT_STARTED",
+  "NEXT": "C2",
+  "C0_ref": "C:\\Users\\mkapi\\.codex\\.chatgpt-projects\\g-p-6a71de76000481919441cb57490dd027\\deliverables\\GW5_MODEL_ROOT_SYNC_C0_RERUN_20261009_v0.1\\GW5_C0_RERUN_20261009.json",
+  "CON008": "DEFERRED_BY_PI2; NO_PASS_CLAIMED"
+}

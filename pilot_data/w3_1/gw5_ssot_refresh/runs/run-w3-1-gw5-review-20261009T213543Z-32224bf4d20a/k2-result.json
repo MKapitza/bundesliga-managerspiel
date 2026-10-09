@@ -1,0 +1,5031 @@
+{
+  "run_id": "run-w3-1-gw5-review-20261009T213543Z-32224bf4d20a",
+  "checked_at": "2026-10-09T23:35:42.743114+02:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "result": "BLOCKED",
+  "execution": "COMPLETED_FOR_ALL_36_PLAYERS_AND_ALL_8_CONTROLS",
+  "players_checked": 36,
+  "player_control_evaluations": 288,
+  "controls": [
+    {
+      "control_id": "CTL-K2-001",
+      "name": "SSOT-Hoheit",
+      "result": "PASS",
+      "players_checked": 36,
+      "passed": 36,
+      "blocked": 0
+    },
+    {
+      "control_id": "CTL-K2-002",
+      "name": "SSOT-Identitaet",
+      "result": "PASS",
+      "players_checked": 36,
+      "passed": 36,
+      "blocked": 0
+    },
+    {
+      "control_id": "CTL-K2-003",
+      "name": "Vereins-/Bundesligazustand",
+      "result": "BLOCKED",
+      "players_checked": 36,
+      "passed": 0,
+      "blocked": 36
+    },
+    {
+      "control_id": "CTL-K2-004",
+      "name": "Saisonale Position",
+      "result": "PASS",
+      "players_checked": 36,
+      "passed": 36,
+      "blocked": 0
+    },
+    {
+      "control_id": "CTL-K2-005",
+      "name": "Zeitliche Gueltigkeit",
+      "result": "PASS",
+      "players_checked": 36,
+      "passed": 36,
+      "blocked": 0
+    },
+    {
+      "control_id": "CTL-K2-006",
+      "name": "SSOT-Prozessierbarkeit",
+      "result": "BLOCKED",
+      "players_checked": 36,
+      "passed": 0,
+      "blocked": 36
+    },
+    {
+      "control_id": "CTL-K2-007",
+      "name": "SSOT-Erstlegitimation",
+      "result": "PASS",
+      "players_checked": 36,
+      "passed": 36,
+      "blocked": 0
+    },
+    {
+      "control_id": "CTL-K2-008",
+      "name": "Current-State-Vereins-/Bundesligastatus",
+      "result": "BLOCKED",
+      "players_checked": 36,
+      "passed": 0,
+      "blocked": 36
+    }
+  ],
+  "player_controls": [
+    {
+      "control_event_ref": "k2-result.json#/player_controls/0",
+      "control_id": "CTL-K2-001",
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/1",
+      "control_id": "CTL-K2-002",
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/2",
+      "control_id": "CTL-K2-003",
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/3",
+      "control_id": "CTL-K2-004",
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/4",
+      "control_id": "CTL-K2-005",
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/5",
+      "control_id": "CTL-K2-006",
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/6",
+      "control_id": "CTL-K2-007",
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/7",
+      "control_id": "CTL-K2-008",
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/8",
+      "control_id": "CTL-K2-001",
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/9",
+      "control_id": "CTL-K2-002",
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/10",
+      "control_id": "CTL-K2-003",
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/11",
+      "control_id": "CTL-K2-004",
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/12",
+      "control_id": "CTL-K2-005",
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/13",
+      "control_id": "CTL-K2-006",
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/14",
+      "control_id": "CTL-K2-007",
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/15",
+      "control_id": "CTL-K2-008",
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/16",
+      "control_id": "CTL-K2-001",
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/17",
+      "control_id": "CTL-K2-002",
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/18",
+      "control_id": "CTL-K2-003",
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/19",
+      "control_id": "CTL-K2-004",
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/20",
+      "control_id": "CTL-K2-005",
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/21",
+      "control_id": "CTL-K2-006",
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/22",
+      "control_id": "CTL-K2-007",
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/23",
+      "control_id": "CTL-K2-008",
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/24",
+      "control_id": "CTL-K2-001",
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/25",
+      "control_id": "CTL-K2-002",
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/26",
+      "control_id": "CTL-K2-003",
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/27",
+      "control_id": "CTL-K2-004",
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/28",
+      "control_id": "CTL-K2-005",
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/29",
+      "control_id": "CTL-K2-006",
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/30",
+      "control_id": "CTL-K2-007",
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/31",
+      "control_id": "CTL-K2-008",
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/32",
+      "control_id": "CTL-K2-001",
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/33",
+      "control_id": "CTL-K2-002",
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/34",
+      "control_id": "CTL-K2-003",
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/35",
+      "control_id": "CTL-K2-004",
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/36",
+      "control_id": "CTL-K2-005",
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/37",
+      "control_id": "CTL-K2-006",
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/38",
+      "control_id": "CTL-K2-007",
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/39",
+      "control_id": "CTL-K2-008",
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/40",
+      "control_id": "CTL-K2-001",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/41",
+      "control_id": "CTL-K2-002",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/42",
+      "control_id": "CTL-K2-003",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/43",
+      "control_id": "CTL-K2-004",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/44",
+      "control_id": "CTL-K2-005",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/45",
+      "control_id": "CTL-K2-006",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/46",
+      "control_id": "CTL-K2-007",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/47",
+      "control_id": "CTL-K2-008",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/48",
+      "control_id": "CTL-K2-001",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/49",
+      "control_id": "CTL-K2-002",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/50",
+      "control_id": "CTL-K2-003",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/51",
+      "control_id": "CTL-K2-004",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/52",
+      "control_id": "CTL-K2-005",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/53",
+      "control_id": "CTL-K2-006",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/54",
+      "control_id": "CTL-K2-007",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/55",
+      "control_id": "CTL-K2-008",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/56",
+      "control_id": "CTL-K2-001",
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/57",
+      "control_id": "CTL-K2-002",
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/58",
+      "control_id": "CTL-K2-003",
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/59",
+      "control_id": "CTL-K2-004",
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/60",
+      "control_id": "CTL-K2-005",
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/61",
+      "control_id": "CTL-K2-006",
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/62",
+      "control_id": "CTL-K2-007",
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/63",
+      "control_id": "CTL-K2-008",
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/64",
+      "control_id": "CTL-K2-001",
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/65",
+      "control_id": "CTL-K2-002",
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/66",
+      "control_id": "CTL-K2-003",
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/67",
+      "control_id": "CTL-K2-004",
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/68",
+      "control_id": "CTL-K2-005",
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/69",
+      "control_id": "CTL-K2-006",
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/70",
+      "control_id": "CTL-K2-007",
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/71",
+      "control_id": "CTL-K2-008",
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/72",
+      "control_id": "CTL-K2-001",
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/73",
+      "control_id": "CTL-K2-002",
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/74",
+      "control_id": "CTL-K2-003",
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/75",
+      "control_id": "CTL-K2-004",
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/76",
+      "control_id": "CTL-K2-005",
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/77",
+      "control_id": "CTL-K2-006",
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/78",
+      "control_id": "CTL-K2-007",
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/79",
+      "control_id": "CTL-K2-008",
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/80",
+      "control_id": "CTL-K2-001",
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/81",
+      "control_id": "CTL-K2-002",
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/82",
+      "control_id": "CTL-K2-003",
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/83",
+      "control_id": "CTL-K2-004",
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/84",
+      "control_id": "CTL-K2-005",
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/85",
+      "control_id": "CTL-K2-006",
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/86",
+      "control_id": "CTL-K2-007",
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/87",
+      "control_id": "CTL-K2-008",
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/88",
+      "control_id": "CTL-K2-001",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/89",
+      "control_id": "CTL-K2-002",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/90",
+      "control_id": "CTL-K2-003",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/91",
+      "control_id": "CTL-K2-004",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/92",
+      "control_id": "CTL-K2-005",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/93",
+      "control_id": "CTL-K2-006",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/94",
+      "control_id": "CTL-K2-007",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/95",
+      "control_id": "CTL-K2-008",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/96",
+      "control_id": "CTL-K2-001",
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/97",
+      "control_id": "CTL-K2-002",
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/98",
+      "control_id": "CTL-K2-003",
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/99",
+      "control_id": "CTL-K2-004",
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/100",
+      "control_id": "CTL-K2-005",
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/101",
+      "control_id": "CTL-K2-006",
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/102",
+      "control_id": "CTL-K2-007",
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/103",
+      "control_id": "CTL-K2-008",
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/104",
+      "control_id": "CTL-K2-001",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/105",
+      "control_id": "CTL-K2-002",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/106",
+      "control_id": "CTL-K2-003",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/107",
+      "control_id": "CTL-K2-004",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/108",
+      "control_id": "CTL-K2-005",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/109",
+      "control_id": "CTL-K2-006",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/110",
+      "control_id": "CTL-K2-007",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/111",
+      "control_id": "CTL-K2-008",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/112",
+      "control_id": "CTL-K2-001",
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/113",
+      "control_id": "CTL-K2-002",
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/114",
+      "control_id": "CTL-K2-003",
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/115",
+      "control_id": "CTL-K2-004",
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/116",
+      "control_id": "CTL-K2-005",
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/117",
+      "control_id": "CTL-K2-006",
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/118",
+      "control_id": "CTL-K2-007",
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/119",
+      "control_id": "CTL-K2-008",
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/120",
+      "control_id": "CTL-K2-001",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/121",
+      "control_id": "CTL-K2-002",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/122",
+      "control_id": "CTL-K2-003",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. POSITIVE_SEASON_LOAN_EVIDENCE_PRESENT_BUT_MANDATORY_OBSERVATION_PROVENANCE_INCOMPLETE"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/123",
+      "control_id": "CTL-K2-004",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/124",
+      "control_id": "CTL-K2-005",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/125",
+      "control_id": "CTL-K2-006",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/126",
+      "control_id": "CTL-K2-007",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/127",
+      "control_id": "CTL-K2-008",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/128",
+      "control_id": "CTL-K2-001",
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/129",
+      "control_id": "CTL-K2-002",
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/130",
+      "control_id": "CTL-K2-003",
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/131",
+      "control_id": "CTL-K2-004",
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/132",
+      "control_id": "CTL-K2-005",
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/133",
+      "control_id": "CTL-K2-006",
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/134",
+      "control_id": "CTL-K2-007",
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/135",
+      "control_id": "CTL-K2-008",
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/136",
+      "control_id": "CTL-K2-001",
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/137",
+      "control_id": "CTL-K2-002",
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/138",
+      "control_id": "CTL-K2-003",
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/139",
+      "control_id": "CTL-K2-004",
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/140",
+      "control_id": "CTL-K2-005",
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/141",
+      "control_id": "CTL-K2-006",
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/142",
+      "control_id": "CTL-K2-007",
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/143",
+      "control_id": "CTL-K2-008",
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/144",
+      "control_id": "CTL-K2-001",
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/145",
+      "control_id": "CTL-K2-002",
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/146",
+      "control_id": "CTL-K2-003",
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/147",
+      "control_id": "CTL-K2-004",
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/148",
+      "control_id": "CTL-K2-005",
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/149",
+      "control_id": "CTL-K2-006",
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/150",
+      "control_id": "CTL-K2-007",
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/151",
+      "control_id": "CTL-K2-008",
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/152",
+      "control_id": "CTL-K2-001",
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/153",
+      "control_id": "CTL-K2-002",
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/154",
+      "control_id": "CTL-K2-003",
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/155",
+      "control_id": "CTL-K2-004",
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/156",
+      "control_id": "CTL-K2-005",
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/157",
+      "control_id": "CTL-K2-006",
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/158",
+      "control_id": "CTL-K2-007",
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/159",
+      "control_id": "CTL-K2-008",
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/160",
+      "control_id": "CTL-K2-001",
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/161",
+      "control_id": "CTL-K2-002",
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/162",
+      "control_id": "CTL-K2-003",
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/163",
+      "control_id": "CTL-K2-004",
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/164",
+      "control_id": "CTL-K2-005",
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/165",
+      "control_id": "CTL-K2-006",
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/166",
+      "control_id": "CTL-K2-007",
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/167",
+      "control_id": "CTL-K2-008",
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/168",
+      "control_id": "CTL-K2-001",
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/169",
+      "control_id": "CTL-K2-002",
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/170",
+      "control_id": "CTL-K2-003",
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/171",
+      "control_id": "CTL-K2-004",
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/172",
+      "control_id": "CTL-K2-005",
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/173",
+      "control_id": "CTL-K2-006",
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/174",
+      "control_id": "CTL-K2-007",
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/175",
+      "control_id": "CTL-K2-008",
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/176",
+      "control_id": "CTL-K2-001",
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/177",
+      "control_id": "CTL-K2-002",
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/178",
+      "control_id": "CTL-K2-003",
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/179",
+      "control_id": "CTL-K2-004",
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/180",
+      "control_id": "CTL-K2-005",
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/181",
+      "control_id": "CTL-K2-006",
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/182",
+      "control_id": "CTL-K2-007",
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/183",
+      "control_id": "CTL-K2-008",
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/184",
+      "control_id": "CTL-K2-001",
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/185",
+      "control_id": "CTL-K2-002",
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/186",
+      "control_id": "CTL-K2-003",
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/187",
+      "control_id": "CTL-K2-004",
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/188",
+      "control_id": "CTL-K2-005",
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/189",
+      "control_id": "CTL-K2-006",
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/190",
+      "control_id": "CTL-K2-007",
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/191",
+      "control_id": "CTL-K2-008",
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/192",
+      "control_id": "CTL-K2-001",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/193",
+      "control_id": "CTL-K2-002",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/194",
+      "control_id": "CTL-K2-003",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/195",
+      "control_id": "CTL-K2-004",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/196",
+      "control_id": "CTL-K2-005",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/197",
+      "control_id": "CTL-K2-006",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/198",
+      "control_id": "CTL-K2-007",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/199",
+      "control_id": "CTL-K2-008",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/200",
+      "control_id": "CTL-K2-001",
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/201",
+      "control_id": "CTL-K2-002",
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/202",
+      "control_id": "CTL-K2-003",
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/203",
+      "control_id": "CTL-K2-004",
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/204",
+      "control_id": "CTL-K2-005",
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/205",
+      "control_id": "CTL-K2-006",
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/206",
+      "control_id": "CTL-K2-007",
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/207",
+      "control_id": "CTL-K2-008",
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/208",
+      "control_id": "CTL-K2-001",
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/209",
+      "control_id": "CTL-K2-002",
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/210",
+      "control_id": "CTL-K2-003",
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/211",
+      "control_id": "CTL-K2-004",
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/212",
+      "control_id": "CTL-K2-005",
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/213",
+      "control_id": "CTL-K2-006",
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/214",
+      "control_id": "CTL-K2-007",
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/215",
+      "control_id": "CTL-K2-008",
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/216",
+      "control_id": "CTL-K2-001",
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/217",
+      "control_id": "CTL-K2-002",
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/218",
+      "control_id": "CTL-K2-003",
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/219",
+      "control_id": "CTL-K2-004",
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/220",
+      "control_id": "CTL-K2-005",
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/221",
+      "control_id": "CTL-K2-006",
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/222",
+      "control_id": "CTL-K2-007",
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/223",
+      "control_id": "CTL-K2-008",
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/224",
+      "control_id": "CTL-K2-001",
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/225",
+      "control_id": "CTL-K2-002",
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/226",
+      "control_id": "CTL-K2-003",
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/227",
+      "control_id": "CTL-K2-004",
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/228",
+      "control_id": "CTL-K2-005",
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/229",
+      "control_id": "CTL-K2-006",
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/230",
+      "control_id": "CTL-K2-007",
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/231",
+      "control_id": "CTL-K2-008",
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/232",
+      "control_id": "CTL-K2-001",
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/233",
+      "control_id": "CTL-K2-002",
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/234",
+      "control_id": "CTL-K2-003",
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/235",
+      "control_id": "CTL-K2-004",
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/236",
+      "control_id": "CTL-K2-005",
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/237",
+      "control_id": "CTL-K2-006",
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/238",
+      "control_id": "CTL-K2-007",
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/239",
+      "control_id": "CTL-K2-008",
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/240",
+      "control_id": "CTL-K2-001",
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/241",
+      "control_id": "CTL-K2-002",
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/242",
+      "control_id": "CTL-K2-003",
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/243",
+      "control_id": "CTL-K2-004",
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/244",
+      "control_id": "CTL-K2-005",
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/245",
+      "control_id": "CTL-K2-006",
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/246",
+      "control_id": "CTL-K2-007",
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/247",
+      "control_id": "CTL-K2-008",
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/248",
+      "control_id": "CTL-K2-001",
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/249",
+      "control_id": "CTL-K2-002",
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/250",
+      "control_id": "CTL-K2-003",
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/251",
+      "control_id": "CTL-K2-004",
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/252",
+      "control_id": "CTL-K2-005",
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/253",
+      "control_id": "CTL-K2-006",
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/254",
+      "control_id": "CTL-K2-007",
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/255",
+      "control_id": "CTL-K2-008",
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/256",
+      "control_id": "CTL-K2-001",
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/257",
+      "control_id": "CTL-K2-002",
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/258",
+      "control_id": "CTL-K2-003",
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/259",
+      "control_id": "CTL-K2-004",
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/260",
+      "control_id": "CTL-K2-005",
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/261",
+      "control_id": "CTL-K2-006",
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/262",
+      "control_id": "CTL-K2-007",
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/263",
+      "control_id": "CTL-K2-008",
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/264",
+      "control_id": "CTL-K2-001",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/265",
+      "control_id": "CTL-K2-002",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/266",
+      "control_id": "CTL-K2-003",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/267",
+      "control_id": "CTL-K2-004",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/268",
+      "control_id": "CTL-K2-005",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/269",
+      "control_id": "CTL-K2-006",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/270",
+      "control_id": "CTL-K2-007",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/271",
+      "control_id": "CTL-K2-008",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/272",
+      "control_id": "CTL-K2-001",
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/273",
+      "control_id": "CTL-K2-002",
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/274",
+      "control_id": "CTL-K2-003",
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/275",
+      "control_id": "CTL-K2-004",
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/276",
+      "control_id": "CTL-K2-005",
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/277",
+      "control_id": "CTL-K2-006",
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/278",
+      "control_id": "CTL-K2-007",
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/279",
+      "control_id": "CTL-K2-008",
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/280",
+      "control_id": "CTL-K2-001",
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001; REQ-SSOT-001"
+      ],
+      "finding": "Historical release bytes preserved; candidate evidence not promoted."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/281",
+      "control_id": "CTL-K2-002",
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-001/015; REQ-SSOT-003"
+      ],
+      "finding": "Existing released player identity and existing club identity reused; no re-legitimation."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/282",
+      "control_id": "CTL-K2-003",
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007"
+      ],
+      "finding": "No complete releasable cutoff confirmation. OLDER_POSITIVE_FACTS_AND_POST_CUTOFF_CORROBORATION_DO_NOT_EXPLICITLY_ESTABLISH_TARGET_INSTANT"
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/283",
+      "control_id": "CTL-K2-004",
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-009/015; REQ-SSOT-002/003"
+      ],
+      "finding": "Same released position and season across predecessor, C1, C2 and refresh input."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/284",
+      "control_id": "CTL-K2-005",
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-012/019/032; TP-02/03/06"
+      ],
+      "finding": "No interpolation or validity interval created; no release for an unsupported instant."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/285",
+      "control_id": "CTL-K2-006",
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-015/032/033; REQ-SSOT-003/006/007"
+      ],
+      "finding": "Current-state review cases remain open; status is SSOT_BLOCKED for this requested cutoff."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/286",
+      "control_id": "CTL-K2-007",
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "PASS",
+      "check_status": "CHECK_PASSED",
+      "severity": "CRITICAL",
+      "block_effect": "NONE",
+      "resolution_status": "RESOLVED",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-030; REQ-SSOT-005"
+      ],
+      "finding": "No player_id or club_id created; initial-legitimation trigger not invoked. Reuse guard passed."
+    },
+    {
+      "control_event_ref": "k2-result.json#/player_controls/287",
+      "control_id": "CTL-K2-008",
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "data_as_of": "2026-10-09T17:00:00+02:00",
+      "checked_at": "2026-10-09T23:35:42.743114+02:00",
+      "result": "BLOCKED",
+      "check_status": "CHECK_FAILED",
+      "severity": "CRITICAL",
+      "block_effect": "RELEASE_BLOCK",
+      "resolution_status": "OPEN",
+      "trace_refs": [
+        "DOC-015@0.8",
+        "DEC-032/033; REQ-SSOT-006/007; TP-02/06/07"
+      ],
+      "finding": "Mandatory observed_at absent; existing validator returns false; verification/release remain unapproved."
+    }
+  ],
+  "failed_players": [
+    "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+    "956d0a9b-c749-4190-b02a-88ae28e555f0",
+    "064f6de3-2fcc-4e4c-962c-4f497c905321",
+    "d7033a82-5009-4008-afc7-386248fd10f1",
+    "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+    "d566ff64-be86-4648-855b-40c1f2fd7819",
+    "756a83b6-daf6-42b9-839a-31303fa35941",
+    "701a8629-72cf-493c-81cf-7d16e7e4032d",
+    "f66ff914-787a-46eb-b965-fa2fe1814c30",
+    "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+    "adc42591-1b56-42aa-af9b-fe672ff460b4",
+    "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+    "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+    "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+    "4567f6bc-c429-44b7-9ebd-b6736379338e",
+    "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+    "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+    "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+    "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+    "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+    "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+    "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+    "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+    "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+    "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+    "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+    "2328b13b-02f9-4de7-b064-55d428e34d94",
+    "991b4d70-4007-412b-8b37-dd11a6860639",
+    "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+    "c474360a-7e86-4b54-bc57-55cae78dcd96",
+    "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+    "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+    "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+    "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+    "a014968a-6e04-482a-8b7c-c1922129c60f",
+    "8f8cdcc7-c804-42eb-a577-e41befd1c66a"
+  ],
+  "scope_checks": {
+    "identity_set_36": "PASS",
+    "same_season_positions_36": "PASS",
+    "existing_club_ids_only": "PASS",
+    "candidate_semantics_35_plus_1": "PASS",
+    "no_double_or_conflicting_candidate_states": "PASS",
+    "source_and_predecessor_hash_traceability": "BLOCKED_PREDECESSOR_K2_EVIDENCE_DIVERGENCE",
+    "no_new_player_club_ids": "PASS",
+    "no_interpolation_or_synthetic_intervals": "PASS",
+    "release_ready_36": "BLOCKED"
+  },
+  "global_blockers": [
+    {
+      "reason_code": "PREDECESSOR_K2_EVIDENCE_DIVERGENCE",
+      "affected_player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "evidence_ref": "evidence/predecessor-comparison.json",
+      "required_input": "P&I 2 reconciliation of the two historical K2 evidence variants without rewriting either historical record."
+    }
+  ]
+}

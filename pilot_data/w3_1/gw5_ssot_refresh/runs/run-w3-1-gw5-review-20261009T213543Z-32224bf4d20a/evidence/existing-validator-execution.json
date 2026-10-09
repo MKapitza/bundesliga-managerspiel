@@ -1,0 +1,873 @@
+{
+  "checked_at": "2026-10-09T23:35:42.743114+02:00",
+  "probes": [
+    {
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/eintracht-frankfurt",
+            "https://en.eintracht.de/news/eintracht-unterliegt-nach-fuehrung-augsburg-179108/",
+            "https://profis.eintracht.de/news/eintracht-frankfurt-verpflichtet-noah-atubolu-178900/",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "9c5535c8-dcbb-4698-a1ad-ad255e9c3ad3"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/borussia-dortmund",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "02b0d742-c110-40ac-8bf1-ed45a4b80377"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/borussia-moenchengladbach/squad",
+            "https://www.mainz05.de/news/gladbach-joker-tore-entscheiden-wahnsinns-ritt",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "f97c8435-a5dd-4a19-8d09-347f6fa31a4f"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/vfb-stuttgart",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "1f193f57-cb65-4399-9373-7800d6600692"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/fc-bayern-muenchen",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "5e5baf09-5fef-46b3-8db4-361565c5a484"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/tsg-hoffenheim/stats",
+            "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/9/5/BVB-Traumstart-nach-Aufholjagd-in-Hoffenheim-perfekt.html",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "eabf1c96-ac52-467b-934e-b11a9843778b"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/1-fc-union-berlin",
+            "https://www.bayer04.de/en-us/news/bundesliga/werkself-thrash-union-berlin-4-0-in-first-home-game",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "237bae42-cb35-4cb3-8e8d-3951c14e0e48"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/borussia-dortmund",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "02b0d742-c110-40ac-8bf1-ed45a4b80377"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/borussia-dortmund",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "02b0d742-c110-40ac-8bf1-ed45a4b80377"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/eintracht-frankfurt",
+            "https://profis.eintracht.de/news/in-unserem-spiel-noch-luft-nach-oben-179374/",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "9c5535c8-dcbb-4698-a1ad-ad255e9c3ad3"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/fc-bayern-muenchen",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "5e5baf09-5fef-46b3-8db4-361565c5a484"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/hamburger-sv",
+            "https://www.hsv.de/news/wir-haben-maximal-bock-auf-diesen-wettbewerb-",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "15b40c17-fa0b-4097-9a68-a26c02c49830"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/rb-leipzig",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "5b024d53-f276-41b4-8999-40c731f7efcb"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/tsg-hoffenheim/stats",
+            "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/9/5/BVB-Traumstart-nach-Aufholjagd-in-Hoffenheim-perfekt.html",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/",
+            "https://www.bundesliga.com/de/spieler/bernardo"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "eabf1c96-ac52-467b-934e-b11a9843778b"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/1-fc-union-berlin",
+            "https://www.bayer04.de/en-us/news/bundesliga/werkself-thrash-union-berlin-4-0-in-first-home-game",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "237bae42-cb35-4cb3-8e8d-3951c14e0e48"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "validator": "validate_outside_bundesliga_state",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_bundesliga_state_confirmation": {
+          "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/",
+            "https://www.galatasaray.org/haber/gs-sportif-a-s/el-chadaille-bitshiabu-galatasarayda/60877",
+            "https://www.galatasaray.org/haber/futbol/galatasaraya-hos-geldin-el-chadaille-bitshiabu/60878"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "membership_status": "OUTSIDE_BUNDESLIGA"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/1-fsv-mainz-05",
+            "https://www.mainz05.de/news/gladbach-joker-tore-entscheiden-wahnsinns-ritt",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "32d37292-0b2b-462e-a536-fa9fbe6d28ae"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/eintracht-frankfurt",
+            "https://en.eintracht.de/news/eintracht-unterliegt-nach-fuehrung-augsburg-179108/",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "9c5535c8-dcbb-4698-a1ad-ad255e9c3ad3"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/fc-augsburg",
+            "https://en.eintracht.de/news/eintracht-unterliegt-nach-fuehrung-augsburg-179108/",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "3a57ccaf-f710-46bd-9526-1d165bebf215"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/tsg-hoffenheim/stats",
+            "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/9/5/BVB-Traumstart-nach-Aufholjagd-in-Hoffenheim-perfekt.html",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "eabf1c96-ac52-467b-934e-b11a9843778b"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/fc-augsburg",
+            "https://en.eintracht.de/news/eintracht-unterliegt-nach-fuehrung-augsburg-179108/",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "3a57ccaf-f710-46bd-9526-1d165bebf215"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/rb-leipzig",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "5b024d53-f276-41b4-8999-40c731f7efcb"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/borussia-dortmund",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "02b0d742-c110-40ac-8bf1-ed45a4b80377"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/fc-augsburg",
+            "https://en.eintracht.de/news/eintracht-unterliegt-nach-fuehrung-augsburg-179108/",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "3a57ccaf-f710-46bd-9526-1d165bebf215"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/sv-werder-bremen",
+            "https://www.werder.de/news/maenner/2025-2026/pm-chuki-02062026",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "965e7790-3520-4864-8cb2-da450c415a3b"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/vfb-stuttgart",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "1f193f57-cb65-4399-9373-7800d6600692"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/sv-elversberg",
+            "https://sv07elversberg.de/sve-erkaempft-sich-einen-punkt-auf-schalke/",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "2533a473-468d-4bf7-b7db-69129a0f086e"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/bayer-04-leverkusen/kader",
+            "https://www.bayer04.de/en-us/news/bundesliga/werkself-thrash-union-berlin-4-0-in-first-home-game",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "03a4b4b3-6cf6-48c6-839b-d80b3a9069c3"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/tsg-hoffenheim/stats",
+            "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/9/5/BVB-Traumstart-nach-Aufholjagd-in-Hoffenheim-perfekt.html",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "eabf1c96-ac52-467b-934e-b11a9843778b"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/1-fc-koeln/squad",
+            "https://www.bundesliga.com/en/bundesliga/news/stars-international-duty-harry-kane-michael-olise-konstantinos-karetsas-39314/",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/",
+            "https://www.bundesliga.com/de/spieler/isak-johannesson"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "92149536-119c-46fd-b4fa-e89360d7befb"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/fc-bayern-muenchen",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "5e5baf09-5fef-46b3-8db4-361565c5a484"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/vfb-stuttgart",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "1f193f57-cb65-4399-9373-7800d6600692"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/borussia-dortmund",
+            "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-borussia-dortmund-rb-leipzig-stuttgart-champions-league-squads-39017",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "02b0d742-c110-40ac-8bf1-ed45a4b80377"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/tsg-hoffenheim/stats",
+            "https://www.vfb.de/de/vfb/profis/saison/bundesliga/2627/3-tsg-hoffenheim----vfb-stuttgart-/",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "eabf1c96-ac52-467b-934e-b11a9843778b"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/bayer-04-leverkusen/kader",
+            "https://www.bayer04.de/en-us/news/bundesliga/werkself-thrash-union-berlin-4-0-in-first-home-game",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "03a4b4b3-6cf6-48c6-839b-d80b3a9069c3"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    },
+    {
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "validator": "validate_tc6_050",
+      "input": {
+        "status": "SSOT_BLOCKED",
+        "player_club_state_confirmation": {
+          "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+          "as_of": "2026-10-09T17:00:00+02:00",
+          "evidence_ref": "evidence/C3_PACKAGE/evidence/INPUTS/C2_WEB_SOURCES.json",
+          "source_reference": [
+            "https://www.bundesliga.com/de/bundesliga/clubs/bayer-04-leverkusen/kader",
+            "https://www.bayer04.de/en-us/news/bundesliga/werkself-thrash-union-berlin-4-0-in-first-home-game",
+            "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051/"
+          ],
+          "observed_at": null,
+          "verification_status": "REVIEW_REQUIRED",
+          "release_status": "NOT_RELEASED",
+          "conflict_status": "CLEAR",
+          "club_id": "03a4b4b3-6cf6-48c6-839b-d80b3a9069c3"
+        }
+      },
+      "returned": false,
+      "interpretation": "Required confirmation conditions are not fulfilled; this is not a released state."
+    }
+  ],
+  "scope": "Validation only; no materialization function or downstream workflow invoked."
+}

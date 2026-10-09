@@ -1,0 +1,335 @@
+[
+  {
+    "path": "C:\\Users\\mkapi\\.codex\\.chatgpt-projects\\g-p-6a71de76000481919441cb57490dd027\\deliverables\\GW5_MODEL_ROOT_SYNC_C0_RERUN_20261009_v0.1.zip",
+    "sha256": "b17e7b4d65fcb78ef03d9f1bc51962be8d8fea0751d74d313a188a97e3e87770",
+    "zip_crc": "PASS",
+    "internal_hashes": [
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/C0_BASELINE_PACKAGES.json",
+        "sha256": "296abad7e75b8a8115713a65ca0319991d258e0857267df392963bc5cc6413e6",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/C0_CURRENT_ROOTS.json",
+        "sha256": "112d945d808398e57271cfb6080cd40475a99e1bf9a557af4429044ceee594fa",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/C0_REGISTER.json",
+        "sha256": "f59fc2c8b11223ad124716898b553a0fde4f5a3a6b8a772cd450f217d030ab00",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/C0_SUBFOLDERS.json",
+        "sha256": "dbcc6489ea7aa423f34ce267b75b3535529e9e910e90bdde738d4f9b340732a5",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/C1_SOURCE_CHECK.json",
+        "sha256": "c9bb677989e6552733ed3af36394f2db4afd13f1f113178e481ab685a0942605",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/GW5_CUTOFF_ROSTER_RECHECK_20261009.json",
+        "sha256": "7ca97f041522ca8f30753b487c4086dd6340603b843cffb6c8bb7070c4f17a35",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/GW5_CUTOFF_ROSTER_SSOT_RECHECK_PLAN_v0.1.json",
+        "sha256": "67372be7956e127ca61e8c0e209a13f576e83f57328884618df642de3f6b4759",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/GW5_CUTOFF_RUNBOOK_20261009_v0.1.md",
+        "sha256": "8f9916b8bce325f414f73f5d0b0a24dfe57b50f70c7e0b928eff0c60dc59ec29",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/POST_SYNC_AUDIT.json",
+        "sha256": "a133870ab969040892ea5e87f0d2dbc67469087bec100757cfe93025063a0710",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/POST_SYNC_SUBFOLDERS.json",
+        "sha256": "dbcc6489ea7aa423f34ce267b75b3535529e9e910e90bdde738d4f9b340732a5",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/PRE_SYNC_AUDIT.json",
+        "sha256": "d786fc3dda70a562d9916ddade6eda46a42a2d8ec793d9fce449b6920bb434db",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/PRE_SYNC_REGISTER.json",
+        "sha256": "8ed1b3cd2720ae13fb9b139336a708b59951ddeb5c2c4c28b849db9deff8ed8b",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "evidence/PRE_SYNC_SUBFOLDERS.json",
+        "sha256": "dbcc6489ea7aa423f34ce267b75b3535529e9e910e90bdde738d4f9b340732a5",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "GW5_C0_RERUN_20261009.json",
+        "sha256": "0493a4b8b561e54b323cd84b509093265691d8f82d17196e53a74a47431e1d49",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "GW5_CUTOFF_TEMPLATE_SET/GW5_CUTOFF_ROSTER_RECHECK_20261009.json",
+        "sha256": "8fad97245ae5938c62dbb9f48ee87060362eee1277e4f694424b868624432364",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "GW5_CUTOFF_TEMPLATE_SET/GW5_CUTOFF_SOURCE_FREEZE_20261009.json",
+        "sha256": "3969aff07bd8df4b5b28e8553f99a1e383baa6a87b5f2de07b81d8b31bd1a259",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "GW5_ENTBLOCKUNG_RUECKGABE_20261009.json",
+        "sha256": "6e026897e5dd75e1a9b57ffde7eb4446823ab8f6f89670de2ce654464a9592b5",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "MODEL_ROOT_INVENTORY_SYNC.json",
+        "sha256": "d080c12d1aa59753115c56b0c7eb6e318c715b660042d14e950a521a71618c32",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "PI2_RUECKGABE_GW5_MODEL_ROOT_SYNC_C0_RERUN_20261009.md",
+        "sha256": "9b3af606f8f29efde4722f07d8d7db5939927c5f2fb9f2abd302cc04a2ea51b0",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "PRE_SYNC_HISTORICAL_PROVENANCE/ELEVEN_FILES.json",
+        "sha256": "bf7d58a01a6453cd12d22ac4c6b720422108b04b722bb7d472560f0d5f1c230e",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "PRE_SYNC_HISTORICAL_PROVENANCE/MANIFEST.json",
+        "sha256": "58b24a23b7c76d932097e0b17ba02d0539dfe363790c77e32291b7291916c518",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "PRE_SYNC_HISTORICAL_PROVENANCE/PHYSICAL_INVENTORY.json",
+        "sha256": "692630f1602dce3b21cac8bd784973883e48b9deb96765abc9b9b3312c83a402",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "PRE_SYNC_HISTORICAL_PROVENANCE/PROVENANCE.json",
+        "sha256": "23692c3620df7d31bd5a45708fe9ff2d9de5001d9c36dcc93175097da4d1534e",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "PRE_SYNC_HISTORICAL_PROVENANCE/SHA256SUMS.txt",
+        "sha256": "5a5c091082e80b150e8fdef0b05c5aa124f1ab8c56f49b9d51f6c620e7a54154",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "reproducibility/finish.py",
+        "sha256": "3366c1d831939e0a325ef8ab71a0cba335b075bdaf246cbbb6f8816bc182047b",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "reproducibility/run.py",
+        "sha256": "1016620d895a159ad842f893b4ea378913ad23f3be6fa26b7cf44b0ff9d08285",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "STAGED_POST_SYNC/MANIFEST.json",
+        "sha256": "ef601c28a65df0020a5d3cc07133b396722648b5caec252cabac7d62345241d4",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS_OUTPUT.txt",
+        "path": "STAGED_POST_SYNC/SHA256SUMS.txt",
+        "sha256": "040d865b9a174efd87bb3b204f77f8412dace0754d47eb5d16bd59431685cdce",
+        "result": "PASS"
+      }
+    ],
+    "checked_at": "2026-10-09T22:49:00.867559+02:00",
+    "result": "PASS"
+  },
+  {
+    "path": "C:\\Users\\mkapi\\.codex\\.chatgpt-projects\\g-p-6a71de76000481919441cb57490dd027\\deliverables\\GW5_C1_C2_20261009_v0.1.zip",
+    "sha256": "f9698dcd81a7d582285cd73f55663b5ac8e78ebb0bd444b1fe27c5d39b9e9350",
+    "zip_crc": "PASS",
+    "internal_hashes": [
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "evidence/BASELINE_ROSTER_REFERENCE.json",
+        "sha256": "13b80aac0f0b70792005d83b0432a7966165543b9adb58bc45456082e55953c4",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "evidence/C2_EXISTING_SSOT_BINDING.json",
+        "sha256": "1fca5add1d5a5db88983d938bff799ffb23a4c3ca18d9bc0d9f07cf619345bc8",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "evidence/C2_REGISTER_RECHECK.json",
+        "sha256": "7a0e3ba7281126170f29af6e833db935e213b3fba110ebf73849fca72dad33eb",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "evidence/C2_WEB_SOURCES.json",
+        "sha256": "ab746f6099285b82e65a40f746f8a67b4cc802a75a09d29a12179a1d052897b7",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "evidence/FIRST_PARTY_ATTESTATION.json",
+        "sha256": "838a13cb455656871cc5a3ad9c5ef2f2e8c51e49b2257b996b2a0d11dd8521c4",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "evidence/REGISTER_CHECK.json",
+        "sha256": "504a5a2fe0729ab027114bb3ccdc65e4ab60b57d385b3ddaa5ddade7fa009712",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "GW5_C1_ROSTER_RECHECK_20261009.json",
+        "sha256": "144cfb131bf59224c353bdb7197c96644d8b5608bf5f38e921b77db0f1f089f7",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "GW5_C2_REAL_WORLD_STATE_20261009.json",
+        "sha256": "d783b249503b8ffbc1402a5c45c2275d334a8392475913705eca69ff355f08f7",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "PI2_RUECKGABE_GW5_C1_C2_20261009.json",
+        "sha256": "e2335802547550d08e03b56bf685b440878fd5b725c07ae1893a07e77650fb68",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "PI2_RUECKGABE_GW5_C1_C2_20261009.md",
+        "sha256": "77ce6e5a09be05e63cf4115670aeb5f84bd3d8f818e4bd846ed4624c3de40cdf",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "READBACK_CHECK.json",
+        "sha256": "a099f464672c5d86662fc5e79a78679ee08b1d8cafe9b481ff2ad3580ea5216f",
+        "result": "PASS"
+      },
+      {
+        "index": "SHA256SUMS.txt",
+        "path": "MANIFEST.json",
+        "sha256": "81a1487aa3fed0f115fce98862cdefbd5b41a36f67ffbcde89bf923ff0f6d1dc",
+        "result": "PASS"
+      }
+    ],
+    "checked_at": "2026-10-09T22:49:00.867559+02:00",
+    "result": "PASS"
+  },
+  {
+    "path": "C:\\Users\\mkapi\\Desktop\\BMS\\03_Modelle_und_Fachhandoffs\\CURRENT\\W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2\\MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL.zip",
+    "sha256": "32f239ad5c13dcc7c9162270e89608754012bd9274006f9429b07db5d8a6bb22",
+    "zip_crc": "PASS",
+    "internal_hashes": [
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/MS2_W3_1_GW4_SSOT_Refresh_Input_v0.1.json",
+        "sha256": "744726c884b01c82aa33977c007586d2b8fe97105c6f0e040a3f4ca6be2dcb47",
+        "result": "PASS"
+      },
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/current-state-resolution-36.json",
+        "sha256": "441a0ebb4a0a0fca0b920089f3a44723f2ab02b393e30cdd1979b6fb03039e51",
+        "result": "PASS"
+      },
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/g3-decision.json",
+        "sha256": "a027e189de8a3cdb4d4232c9468b5514687bcb4c76d0dfafd671a487b29f8fc4",
+        "result": "PASS"
+      },
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/g3-evidence.json",
+        "sha256": "ea9859e8a5a421a239e5f504435bcf969e20c776f3fc732d09bbcd6ae6d68179",
+        "result": "PASS"
+      },
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/handoff.json",
+        "sha256": "7b7915eb25707cf831234c9ee4aae9e1a6ea170af643fd4c799bc6ed06876a4d",
+        "result": "PASS"
+      },
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/k2-result.json",
+        "sha256": "3008b0eebeba8e94a27d032f55e612a22b844c98f7bbe86d69c9d7dd9530561f",
+        "result": "PASS"
+      },
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/run-manifest.json",
+        "sha256": "dbbcf7260c69b7bfa33d3deaa56f775f4e64fc1f870fc823cf69f49e357629e9",
+        "result": "PASS"
+      },
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/source-integrity.json",
+        "sha256": "a0dc2de6e88d68d2e9d3a05eb49a0a95eec2024652606e9b79a8a054f3985901",
+        "result": "PASS"
+      },
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/source_MANIFEST.json",
+        "sha256": "f2d43e07d57a2d4c336ae2525e5ddfee86f5dea5fc547b26357d068b1552b933",
+        "result": "PASS"
+      },
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/source_SHA256SUMS.txt",
+        "sha256": "275e5fd601e6063d168108b19b46162c19a7f9a36f296d31300e621461aae716",
+        "result": "PASS"
+      },
+      {
+        "index": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/SHA256SUMS.txt",
+        "path": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/ssot-version.json",
+        "sha256": "c01fbf42b020b6ebbb302eb2be794124b8c57a13df6bf383ecab6e4547987c49",
+        "result": "PASS"
+      }
+    ],
+    "checked_at": "2026-10-09T22:49:00.896243+02:00",
+    "result": "PASS"
+  }
+]

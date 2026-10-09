@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-09T22:49:01.062262+02:00",
+  "scope": "All JSON and named SSOT/G3 members directly inside ZIP files in the four checked CURRENT roots; no historical root used as current.",
+  "records": [
+    {
+      "source": "C:\\Users\\mkapi\\Desktop\\BMS\\03_Modelle_und_Fachhandoffs\\CURRENT\\W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2\\MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL.zip::MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/g3-decision.json",
+      "schema": "bms.w3-1-gw4-g3-decision",
+      "ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+      "data_as_of": "2026-09-18T17:00:00+02:00",
+      "decision": "SSOT_RELEASED",
+      "created_at": null,
+      "g3_release_id": "2d6c65ed-6b2e-5ba9-960c-70bfa15d68c0"
+    },
+    {
+      "source": "C:\\Users\\mkapi\\Desktop\\BMS\\03_Modelle_und_Fachhandoffs\\CURRENT\\W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2\\MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL.zip::MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/ssot-version.json",
+      "schema": "bms.ssot-version",
+      "ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+      "data_as_of": "2026-09-18T17:00:00+02:00",
+      "decision": null,
+      "created_at": "2026-09-18T17:47:00+02:00",
+      "g3_release_id": null
+    }
+  ],
+  "latest_verified_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "no_later_cutoff_release_found": true
+}

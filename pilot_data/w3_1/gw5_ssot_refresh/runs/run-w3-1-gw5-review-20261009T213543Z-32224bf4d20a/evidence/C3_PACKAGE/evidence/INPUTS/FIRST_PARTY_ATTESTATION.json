@@ -1,0 +1,18 @@
+{
+  "artifact": "FIRST_PARTY_ATTESTATION_20261009",
+  "source": "Aktuelle direkte Benutzernachricht in diesem Chat, Abschnitte 4–11",
+  "recorded_at": "2026-10-09T21:52:47.149994+02:00",
+  "accepted_scope": "Keine privaten Managerspiel-Kadertransaktionen seit akzeptierter Baseline bis 2026-10-09T17:00:00+02:00; Bitshiabu ohne Ersatzkauf weiter Mitglied.",
+  "source_excerpts": [
+    "Die User-Attestation belegt ausschließlich, dass keine privaten Managerspiel-Kadertransaktionen erfolgt sind.",
+    "ROSTER_REPLACEMENT = NONE_CONFIRMED_BY_FIRST_PARTY_ATTESTATION"
+  ],
+  "does_not_evidence": [
+    "realer Verein",
+    "Bundesliga-Zugehörigkeit",
+    "Transferstatus",
+    "SSOT-Current-State",
+    "Eligibility"
+  ],
+  "status": "ACCEPTED"
+}

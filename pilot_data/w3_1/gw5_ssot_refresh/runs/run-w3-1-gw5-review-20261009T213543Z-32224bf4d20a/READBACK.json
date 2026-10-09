@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "scope": "Artifact integrity and faithfully recorded blocked result; not an SSOT release",
+  "checked_at": "2026-10-09T23:35:42.743114+02:00",
+  "input_hashes": "PASS",
+  "governance": "PASS",
+  "current_roots_unchanged": true,
+  "players_read_back": 36,
+  "identity_reused": 36,
+  "position_reused": 36,
+  "k2_controls_executed": 288,
+  "k2_passed": 180,
+  "k2_blocked": 108,
+  "existing_validator_rejections": 36,
+  "ssot_versions_created": 0,
+  "g3_releases_created": 0,
+  "new_player_club_ids_created": 0,
+  "synthetic_validity_intervals_created": 0,
+  "CON008": "NOT_PERFORMED"
+}

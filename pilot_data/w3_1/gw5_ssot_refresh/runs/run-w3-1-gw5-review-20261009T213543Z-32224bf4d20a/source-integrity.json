@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "scope": "Authorized input hashes, package internal bindings and live CURRENT governance",
+  "input_sha256": "32224bf4d20a23793c2130873c182c4235feecc7d56cc8d2b974d34c8a5e75ad",
+  "zip_sha256": "39fd76fb889a643d97a764f28ca0c27bf11649de808dee7f9a41d5fc2b04cc2c",
+  "zip_crc": "PASS",
+  "zip_internal_hash_checks": 25,
+  "zip_manifest_checks": 24,
+  "standalone_input_equals_zip_member": true,
+  "all_input_and_predecessor_bindings": "PASS_WITHIN_HANDOFF_PACKAGE",
+  "current_set": {
+    "DOC-013": "0.1",
+    "DOC-014": "1.0",
+    "DOC-015": "0.8",
+    "DOC-016": "0.3",
+    "DOC-REG-001": "4.1"
+  },
+  "current_root_hash_checks": 434,
+  "current_root_manifest_checks": 430,
+  "governance_text_matches_current_bytes": true,
+  "repository_predecessor_comparison_ref": "evidence/predecessor-comparison.json",
+  "repository_ssot_version_and_g3_match": true,
+  "repository_k2_matches": false
+}

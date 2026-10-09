@@ -1,0 +1,31 @@
+{
+  "run_id": "run-w3-1-gw5-review-20261009T213543Z-32224bf4d20a",
+  "checked_at": "2026-10-09T23:35:42.743114+02:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "SSOT_REFRESH": "BLOCKED",
+  "PLAYERS": 36,
+  "IDENTITY_REUSED": "36/36",
+  "POSITION_REUSED": "36/36",
+  "CURRENT_STATE_REVIEWED": "36/36",
+  "CURRENT_STATE_RESOLVED": "0/36",
+  "BUNDESLIGA_CLUB": 0,
+  "OUTSIDE_BUNDESLIGA": 0,
+  "C2_CANDIDATES": {
+    "BUNDESLIGA_CLUB": 35,
+    "OUTSIDE_BUNDESLIGA": 1,
+    "outside_names": [
+      "El Chadaille Bitshiabu"
+    ]
+  },
+  "K2": "BLOCKED",
+  "K2_EXECUTION": "COMPLETE",
+  "SSOT_VERSION_ID": null,
+  "G3": "BLOCKED",
+  "G3_RELEASE_ID": null,
+  "G3_EVIDENCE_ID": "evidence:048f9a68-13f0-42da-b44c-cebf6cbe5ec2",
+  "PREDECESSOR_K2_CONSISTENCY": "REVIEW_REQUIRED",
+  "CON-008": "NOT_PERFORMED",
+  "C4_C13": "NOT_STARTED",
+  "NEXT": "STOP → P&I 2"
+}

@@ -1,0 +1,76 @@
+{
+  "run_id": "run-w3-1-gw5-review-20261009T213543Z-32224bf4d20a",
+  "checked_at": "2026-10-09T23:35:42.743114+02:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "input": {
+    "file": "GW5_CUTOFF_SSOT_REFRESH_INPUT_20261009.json",
+    "sha256": "32224bf4d20a23793c2130873c182c4235feecc7d56cc8d2b974d34c8a5e75ad"
+  },
+  "handoff": {
+    "file": "evidence/GW5_C3_20261009_v0.1.zip",
+    "sha256": "39fd76fb889a643d97a764f28ca0c27bf11649de808dee7f9a41d5fc2b04cc2c"
+  },
+  "predecessor_g3_release_id": "2d6c65ed-6b2e-5ba9-960c-70bfa15d68c0",
+  "predecessor_g3_evidence_id": "evidence:38af4563-35c1-5443-9882-9d2a90f2047f",
+  "predecessor_data_as_of": "2026-09-18T17:00:00+02:00",
+  "identity_position_scope": [
+    "064f6de3-2fcc-4e4c-962c-4f497c905321",
+    "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+    "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+    "2328b13b-02f9-4de7-b064-55d428e34d94",
+    "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+    "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+    "4567f6bc-c429-44b7-9ebd-b6736379338e",
+    "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+    "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+    "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+    "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+    "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+    "701a8629-72cf-493c-81cf-7d16e7e4032d",
+    "756a83b6-daf6-42b9-839a-31303fa35941",
+    "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+    "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+    "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+    "956d0a9b-c749-4190-b02a-88ae28e555f0",
+    "991b4d70-4007-412b-8b37-dd11a6860639",
+    "a014968a-6e04-482a-8b7c-c1922129c60f",
+    "adc42591-1b56-42aa-af9b-fe672ff460b4",
+    "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+    "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+    "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+    "c474360a-7e86-4b54-bc57-55cae78dcd96",
+    "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+    "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+    "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+    "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+    "d566ff64-be86-4648-855b-40c1f2fd7819",
+    "d7033a82-5009-4008-afc7-386248fd10f1",
+    "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+    "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+    "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+    "f66ff914-787a-46eb-b965-fa2fe1814c30",
+    "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc"
+  ],
+  "governance": {
+    "DOC-013": "0.1",
+    "DOC-014": "1.0",
+    "DOC-015": "0.8",
+    "DOC-016": "0.3",
+    "DOC-REG-001": "4.1"
+  },
+  "historical_preflight_preserved": "../../preflight-blocked-20261009.json",
+  "supersedes_prior_input_blockers": [
+    "GW5_SSOT_REFRESH_INPUT_HASH_MISMATCH",
+    "GW5_SSOT_REFRESH_INPUT_UNPOPULATED",
+    "MISSING_GW5_C3_HANDOFF_PACKAGE"
+  ],
+  "new_blockers": [
+    "REQUIRED_OBSERVED_AT_NOT_DOCUMENTED",
+    "CUTOFF_STATE_NOT_SUFFICIENTLY_EVIDENCED",
+    "PREDECESSOR_K2_EVIDENCE_DIVERGENCE"
+  ],
+  "branch": "ms2-w3-1-gw5-ssot-refresh",
+  "base_commit": "1e589347d9fd20572cb5ee2d02ddb1b74d8365d5",
+  "predecessor_comparison_ref": "evidence/predecessor-comparison.json"
+}

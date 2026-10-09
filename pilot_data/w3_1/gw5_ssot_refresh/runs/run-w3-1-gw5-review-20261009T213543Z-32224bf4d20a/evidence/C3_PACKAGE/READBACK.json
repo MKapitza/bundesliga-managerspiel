@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-09T22:49:01.221014+02:00",
+  "players": 36,
+  "existing_player_ids_preserved": 36,
+  "positions_match_released_same_season_ssot": 36,
+  "point_in_time_refresh_decisions": 36,
+  "positive_club_refresh": 35,
+  "outside_refresh": 1,
+  "bound_artifact_hashes": "PASS",
+  "current_inventory_unchanged_during_C3": true,
+  "new_ssot_versions": 0,
+  "new_g3_releases": 0,
+  "new_player_club_governance_ids": 0,
+  "synthetic_validity_intervals": 0,
+  "C4_C13": "NOT_STARTED",
+  "CON008": "DEFERRED; NOT_PERFORMED"
+}

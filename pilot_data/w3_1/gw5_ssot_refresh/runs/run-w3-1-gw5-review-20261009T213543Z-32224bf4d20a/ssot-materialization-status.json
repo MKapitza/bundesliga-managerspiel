@@ -1,0 +1,10 @@
+{
+  "run_id": "run-w3-1-gw5-review-20261009T213543Z-32224bf4d20a",
+  "checked_at": "2026-10-09T23:35:42.743114+02:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "status": "NOT_MATERIALIZED",
+  "ssot_version_id": null,
+  "reason": "K2 BLOCKED; no new released or provisional SSOT version created",
+  "predecessor_preserved": true
+}

@@ -1,0 +1,86 @@
+{
+  "checked_at": "2026-10-09T22:45:37.477760+02:00",
+  "version": "4.1",
+  "sha256": "eed5796493fc8c41f8992b8d825754791f8bd5d0e9994f9ade2f210ba3bffff5",
+  "mapping": {
+    "DOC-013": "0.1",
+    "DOC-014": "1.0",
+    "DOC-015": "0.8",
+    "DOC-016": "0.3",
+    "DOC-REG-001": "4.1"
+  },
+  "tables": [
+    [
+      [
+        "Dokument-ID",
+        "DOC-REG-001",
+        "Registerstand",
+        "4.1"
+      ],
+      [
+        "Status",
+        "Aktuell und verbindlich",
+        "Stand",
+        "15.09.2026"
+      ]
+    ],
+    [
+      [
+        "ID",
+        "Dokument",
+        "Version",
+        "Verbindliche Datei",
+        "Status",
+        "Zuständigkeit",
+        "Hinweis"
+      ],
+      [
+        "DOC-013",
+        "MS1-Abnahmeprotokoll",
+        "0.1",
+        "13_MS1_Abnahmeprotokoll_v0.1.docx",
+        "Aktuell",
+        "Projektsteuerung",
+        "Formaler MS1-Abnahmenachweis; bestätigt MS1-K01 bis K15 und bleibt separat."
+      ],
+      [
+        "DOC-014",
+        "Konsolidiertes Governance-/Steuerungspaket",
+        "1.0",
+        "14_Governance_Steuerungspaket_v1.0.docx",
+        "Aktuell",
+        "Projektsteuerung; Grundsatzfragen",
+        "Konsolidierte Governance-Kernquelle; enthält DEC-034 und CHG-0033 zur Fortsetzungsstrategie nach dem datenlimitierten W3.2-/GW2-Pilot. Keine neue REQ/CON."
+      ],
+      [
+        "DOC-015",
+        "Konsolidiertes Fachliches Zielmodell MS1",
+        "0.8",
+        "15_Fachliches_Zielmodell_MS1_v0.8.docx",
+        "Aktuell",
+        "Projektsteuerung; fachlich zuständige Fach-Chats",
+        "Unverändert v0.8; fachliches Zielmodell sowie Missing-/Freigabelogik bleiben durch DEC-034 unberührt."
+      ],
+      [
+        "DOC-016",
+        "Steuerungsdokument Milestone 2 – Umsetzung und Pilotierung",
+        "0.3",
+        "16_Steuerungsdokument_MS2_v0.3.docx",
+        "Aktuell",
+        "Projektsteuerung und Integrationsmanagement",
+        "Fortgeschrieben um DEC-034: CURRENT_GW2 = CLOSED_DATA_LIMITED; Option C bounded source check; Option B neuer Pilot nach Readiness-Preflight; Option D nur nach neuer Grundsatzentscheidung; W3.3/W3.4 bis validem W3.2/G5 blockiert."
+      ],
+      [
+        "DOC-REG-001",
+        "Dokumentenregister",
+        "4.1",
+        "Einzige aktuelle Quelle mit DOC-REG-001",
+        "Aktuell",
+        "Projektsteuerung",
+        "Wird bei Fortschreibung vollständig ersetzt; Uploadsuffix nicht maßgeblich. Stand 4.1 integriert CHG-0033."
+      ]
+    ]
+  ],
+  "text": "Dokumentenregister\nBundesliga-Managerspiel-Monitoring 2026/27\nDokument-ID\nDOC-REG-001\nRegisterstand\n4.1\nStatus\nAktuell und verbindlich\nStand\n15.09.2026\nFreigabehinweis: DOC-REG-001 Stand 4.1 ist durch Projektsteuerung und Integrationsmanagement 2 am 15.09.2026 freigegeben und aktuell verbindlich.\n\nVerbindlichkeitsregel\nBei mehreren Versionen einer Projektquelle ist ausschließlich die in diesem Dokumentenregister als aktuell ausgewiesene Fassung zu verwenden. Vor der Verwendung versionierter Projektquellen ist dieses Register zu prüfen. Ältere Fassungen dienen ausschließlich der Historie und dürfen nicht als aktuelle Arbeitsgrundlage behandelt werden.\nDas Dokumentenregister selbst wird nicht historisiert. Bei einer Neuerstellung wird die bisherige Fassung gelöscht und vollständig durch die neue Fassung ersetzt.\nAktuell verbindliche Projektquellen\nID\nDokument\nVersion\nVerbindliche Datei\nStatus\nZuständigkeit\nHinweis\nDOC-013\nMS1-Abnahmeprotokoll\n0.1\n13_MS1_Abnahmeprotokoll_v0.1.docx\nAktuell\nProjektsteuerung\nFormaler MS1-Abnahmenachweis; bestätigt MS1-K01 bis K15 und bleibt separat.\nDOC-014\nKonsolidiertes Governance-/Steuerungspaket\n1.0\n14_Governance_Steuerungspaket_v1.0.docx\nAktuell\nProjektsteuerung; Grundsatzfragen\nKonsolidierte Governance-Kernquelle; enthält DEC-034 und CHG-0033 zur Fortsetzungsstrategie nach dem datenlimitierten W3.2-/GW2-Pilot. Keine neue REQ/CON.\nDOC-015\nKonsolidiertes Fachliches Zielmodell MS1\n0.8\n15_Fachliches_Zielmodell_MS1_v0.8.docx\nAktuell\nProjektsteuerung; fachlich zuständige Fach-Chats\nUnverändert v0.8; fachliches Zielmodell sowie Missing-/Freigabelogik bleiben durch DEC-034 unberührt.\nDOC-016\nSteuerungsdokument Milestone 2 – Umsetzung und Pilotierung\n0.3\n16_Steuerungsdokument_MS2_v0.3.docx\nAktuell\nProjektsteuerung und Integrationsmanagement\nFortgeschrieben um DEC-034: CURRENT_GW2 = CLOSED_DATA_LIMITED; Option C bounded source check; Option B neuer Pilot nach Readiness-Preflight; Option D nur nach neuer Grundsatzentscheidung; W3.3/W3.4 bis validem W3.2/G5 blockiert.\nDOC-REG-001\nDokumentenregister\n4.1\nEinzige aktuelle Quelle mit DOC-REG-001\nAktuell\nProjektsteuerung\nWird bei Fortschreibung vollständig ersetzt; Uploadsuffix nicht maßgeblich. Stand 4.1 integriert CHG-0033.\nArchiv-/Ersetzungshinweis: Mit CHG-0033 wurden DOC-014 v0.9 auf v1.0 und DOC-016 v0.2 auf v0.3 fortgeschrieben, um DEC-034 und die MS2-Fortsetzungslogik nach dem datenlimitierten W3.2-/GW2-Pilotbefund verbindlich zu integrieren. DOC-015 v0.8 und DOC-013 v0.1 bleiben unverändert. Historische Originale und Prüfnachweise verbleiben ausschließlich in Bibliothek/Archiv und sind keine aktuelle Arbeitsgrundlage.\nPflege- und Freigaberegeln\nJe Dokumenttyp darf genau eine Fassung den Status „Aktuell“ besitzen.\nBei einer Fortschreibung wird eine neue Datei mit neuer Versionsnummer erstellt und als Projektquelle hinzugefügt.\nDanach wird ausschließlich der zugehörige Eintrag in diesem Register aktualisiert.\nDie ersetzte Fassung bleibt unverändert als historische Quelle beziehungsweise Archivnachweis erhalten und wird nach abgeschlossener Prüfung nicht mehr als aktuelle Arbeitsgrundlage verwendet.\nArchivierte Fassungen werden weder umbenannt noch nachträglich bearbeitet.\nÄnderungen am Register werden im Chat „Projektsteuerung und Integrationsmanagement“ geprüft und freigegeben.\nQuellenplatzregel: Arbeits- und Rückmeldedateien werden nach Möglichkeit nicht als dauerhafte Projektquellen registriert. Die nach MS1 durchgeführte Quellenkonsolidierung reduziert den aktiven Kernbestand auf wenige selbsttragende Quellen; historische Originale und Prüfnachweise verbleiben in Bibliothek/Archiv.\nPrüfschritt vor Nutzung einer Projektquelle\nVor jeder inhaltlichen Verwendung einer versionierten Projektquelle ist zu prüfen, ob Dateiname und Version mit dem Eintrag in der Tabelle übereinstimmen. Bei Abweichungen ist die gefundene Datei als nicht verbindlich zu behandeln.",
+  "pass": true
+}
