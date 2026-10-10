@@ -1,0 +1,20 @@
+{
+  "schema": "bms.ssot-version",
+  "schema_version": "0.3",
+  "ssot_version_id": "bc32ff06-12f2-5381-b8c4-e7a1f3b41a11",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "created_at": "2026-10-10T16:05:21Z",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "season_id": "73745028-426a-4970-a812-95455407ad77",
+  "scope": "W3.1_GW5_CUTOFF_CURRENT_STATE_36",
+  "released_scope_player_count": 36,
+  "current_state_counts": {"CURRENT_BUNDESLIGA_CLUB": 35, "OUTSIDE_BUNDESLIGA": 1},
+  "identity_reused_count": 36,
+  "position_reused_count": 36,
+  "composite_current_state_count": 6,
+  "historical_predecessor_preserved": true,
+  "point_in_time_only": true,
+  "valid_from_intervals_created": false,
+  "valid_to_intervals_created": false,
+  "resolution_artifact": "GW5_C3_SSOT_G3_REFRESH_20261010_FINAL.zip::current-state-resolution-36.json"
+}
