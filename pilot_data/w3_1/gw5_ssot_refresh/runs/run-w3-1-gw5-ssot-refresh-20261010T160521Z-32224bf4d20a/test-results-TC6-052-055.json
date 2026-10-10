@@ -1,0 +1,14 @@
+{
+  "schema": "bms.gw5-governance-test-results",
+  "schema_version": "0.1",
+  "run_id": "run-w3-1-gw5-ssot-refresh-20261010T160521Z-32224bf4d20a",
+  "executed_at": "2026-10-10T16:05:21Z",
+  "governance": "DOC-015 v0.9 / DEC-035 / REQ-SSOT-008",
+  "tests": [
+    {"test_id":"TC6-052","fixture":"PRODUCTION_COUPFAL_COMPOSITE","expected":"VALID","actual":"VALID","result":"PASS","conditions":{"positive_evidence_before_t":true,"positive_evidence_after_t":true,"reproducible_continuity_check":true,"no_conflict":true}},
+    {"test_id":"TC6-053","fixture":"NEGATIVE_TEST_FIXTURE_NON_REPRODUCIBLE_CONTINUITY","expected":"NOT_VALID","actual":"NOT_VALID","result":"PASS","conditions":{"positive_evidence_before_t":true,"positive_evidence_after_t":true,"reproducible_continuity_check":false,"no_conflict":true},"production_mutation":false},
+    {"test_id":"TC6-054","fixture":"NEGATIVE_TEST_FIXTURE_POSITIVE_CONFLICT","expected":"NOT_VALID","actual":"NOT_VALID","result":"PASS","conditions":{"positive_evidence_before_t":true,"positive_evidence_after_t":true,"reproducible_continuity_check":true,"no_conflict":false},"production_mutation":false},
+    {"test_id":"TC6-055","fixture":"NEGATIVE_TEST_FIXTURE_NO_CONFLICT_ONLY","expected":"NOT_VALID","actual":"NOT_VALID","result":"PASS","conditions":{"positive_evidence_before_t":false,"positive_evidence_after_t":false,"reproducible_continuity_check":true,"no_conflict":true},"production_mutation":false}
+  ],
+  "all_pass": true
+}
