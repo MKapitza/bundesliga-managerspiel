@@ -1,0 +1,18 @@
+{
+  "schema": "bms.w3-1-gw5-g3-evidence",
+  "schema_version": "0.1",
+  "g3_evidence_id": "evidence:ebc90ee2-9699-5a9c-8ab6-7ca314d70661",
+  "run_id": "run-w3-1-gw5-ssot-refresh-20261010T160521Z-32224bf4d20a",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "ssot_version_id": "bc32ff06-12f2-5381-b8c4-e7a1f3b41a11",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "k2_result": "PASS",
+  "current_state_coverage": "36/36",
+  "states": {"CURRENT_BUNDESLIGA_CLUB": 35, "OUTSIDE_BUNDESLIGA": 1},
+  "composite_decision_ref": "GW5_C3_SSOT_G3_REFRESH_20261010_FINAL.zip::GW5_COMPOSITE_RECHECK_6_20261009.json",
+  "composite_valid": "6/6",
+  "tests_ref": "test-results-TC6-052-055.json",
+  "governance_manifest_ref": "GW5_C3_SSOT_G3_REFRESH_20261010_FINAL.zip::CURRENT_GOVERNANCE_BINDING.json",
+  "evidence_source": "GW5 remediation repository state + bounded six-player composite recheck",
+  "blocked_inputs": []
+}
