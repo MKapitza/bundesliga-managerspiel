@@ -1,0 +1,10 @@
+{
+  "package_filename":"GW5_C3_SSOT_G3_REFRESH_20261010_FINAL.zip",
+  "package_sha256":"b27faf5b858f5fafd3c2b9ff4093f4fd195312c8d84efe853e8b745433249963",
+  "package_bytes":412647,
+  "run_id":"run-w3-1-gw5-ssot-refresh-20261010T160521Z-32224bf4d20a",
+  "ssot_version_id":"bc32ff06-12f2-5381-b8c4-e7a1f3b41a11",
+  "g3_release_id":"b424c0a3-fa67-5d50-b31b-08b92c4ec113",
+  "g3_evidence_id":"evidence:ebc90ee2-9699-5a9c-8ab6-7ca314d70661",
+  "readback":"PASS"
+}
