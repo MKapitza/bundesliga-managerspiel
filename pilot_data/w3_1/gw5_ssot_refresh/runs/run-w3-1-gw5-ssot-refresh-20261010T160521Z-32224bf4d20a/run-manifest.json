@@ -1,0 +1,16 @@
+{
+  "schema":"bms.w3-1-ssot-run-manifest","schema_version":"0.7",
+  "run_id":"run-w3-1-gw5-ssot-refresh-20261010T160521Z-32224bf4d20a",
+  "run_at":"2026-10-10T16:05:21Z","execution_status":"SUCCEEDED",
+  "data_as_of":"2026-10-09T17:00:00+02:00",
+  "governance":{"DOC-REG-001":"4.2","DOC-013":"0.1","DOC-014":"1.1","DOC-015":"0.9","DOC-016":"0.3"},
+  "governance_decision":"DEC-035","governance_requirement":"REQ-SSOT-008","governance_change":"CHG-0034",
+  "source_predecessor_ssot_version_id":"a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "ssot_version_id":"bc32ff06-12f2-5381-b8c4-e7a1f3b41a11",
+  "released_scope_player_count":36,"outside_bundesliga_player_count":1,"composite_player_count":6,
+  "k2_result":"PASS","g3_decision":"SSOT_RELEASED",
+  "g3_release_id":"b424c0a3-fa67-5d50-b31b-08b92c4ec113",
+  "g3_evidence_id":"evidence:ebc90ee2-9699-5a9c-8ab6-7ca314d70661",
+  "current_state_coverage":"36/36","historical_ssot_versions_preserved":true,
+  "c3":"READY_TO_CLOSE","c4_c13":"NOT_STARTED","con_008":"NOT_PERFORMED","next":"STOP → P&I 2"
+}
