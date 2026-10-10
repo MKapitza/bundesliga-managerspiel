@@ -1,0 +1,65 @@
+{
+  "run_id": "gw5-bounded-remediation-20261010",
+  "checked_at": "2026-10-10T12:14:50+00:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "EVIDENCE_REMEDIATION": "PARTIAL",
+  "PLAYERS_CHECKED": 36,
+  "OBSERVED_AT_READY": "36/36",
+  "CUTOFF_STATE_EVIDENCE_READY": "30/36",
+  "BUNDESLIGA_CLUB_READY": "29/35",
+  "POSITIVE_CLUB_STATE_READY": "29/35",
+  "BITSHIABU_OUTSIDE_READY": "YES",
+  "UNRESOLVED_PLAYERS": [
+    {
+      "row": 6,
+      "name": "Vladimír Coufal",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "missing_evidence": "Vladimír Coufal: Vorhandener September-Spielbericht und spätere Saisonprofile belegen keinen ausdrücklich über den Cutoff geltenden Clubzustand. Die gezielte Suche ergab die Laufzeit bis 2028 nur in Sekundärquellen; kein gesicherter offizieller Laufzeit-/Stichtagsbeleg."
+    },
+    {
+      "row": 7,
+      "name": "Josip Juranović",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "missing_evidence": "Josip Juranović: Offizielle Verlängerung vom 22.08.2025 nennt nur künftige Zusammenarbeit, ohne Enddatum oder ausdrücklich den 09.10.2026 einschließende Saison. Benötigt wird eine offizielle zeitliche Konkretisierung oder Stichtagsbestätigung."
+    },
+    {
+      "row": 12,
+      "name": "Miro Muheim",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "missing_evidence": "Miro Muheim: Vorhandener August-Spielbericht und späterer Kaderabruf reichen zeitlich nicht. Die begrenzte offizielle Suche lieferte keinen Laufzeit-/Stichtagsbeleg über den Cutoff; Treffer zu Heyer sind keine Muheim-Evidence."
+    },
+    {
+      "row": 14,
+      "name": "Bernardo Fernandes da Silva Junior",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "missing_evidence": "Bernardo Fernandes da Silva Junior: Offizielle Transfermeldung vom 05.06.2025 nennt keine Laufzeit. Die Laufzeit 2027 erschien nur in Sekundärtreffern; kein gesicherter offizieller Nachweis für den Cutoff."
+    },
+    {
+      "row": 25,
+      "name": "Iván San José Cantalejo (Chuki)",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "missing_evidence": "Iván San José Cantalejo (Chuki): Werder-Abrufe scheiterten mit HTTP 429. Die gesicherte offizielle Ligameldung bestätigt den Transfer zur neuen Saison, aber weder eine ausdrücklich fortdauernde Bindung über den Cutoff noch eine konkrete Laufzeit. Benötigt wird ein offizieller Vertrags-/Registrierungs-/Stichtagsbeleg."
+    },
+    {
+      "row": 34,
+      "name": "Fisnik Asllani",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "missing_evidence": "Fisnik Asllani: Offizielle Meldung vom 13.07.2025 verlängert den zuvor bis Juni 2026 laufenden Vertrag langfristig, nennt aber kein neues Ende und keine ausdrückliche Geltung am Cutoff. Die gezielte offizielle Laufzeitsuche ergab keinen zusätzlichen Beleg."
+    }
+  ],
+  "SSOT_REFRESH": "BLOCKED",
+  "K2": "BLOCKED",
+  "K2_EXECUTION": "NOT_RERUN",
+  "SSOT_VERSION_ID": "NONE",
+  "G3": "BLOCKED",
+  "G3_EXECUTION": "NOT_RERUN",
+  "G3_RELEASE_ID": "NONE",
+  "C3": "WAITING_FOR_SSOT_G3_REFRESH",
+  "C4_C13": "NOT_STARTED",
+  "CON_008": "NOT_PERFORMED",
+  "PREDECESSOR_K2_EVIDENCE_DIVERGENCE": "CLOSED_BY_PI2_DECISION",
+  "STOP_REASON": "EVIDENCE_NOT_RETROSPECTIVELY_RECOVERABLE",
+  "STOP_REASON_SCOPE": "Within the completed bounded source check, for the six listed players; not an assertion that no evidence can ever exist.",
+  "NEXT": "STOP → P&I 2"
+}

@@ -1,0 +1,34 @@
+{
+  "source_key": "CONTRACT_21_LEAGUE",
+  "source_url": "https://www.bundesliga.com/en/bundesliga/news/arijon-ibrahimovic-joins-augsburg-bayern-munich-loan-38930",
+  "roster_rows": [
+    21
+  ],
+  "request_started_at": "2026-10-10T11:54:24+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T11:54:25+00:00",
+  "retrieved_at": "2026-10-10T11:54:25+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/en/bundesliga/news/arijon-ibrahimovic-joins-augsburg-bayern-munich-loan-38930",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Sat, 10 Oct 2026 11:54:24 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Server-Timing": "dtTrId;desc=\"2884204589fdf35438ddba2a365f0d2e\", dtSInfo;desc=\"0\", dtRpid;desc=\"996551446\"",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 6b15a9d1514a5645abfd43cbf330ce48.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "2rdRk1inQVLVUEe4IkvC1b9lp7YqwEYjJMwIot7yk98rhgm55sjnUQ=="
+  },
+  "content_hash": "8a4d72173fb56880402d0dd3521bbb34fde50b61af082c505893d1e33de12c94",
+  "content_bytes": 835630,
+  "retrieval_status": "RETRIEVED"
+}

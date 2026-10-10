@@ -1,0 +1,33 @@
+{
+  "source_key": "BITSHIABU_IDENTITY",
+  "source_url": "https://www.galatasaray.org/haber/futbol/galatasaraya-hos-geldin-el-chadaille-bitshiabu/60878",
+  "roster_rows": [
+    16
+  ],
+  "request_started_at": "2026-10-09T21:51:46+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:47+00:00",
+  "retrieved_at": "2026-10-09T21:51:47+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.galatasaray.org/haber/futbol/galatasaraya-hos-geldin-el-chadaille-bitshiabu/60878",
+  "headers": {
+    "Server": "nginx",
+    "Date": "Fri, 09 Oct 2026 21:51:46 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Content-Length": "26447",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "public, no-cache=\"Set-Cookie\", max-age=0",
+    "Expires": "Fri, 09 Oct 2026 21:51:46 GMT",
+    "Last-Modified": "Fri, 09 Oct 2026 21:51:46 GMT",
+    "Set-Cookie": "ASP.NET_SessionId=3sti3gs03qvrjaoy3xnm2sq2; path=/; HttpOnly; SameSite=Lax",
+    "X-Rocket-MasterCacheStatus": "EXPIRED",
+    "X-Rocket-MasterNode": "cache117.ist.tr.eu.rocketcdn.com",
+    "X-Rocket-CacheStatus": "EXPIRED",
+    "X-Rocket-Node": "edge125.ist.tr.eu.rocketcdn.com"
+  },
+  "content_hash": "e6f063d1b936c8204a25b511ff731368aa8eaf0124d0788f6faf3c3755a9ad15",
+  "content_bytes": 26447,
+  "retrieval_status": "RETRIEVED"
+}

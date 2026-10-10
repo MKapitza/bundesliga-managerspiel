@@ -1,0 +1,34 @@
+{
+  "source_key": "BERNARDO_PROFILE",
+  "source_url": "https://www.bundesliga.com/de/spieler/bernardo",
+  "roster_rows": [
+    14
+  ],
+  "request_started_at": "2026-10-09T21:51:46+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:48+00:00",
+  "retrieved_at": "2026-10-09T21:51:48+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/spieler/bernardo",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 21:51:48 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Server-Timing": "dtTrId;desc=\"cf7391521a331d3465e91822976d9ddc\", dtSInfo;desc=\"0\", dtRpid;desc=\"1091169811\"",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 79d85d2de1f5aa38558ef6bab6274390.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "xMmuzhVGEYYCzwb-tpxPvm_-_V5hElkUZ4Xqz8jjB6BWlYpxuK_CrA=="
+  },
+  "content_hash": "7575d9277868307e59d9f7de0e930778e6df6fbf3920245c35472b7a24bf0457",
+  "content_bytes": 942680,
+  "retrieval_status": "RETRIEVED"
+}

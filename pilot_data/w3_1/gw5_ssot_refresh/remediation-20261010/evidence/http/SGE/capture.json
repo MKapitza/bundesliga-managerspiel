@@ -1,0 +1,36 @@
+{
+  "source_key": "SGE",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/clubs/eintracht-frankfurt",
+  "roster_rows": [
+    1,
+    10,
+    18
+  ],
+  "request_started_at": "2026-10-09T21:51:42+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:43+00:00",
+  "retrieved_at": "2026-10-09T21:51:43+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/clubs/eintracht-frankfurt",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 16:36:07 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 b6a955345e4fcc7881bd0a9815e8286e.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "0g1UZMW2bJanuFFlHvxDV9UjWcxeaFng1a0Fk_AppLXeudi95PmEDA==",
+    "Age": "18935"
+  },
+  "content_hash": "b1d13ac3874b6ec614ccc65c614b623b9ecf9f8dc24944d372bf55dc75dbce13",
+  "content_bytes": 1232573,
+  "retrieval_status": "RETRIEVED"
+}

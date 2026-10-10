@@ -1,0 +1,34 @@
+{
+  "source_key": "CONTRACT_19",
+  "source_url": "https://www.fcaugsburg.de/en/article/alexis-claude-maurice-signs-for-fc-augsburg-20728",
+  "roster_rows": [
+    19
+  ],
+  "request_started_at": "2026-10-10T09:11:37+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:37+00:00",
+  "retrieved_at": "2026-10-10T09:11:37+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.fcaugsburg.de/en/article/alexis-claude-maurice-signs-for-fc-augsburg-20728",
+  "headers": {
+    "server": "nginx",
+    "date": "Sat, 10 Oct 2026 09:11:36 GMT",
+    "content-type": "text/html; charset=UTF-8",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding",
+    "set-cookie": "PHPSESSID=cbe75813bca6e32ab0fd4d9d394e7963; path=/; secure; HttpOnly; SameSite=none",
+    "cache-control": "max-age=0, must-revalidate, private, s-maxage=60",
+    "last-modified": "Mon, 02 Sep 2024 06:40:50 GMT",
+    "expires": "Sat, 10 Oct 2026 09:11:36 GMT",
+    "access-control-allow-origin": "https://www.lms-ticket.de",
+    "access-control-allow-credentials": "true",
+    "x-frontend-server": "fantv-production-app-2",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "x-xss-protection": "1; mode=block",
+    "connection": "close"
+  },
+  "content_hash": "6873fa923dcdc7f576ad378b2b6a64b86e8151d6bdce772c6ef7a87f39569f38",
+  "content_bytes": 73143,
+  "retrieval_status": "RETRIEVED"
+}

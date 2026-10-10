@@ -1,0 +1,34 @@
+{
+  "source_key": "CONTRACT_24",
+  "source_url": "https://www.fcaugsburg.de/article/fc-augsburg-verpflichtet-schweizer-nationalspieler-fabian-rieder-22350",
+  "roster_rows": [
+    24
+  ],
+  "request_started_at": "2026-10-10T09:11:38+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:38+00:00",
+  "retrieved_at": "2026-10-10T09:11:38+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.fcaugsburg.de/article/fc-augsburg-verpflichtet-schweizer-nationalspieler-fabian-rieder-22350",
+  "headers": {
+    "server": "nginx",
+    "date": "Sat, 10 Oct 2026 09:11:37 GMT",
+    "content-type": "text/html; charset=UTF-8",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding",
+    "set-cookie": "PHPSESSID=883c8f680ce1cea83aaca27dddb9fbf3; path=/; secure; HttpOnly; SameSite=none",
+    "cache-control": "max-age=120",
+    "last-modified": "Mon, 01 Sep 2025 15:48:14 GMT",
+    "expires": "Sat, 10 Oct 2026 09:13:37 GMT",
+    "access-control-allow-origin": "https://www.lms-ticket.de",
+    "access-control-allow-credentials": "true",
+    "x-frontend-server": "fantv-production-app-1",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "x-xss-protection": "1; mode=block",
+    "connection": "close"
+  },
+  "content_hash": "da4b8405781edd5743764cbb29e8cd68c6dade38600d7a01200491609b103a31",
+  "content_bytes": 190175,
+  "retrieval_status": "RETRIEVED"
+}

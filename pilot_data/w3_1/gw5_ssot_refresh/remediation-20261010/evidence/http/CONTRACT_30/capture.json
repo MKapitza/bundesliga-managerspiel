@@ -1,0 +1,38 @@
+{
+  "source_key": "CONTRACT_30",
+  "source_url": "https://fc.de/aktuelles/news/fc-verpflichtet-isak-johannesson",
+  "roster_rows": [
+    30
+  ],
+  "request_started_at": "2026-10-10T09:11:38+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:39+00:00",
+  "retrieved_at": "2026-10-10T09:11:39+00:00",
+  "http_status": 200,
+  "resolved_url": "https://fc.de/aktuelles/news/fc-verpflichtet-isak-johannesson",
+  "headers": {
+    "Date": "Sat, 10 Oct 2026 09:11:38 GMT",
+    "Content-Type": "text/html",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Link": "</.well-known/ucp>; rel=\"ucp\"",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Server-Timing": "_y;desc=8ba45325-adce-4758-8c51-addfa85bc095, _s;desc=ed8d5ac4-6378-45ac-aed3-d4ba4008adb2",
+    "X-Permitted-Cross-Domain-Policies": "none",
+    "oxygen-full-page-cache": "uncacheable",
+    "powered-by": "Shopify, Oxygen, Hydrogen",
+    "x-request-id": "57137fc0-3471-4733-b98d-90a223de1eea-1791623497",
+    "X-Download-Options": "noopen",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=EC4l07Mb%2FyYKms1ENgyaZTyhypNLbHFBrHrEPDqShNWwYlHUHaq6yxjI0y39OTmfZ5mhi61Zag1%2BdlwogLOqK6pp%2BhJLfbS%2Fx7fZ0b012KmU503VEavn\"}]}",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff",
+    "Server": "cloudflare",
+    "CF-RAY": "a4847fae4f6be4f5-FRA",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "content_hash": "e469348e65ec42e435f55a32a923471f5a901bb08f621e2f60f5b671d7020a42",
+  "content_bytes": 297984,
+  "retrieval_status": "RETRIEVED"
+}

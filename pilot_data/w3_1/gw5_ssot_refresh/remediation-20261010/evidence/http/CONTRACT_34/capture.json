@@ -1,0 +1,34 @@
+{
+  "source_key": "CONTRACT_34",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/news/tsg-hoffenheim-fisnik-asllani-vertrag-verlangerung-32991",
+  "roster_rows": [
+    34
+  ],
+  "request_started_at": "2026-10-10T09:11:38+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:40+00:00",
+  "retrieved_at": "2026-10-10T09:11:40+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/news/tsg-hoffenheim-fisnik-asllani-vertrag-verlangerung-32991",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Sat, 10 Oct 2026 09:11:39 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Server-Timing": "dtTrId;desc=\"2159d5c0a5deeaea904a1122a708719c\", dtSInfo;desc=\"0\", dtRpid;desc=\"1717971459\"",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 3d95fd99ed5f07db9d464a35af433056.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "9sofUphqKQwRFfByIGnBJKhF33RqB9ETpv7yI8SQ4-lCTLJuG3NVAg=="
+  },
+  "content_hash": "445d3c3c2ab83ccf1e31f0cd630b813e235801379fa28e4fa19e474bb1570f96",
+  "content_bytes": 822773,
+  "retrieval_status": "RETRIEVED"
+}

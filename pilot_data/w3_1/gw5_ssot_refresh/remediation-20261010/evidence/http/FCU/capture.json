@@ -1,0 +1,35 @@
+{
+  "source_key": "FCU",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/clubs/1-fc-union-berlin",
+  "roster_rows": [
+    7,
+    15
+  ],
+  "request_started_at": "2026-10-09T21:51:43+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:43+00:00",
+  "retrieved_at": "2026-10-09T21:51:43+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/clubs/1-fc-union-berlin",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 16:36:07 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 ca751e0315de05e656597e32136af94e.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "_a9VId5K4HPJ72EoS125ASgt_xWrot-EQ0hHVguTQ5qlfa8fvA2Brg==",
+    "Age": "18935"
+  },
+  "content_hash": "0f3152aa833296e8b51fcf7d74907e85d81518e2ae973fa87987bb112fb65921",
+  "content_bytes": 1239526,
+  "retrieval_status": "RETRIEVED"
+}

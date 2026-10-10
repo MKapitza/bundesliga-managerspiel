@@ -1,0 +1,34 @@
+{
+  "source_key": "CONTRACT_20_TERM",
+  "source_url": "https://www.bundesliga.com/en/bundesliga/news/top-scorers-nations-harry-kane-schick-lewandowski-muller-robben-30328",
+  "roster_rows": [
+    20
+  ],
+  "request_started_at": "2026-10-10T11:54:24+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T11:54:27+00:00",
+  "retrieved_at": "2026-10-10T11:54:27+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/en/bundesliga/news/top-scorers-nations-harry-kane-schick-lewandowski-muller-robben-30328",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Sat, 10 Oct 2026 11:54:24 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Server-Timing": "dtTrId;desc=\"d3888bbf6433cd6fb72a881f630966cc\", dtSInfo;desc=\"0\", dtRpid;desc=\"-617645964\"",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 6373f5d706cb8d973f3ced2fc572f6a8.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "Vx-RITw-p1TEzLBf8Lx57tQfWhxCd_2yfgmImUGhRVn4ULdu6G4Gug=="
+  },
+  "content_hash": "74beb88b41b38d3eda530f3756b70589a8874b3b245e5187c5f7e5b25c4d3996",
+  "content_bytes": 1003124,
+  "retrieval_status": "RETRIEVED"
+}

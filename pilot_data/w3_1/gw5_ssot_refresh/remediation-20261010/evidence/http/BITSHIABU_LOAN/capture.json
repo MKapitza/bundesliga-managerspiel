@@ -1,0 +1,33 @@
+{
+  "source_key": "BITSHIABU_LOAN",
+  "source_url": "https://www.galatasaray.org/haber/gs-sportif-a-s/el-chadaille-bitshiabu-galatasarayda/60877",
+  "roster_rows": [
+    16
+  ],
+  "request_started_at": "2026-10-09T21:50:17+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:50:18+00:00",
+  "retrieved_at": "2026-10-09T21:50:18+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.galatasaray.org/haber/gs-sportif-a-s/el-chadaille-bitshiabu-galatasarayda/60877",
+  "headers": {
+    "Server": "nginx",
+    "Date": "Fri, 09 Oct 2026 21:50:18 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Content-Length": "26509",
+    "Connection": "close",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "public, no-cache=\"Set-Cookie\", max-age=0",
+    "Expires": "Fri, 09 Oct 2026 21:50:17 GMT",
+    "Last-Modified": "Fri, 09 Oct 2026 21:50:17 GMT",
+    "Set-Cookie": "ASP.NET_SessionId=ey0irmsehxmrt1jwbbq3h2jj; path=/; HttpOnly; SameSite=Lax",
+    "X-Rocket-MasterCacheStatus": "EXPIRED",
+    "X-Rocket-MasterNode": "cache117.ist.tr.eu.rocketcdn.com",
+    "X-Rocket-CacheStatus": "EXPIRED",
+    "X-Rocket-Node": "edge125.ist.tr.eu.rocketcdn.com"
+  },
+  "content_hash": "362adffff64af21806dc9061d6dfa51d65b0856317caf428c4402a90ee64f9ba",
+  "content_bytes": 26509,
+  "retrieval_status": "RETRIEVED"
+}

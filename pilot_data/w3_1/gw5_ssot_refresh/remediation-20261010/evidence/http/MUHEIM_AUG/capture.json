@@ -1,0 +1,35 @@
+{
+  "source_key": "MUHEIM_AUG",
+  "source_url": "https://www.hsv.de/news/wir-haben-maximal-bock-auf-diesen-wettbewerb-",
+  "roster_rows": [
+    12
+  ],
+  "request_started_at": "2026-10-09T21:51:46+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:46+00:00",
+  "retrieved_at": "2026-10-09T21:51:46+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.hsv.de/news/wir-haben-maximal-bock-auf-diesen-wettbewerb-",
+  "headers": {
+    "Age": "4663",
+    "Cache-Control": "public, max-age=0, must-revalidate",
+    "Content-Length": "153237",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Fri, 09 Oct 2026 20:34:03 GMT",
+    "Etag": "\"e412wtfsc3a12\"",
+    "Server": "Vercel",
+    "Strict-Transport-Security": "max-age=63072000",
+    "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "X-Matched-Path": "/[[...slug]]",
+    "X-Nextjs-Prerender": "1",
+    "X-Nextjs-Stale-Time": "300",
+    "X-Powered-By": "Next.js",
+    "X-Vercel-Cache": "HIT",
+    "X-Vercel-Id": "fra1::fra1::z82cp-1791582706238-be0d23c28aa6",
+    "Connection": "close"
+  },
+  "content_hash": "5ac49397acfb6ce415459ed27da489493a6d5995f38e36f947efee4287d3ab19",
+  "content_bytes": 153237,
+  "retrieval_status": "RETRIEVED"
+}

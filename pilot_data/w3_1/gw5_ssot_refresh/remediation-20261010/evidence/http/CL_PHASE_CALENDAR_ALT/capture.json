@@ -1,0 +1,12 @@
+{
+  "source_key": "CL_PHASE_CALENDAR_ALT",
+  "source_url": "https://www.uefa.com/uefachampionsleague/news/02a6-20d57cfcd03e-407c22a7f465-1000--2026-27-champions-league-teams-dates-draws-format-final/",
+  "roster_rows": [],
+  "request_started_at": "2026-10-10T11:56:38+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": null,
+  "attempt_completed_at": "2026-10-10T11:56:58+00:00",
+  "retrieval_status": "FAILED",
+  "error": "The read operation timed out"
+}

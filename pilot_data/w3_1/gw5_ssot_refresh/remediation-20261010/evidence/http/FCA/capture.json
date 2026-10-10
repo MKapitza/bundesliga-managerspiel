@@ -1,0 +1,36 @@
+{
+  "source_key": "FCA",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/clubs/fc-augsburg",
+  "roster_rows": [
+    19,
+    21,
+    24
+  ],
+  "request_started_at": "2026-10-09T21:51:43+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:44+00:00",
+  "retrieved_at": "2026-10-09T21:51:44+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/clubs/fc-augsburg",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 16:36:05 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 f5af2731a86629973e69564f824d95be.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "2qTjG5xacfGci84gv-du_BDuvsF6Dx9MXlFzBR7yG8Efjz7dW-L7Rg==",
+    "Age": "18938"
+  },
+  "content_hash": "bed7330d106bec4a43fae293de80dfe59606311af71baa24bdca54ea7fe2744c",
+  "content_bytes": 1203871,
+  "retrieval_status": "RETRIEVED"
+}

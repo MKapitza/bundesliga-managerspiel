@@ -1,0 +1,28 @@
+{
+  "source_key": "PETKOV_SEPT",
+  "source_url": "https://sv07elversberg.de/sve-erkaempft-sich-einen-punkt-auf-schalke/",
+  "roster_rows": [
+    27
+  ],
+  "request_started_at": "2026-10-09T21:51:46+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:46+00:00",
+  "retrieved_at": "2026-10-09T21:51:46+00:00",
+  "http_status": 200,
+  "resolved_url": "https://sv07elversberg.de/sve-erkaempft-sich-einen-punkt-auf-schalke/",
+  "headers": {
+    "Date": "Fri, 09 Oct 2026 21:51:45 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "X-Mod-Pagespeed": "1.14.36.1-0",
+    "Cache-Control": "max-age=0, no-cache",
+    "Vary": "Accept-Encoding",
+    "Accept-Ranges": "none",
+    "Server": "HTTP Server"
+  },
+  "content_hash": "34543f468425dbbeddc7e7601aae6baf75b02f0ad7d8456809312eb9d5293b80",
+  "content_bytes": 180569,
+  "retrieval_status": "RETRIEVED"
+}

@@ -1,0 +1,38 @@
+{
+  "source_key": "TSG",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/clubs/tsg-hoffenheim/stats",
+  "roster_rows": [
+    6,
+    14,
+    20,
+    29,
+    34
+  ],
+  "request_started_at": "2026-10-09T21:51:43+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:44+00:00",
+  "retrieved_at": "2026-10-09T21:51:44+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/clubs/tsg-hoffenheim/stats",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 21:51:43 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Server-Timing": "dtTrId;desc=\"4a38b682e12034d9fc1e6d46420bd314\", dtSInfo;desc=\"0\", dtRpid;desc=\"1597350613\"",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 08144b62d8ba59c510ae7682981f36c0.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "8S9w3ZGnc6cAnok3B9Vj3EOJd3XWOdG0KUAsgEIQyg8JJFNHa8UyOg=="
+  },
+  "content_hash": "6d064aad95546b5bc4420b706cbddcf1aaab5e8e8421f1f4552bcc5447f76335",
+  "content_bytes": 1177487,
+  "retrieval_status": "RETRIEVED"
+}

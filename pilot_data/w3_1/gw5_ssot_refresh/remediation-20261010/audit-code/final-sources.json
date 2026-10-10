@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "source_key": "CL_PHASE_CALENDAR",
+      "roster_rows": [],
+      "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/"
+    },
+    {
+      "source_key": "CONTRACT_20_TERM",
+      "roster_rows": [
+        20
+      ],
+      "url": "https://www.bundesliga.com/en/bundesliga/news/top-scorers-nations-harry-kane-schick-lewandowski-muller-robben-30328"
+    },
+    {
+      "source_key": "CONTRACT_21_LEAGUE",
+      "roster_rows": [
+        21
+      ],
+      "url": "https://www.bundesliga.com/en/bundesliga/news/arijon-ibrahimovic-joins-augsburg-bayern-munich-loan-38930"
+    },
+    {
+      "source_key": "CONTRACT_25_LEAGUE",
+      "roster_rows": [
+        25
+      ],
+      "url": "https://www.bundesliga.com/de/bundesliga/news/sv-werder-bremen-chuki-transfer-real-valladolid-37351"
+    }
+  ]
+}

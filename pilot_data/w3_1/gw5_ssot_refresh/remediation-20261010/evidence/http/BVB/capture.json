@@ -1,0 +1,38 @@
+{
+  "source_key": "BVB",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/clubs/borussia-dortmund",
+  "roster_rows": [
+    2,
+    8,
+    9,
+    23,
+    33
+  ],
+  "request_started_at": "2026-10-09T21:51:42+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:42+00:00",
+  "retrieved_at": "2026-10-09T21:51:42+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/clubs/borussia-dortmund",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 18:47:05 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 0b328de7c6916513ee4489477445f2e2.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "4k4pzCfFWf5y2IbiuyRvw1zDCOOoHZdMK7pYG7X0fod5RVVYGWZNUw==",
+    "Age": "11077"
+  },
+  "content_hash": "5e5246d33a416561f1b0ad21ed5c288a1d96e66ce5a6dea031a9aeebe2a19e35",
+  "content_bytes": 1196984,
+  "retrieval_status": "RETRIEVED"
+}

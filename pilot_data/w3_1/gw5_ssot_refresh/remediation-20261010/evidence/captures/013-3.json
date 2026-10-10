@@ -1,0 +1,14 @@
+{
+  "queries": [
+    {
+      "q": "\"Asllani\" \"Vertrag\" \"2029\"",
+      "domains": [
+        "tsg-hoffenheim.de",
+        "bundesliga.com"
+      ]
+    }
+  ],
+  "started_at": "2026-10-10 11:51:15 UTC",
+  "observed_at": "2026-10-10 11:51:17 UTC",
+  "provider_response": "Empty search results\nNo results were found for the provided queries"
+}

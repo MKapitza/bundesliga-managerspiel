@@ -1,0 +1,34 @@
+{
+  "source_key": "CONTRACT_03",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/news/borussia-monchengladbach-kevin-diks-transfer-wechsel-fc-kopenhagen-30653",
+  "roster_rows": [
+    3
+  ],
+  "request_started_at": "2026-10-10T09:11:36+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:37+00:00",
+  "retrieved_at": "2026-10-10T09:11:37+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/news/borussia-monchengladbach-kevin-diks-transfer-wechsel-fc-kopenhagen-30653",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Sat, 10 Oct 2026 09:11:36 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Server-Timing": "dtTrId;desc=\"9116a36e16c46803852b9d7614fa207a\", dtSInfo;desc=\"0\", dtRpid;desc=\"-203807039\"",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 9938d2bc2f9fab06207e42238c10bb32.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "92jak4OM6l9tsKaAUjlAxsvxWKb7jC3hG8qeI00mLneNHJI79N120Q=="
+  },
+  "content_hash": "d8f483b89cbde1f2a47a9dd2f023ccfd4e74416db33b2fd139b40d47f9cdf330",
+  "content_bytes": 814533,
+  "retrieval_status": "RETRIEVED"
+}

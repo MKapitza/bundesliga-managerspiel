@@ -1,0 +1,2028 @@
+{
+  "run_id": "gw5-bounded-remediation-20261010",
+  "checked_at": "2026-10-10T12:14:50+00:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "players_checked": 36,
+  "evidence_ready": 30,
+  "released_states": 0,
+  "resolutions": [
+    {
+      "row": 1,
+      "display_name": "Noah Atubolu",
+      "player_id": "6d404217-7c18-46ad-94bb-976cee7cb0c2",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "T",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "9c5535c8-dcbb-4698-a1ad-ad255e9c3ad3",
+      "candidate_real_world_club": "Eintracht Frankfurt",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "ATUBOLU_TRANSFER",
+          "observed_at": "2026-10-09T21:50:18+00:00",
+          "content_hash": "2c4f0ed8489b32de97a1f9a6869c67b844f61cacb409ced73443f2e8e3e4c2e7"
+        },
+        {
+          "source_ref": "SGE",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "b1d13ac3874b6ec614ccc65c614b623b9ecf9f8dc24944d372bf55dc75dbce13"
+        },
+        {
+          "source_ref": "SGE_FCA_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "6a623b24d3d8958d237b5a77f95e7f7fb318c6986713a875e6cf2c9849981c9a"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "ATUBOLU_TRANSFER"
+      ],
+      "all_checked_source_refs": [
+        "ATUBOLU_TRANSFER",
+        "SGE",
+        "SGE_FCA_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Der ausdrücklich genannte Leihzeitraum umfasst den Cutoff im Oktober 2026."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 2,
+      "display_name": "Gregor Kobel",
+      "player_id": "956d0a9b-c749-4190-b02a-88ae28e555f0",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "T",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "02b0d742-c110-40ac-8bf1-ed45a4b80377",
+      "candidate_real_world_club": "Borussia Dortmund",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "BVB",
+          "observed_at": "2026-10-09T21:51:42+00:00",
+          "content_hash": "5e5246d33a416561f1b0ad21ed5c288a1d96e66ce5a6dea031a9aeebe2a19e35"
+        },
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "BVB",
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 3,
+      "display_name": "Kevin Diks",
+      "player_id": "064f6de3-2fcc-4e4c-962c-4f497c905321",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "f97c8435-a5dd-4a19-8d09-347f6fa31a4f",
+      "candidate_real_world_club": "Borussia Mönchengladbach",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "BMG",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "2681617f93b99a23ebdc46b2039dc8c0279019fb0e1f09702303901e0f0f1e51"
+        },
+        {
+          "source_ref": "CONTRACT_03",
+          "observed_at": "2026-10-10T09:11:37+00:00",
+          "content_hash": "d8f483b89cbde1f2a47a9dd2f023ccfd4e74416db33b2fd139b40d47f9cdf330"
+        },
+        {
+          "source_ref": "DIKS_AMIRI_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "f5477f81c8b28c8102afcc12c34e04be618cbb46d709c3cd30e937cf0e04e939"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_03"
+      ],
+      "all_checked_source_refs": [
+        "BMG",
+        "CONTRACT_03",
+        "DIKS_AMIRI_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Ausdrückliche Vereinsbindung bis 2030 umfasst den Cutoff."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 4,
+      "display_name": "Maximilian Mittelstädt",
+      "player_id": "d7033a82-5009-4008-afc7-386248fd10f1",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "1f193f57-cb65-4399-9373-7800d6600692",
+      "candidate_real_world_club": "VfB Stuttgart",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        },
+        {
+          "source_ref": "VFB",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "377bb7f63542dc0af21baf444d98f99ef4a766ec57902d9ff160d0c73ecd1665"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "SUMMER_TRANSFERS",
+        "VFB"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 5,
+      "display_name": "Alphonso Davies",
+      "player_id": "402c6c62-eacd-4ea7-b864-9572bf136fd1",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "5e5baf09-5fef-46b3-8db4-361565c5a484",
+      "candidate_real_world_club": "FC Bayern München",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "FCB",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "5820bc090d66c3c3bb81215e47a48dcf9862c35ccf02f68d87afe74af7b6c50d"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "FCB",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 6,
+      "display_name": "Vladimír Coufal",
+      "player_id": "d566ff64-be86-4648-855b-40c1f2fd7819",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "eabf1c96-ac52-467b-934e-b11a9843778b",
+      "candidate_real_world_club": "TSG Hoffenheim",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        },
+        {
+          "source_ref": "TSG",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "6d064aad95546b5bc4420b706cbddcf1aaab5e8e8421f1f4552bcc5447f76335"
+        },
+        {
+          "source_ref": "TSG_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "37ab24d334a22437b39bce356157ab4205b733e0f442f1f7838f63ea9c96f934"
+        }
+      ],
+      "cutoff_state_evidence_ready": false,
+      "selected_source_refs": [],
+      "all_checked_source_refs": [
+        "SUMMER_TRANSFERS",
+        "TSG",
+        "TSG_SEPT"
+      ],
+      "temporal_reasoning": [],
+      "missing_evidence": "Vladimír Coufal: Vorhandener September-Spielbericht und spätere Saisonprofile belegen keinen ausdrücklich über den Cutoff geltenden Clubzustand. Die gezielte Suche ergab die Laufzeit bis 2028 nur in Sekundärquellen; kein gesicherter offizieller Laufzeit-/Stichtagsbeleg.",
+      "source_check_status": "EVIDENCE_NOT_RETROSPECTIVELY_RECOVERABLE",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 7,
+      "display_name": "Josip Juranović",
+      "player_id": "756a83b6-daf6-42b9-839a-31303fa35941",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "237bae42-cb35-4cb3-8e8d-3951c14e0e48",
+      "candidate_real_world_club": "1. FC Union Berlin",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "BAYER_UNION_SEPT",
+          "observed_at": "2026-10-09T21:51:45+00:00",
+          "content_hash": "922fc71afa078df8fc032dab597470e8d9f4cae9d2dbbfc0224617071b897ba6"
+        },
+        {
+          "source_ref": "CONTRACT_07",
+          "observed_at": "2026-10-10T09:11:37+00:00",
+          "content_hash": "8b5385752bbd18a50dec9d1359cbc43f6681ffa260d683f06cec95bbdb7464eb"
+        },
+        {
+          "source_ref": "FCU",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "0f3152aa833296e8b51fcf7d74907e85d81518e2ae973fa87987bb112fb65921"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": false,
+      "selected_source_refs": [],
+      "all_checked_source_refs": [
+        "BAYER_UNION_SEPT",
+        "CONTRACT_07",
+        "FCU",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [],
+      "missing_evidence": "Josip Juranović: Offizielle Verlängerung vom 22.08.2025 nennt nur künftige Zusammenarbeit, ohne Enddatum oder ausdrücklich den 09.10.2026 einschließende Saison. Benötigt wird eine offizielle zeitliche Konkretisierung oder Stichtagsbestätigung.",
+      "source_check_status": "EVIDENCE_NOT_RETROSPECTIVELY_RECOVERABLE",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 8,
+      "display_name": "Daniel Svensson",
+      "player_id": "701a8629-72cf-493c-81cf-7d16e7e4032d",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "02b0d742-c110-40ac-8bf1-ed45a4b80377",
+      "candidate_real_world_club": "Borussia Dortmund",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "BVB",
+          "observed_at": "2026-10-09T21:51:42+00:00",
+          "content_hash": "5e5246d33a416561f1b0ad21ed5c288a1d96e66ce5a6dea031a9aeebe2a19e35"
+        },
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "BVB",
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 9,
+      "display_name": "Nico Schlotterbeck",
+      "player_id": "f66ff914-787a-46eb-b965-fa2fe1814c30",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "02b0d742-c110-40ac-8bf1-ed45a4b80377",
+      "candidate_real_world_club": "Borussia Dortmund",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "BVB",
+          "observed_at": "2026-10-09T21:51:42+00:00",
+          "content_hash": "5e5246d33a416561f1b0ad21ed5c288a1d96e66ce5a6dea031a9aeebe2a19e35"
+        },
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "BVB",
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 10,
+      "display_name": "Robin Koch",
+      "player_id": "bdb08d39-d4af-4e41-a77a-aaa1bdadaf6a",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "9c5535c8-dcbb-4698-a1ad-ad255e9c3ad3",
+      "candidate_real_world_club": "Eintracht Frankfurt",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_10",
+          "observed_at": "2026-10-10T09:11:37+00:00",
+          "content_hash": "3d8d7ac03638bde2890e224c5d2a3d775990e32bac7dabca7ebd286a6ded8bf5"
+        },
+        {
+          "source_ref": "KOCH_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "1f347b923686dbda44a4e0efe54a2dbff6ab3dea55bc7f300c2a8b694f91562e"
+        },
+        {
+          "source_ref": "SGE",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "b1d13ac3874b6ec614ccc65c614b623b9ecf9f8dc24944d372bf55dc75dbce13"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_10"
+      ],
+      "all_checked_source_refs": [
+        "CONTRACT_10",
+        "KOCH_SEPT",
+        "SGE",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Der verlängerte Vertrag trägt die Clubbindung am Cutoff; keine zusätzliche Tagespräzision erzeugt."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 11,
+      "display_name": "Konrad Laimer",
+      "player_id": "adc42591-1b56-42aa-af9b-fe672ff460b4",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "5e5baf09-5fef-46b3-8db4-361565c5a484",
+      "candidate_real_world_club": "FC Bayern München",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "FCB",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "5820bc090d66c3c3bb81215e47a48dcf9862c35ccf02f68d87afe74af7b6c50d"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "FCB",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 12,
+      "display_name": "Miro Muheim",
+      "player_id": "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "15b40c17-fa0b-4097-9a68-a26c02c49830",
+      "candidate_real_world_club": "Hamburger SV",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "HSV",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "3416c16918a4e089760b911d692ae55b4ddb5702399e93d4f9821329aa48177e"
+        },
+        {
+          "source_ref": "MUHEIM_AUG",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "5ac49397acfb6ce415459ed27da489493a6d5995f38e36f947efee4287d3ab19"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": false,
+      "selected_source_refs": [],
+      "all_checked_source_refs": [
+        "HSV",
+        "MUHEIM_AUG",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [],
+      "missing_evidence": "Miro Muheim: Vorhandener August-Spielbericht und späterer Kaderabruf reichen zeitlich nicht. Die begrenzte offizielle Suche lieferte keinen Laufzeit-/Stichtagsbeleg über den Cutoff; Treffer zu Heyer sind keine Muheim-Evidence.",
+      "source_check_status": "EVIDENCE_NOT_RETROSPECTIVELY_RECOVERABLE",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 13,
+      "display_name": "Castello Lukeba",
+      "player_id": "7be957a6-2418-4787-a3e2-8d1aebcb5969",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "5b024d53-f276-41b4-8999-40c731f7efcb",
+      "candidate_real_world_club": "RB Leipzig",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "RBL",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "48182b573cd9d362132cbfd2fe74f9160596530f6e61f15d0ad9d24a31679a3f"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "RBL",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 14,
+      "display_name": "Bernardo Fernandes da Silva Junior",
+      "player_id": "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "eabf1c96-ac52-467b-934e-b11a9843778b",
+      "candidate_real_world_club": "TSG Hoffenheim",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "BERNARDO_PROFILE",
+          "observed_at": "2026-10-09T21:51:48+00:00",
+          "content_hash": "7575d9277868307e59d9f7de0e930778e6df6fbf3920245c35472b7a24bf0457"
+        },
+        {
+          "source_ref": "CONTRACT_14",
+          "observed_at": "2026-10-10T09:11:37+00:00",
+          "content_hash": "630707dfe6e20a419d3e15014fc030663933f3efa65505d3b543ad940e3a13b9"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        },
+        {
+          "source_ref": "TSG",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "6d064aad95546b5bc4420b706cbddcf1aaab5e8e8421f1f4552bcc5447f76335"
+        },
+        {
+          "source_ref": "TSG_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "37ab24d334a22437b39bce356157ab4205b733e0f442f1f7838f63ea9c96f934"
+        }
+      ],
+      "cutoff_state_evidence_ready": false,
+      "selected_source_refs": [],
+      "all_checked_source_refs": [
+        "BERNARDO_PROFILE",
+        "CONTRACT_14",
+        "SUMMER_TRANSFERS",
+        "TSG",
+        "TSG_SEPT"
+      ],
+      "temporal_reasoning": [],
+      "missing_evidence": "Bernardo Fernandes da Silva Junior: Offizielle Transfermeldung vom 05.06.2025 nennt keine Laufzeit. Die Laufzeit 2027 erschien nur in Sekundärtreffern; kein gesicherter offizieller Nachweis für den Cutoff.",
+      "source_check_status": "EVIDENCE_NOT_RETROSPECTIVELY_RECOVERABLE",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 15,
+      "display_name": "Christopher Trimmel",
+      "player_id": "4567f6bc-c429-44b7-9ebd-b6736379338e",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "237bae42-cb35-4cb3-8e8d-3951c14e0e48",
+      "candidate_real_world_club": "1. FC Union Berlin",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "BAYER_UNION_SEPT",
+          "observed_at": "2026-10-09T21:51:45+00:00",
+          "content_hash": "922fc71afa078df8fc032dab597470e8d9f4cae9d2dbbfc0224617071b897ba6"
+        },
+        {
+          "source_ref": "CONTRACT_15",
+          "observed_at": "2026-10-10T09:11:37+00:00",
+          "content_hash": "f199389cda994a2734c22797fb75f4b5a234943a65a207d5c23d9583de467883"
+        },
+        {
+          "source_ref": "FCU",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "0f3152aa833296e8b51fcf7d74907e85d81518e2ae973fa87987bb112fb65921"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_15"
+      ],
+      "all_checked_source_refs": [
+        "BAYER_UNION_SEPT",
+        "CONTRACT_15",
+        "FCU",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Die ausdrücklich angekündigte nächste Union-Saison ist 2026/27 und umfasst den Oktober-Cutoff; kein Vertragsendtag wird erfunden."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 16,
+      "display_name": "El Chadaille Bitshiabu",
+      "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "A",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "OUTSIDE_BUNDESLIGA",
+      "candidate_club_id": null,
+      "candidate_real_world_club": "Galatasaray",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "BITSHIABU_IDENTITY",
+          "observed_at": "2026-10-09T21:51:47+00:00",
+          "content_hash": "e6f063d1b936c8204a25b511ff731368aa8eaf0124d0788f6faf3c3755a9ad15"
+        },
+        {
+          "source_ref": "BITSHIABU_LOAN",
+          "observed_at": "2026-10-09T21:50:18+00:00",
+          "content_hash": "362adffff64af21806dc9061d6dfa51d65b0856317caf428c4402a90ee64f9ba"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "BITSHIABU_LOAN",
+        "BITSHIABU_IDENTITY"
+      ],
+      "all_checked_source_refs": [
+        "BITSHIABU_IDENTITY",
+        "BITSHIABU_LOAN",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Die positive ausländische Clubbindung über die Saison umfasst den Cutoff; OUTSIDE_BUNDESLIGA wird nicht aus Abwesenheit abgeleitet.",
+        "Unterstützt die Identitätsbindung zur ausgewählten saisonbezogenen Leihe."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 17,
+      "display_name": "Nadiem Amiri",
+      "player_id": "0c66d2af-da9b-4f5d-9147-c7d9c6f0f4f9",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "32d37292-0b2b-462e-a536-fa9fbe6d28ae",
+      "candidate_real_world_club": "1. FSV Mainz 05",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_17",
+          "observed_at": "2026-10-10T09:11:38+00:00",
+          "content_hash": "8f84c969974ceab91fb0b4d148a468dfe41283c079b5a25a8d82fb7a662d57dd"
+        },
+        {
+          "source_ref": "DIKS_AMIRI_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "f5477f81c8b28c8102afcc12c34e04be618cbb46d709c3cd30e937cf0e04e939"
+        },
+        {
+          "source_ref": "M05",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "09b4482d9378843773b241e1cd051304ab64bf88e41976079a3a0f43348e90af"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_17"
+      ],
+      "all_checked_source_refs": [
+        "CONTRACT_17",
+        "DIKS_AMIRI_SEPT",
+        "M05",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Ausdrückliche Vertragsbindung über den Zielzeitpunkt hinaus."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 18,
+      "display_name": "Farès Chaïbi",
+      "player_id": "c4b6c5ff-3b4f-4a40-a917-a587f22029f5",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "9c5535c8-dcbb-4698-a1ad-ad255e9c3ad3",
+      "candidate_real_world_club": "Eintracht Frankfurt",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_18",
+          "observed_at": "2026-10-10T09:11:38+00:00",
+          "content_hash": "ce34235e957474c7e66de0985c3ccc97f8c2c71d9a0706b3936e632e130a49c8"
+        },
+        {
+          "source_ref": "SGE",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "b1d13ac3874b6ec614ccc65c614b623b9ecf9f8dc24944d372bf55dc75dbce13"
+        },
+        {
+          "source_ref": "SGE_FCA_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "6a623b24d3d8958d237b5a77f95e7f7fb318c6986713a875e6cf2c9849981c9a"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_18"
+      ],
+      "all_checked_source_refs": [
+        "CONTRACT_18",
+        "SGE",
+        "SGE_FCA_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Ausdrücklicher Vertragszeitraum umfasst den Cutoff."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 19,
+      "display_name": "Alexis Claude-Maurice",
+      "player_id": "3ca6dad8-cdd9-4293-aa01-238c3640a2c2",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "3a57ccaf-f710-46bd-9526-1d165bebf215",
+      "candidate_real_world_club": "FC Augsburg",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_19",
+          "observed_at": "2026-10-10T09:11:37+00:00",
+          "content_hash": "6873fa923dcdc7f576ad378b2b6a64b86e8151d6bdce772c6ef7a87f39569f38"
+        },
+        {
+          "source_ref": "FCA",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "bed7330d106bec4a43fae293de80dfe59606311af71baa24bdca54ea7fe2744c"
+        },
+        {
+          "source_ref": "SGE_FCA_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "6a623b24d3d8958d237b5a77f95e7f7fb318c6986713a875e6cf2c9849981c9a"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_19"
+      ],
+      "all_checked_source_refs": [
+        "CONTRACT_19",
+        "FCA",
+        "SGE_FCA_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Ausdrücklicher Vertragszeitraum umfasst den Cutoff."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 20,
+      "display_name": "Andrej Kramarić",
+      "player_id": "9027bf68-6eed-45b9-9c75-501ffc00cc5e",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "eabf1c96-ac52-467b-934e-b11a9843778b",
+      "candidate_real_world_club": "TSG Hoffenheim",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_20",
+          "observed_at": "2026-10-10T09:11:38+00:00",
+          "content_hash": "a6e8ba443ae4d5eebeb346e9b33d30d8a6d28053c3cd9c76c54ceac60c93b574"
+        },
+        {
+          "source_ref": "CONTRACT_20_TERM",
+          "observed_at": "2026-10-10T11:54:27+00:00",
+          "content_hash": "74beb88b41b38d3eda530f3756b70589a8874b3b245e5187c5f7e5b25c4d3996"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        },
+        {
+          "source_ref": "TSG",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "6d064aad95546b5bc4420b706cbddcf1aaab5e8e8421f1f4552bcc5447f76335"
+        },
+        {
+          "source_ref": "TSG_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "37ab24d334a22437b39bce356157ab4205b733e0f442f1f7838f63ea9c96f934"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_20_TERM"
+      ],
+      "all_checked_source_refs": [
+        "CONTRACT_20",
+        "CONTRACT_20_TERM",
+        "SUMMER_TRANSFERS",
+        "TSG",
+        "TSG_SEPT"
+      ],
+      "temporal_reasoning": [
+        "Der zusätzliche offizielle Beleg konkretisiert die Verlängerung und trägt die Bindung über den Cutoff."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 21,
+      "display_name": "Arijon Ibrahimović",
+      "player_id": "c362ef51-2c3c-4fcb-aa83-151fb5ea5fa0",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "3a57ccaf-f710-46bd-9526-1d165bebf215",
+      "candidate_real_world_club": "FC Augsburg",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_21_LEAGUE",
+          "observed_at": "2026-10-10T11:54:25+00:00",
+          "content_hash": "8a4d72173fb56880402d0dd3521bbb34fde50b61af082c505893d1e33de12c94"
+        },
+        {
+          "source_ref": "FCA",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "bed7330d106bec4a43fae293de80dfe59606311af71baa24bdca54ea7fe2744c"
+        },
+        {
+          "source_ref": "SGE_FCA_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "6a623b24d3d8958d237b5a77f95e7f7fb318c6986713a875e6cf2c9849981c9a"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_21_LEAGUE"
+      ],
+      "all_checked_source_refs": [
+        "CONTRACT_21",
+        "CONTRACT_21_LEAGUE",
+        "FCA",
+        "SGE_FCA_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Konkrete spätere Leihmeldung bestätigt Augsburg am Cutoff; ältere Bayern-Vertrags-/Planungsinformationen sind keine gegenteilige aktuelle Clubzuordnung."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 22,
+      "display_name": "Brajan Gruda",
+      "player_id": "ee2cd5eb-7b02-49dd-a447-bf20f61d1d5e",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "5b024d53-f276-41b4-8999-40c731f7efcb",
+      "candidate_real_world_club": "RB Leipzig",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "RBL",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "48182b573cd9d362132cbfd2fe74f9160596530f6e61f15d0ad9d24a31679a3f"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "RBL",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 23,
+      "display_name": "Carney Chukwuemeka",
+      "player_id": "c72f7d72-f070-4992-a9d7-1d50ed4d5fc2",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "02b0d742-c110-40ac-8bf1-ed45a4b80377",
+      "candidate_real_world_club": "Borussia Dortmund",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "BVB",
+          "observed_at": "2026-10-09T21:51:42+00:00",
+          "content_hash": "5e5246d33a416561f1b0ad21ed5c288a1d96e66ce5a6dea031a9aeebe2a19e35"
+        },
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "BVB",
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 24,
+      "display_name": "Fabian Rieder",
+      "player_id": "d790076c-0754-49c0-9bc7-7260d57d3ccd",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "3a57ccaf-f710-46bd-9526-1d165bebf215",
+      "candidate_real_world_club": "FC Augsburg",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_24",
+          "observed_at": "2026-10-10T09:11:38+00:00",
+          "content_hash": "da4b8405781edd5743764cbb29e8cd68c6dade38600d7a01200491609b103a31"
+        },
+        {
+          "source_ref": "FCA",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "bed7330d106bec4a43fae293de80dfe59606311af71baa24bdca54ea7fe2744c"
+        },
+        {
+          "source_ref": "SGE_FCA_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "6a623b24d3d8958d237b5a77f95e7f7fb318c6986713a875e6cf2c9849981c9a"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_24"
+      ],
+      "all_checked_source_refs": [
+        "CONTRACT_24",
+        "FCA",
+        "SGE_FCA_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Ausdrückliche Vereinsbindung umfasst den Cutoff."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 25,
+      "display_name": "Iván San José Cantalejo (Chuki)",
+      "player_id": "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "965e7790-3520-4864-8cb2-da450c415a3b",
+      "candidate_real_world_club": "SV Werder Bremen",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_25_LEAGUE",
+          "observed_at": "2026-10-10T11:54:25+00:00",
+          "content_hash": "ad958ef2e5cd73072f6336972dcf7f50389266ae0d9cdefe697e374760af6c5b"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        },
+        {
+          "source_ref": "SVW",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "f0424deeb514bb10662bb5e10740983a0450dc1582711a5837f8b1b66f351c8f"
+        }
+      ],
+      "cutoff_state_evidence_ready": false,
+      "selected_source_refs": [],
+      "all_checked_source_refs": [
+        "CHUKI_TRANSFER",
+        "CONTRACT_25",
+        "CONTRACT_25_LEAGUE",
+        "SUMMER_TRANSFERS",
+        "SVW"
+      ],
+      "temporal_reasoning": [],
+      "missing_evidence": "Iván San José Cantalejo (Chuki): Werder-Abrufe scheiterten mit HTTP 429. Die gesicherte offizielle Ligameldung bestätigt den Transfer zur neuen Saison, aber weder eine ausdrücklich fortdauernde Bindung über den Cutoff noch eine konkrete Laufzeit. Benötigt wird ein offizieller Vertrags-/Registrierungs-/Stichtagsbeleg.",
+      "source_check_status": "EVIDENCE_NOT_RETROSPECTIVELY_RECOVERABLE",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 26,
+      "display_name": "Jamie Leweling",
+      "player_id": "1ffac639-0a04-4bff-87c2-04d3fc54d98a",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "1f193f57-cb65-4399-9373-7800d6600692",
+      "candidate_real_world_club": "VfB Stuttgart",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        },
+        {
+          "source_ref": "VFB",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "377bb7f63542dc0af21baf444d98f99ef4a766ec57902d9ff160d0c73ecd1665"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "SUMMER_TRANSFERS",
+        "VFB"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 27,
+      "display_name": "Lukas Petkov",
+      "player_id": "2328b13b-02f9-4de7-b064-55d428e34d94",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "2533a473-468d-4bf7-b7db-69129a0f086e",
+      "candidate_real_world_club": "SV Elversberg",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_27",
+          "observed_at": "2026-10-10T09:11:38+00:00",
+          "content_hash": "5ba0d5f5dc914af69f20a52cb5f51385d97ca612e56d8d87cc15d10b73997a05"
+        },
+        {
+          "source_ref": "ELV",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "0e17ea401a23af9ea7e58295604dcda7ff60dd420569956d50f9fcb3a4375dfd"
+        },
+        {
+          "source_ref": "PETKOV_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "34543f468425dbbeddc7e7601aae6baf75b02f0ad7d8456809312eb9d5293b80"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_27"
+      ],
+      "all_checked_source_refs": [
+        "CONTRACT_27",
+        "ELV",
+        "PETKOV_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter Vertragszeitraum umfasst den Cutoff; Sommer wird nicht in einen erfundenen Endtag umgerechnet."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 28,
+      "display_name": "Malik Tillman",
+      "player_id": "991b4d70-4007-412b-8b37-dd11a6860639",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "03a4b4b3-6cf6-48c6-839b-d80b3a9069c3",
+      "candidate_real_world_club": "Bayer 04 Leverkusen",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "B04",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "c5f417d4fc4d0f891ce3b86a7c1029f69b5c4a05306f13e1cc93502bcdd90ff4"
+        },
+        {
+          "source_ref": "BAYER_UNION_SEPT",
+          "observed_at": "2026-10-09T21:51:45+00:00",
+          "content_hash": "922fc71afa078df8fc032dab597470e8d9f4cae9d2dbbfc0224617071b897ba6"
+        },
+        {
+          "source_ref": "CONTRACT_28",
+          "observed_at": "2026-10-10T09:11:39+00:00",
+          "content_hash": "0b1411024b45d318c52b19931961cf9fcf189c7b14531208e9676e63c6c072e2"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_28"
+      ],
+      "all_checked_source_refs": [
+        "B04",
+        "BAYER_UNION_SEPT",
+        "CONTRACT_28",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter Vertragszeitraum umfasst den Cutoff."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 29,
+      "display_name": "Wouter Burger",
+      "player_id": "45e0a256-a679-44ee-b3ea-9284b22d2d42",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "eabf1c96-ac52-467b-934e-b11a9843778b",
+      "candidate_real_world_club": "TSG Hoffenheim",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_29",
+          "observed_at": "2026-10-10T09:11:38+00:00",
+          "content_hash": "7a1e51766088f8043816ac3f24871688fe6488222b2451235e776ba4e9582f3b"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        },
+        {
+          "source_ref": "TSG",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "6d064aad95546b5bc4420b706cbddcf1aaab5e8e8421f1f4552bcc5447f76335"
+        },
+        {
+          "source_ref": "TSG_SEPT",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "37ab24d334a22437b39bce356157ab4205b733e0f442f1f7838f63ea9c96f934"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_29"
+      ],
+      "all_checked_source_refs": [
+        "CONTRACT_29",
+        "SUMMER_TRANSFERS",
+        "TSG",
+        "TSG_SEPT"
+      ],
+      "temporal_reasoning": [
+        "Die ausdrückliche mehrjährige Fortdauer ab August 2026 umfasst Oktober 2026. Kein konkretes Vertragsende oder SSOT-Intervall wird daraus konstruiert."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 30,
+      "display_name": "Ísak Bergmann Jóhannesson",
+      "player_id": "c474360a-7e86-4b54-bc57-55cae78dcd96",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "M",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "92149536-119c-46fd-b4fa-e89360d7befb",
+      "candidate_real_world_club": "1. FC Köln",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CONTRACT_30",
+          "observed_at": "2026-10-10T09:11:39+00:00",
+          "content_hash": "e469348e65ec42e435f55a32a923471f5a901bb08f621e2f60f5b671d7020a42"
+        },
+        {
+          "source_ref": "JOHANNESSON_OCT",
+          "observed_at": "2026-10-09T21:51:47+00:00",
+          "content_hash": "83893a2de6f45c3ca5c13b386f1e19d9a9f14cf3937c8907dfbbe0d7a4dea69f"
+        },
+        {
+          "source_ref": "JOHANNESSON_PROFILE",
+          "observed_at": "2026-10-09T21:51:48+00:00",
+          "content_hash": "d7935293d6d77c0c1ae9c1f171e530faf9194922ee1eca4b480ef44c54765f87"
+        },
+        {
+          "source_ref": "KOE",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "85808096311a005fe0120347911f7819ffb98fb53980b345fa457ebaa1ea840b"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_30"
+      ],
+      "all_checked_source_refs": [
+        "CONTRACT_30",
+        "JOHANNESSON_OCT",
+        "JOHANNESSON_PROFILE",
+        "KOE",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter Vertragszeitraum umfasst den Cutoff."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 31,
+      "display_name": "Serge Gnabry",
+      "player_id": "66eedad6-6d31-4b13-87a8-358aa68ca9f6",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "S",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "5e5baf09-5fef-46b3-8db4-361565c5a484",
+      "candidate_real_world_club": "FC Bayern München",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "FCB",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "5820bc090d66c3c3bb81215e47a48dcf9862c35ccf02f68d87afe74af7b6c50d"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "FCB",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 32,
+      "display_name": "Deniz Undav",
+      "player_id": "ea0f64b7-5b07-46dc-9822-c15dec0c9bd9",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "S",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "1f193f57-cb65-4399-9373-7800d6600692",
+      "candidate_real_world_club": "VfB Stuttgart",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        },
+        {
+          "source_ref": "VFB",
+          "observed_at": "2026-10-09T21:51:43+00:00",
+          "content_hash": "377bb7f63542dc0af21baf444d98f99ef4a766ec57902d9ff160d0c73ecd1665"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "SUMMER_TRANSFERS",
+        "VFB"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 33,
+      "display_name": "Maximilian Beier",
+      "player_id": "b491f0eb-318c-40f5-a1fb-49536ff3e986",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "S",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "02b0d742-c110-40ac-8bf1-ed45a4b80377",
+      "candidate_real_world_club": "Borussia Dortmund",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "BVB",
+          "observed_at": "2026-10-09T21:51:42+00:00",
+          "content_hash": "5e5246d33a416561f1b0ad21ed5c288a1d96e66ce5a6dea031a9aeebe2a19e35"
+        },
+        {
+          "source_ref": "CL_PHASE_CALENDAR_WEB",
+          "observed_at": "2026-10-10 11:57:42 UTC",
+          "content_hash": "fb85266ffd940b50c63c4613219ebc1bbd1ba896b92e4506ada80cb53d57f6bd"
+        },
+        {
+          "source_ref": "CL_SEPT",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "d2eba6ba7fc7f051cd84209995dc86b46e5c1aa6293bde340356bbf1b90a93a6"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CL_SEPT",
+        "CL_PHASE_CALENDAR_WEB"
+      ],
+      "all_checked_source_refs": [
+        "BVB",
+        "CL_PHASE_CALENDAR_WEB",
+        "CL_SEPT",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Expliziter phasenbezogener Kadernachweis, zusammen mit dem offiziellen UEFA-Phasenkalender. Der 09.10.2026 liegt innerhalb dieser Phase. Keine Ableitung aus einer einzelnen früheren Spielteilnahme; keine Eligibility-Prüfung.",
+        "Ergänzt die ausdrückliche Ligaphasen-Geltung von CL_SEPT. Der Zielzeitpunkt liegt eindeutig innerhalb, ohne künstliche Uhrzeiten für Phasengrenzen."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 34,
+      "display_name": "Fisnik Asllani",
+      "player_id": "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "S",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "eabf1c96-ac52-467b-934e-b11a9843778b",
+      "candidate_real_world_club": "TSG Hoffenheim",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "ASLLANI_SEPT",
+          "observed_at": "2026-10-09T21:51:45+00:00",
+          "content_hash": "b7690e02ef2e250529c403200a28b1373439936f3f3e9d0879a407453b9efba3"
+        },
+        {
+          "source_ref": "CONTRACT_34",
+          "observed_at": "2026-10-10T09:11:40+00:00",
+          "content_hash": "445d3c3c2ab83ccf1e31f0cd630b813e235801379fa28e4fa19e474bb1570f96"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        },
+        {
+          "source_ref": "TSG",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "6d064aad95546b5bc4420b706cbddcf1aaab5e8e8421f1f4552bcc5447f76335"
+        }
+      ],
+      "cutoff_state_evidence_ready": false,
+      "selected_source_refs": [],
+      "all_checked_source_refs": [
+        "ASLLANI_SEPT",
+        "CONTRACT_34",
+        "SUMMER_TRANSFERS",
+        "TSG"
+      ],
+      "temporal_reasoning": [],
+      "missing_evidence": "Fisnik Asllani: Offizielle Meldung vom 13.07.2025 verlängert den zuvor bis Juni 2026 laufenden Vertrag langfristig, nennt aber kein neues Ende und keine ausdrückliche Geltung am Cutoff. Die gezielte offizielle Laufzeitsuche ergab keinen zusätzlichen Beleg.",
+      "source_check_status": "EVIDENCE_NOT_RETROSPECTIVELY_RECOVERABLE",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 35,
+      "display_name": "Christian Kofane",
+      "player_id": "a014968a-6e04-482a-8b7c-c1922129c60f",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "S",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "03a4b4b3-6cf6-48c6-839b-d80b3a9069c3",
+      "candidate_real_world_club": "Bayer 04 Leverkusen",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "B04",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "c5f417d4fc4d0f891ce3b86a7c1029f69b5c4a05306f13e1cc93502bcdd90ff4"
+        },
+        {
+          "source_ref": "BAYER_UNION_SEPT",
+          "observed_at": "2026-10-09T21:51:45+00:00",
+          "content_hash": "922fc71afa078df8fc032dab597470e8d9f4cae9d2dbbfc0224617071b897ba6"
+        },
+        {
+          "source_ref": "CONTRACT_35",
+          "observed_at": "2026-10-10T09:11:40+00:00",
+          "content_hash": "2a39d43fe0d430262c91aeec3e64005b4ffb1dd2e0a285964446dcd94ba7a068"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_35"
+      ],
+      "all_checked_source_refs": [
+        "B04",
+        "BAYER_UNION_SEPT",
+        "CONTRACT_35",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Das Profil enthält einen ausdrücklichen historischen Vertragszeitraum über den Cutoff; es wird nicht nur die heutige Kaderanzeige verwendet."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    },
+    {
+      "row": 36,
+      "display_name": "Moussa Diaby",
+      "player_id": "8f8cdcc7-c804-42eb-a577-e41befd1c66a",
+      "season_id": "73745028-426a-4970-a812-95455407ad77",
+      "season_position": "S",
+      "identity_reused": true,
+      "season_position_reused": true,
+      "candidate_bundesliga_state": "CURRENT_BUNDESLIGA_CLUB",
+      "candidate_club_id": "03a4b4b3-6cf6-48c6-839b-d80b3a9069c3",
+      "candidate_real_world_club": "Bayer 04 Leverkusen",
+      "target_as_of": "2026-10-09T17:00:00+02:00",
+      "observed_at_ready": true,
+      "observations": [
+        {
+          "source_ref": "B04",
+          "observed_at": "2026-10-09T21:51:44+00:00",
+          "content_hash": "c5f417d4fc4d0f891ce3b86a7c1029f69b5c4a05306f13e1cc93502bcdd90ff4"
+        },
+        {
+          "source_ref": "BAYER_UNION_SEPT",
+          "observed_at": "2026-10-09T21:51:45+00:00",
+          "content_hash": "922fc71afa078df8fc032dab597470e8d9f4cae9d2dbbfc0224617071b897ba6"
+        },
+        {
+          "source_ref": "CONTRACT_36",
+          "observed_at": "2026-10-10T09:11:40+00:00",
+          "content_hash": "4e8fed29e1277208c47e97ec5fc22645adffe77f2a8b36c57042f4d3842d0a6d"
+        },
+        {
+          "source_ref": "SUMMER_TRANSFERS",
+          "observed_at": "2026-10-09T21:51:46+00:00",
+          "content_hash": "8ff4893741470815d596dbf9cbeec436c7c4d2bac95f2b5cba0f4eab863622c8"
+        }
+      ],
+      "cutoff_state_evidence_ready": true,
+      "selected_source_refs": [
+        "CONTRACT_36"
+      ],
+      "all_checked_source_refs": [
+        "B04",
+        "BAYER_UNION_SEPT",
+        "CONTRACT_36",
+        "SUMMER_TRANSFERS"
+      ],
+      "temporal_reasoning": [
+        "Die ausdrückliche Rückkehr und mehrjährige Vereinsbindung umfassen den Cutoff."
+      ],
+      "missing_evidence": null,
+      "source_check_status": "EVIDENCE_READY_FOR_K2",
+      "recovery_scope": "Bounded check only; no claim of universal impossibility",
+      "verification_status": "EVIDENCE_ASSESSED_ONLY",
+      "release_status": "NOT_RELEASED",
+      "resolved_state": null,
+      "ssot_version_id": null
+    }
+  ]
+}

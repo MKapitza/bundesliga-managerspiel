@@ -1,0 +1,32 @@
+{
+  "source_key": "CONTRACT_18",
+  "source_url": "https://profis.eintracht.de/news/fares-chaibi-wird-ein-adlertraeger-152643/",
+  "roster_rows": [
+    18
+  ],
+  "request_started_at": "2026-10-10T09:11:37+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:38+00:00",
+  "retrieved_at": "2026-10-10T09:11:38+00:00",
+  "http_status": 200,
+  "resolved_url": "https://profis.eintracht.de/news/fares-chaibi-wird-ein-adlertraeger-152643/",
+  "headers": {
+    "Accept-Ranges": "bytes",
+    "Age": "0",
+    "Cache-Control": "public,max-age=0,must-revalidate",
+    "Cache-Status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+    "Content-Length": "129276",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Sat, 10 Oct 2026 09:11:36 GMT",
+    "Etag": "\"e597031623b393e0290f7c951515bea7-ssl\"",
+    "Server": "Netlify",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Vary": "Accept-Encoding",
+    "X-Nf-Request-Id": "01M4JHA0WFPJNYE20Y4TH0HCRS",
+    "Connection": "close"
+  },
+  "content_hash": "ce34235e957474c7e66de0985c3ccc97f8c2c71d9a0706b3936e632e130a49c8",
+  "content_bytes": 129276,
+  "retrieval_status": "RETRIEVED"
+}

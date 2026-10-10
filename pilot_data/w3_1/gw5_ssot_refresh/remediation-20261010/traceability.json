@@ -1,0 +1,34 @@
+{
+  "run_id": "gw5-bounded-remediation-20261010",
+  "checked_at": "2026-10-10T12:14:50+00:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "input_sha256": "32224bf4d20a23793c2130873c182c4235feecc7d56cc8d2b974d34c8a5e75ad",
+  "c3_package_sha256": "39fd76fb889a643d97a764f28ca0c27bf11649de808dee7f9a41d5fc2b04cc2c",
+  "current_governance": {
+    "DOC-013": "0.1",
+    "DOC-014": "1.0",
+    "DOC-015": "0.8",
+    "DOC-016": "0.3",
+    "DOC-REG-001": "4.1"
+  },
+  "governance_audit_ref": "evidence/current-governance-audit.json",
+  "source_evidence_ref": "source-evidence.json",
+  "per_player_ref": "current-state-resolution-36.json",
+  "prior_run_ref": "pilot_data/w3_1/gw5_ssot_refresh/runs/run-w3-1-gw5-review-20261009T213543Z-32224bf4d20a",
+  "predecessor_authority_ref": "predecessor-authority-decision.json",
+  "scope_guards": {
+    "players": 36,
+    "existing_player_ids": true,
+    "existing_club_ids_or_outside_null": true,
+    "season_positions_unchanged": true,
+    "no_interpolation": true,
+    "no_new_valid_from_or_valid_to": true,
+    "no_C4_plus": true,
+    "no_eligibility": true,
+    "no_K3_G4": true,
+    "no_HIST_PROFILE": true,
+    "no_forecast_ranking_variants": true,
+    "CON_008": "NOT_PERFORMED"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "source_key": "SVW",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/clubs/sv-werder-bremen",
+  "roster_rows": [
+    25
+  ],
+  "request_started_at": "2026-10-09T21:51:43+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:44+00:00",
+  "retrieved_at": "2026-10-09T21:51:44+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/clubs/sv-werder-bremen",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 16:36:06 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 e47c87f8fd9c4c08ac7559d0bcc2b4c2.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "w6dK0zjfNfAdkI948GQ7DBhQ1DWogOUKeANCvw0ECXopWZjYRqvwkg==",
+    "Age": "18937"
+  },
+  "content_hash": "f0424deeb514bb10662bb5e10740983a0450dc1582711a5837f8b1b66f351c8f",
+  "content_bytes": 1212256,
+  "retrieval_status": "RETRIEVED"
+}

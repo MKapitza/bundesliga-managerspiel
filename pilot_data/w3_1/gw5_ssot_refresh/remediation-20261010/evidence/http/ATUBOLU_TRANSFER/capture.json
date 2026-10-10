@@ -1,0 +1,32 @@
+{
+  "source_key": "ATUBOLU_TRANSFER",
+  "source_url": "https://profis.eintracht.de/news/eintracht-frankfurt-verpflichtet-noah-atubolu-178900/",
+  "roster_rows": [
+    1
+  ],
+  "request_started_at": "2026-10-09T21:50:17+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:50:18+00:00",
+  "retrieved_at": "2026-10-09T21:50:18+00:00",
+  "http_status": 200,
+  "resolved_url": "https://profis.eintracht.de/news/eintracht-frankfurt-verpflichtet-noah-atubolu-178900/",
+  "headers": {
+    "Accept-Ranges": "bytes",
+    "Age": "2",
+    "Cache-Control": "public,max-age=0,must-revalidate",
+    "Cache-Status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+    "Content-Length": "129839",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Fri, 09 Oct 2026 21:50:18 GMT",
+    "Etag": "\"1c6413115a5058bd31f54a52f0c9cd62-ssl\"",
+    "Server": "Netlify",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Vary": "Accept-Encoding",
+    "X-Nf-Request-Id": "01M4HAAG4QSYNZZP3H4Z85BZ5Y",
+    "Connection": "close"
+  },
+  "content_hash": "2c4f0ed8489b32de97a1f9a6869c67b844f61cacb409ced73443f2e8e3e4c2e7",
+  "content_bytes": 129839,
+  "retrieval_status": "RETRIEVED"
+}

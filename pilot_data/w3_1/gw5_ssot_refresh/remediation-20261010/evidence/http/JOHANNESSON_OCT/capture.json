@@ -1,0 +1,34 @@
+{
+  "source_key": "JOHANNESSON_OCT",
+  "source_url": "https://www.bundesliga.com/en/bundesliga/news/stars-international-duty-harry-kane-michael-olise-konstantinos-karetsas-39314/",
+  "roster_rows": [
+    30
+  ],
+  "request_started_at": "2026-10-09T21:51:46+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:47+00:00",
+  "retrieved_at": "2026-10-09T21:51:47+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/en/bundesliga/news/stars-international-duty-harry-kane-michael-olise-konstantinos-karetsas-39314/",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 21:51:46 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Server-Timing": "dtTrId;desc=\"409b603952790e1b1d8d5b48627f40ad\", dtSInfo;desc=\"0\", dtRpid;desc=\"-238446077\"",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 7ab8983df8c6e33475e52fb04de82cbc.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "eeYE2LzKoeOWPVHePImgqN6Tg9zUNr12vHV2Mmv-wLAowAzPIxZ9Pw=="
+  },
+  "content_hash": "83893a2de6f45c3ca5c13b386f1e19d9a9f14cf3937c8907dfbbe0d7a4dea69f",
+  "content_bytes": 1267675,
+  "retrieval_status": "RETRIEVED"
+}

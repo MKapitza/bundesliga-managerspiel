@@ -1,0 +1,36 @@
+{
+  "source_key": "FCB",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/clubs/fc-bayern-muenchen",
+  "roster_rows": [
+    5,
+    11,
+    31
+  ],
+  "request_started_at": "2026-10-09T21:51:42+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:43+00:00",
+  "retrieved_at": "2026-10-09T21:51:43+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/clubs/fc-bayern-muenchen",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 05:16:17 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 08144b62d8ba59c510ae7682981f36c0.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "x7LOlK8HwI27iPLlSvhrJvaBIABfu8q0Aq_4Yq85GUYor-x750NzwA==",
+    "Age": "59725"
+  },
+  "content_hash": "5820bc090d66c3c3bb81215e47a48dcf9862c35ccf02f68d87afe74af7b6c50d",
+  "content_bytes": 1202920,
+  "retrieval_status": "RETRIEVED"
+}

@@ -1,0 +1,28 @@
+{
+  "source_key": "CONTRACT_27",
+  "source_url": "https://sv07elversberg.de/offensivspieler-lukas-petkov-wechselt-aus-augsburg-ins-saarland/",
+  "roster_rows": [
+    27
+  ],
+  "request_started_at": "2026-10-10T09:11:38+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:38+00:00",
+  "retrieved_at": "2026-10-10T09:11:38+00:00",
+  "http_status": 200,
+  "resolved_url": "https://sv07elversberg.de/offensivspieler-lukas-petkov-wechselt-aus-augsburg-ins-saarland/",
+  "headers": {
+    "Date": "Sat, 10 Oct 2026 09:11:37 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "X-Mod-Pagespeed": "1.14.36.1-0",
+    "Cache-Control": "max-age=0, no-cache",
+    "Vary": "Accept-Encoding",
+    "Accept-Ranges": "none",
+    "Server": "HTTP Server"
+  },
+  "content_hash": "5ba0d5f5dc914af69f20a52cb5f51385d97ca612e56d8d87cc15d10b73997a05",
+  "content_bytes": 195689,
+  "retrieval_status": "RETRIEVED"
+}

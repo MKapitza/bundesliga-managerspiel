@@ -1,0 +1,38 @@
+{
+  "source_key": "BAYER_UNION_SEPT",
+  "source_url": "https://www.bayer04.de/en-us/news/bundesliga/werkself-thrash-union-berlin-4-0-in-first-home-game",
+  "roster_rows": [
+    7,
+    15,
+    28,
+    35,
+    36
+  ],
+  "request_started_at": "2026-10-09T21:51:45+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:45+00:00",
+  "retrieved_at": "2026-10-09T21:51:45+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bayer04.de/en-us/news/bundesliga/werkself-thrash-union-berlin-4-0-in-first-home-game",
+  "headers": {
+    "date": "Fri, 09 Oct 2026 21:51:45 GMT",
+    "content-type": "text/html;charset=UTF-8",
+    "x-ssr-cache": "MISS",
+    "cache-control": "no-cache",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "sameorigin",
+    "reporting-endpoints": "posthog=\"https://eu.i.posthog.com/report/?token=phc_CCadYkZHJuUEn207lzt5jWutTvVtF9lDjQtkhFQnsSQ&v=1\"",
+    "content-security-policy": "child-src blob:; connect-src 'self' blob: data: wss://*.bayer04.de wss://*.b04itpg.de https://*.akamaized.net https://*.azureedge.net https://*.b04itpg.de https://*.bayer04.de https://*.cmp.usercentrics.eu https://*.ecn-ldr.de https://*.econda-monitor.de https://*.flockler.com https://*.gstatic.com https://*.sportradar.com https://*.sportradar.dev https://*.usercentrics.eu https://*.youboranqs01.com https://cdn.jsdelivr.net https://eu-api.friendlycaptcha.eu https://gnsnpaw.com https://lma.npaw.com https://widgets.crosssell.info https://api.collectid.io https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com https://*.g.doubleclick.net https://www.googleadservices.com https://ad.doubleclick.net https://*.google.de https://*.cloudfront.net; default-src 'self' https://*.bayer04.de https://*.b04itpg.de; font-src 'self' https://*.b04itpg.de https://*.bayer04.de https://fonts.gstatic.com; frame-ancestors 'self' https://lr.msprod.phimobile.com file:; frame-src https://*.b04itpg.de https://*.bayer04.de https://*.facebook.com https://*.flockler.com https://*.google.com https://*.matterport.com https://*.youtube.com https://bayer04.limesurvey.net https://copilotstudio.microsoft.com https://meisterwerk.podigee.io https://open.spotify.com https://virtual.bundesliga.com https://player.podigee-cdn.net https://*.google.de; img-src 'self' blob: data: https://*.azureedge.net https://*.b04itpg.de https://*.bayer04.de https://*.cdninstagram.com https://*.cmp.usercentrics.eu https://*.econda-monitor.de https://*.facebook.com https://*.facebook.net https://*.fbcdn.net https://*.flockler.com https://*.sportradar.com https://*.sportradar.dev https://*.tiktokcdn-eu.com https://*.usercentrics.eu https://*.wt-safetag.com https://b04mediastorageprod.blob.core.windows.net https://fbc.wcfbc.net https://fl-cdn.scdn1.secure.raxcdn.com https://flockler.com https://social-proxy.flocklr.com https://*.twimg.com https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com https://*.g.doubleclick.net https://www.googleadservices.com https://ad.doubleclick.net https://*.google.de; media-src 'self' blob: data: https://*.akamaized.net https://*.b04itpg.de https://*.bayer04.de https://*.rndfnk.com https://*.cdninstagram.com https://*.radioho.st https://*.radiohost.de; report-to posthog; report-uri https://us.i.posthog.com/report/?token=phc_CCadYkZHJuUEn207lzt5jWutTvVtF9lDjQtkhFQnsSQ&v=1; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' https://*.b04itpg.de https://*.bayer04.de https://*.cmp.usercentrics.eu https://*.ecn-ldr.de https://*.econda-monitor.de https://*.facebook.com https://*.facebook.net https://*.flockler.com https://*.gstatic.com https://*.sportradar.com https://*.sportradar.dev https://*.usercentrics.eu https://*.wt-safetag.com https://*.googletagmanager.com https://www.googletagmanager.com https://www.googleadservices.com https://*.google.com https://*.g.doubleclick.net https://*.google.de https://*.cloudfront.net; style-src 'self' 'unsafe-inline' https://*.b04itpg.de https://*.bayer04.de https://*.cmp.usercentrics.eu https://*.econda-monitor.de https://*.facebook.com https://*.facebook.net https://*.flockler.com https://*.sportradar.com https://*.sportradar.dev https://*.usercentrics.eu https://*.wt-safetag.com https://www.googletagmanager.com https://*.google.com https://*.google.de; worker-src blob:;",
+    "x-request-id": "37fbd98db7850db006a72b5207c00729",
+    "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "x-envoy-upstream-service-time": "453",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  },
+  "content_hash": "922fc71afa078df8fc032dab597470e8d9f4cae9d2dbbfc0224617071b897ba6",
+  "content_bytes": 122142,
+  "retrieval_status": "RETRIEVED"
+}

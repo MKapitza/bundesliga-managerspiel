@@ -1,0 +1,36 @@
+{
+  "source_key": "SGE_FCA_SEPT",
+  "source_url": "https://en.eintracht.de/news/eintracht-unterliegt-nach-fuehrung-augsburg-179108/",
+  "roster_rows": [
+    1,
+    18,
+    19,
+    21,
+    24
+  ],
+  "request_started_at": "2026-10-09T21:51:45+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:46+00:00",
+  "retrieved_at": "2026-10-09T21:51:46+00:00",
+  "http_status": 200,
+  "resolved_url": "https://en.eintracht.de/news/eintracht-unterliegt-nach-fuehrung-augsburg-179108/",
+  "headers": {
+    "Accept-Ranges": "bytes",
+    "Age": "0",
+    "Cache-Control": "public,max-age=0,must-revalidate",
+    "Cache-Status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+    "Content-Length": "128246",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Fri, 09 Oct 2026 21:51:45 GMT",
+    "Etag": "\"a512fb6ab1e630ccac0d1ef99be6a23b-ssl\"",
+    "Server": "Netlify",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Vary": "Accept-Encoding",
+    "X-Nf-Request-Id": "01M4HAD5PM0M56DFDCQ21BQZS9",
+    "Connection": "close"
+  },
+  "content_hash": "6a623b24d3d8958d237b5a77f95e7f7fb318c6986713a875e6cf2c9849981c9a",
+  "content_bytes": 128246,
+  "retrieval_status": "RETRIEVED"
+}

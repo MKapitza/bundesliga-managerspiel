@@ -1,0 +1,36 @@
+{
+  "source_key": "VFB",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/clubs/vfb-stuttgart",
+  "roster_rows": [
+    4,
+    26,
+    32
+  ],
+  "request_started_at": "2026-10-09T21:51:42+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:43+00:00",
+  "retrieved_at": "2026-10-09T21:51:43+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/clubs/vfb-stuttgart",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 16:36:10 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 e999795aa400a9b7027a66ec4ada5728.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "9YB3pWUI5sPzcZ86bIV5yaV9ndL7NRTpiqj6PxFEjGdJraV4bIuhfg==",
+    "Age": "18932"
+  },
+  "content_hash": "377bb7f63542dc0af21baf444d98f99ef4a766ec57902d9ff160d0c73ecd1665",
+  "content_bytes": 1210455,
+  "retrieval_status": "RETRIEVED"
+}

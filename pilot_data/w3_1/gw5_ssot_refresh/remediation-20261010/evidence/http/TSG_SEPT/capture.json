@@ -1,0 +1,41 @@
+{
+  "source_key": "TSG_SEPT",
+  "source_url": "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/9/5/BVB-Traumstart-nach-Aufholjagd-in-Hoffenheim-perfekt.html",
+  "roster_rows": [
+    6,
+    14,
+    20,
+    29
+  ],
+  "request_started_at": "2026-10-09T21:51:44+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:46+00:00",
+  "retrieved_at": "2026-10-09T21:51:46+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/9/5/BVB-Traumstart-nach-Aufholjagd-in-Hoffenheim-perfekt.html",
+  "headers": {
+    "Date": "Fri, 09 Oct 2026 21:51:46 GMT",
+    "Content-Type": "text/html;charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "x-frame-options": "SAMEORIGIN",
+    "Cache-Control": "max-age=300",
+    "expires": "Fri, 09 Oct 2026 21:56:44 GMT",
+    "x-vhost": "bvb.de",
+    "x-content-type-options": "nosniff",
+    "Age": "0",
+    "strict-transport-security": "max-age=31557600",
+    "Set-Cookie": "affinity=\"0f0e0ef01cadc3fb\"; Path=/; HttpOnly; secure",
+    "x-served-by": "cache-fra-etou8220029-FRA",
+    "x-cache": "MISS",
+    "x-timer": "S1791582705.643178,VS0,VS0,VE1697",
+    "vary": "Accept-Encoding",
+    "cf-cache-status": "BYPASS",
+    "Server": "cloudflare",
+    "CF-RAY": "a4809bbfcac73654-FRA"
+  },
+  "content_hash": "37ab24d334a22437b39bce356157ab4205b733e0f442f1f7838f63ea9c96f934",
+  "content_bytes": 783799,
+  "retrieval_status": "RETRIEVED"
+}

@@ -1,0 +1,26 @@
+{
+  "run_id": "gw5-bounded-remediation-20261010",
+  "checked_at": "2026-10-10T12:14:50+00:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "player_id": "ff96da5e-6d75-4ffa-8aa9-67e9758e7fcc",
+  "candidate_state": "OUTSIDE_BUNDESLIGA",
+  "candidate_club_id": null,
+  "identity_reused": true,
+  "positive_foreign_club_loan_covers_cutoff": true,
+  "source_refs": [
+    "BITSHIABU_LOAN",
+    "BITSHIABU_IDENTITY"
+  ],
+  "actual_observation_and_raw_hash": "PASS",
+  "no_dummy_club_or_exit_time": "PASS",
+  "basis": [
+    "DEC-033",
+    "REQ-SSOT-007",
+    "CTL-K2-003/006/008"
+  ],
+  "evidence_readiness": "PASS",
+  "formal_k2_execution": "NOT_RERUN",
+  "release_effect": "NONE",
+  "note": "Separate first evidence check completed. Full K2 remains gated by all 36 evidence sets."
+}

@@ -1,0 +1,34 @@
+{
+  "source_key": "CONTRACT_20",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/news/andrej-kramaric-tsg-hoffenheim-vertrag-verlangerung-37183",
+  "roster_rows": [
+    20
+  ],
+  "request_started_at": "2026-10-10T09:11:37+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:38+00:00",
+  "retrieved_at": "2026-10-10T09:11:38+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/news/andrej-kramaric-tsg-hoffenheim-vertrag-verlangerung-37183",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Sat, 10 Oct 2026 09:11:37 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Server-Timing": "dtTrId;desc=\"60fee4884a0579c7952a77fb1b8ba89b\", dtSInfo;desc=\"0\", dtRpid;desc=\"-1206321813\"",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 e3824a4cc698f190d3fa6fe687f1a600.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "xYpvw4cBdGthEU5QZZ4GKTfKwWlEKnsFwkNhX06FXiipeOXhIemSQA=="
+  },
+  "content_hash": "a6e8ba443ae4d5eebeb346e9b33d30d8a6d28053c3cd9c76c54ceac60c93b574",
+  "content_bytes": 842358,
+  "retrieval_status": "RETRIEVED"
+}

@@ -1,0 +1,29 @@
+{
+  "run_id": "gw5-bounded-remediation-20261010",
+  "checked_at": "2026-10-10T12:14:50+00:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "result": "BLOCKED",
+  "execution": "NOT_RERUN",
+  "reason": "Only 30/36 evidence sets ready. User section 9 requires all 36 before full K2 rerun.",
+  "player_control_evaluations": 0,
+  "previous_result_ref": "pilot_data/w3_1/gw5_ssot_refresh/runs/run-w3-1-gw5-review-20261009T213543Z-32224bf4d20a/k2-result.json",
+  "required_controls": [
+    "CTL-K2-001",
+    "CTL-K2-002",
+    "CTL-K2-003",
+    "CTL-K2-004",
+    "CTL-K2-005",
+    "CTL-K2-006",
+    "CTL-K2-007",
+    "CTL-K2-008"
+  ],
+  "blocking_players": [
+    "d566ff64-be86-4648-855b-40c1f2fd7819",
+    "756a83b6-daf6-42b9-839a-31303fa35941",
+    "d10f160a-2e03-41b5-af14-cdfae062bb5e",
+    "d29ff34f-8ce4-4c3f-8702-ffeca5bf9c9b",
+    "691b7e95-d539-4fb3-b097-0d25fb41f48f",
+    "573ad1b2-fe1f-4b30-be76-1cd01c70a8a0"
+  ]
+}

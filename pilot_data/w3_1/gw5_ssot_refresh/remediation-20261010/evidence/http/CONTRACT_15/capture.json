@@ -1,0 +1,35 @@
+{
+  "source_key": "CONTRACT_15",
+  "source_url": "https://www.fc-union-berlin.de/en/news/trimmel-and-the-wild-13-vom0do",
+  "roster_rows": [
+    15
+  ],
+  "request_started_at": "2026-10-10T09:11:37+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:37+00:00",
+  "retrieved_at": "2026-10-10T09:11:37+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.fc-union-berlin.de/en/news/trimmel-and-the-wild-13-vom0do",
+  "headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "Content-Length": "139639",
+    "Connection": "close",
+    "Date": "Sat, 10 Oct 2026 09:11:36 GMT",
+    "x-xss-protection": "0",
+    "Cache-Control": "public, max-age=0, s-maxage=60, stale-while-revalidate=60",
+    "content-security-policy": "frame-ancestors self https://fcu-cms.directus.app https://1fcunionberlin.sharepoint.com",
+    "ETag": "\"UeLFJy/tfpN2NptSSUl6VEiMlUs\"",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-dns-prefetch-control": "off",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 d6f4f7f6ffad42fddc330a28a55aeffe.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P13",
+    "X-Amz-Cf-Id": "qbkE6zSj8lWOSKlUYypSs7ceRQtbKBS3gCLyCaS0t1WzQ5ThFqBZLg=="
+  },
+  "content_hash": "f199389cda994a2734c22797fb75f4b5a234943a65a207d5c23d9583de467883",
+  "content_bytes": 139639,
+  "retrieval_status": "RETRIEVED"
+}

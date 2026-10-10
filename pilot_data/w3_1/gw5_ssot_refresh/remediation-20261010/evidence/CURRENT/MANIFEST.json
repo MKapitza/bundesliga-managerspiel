@@ -1,0 +1,80 @@
+{
+  "schema": "bms.con-008.project-sources-backup",
+  "schema_version": "1.0",
+  "backup_date": "2026-09-15",
+  "handoff_status": "HANDOFF_READY",
+  "register_checked_first": true,
+  "register": {
+    "doc_id": "DOC-REG-001",
+    "version": "4.1",
+    "status": "CURRENT_AND_BINDING",
+    "sha256": "eed5796493fc8c41f8992b8d825754791f8bd5d0e9994f9ade2f210ba3bffff5"
+  },
+  "binding_current_set": {
+    "DOC-REG-001": "4.1",
+    "DOC-013": "0.1",
+    "DOC-014": "1.0",
+    "DOC-015": "0.8",
+    "DOC-016": "0.3"
+  },
+  "change_summary": {
+    "DOC-REG-001": "4.0 -> 4.1",
+    "DOC-014": "0.9 -> 1.0",
+    "DOC-016": "0.2 -> 0.3",
+    "DOC-013": "unchanged at 0.1",
+    "DOC-015": "unchanged at 0.8"
+  },
+  "governance_note": "Register 4.1 integrates CHG-0033 and identifies DEC-034 as the continuation strategy after the data-limited W3.2/GW2 pilot. Older versions are historical only.",
+  "files": [
+    {
+      "doc_id": "DOC-REG-001",
+      "version": "4.1",
+      "status": "CURRENT",
+      "canonical_filename": "00_Dokumentenregister_Stand_4.1.docx",
+      "source_upload_filename": "00_Dokumentenregister_Stand_4.1(1).docx",
+      "size_bytes": 22537,
+      "sha256": "eed5796493fc8c41f8992b8d825754791f8bd5d0e9994f9ade2f210ba3bffff5",
+      "docx_zip_integrity": "PASS"
+    },
+    {
+      "doc_id": "DOC-013",
+      "version": "0.1",
+      "status": "CURRENT",
+      "canonical_filename": "13_MS1_Abnahmeprotokoll_v0.1.docx",
+      "source_upload_filename": "13_MS1_Abnahmeprotokoll_v0.1(1).docx",
+      "size_bytes": 40768,
+      "sha256": "d8dbb559489dcfb5f88e05b27e08a0a03a5275a7025aff90bd28412d2d18e799",
+      "docx_zip_integrity": "PASS"
+    },
+    {
+      "doc_id": "DOC-014",
+      "version": "1.0",
+      "status": "CURRENT",
+      "canonical_filename": "14_Governance_Steuerungspaket_v1.0.docx",
+      "source_upload_filename": "14_Governance_Steuerungspaket_v1.0(1).docx",
+      "size_bytes": 85260,
+      "sha256": "a05de07368861d5799c35d79f454bd426558d9af9aedce3ec93650d8f7b02800",
+      "docx_zip_integrity": "PASS"
+    },
+    {
+      "doc_id": "DOC-015",
+      "version": "0.8",
+      "status": "CURRENT",
+      "canonical_filename": "15_Fachliches_Zielmodell_MS1_v0.8.docx",
+      "source_upload_filename": "15_Fachliches_Zielmodell_MS1_v0.8(1).docx",
+      "size_bytes": 186275,
+      "sha256": "ef5d494cc1ac3d5b5eeec046e0c43528d82884173fedd99c726df77bc710d908",
+      "docx_zip_integrity": "PASS"
+    },
+    {
+      "doc_id": "DOC-016",
+      "version": "0.3",
+      "status": "CURRENT",
+      "canonical_filename": "16_Steuerungsdokument_MS2_v0.3.docx",
+      "source_upload_filename": "16_Steuerungsdokument_MS2_v0.3(1).docx",
+      "size_bytes": 60563,
+      "sha256": "51f54bd61e48bbd857cda9152e6b4f6ae7d34cb62e41e98e880d676d7242b443",
+      "docx_zip_integrity": "PASS"
+    }
+  ]
+}

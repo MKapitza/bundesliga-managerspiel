@@ -1,0 +1,12 @@
+{
+  "run_id": "gw5-bounded-remediation-20261010",
+  "checked_at": "2026-10-10T12:14:50+00:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "decision": "BLOCKED",
+  "execution": "NOT_RERUN",
+  "ssot_version_id": null,
+  "g3_release_id": null,
+  "released_player_count": 0,
+  "reason": "Evidence gate incomplete; K2 not rerun; no partial release."
+}

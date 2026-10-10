@@ -1,0 +1,14 @@
+{
+  "source_key": "CONTRACT_25",
+  "source_url": "https://www.werder.de/en/news/first-team/2025-2026/chuki-transfer-02062026",
+  "roster_rows": [
+    25
+  ],
+  "request_started_at": "2026-10-10T09:11:38+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": null,
+  "attempt_completed_at": "2026-10-10T09:11:38+00:00",
+  "retrieval_status": "FAILED",
+  "error": "HTTP Error 429: Too Many Requests"
+}

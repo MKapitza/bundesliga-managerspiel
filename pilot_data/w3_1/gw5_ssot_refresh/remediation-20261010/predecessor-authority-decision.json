@@ -1,0 +1,17 @@
+{
+  "run_id": "gw5-bounded-remediation-20261010",
+  "checked_at": "2026-10-10T12:14:50+00:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "authority": "FORMALLY_RELEASED_CURRENT_HANDOFF_PACKAGE",
+  "authority_package_path": "C:\\Users\\mkapi\\Desktop\\BMS\\03_Modelle_und_Fachhandoffs\\CURRENT\\W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2\\MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL.zip",
+  "authority_package_sha256": "32f239ad5c13dcc7c9162270e89608754012bd9274006f9429b07db5d8a6bb22",
+  "authoritative_member": "MS2_W3_1_GW4_SSOT_Refresh_20260918T1700_v0.2_FINAL/k2-result.json",
+  "authoritative_member_sha256": "3008b0eebeba8e94a27d032f55e612a22b844c98f7bbe86d69c9d7dd9530561f",
+  "historical_diagnostic_sha256": "7ca5dbac5909a63a087b0a3e38bb8d56962af11c94968cfa2c4606201ff50b77",
+  "historical_diagnostic_authority": "NON_AUTHORITATIVE_FOR_RELEASE_LINEAGE",
+  "status": "CLOSED_BY_PI2_DECISION",
+  "authorization": "Human P&I 2 supplemental assignment in this conversation, section 2",
+  "both_originals_preserved": true,
+  "additional_blocker": false
+}

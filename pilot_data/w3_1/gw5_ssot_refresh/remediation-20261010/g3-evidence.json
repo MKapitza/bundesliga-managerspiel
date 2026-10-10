@@ -1,0 +1,12 @@
+{
+  "run_id": "gw5-bounded-remediation-20261010",
+  "checked_at": "2026-10-10T12:14:50+00:00",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "predecessor_ssot_version_id": "a1c6e3cb-51f6-5390-b286-4a2fd0d049b0",
+  "status": "BLOCKED_STATUS_RECORD_ONLY",
+  "g3_release_id": null,
+  "ssot_version_id": null,
+  "k2_sha256": "1ee76577cf75de13ab3210c4d1ddf0a1457a3e72f90155bdb03a9da655fa2102",
+  "source_evidence_sha256": "a4d9075cbf89899c2441c77dfd113fe8e1fb6e5a2bc0152e2a33632036a51738",
+  "resolution_sha256": "ff318e0aece4f6ea2dc875a29ba49f89ab5a282fb5c5bb434a1ef0f391787ae8"
+}

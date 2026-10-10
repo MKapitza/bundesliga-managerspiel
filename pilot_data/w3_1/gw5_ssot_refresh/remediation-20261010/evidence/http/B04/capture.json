@@ -1,0 +1,36 @@
+{
+  "source_key": "B04",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/clubs/bayer-04-leverkusen/kader",
+  "roster_rows": [
+    28,
+    35,
+    36
+  ],
+  "request_started_at": "2026-10-09T21:51:44+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:44+00:00",
+  "retrieved_at": "2026-10-09T21:51:44+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/clubs/bayer-04-leverkusen/kader",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 12:03:17 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 e999795aa400a9b7027a66ec4ada5728.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "t8M511aiui5MUu__48lcmJNpoiTwEGS2t59VnryxaHM_VyFpLsnapg==",
+    "Age": "35307"
+  },
+  "content_hash": "c5f417d4fc4d0f891ce3b86a7c1029f69b5c4a05306f13e1cc93502bcdd90ff4",
+  "content_bytes": 1218292,
+  "retrieval_status": "RETRIEVED"
+}

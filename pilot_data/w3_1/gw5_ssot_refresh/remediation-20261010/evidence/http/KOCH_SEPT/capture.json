@@ -1,0 +1,32 @@
+{
+  "source_key": "KOCH_SEPT",
+  "source_url": "https://profis.eintracht.de/news/in-unserem-spiel-noch-luft-nach-oben-179374/",
+  "roster_rows": [
+    10
+  ],
+  "request_started_at": "2026-10-09T21:51:45+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:46+00:00",
+  "retrieved_at": "2026-10-09T21:51:46+00:00",
+  "http_status": 200,
+  "resolved_url": "https://profis.eintracht.de/news/in-unserem-spiel-noch-luft-nach-oben-179374/",
+  "headers": {
+    "Accept-Ranges": "bytes",
+    "Age": "0",
+    "Cache-Control": "public,max-age=0,must-revalidate",
+    "Cache-Status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+    "Content-Length": "135616",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Fri, 09 Oct 2026 21:51:45 GMT",
+    "Etag": "\"4967491c4ac4bcff622847dad89daa68-ssl\"",
+    "Server": "Netlify",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Vary": "Accept-Encoding",
+    "X-Nf-Request-Id": "01M4HAD5T5SC9G4CBZ2GZZMAV7",
+    "Connection": "close"
+  },
+  "content_hash": "1f347b923686dbda44a4e0efe54a2dbff6ab3dea55bc7f300c2a8b694f91562e",
+  "content_bytes": 135616,
+  "retrieval_status": "RETRIEVED"
+}

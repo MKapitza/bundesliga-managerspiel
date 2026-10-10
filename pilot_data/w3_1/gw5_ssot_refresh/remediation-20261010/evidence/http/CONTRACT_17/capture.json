@@ -1,0 +1,30 @@
+{
+  "source_key": "CONTRACT_17",
+  "source_url": "https://www.mainz05.de/news/nadiem-amiri-verlaengert-bis-2028/",
+  "roster_rows": [
+    17
+  ],
+  "request_started_at": "2026-10-10T09:11:37+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:38+00:00",
+  "retrieved_at": "2026-10-10T09:11:38+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.mainz05.de/news/nadiem-amiri-verlaengert-bis-2028/",
+  "headers": {
+    "Date": "Sat, 10 Oct 2026 09:11:37 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Server": "cloudflare",
+    "Speculation-Rules": "\"/cdn-cgi/speculation\"",
+    "Strict-Transport-Security": "max-age=2592000",
+    "vary": "accept-encoding",
+    "cf-cache-status": "DYNAMIC",
+    "CF-RAY": "a4847fa518bed3a0-FRA",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "content_hash": "8f84c969974ceab91fb0b4d148a468dfe41283c079b5a25a8d82fb7a662d57dd",
+  "content_bytes": 166327,
+  "retrieval_status": "RETRIEVED"
+}

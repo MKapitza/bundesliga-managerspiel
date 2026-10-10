@@ -1,0 +1,34 @@
+{
+  "source_key": "BMG",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/clubs/borussia-moenchengladbach/squad",
+  "roster_rows": [
+    3
+  ],
+  "request_started_at": "2026-10-09T21:51:42+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:44+00:00",
+  "retrieved_at": "2026-10-09T21:51:44+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/clubs/borussia-moenchengladbach/squad",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Fri, 09 Oct 2026 21:51:44 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Server-Timing": "dtTrId;desc=\"74c72b8dd5260e0b267b40bf701ecda3\", dtSInfo;desc=\"0\", dtRpid;desc=\"-1833018213\"",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 fd87ab1d9a433dd02274380a706bf7d2.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "_qOjhM6YJZVPKNYs7gUwmD9Tz-eNibbt22l5smihcoORaGIQ8irf5g=="
+  },
+  "content_hash": "2681617f93b99a23ebdc46b2039dc8c0279019fb0e1f09702303901e0f0f1e51",
+  "content_bytes": 1186102,
+  "retrieval_status": "RETRIEVED"
+}

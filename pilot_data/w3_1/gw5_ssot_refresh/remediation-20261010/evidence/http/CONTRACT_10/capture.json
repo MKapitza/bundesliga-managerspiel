@@ -1,0 +1,32 @@
+{
+  "source_key": "CONTRACT_10",
+  "source_url": "https://profis.eintracht.de/news/vertragsverlaengerung-robin-koch-169144/",
+  "roster_rows": [
+    10
+  ],
+  "request_started_at": "2026-10-10T09:11:36+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:37+00:00",
+  "retrieved_at": "2026-10-10T09:11:37+00:00",
+  "http_status": 200,
+  "resolved_url": "https://profis.eintracht.de/news/vertragsverlaengerung-robin-koch-169144/",
+  "headers": {
+    "Accept-Ranges": "bytes",
+    "Age": "0",
+    "Cache-Control": "public,max-age=0,must-revalidate",
+    "Cache-Status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+    "Content-Length": "131582",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Sat, 10 Oct 2026 09:11:36 GMT",
+    "Etag": "\"c4c7b01dbcea51b2757251089829e6da-ssl\"",
+    "Server": "Netlify",
+    "Strict-Transport-Security": "max-age=31536000",
+    "Vary": "Accept-Encoding",
+    "X-Nf-Request-Id": "01M4JHA0CCJRSJ0WQYQ4VN1F0G",
+    "Connection": "close"
+  },
+  "content_hash": "3d8d7ac03638bde2890e224c5d2a3d775990e32bac7dabca7ebd286a6ded8bf5",
+  "content_bytes": 131582,
+  "retrieval_status": "RETRIEVED"
+}

@@ -1,0 +1,34 @@
+{
+  "source_key": "CONTRACT_29",
+  "source_url": "https://www.bundesliga.com/de/bundesliga/news/wouter-burger-verlangert-bei-der-tsg-hoffenheim-38472",
+  "roster_rows": [
+    29
+  ],
+  "request_started_at": "2026-10-10T09:11:38+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-10T09:11:38+00:00",
+  "retrieved_at": "2026-10-10T09:11:38+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.bundesliga.com/de/bundesliga/news/wouter-burger-verlangert-bei-der-tsg-hoffenheim-38472",
+  "headers": {
+    "Content-Type": "text/html;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Date": "Sat, 10 Oct 2026 09:08:05 GMT",
+    "X-OneAgent-JS-Injection": "true",
+    "X-ruxit-JS-Agent": "true",
+    "x-served-by": "bundesliga-platform",
+    "Cache-Control": "public, max-age=30",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 90b31bff657d66dd87e437e4a49bf7a6.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "FRA56-P9",
+    "Alt-Svc": "h3=\":443\"; ma=86400",
+    "X-Amz-Cf-Id": "gZ_Jb-4g-v_PmT3mNvKSuaeLgFpm_1L0_n9lAL75y3b-myPboSwEhw==",
+    "Age": "212"
+  },
+  "content_hash": "7a1e51766088f8043816ac3f24871688fe6488222b2451235e776ba4e9582f3b",
+  "content_bytes": 843611,
+  "retrieval_status": "RETRIEVED"
+}

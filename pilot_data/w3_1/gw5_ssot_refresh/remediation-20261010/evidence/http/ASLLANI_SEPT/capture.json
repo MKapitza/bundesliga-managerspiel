@@ -1,0 +1,27 @@
+{
+  "source_key": "ASLLANI_SEPT",
+  "source_url": "https://www.vfb.de/de/vfb/profis/saison/bundesliga/2627/3-tsg-hoffenheim----vfb-stuttgart-/",
+  "roster_rows": [
+    34
+  ],
+  "request_started_at": "2026-10-09T21:51:44+00:00",
+  "capture_method": "direct HTTPS GET; response body bytes preserved",
+  "target_as_of": "2026-10-09T17:00:00+02:00",
+  "observed_at": "2026-10-09T21:51:45+00:00",
+  "retrieved_at": "2026-10-09T21:51:45+00:00",
+  "http_status": 200,
+  "resolved_url": "https://www.vfb.de/de/vfb/profis/saison/bundesliga/2627/3-tsg-hoffenheim----vfb-stuttgart-/",
+  "headers": {
+    "Server": "nginx",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Vary": "Accept-Encoding",
+    "Cache-Control": "max-age=300",
+    "Expires": "Fri, 09 Oct 2026 21:56:45 GMT",
+    "Date": "Fri, 09 Oct 2026 21:51:45 GMT",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close"
+  },
+  "content_hash": "b7690e02ef2e250529c403200a28b1373439936f3f3e9d0879a407453b9efba3",
+  "content_bytes": 99806,
+  "retrieval_status": "RETRIEVED"
+}
