@@ -1,0 +1,26 @@
+{
+  "schema": "bms.w3-1-gw5-g3-decision",
+  "schema_version": "0.1",
+  "run_id": "run-w3-1-gw5-ssot-refresh-20261010T160521Z-32224bf4d20a",
+  "decision_id": "d1b14236-7d71-5e7b-b310-3da2fd3e9ce8",
+  "decision": "SSOT_RELEASED",
+  "ssot_version_id": "bc32ff06-12f2-5381-b8c4-e7a1f3b41a11",
+  "g3_release_id": "b424c0a3-fa67-5d50-b31b-08b92c4ec113",
+  "g3_evidence_id": "evidence:ebc90ee2-9699-5a9c-8ab6-7ca314d70661",
+  "data_as_of": "2026-10-09T17:00:00+02:00",
+  "released_scope_player_count": 36,
+  "k2_result": "PASS",
+  "derivation": {
+    "current_state_coverage": "36/36",
+    "current_bundesliga_club_states": 35,
+    "outside_bundesliga_states": 1,
+    "composite_valid": "6/6",
+    "all_required_k2_controls_passed": true,
+    "no_new_identity_decisions": true,
+    "no_new_player_ids": true,
+    "no_new_club_ids": true,
+    "no_synthetic_validity_intervals": true,
+    "predecessor_unchanged": true
+  },
+  "blocked_inputs": []
+}
